@@ -1,12 +1,14 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next'
-function Home() {
-  const {t , i18n}= useTranslation();
-  return (
-    <div>
-      {t("Header.0")}
-    </div>
-  )
-}
+import React from "react";
+import { useTranslation } from "react-i18next";
+import HomeComponent from '../../components/home-components/index'
 
-export default Home
+const Home = () => {
+  const { t, i18n } = useTranslation();
+  return (
+    <>
+      <HomeComponent />
+    </>
+  );
+};
+
+export default Home;
