@@ -1,5 +1,24 @@
 {
     "Header":{
-        "0":"Salom"
+        "0":"Kirish"
+    },
+    "Auth" : {
+        "0" : "Ro'yxatdan o'tish",
+         "1": "Kirish",
+         "2": "Kompaniya nomi",
+         "3" : "Elektron",
+         "4": "INN",
+         "5" : "Elektron pochtangizni kiriting",
+         "6" : "Ushbu e-pochtaga elektron pochta xabarlarini olish",
+         "7": "OGRN",
+         "8" : "Nazorat punkti",
+         "9" : "Mamlakat",
+         "10" : "Kuchli parol yarating",
+         "11" : "Parolni tasdiqlang",
+         "12" : "Men foydalanuvchi shartnomasi shartlarini va shaxsiy ma'lumotlarni qayta ishlash siyosatini qabul qilaman",
+         "13" : "Ro'yxatdan o'tish",
+         "14" : "Avtorizatsiya",
+         "15" : "Eslab qoling",
+         "16" : "Parolingizni kiriting"
     }
 }
