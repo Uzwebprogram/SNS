@@ -35,11 +35,11 @@ const Calling = () => {
         </div>
         <CommonButton
           style={{
-            color: "#1E1E1E",
-            borderColor: "#1E1E1E",
+            color: "#FFFFFF",
             display: "inline-block",
             marginTop: "12px",
             padding: "8px 50px",
+            background: "#2F66B8",
           }}
           type={"button"}
         >

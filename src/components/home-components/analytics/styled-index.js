@@ -9,6 +9,10 @@ export const WrapperPress = styled.div`
   @media only screen and (max-width: 425px) {
     margin-top: 0;
     border-radius: 0;
+
+    .row {
+      margin-left: 0 !important;
+    }
   }
 
   .card-wrapper {
@@ -27,6 +31,42 @@ export const WrapperPress = styled.div`
     margin-top: 0;
     letter-spacing: 0.01em;
     color: #fff;
+  }
+
+  .select-box {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 425px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+    select {
+      width: 75%;
+      background: #1b1a1a;
+      border: 1px solid #2c2c2c;
+      border-radius: 5px;
+      outline: none;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      padding: 10px 30px 10px 10px;
+
+      @media only screen and (max-width: 425px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   .press-content {
