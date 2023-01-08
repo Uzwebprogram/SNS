@@ -11,4 +11,5 @@ export const Button = styled.div`
   letter-spacing: 0.01em;
   padding: 6px 30px;
   color: #ffffff;
+  cursor: pointer;
 `;
