@@ -1,5 +1,31 @@
 {
     "Header":{
-        "0":"Hello"
+        "0":"Login",
+        "1" :"Company, research",
+        "2" : "Ratings",
+        "3" :"Rankings",
+        "4" :"Analytics",
+        "5" : "Services",
+        "6" : "About agency",
+        "7" : "FAQ"
+    },
+    "Auth" : {
+        "0" : "Registration",
+        "1" : "Login",
+        "2" : "Company name",
+        "3" : "El",
+        "4" : "INN",
+        "5" : "Enter your E-mail",
+        "6" : "Receive email newsletters to this email",
+        "7" : "OGRN",
+        "8" : "Checkpoint",
+        "9" : "Country",
+        "10" : "Create a strong password",
+        "11" : "Confirm password",
+        "12" : "I accept the terms of the user agreement and the policy regarding the processing of personal data",
+        "13" : "Register",
+        "14" : "Authorization",
+        "15" : "Remember",
+        "16" : "Enter your password"
     }
 }
