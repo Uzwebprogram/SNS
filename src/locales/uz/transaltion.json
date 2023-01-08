@@ -1,6 +1,13 @@
 {
     "Header":{
-        "0":"Kirish"
+        "0":"Kirish",
+        "1":"Kompaniya, tadqiqot",
+         "2": "Reytinglar",
+         "3":"Renking",
+         "4" :"Tahlil",
+         "5" : "Xizmatlar",
+         "6" : "Agentlik haqida",
+         "7" : "FAQ"
     },
     "Auth" : {
         "0" : "Ro'yxatdan o'tish",

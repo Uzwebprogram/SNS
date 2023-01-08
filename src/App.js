@@ -1,10 +1,10 @@
-import RouterComponent from './router';
-import { GlobalStyle } from './style-App';
+import { GlobalStyle } from "./style-App";
+import RouterComponent from "./router";
 function App() {
   return (
     <>
-    <GlobalStyle/>
-    <RouterComponent/>
+      <GlobalStyle/>
+        <RouterComponent />
     </>
   );
 }

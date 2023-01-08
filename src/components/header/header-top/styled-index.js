@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     align-items: center;
     margin-left: auto;
     padding: 11px 0px;
-    @media only screen and (max-width:920px) {
+    @media only screen and (max-width:720px) {
         width: 100%;
         .logo-insta{
             display: none;

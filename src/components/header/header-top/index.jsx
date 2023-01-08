@@ -16,8 +16,8 @@ function HeaderTop() {
         <Wrapper>
             <a href="mailto:uzexp@gmail.ru">uzexp@gmail.ru</a>
             <a href="tel:+998 (90) 900 00 00">+998 (90) 900 00 00</a>
-            <a href="insta" className='logo-insta'><i class='bx bxl-instagram'></i></a>
-            <a href="telegram" className='logo-tg'><i class='bx bxl-telegram' ></i></a>
+            <a href="insta"><i class='bx bxl-instagram'></i></a>
+            <a href="telegram"><i class='bx bxl-telegram' ></i></a>
             <div>
             <button onClick={HandleOpen}>
               <i class='bx bx-user-circle'></i>
