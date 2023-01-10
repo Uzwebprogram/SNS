@@ -2,7 +2,7 @@ import React from "react";
 import CommonButton from "../../../common/button";
 import CommonCard from "../../../common/card";
 import { WrapperPress } from "./styled-index";
-import cardImg from "../../../assest/home-comp/cardimg.png";
+import cardImg from "../../../assets/home-comp/cardimg.png";
 import { Col, Row } from "react-grid-system";
 
 const Analytics = ({ isSelect }) => {
