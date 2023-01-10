@@ -30,6 +30,6 @@ export const WrapperContainer = styled.div`
     width: 95%;
   }
   @media only screen and (max-width: 425px) {
-    width: 100%;
+    width: 92%;
   }
 `;

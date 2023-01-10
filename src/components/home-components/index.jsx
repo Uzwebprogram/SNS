@@ -2,7 +2,7 @@ import React from "react";
 import SliderComponent from "./slider-component";
 import { Row, Col } from "react-grid-system";
 import { Section } from "./styled-index";
-import { WrapperContainer } from "../../style-App";
+import { WrapperContainer } from "./styled-index";
 import PressCenter from "./press-center";
 import Comentary from "./comentary";
 import News from "./news";
@@ -14,7 +14,7 @@ const HomeComponent = () => {
     <>
       <Section>
         <WrapperContainer>
-          <Row className="row">
+        <Row className="row">
             <Col lg={8} md={12} sm={12} sx={12} className="col">
               <SliderComponent />
               <Analytics />

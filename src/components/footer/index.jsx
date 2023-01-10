@@ -45,12 +45,12 @@ function Footer() {
         <WrapperContainer>
             <div className="FooterTop">
                <Row>
-                 <Col className='Footer-top-left' lg={3}>
+                 <Col className='Footer-top-left' lg={3} md={12}>
                     <img src={Logo} width={123} height={35} alt="images logo" />
                     <p>{t("Footer.0")}</p>
                     <span>Представленная информация предназначена для использования </span>
                  </Col>
-                 <Col className='Footer-top-ul' lg={3}>
+                 <Col className='Footer-top-ul'  md={12} lg={3}>
                     <ul>
                       <p>{t("Footer.1")}</p>
                       <li>
@@ -64,7 +64,7 @@ function Footer() {
                       </li>
                     </ul>
                  </Col>
-                 <Col className='Footer-top-ul' lg={3}>
+                 <Col className='Footer-top-ul'  md={12} lg={3}>
                     <ul>
                  <p>{t("Footer.2")}</p>
                     {dataLink.map((elem , index) =>
@@ -76,7 +76,7 @@ function Footer() {
                 )}
                     </ul>
                  </Col>
-                 <Col className='Footer-top-ul' lg={3}>
+                 <Col className='Footer-top-ul'  md={12} lg={3}>
                     <ul>
                     <p>{t("Footer.2")}</p>
                     {dataLinkFooter.map((elem , index) =>
@@ -90,14 +90,34 @@ function Footer() {
                  </Col>
                 </Row>
             </div>
-            <div className="FooterBoottom">
-            <Col>
-                 <Row>
-                    
-                 </Row>
-                </Col>
-            </div>
         </WrapperContainer>
+                      <hr />
+            <WrapperContainer>
+            <div className="FooterBoottom">
+            <Row>
+                 <Col className='Footer-Bottom-left' lg={7} md={12}>
+                  <p>{t("Footer.9")}</p>
+                  <p>{t("Footer.10")}</p>
+                  <p>{t("Footer.11")}</p>
+                  <Row >
+                    <Col className='Footer-Bottom-left-bottom' lg={7} md={12}>
+                      <a href="#">{t("Footer.12")}</a>
+                    </Col>
+                    <Col lg={5} md={12} className='Footer-Bottom-left-bottom'>
+                      <a href="#">{t("Footer.13")}</a>
+                    </Col>
+                  </Row>
+                 </Col>
+                 <Col lg={5} md={12} className='Footer-Bottom-right'>
+                  <h3>{t("Footer.14")}</h3>
+                    <p>
+                    {t("Footer.16")}
+                    <a href="#">{t("Footer.15")}</a>
+                    </p>
+                 </Col>
+                </Row>
+            </div>
+            </WrapperContainer>
     </Wrapper>
   )
 }
