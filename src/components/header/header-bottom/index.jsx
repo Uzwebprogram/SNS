@@ -8,48 +8,19 @@ import { NavLink } from "react-router-dom";
 import Hamburger from "./../../../assets/Header/hamburger.svg"
 import SearchIcon from "./../../../assets/Header/search.svg"
 import CloseIcon from "./../../../assets/Header/close-icon.svg"
+import { dataLink } from "../../../utils/data-link";
 const { Search } = Input;
 function HeaderBottom({HandleOpen , close , SearchOpen , closSearch , closeSearchSet}) {
     const onSearch = (value) => console.log(value);
     const {t , i18n} = useTranslation();
-    const dataLink = [
-        {
-            id: 1,
-            title : "Header.2",
-            link : "/"
-        },
-        {
-            id: 2,
-            title : "Header.3",
-            link : "/"
-        },
-        {
-            id: 3,
-            title : "Header.4",
-            link : "/"
-        },
-        {
-            id: 4,
-            title : "Header.5",
-            link : "/"
-        },        
-        {
-            id: 5,
-            title : "Header.6",
-            link : "/"
-        },
-        {
-            id: 6,
-            title : "Header.7",
-            link : "/"
-        },
-    ]
+
     return(
         <Section>
                 <WrapperContainer>
                 <Wrapper>
-                <img src={Logo} alt="" />
-            <Search
+                
+                    <NavLink to={"/"}><img src={Logo} alt="" /></NavLink>
+                <Search
                     placeholder={t("Header.1")}
                     onSearch={onSearch}
                     style={{
@@ -60,7 +31,7 @@ function HeaderBottom({HandleOpen , close , SearchOpen , closSearch , closeSearc
             <ul>
                 {dataLink.map((elem , index) =>
                                 <li key={index}>
-                                <NavLink style={{textDecoration:"none"}} to="/">
+                                <NavLink style={{textDecoration:"none"}} to={elem.link}>
                                     <p>{t(elem.title)}</p>
                                 </NavLink>
                             </li>

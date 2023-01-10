@@ -28,5 +28,23 @@
          "14" : "Avtorizatsiya",
          "15" : "Eslab qoling",
          "16" : "Parolingizni kiriting"
+    },
+    "Footer" : {
+        "0" : "Manzil",
+         "1" : "Kontaktlar",
+         "2" : "Ma'lumot",
+         "3" : "SNS kompaniyasi yangiliklari",
+         "4" : "Metodologiya" ,
+         "5" : "Oshkor qilish",
+         "6" : "Tafsilotlar",
+         "7" : "Ishlar",
+         "8" : "Matbuot markazi",
+         "9" : "© 2022 'Ekspert RA' AJ. Saytning barcha materiallari 'Ekspert RA' OAJning intellektual mulki hisoblanadi (boshqa mualliflik aniq ko'rsatilgan hollar bundan mustasno) va qonun bilan himoyalangan. Taqdim etilgan ma'lumotlar faqat ma'lumot olish uchun mo'ljallangan.",
+         "10" : "Ushbu ma'lumotni Agentlikning oldindan roziligisiz va www.raexpert.ru manbasiga havolasiz hech qanday tarzda va har qanday shaklda tarqatish mumkin emas. Ushbu talablarni buzgan holda ma'lumotlardan foydalanish taqiqlanadi.",
+         "11" : "Reytinglar 'Ekspert RA' OAJning fikrini ifodalaydi va ma'lum bir qimmatli qog'ozlar yoki aktivlarni sotib olish, ushlab turish yoki sotish, investitsiya qarorlarini qabul qilish bo'yicha fakt yoki tavsiyani tashkil etmaydi. Agentlik bilan bog'liq holda hech qanday javobgarlik zimmasiga olmaydi. Reytingni baholash bilan bevosita yoki bilvosita bog'liq bo'lgan har qanday oqibatlar, sharhlar, xulosalar, tavsiyalar va boshqa harakatlar, Agentlik tomonidan amalga oshirilgan reyting harakatlari, shuningdek, reyting hisobotida va agentlik tomonidan e'lon qilingan press-relizlarda mavjud bo'lgan xulosalar va xulosalar yoki yuqorida aytilganlarning barchasi yo'qligi.Reytingning hozirgi holati 'Ekspert RA' OAJning rasmiy sayti",
+         "12" : "Shaxsiy ma'lumotlarni qayta ishlash siyosati",
+         "13" : "Foydalanuvchi shartnomasi",
+         "14" : "Ichki nazorat xizmati",
+         "15" : "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali bildirishingiz mumkin"
     }
 }

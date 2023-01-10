@@ -2,10 +2,13 @@ import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "../components/header";
 import { RouterData } from "./index-data";
+import { Wrapper } from "./styled-index";
+import Footer from "../components/footer";
 function RouterComponent() {
   return (
     <>
-      <Header />
+      <Header/>
+      <Wrapper>
       <Routes>
         {RouterData.map((elem) => (
           <Route
@@ -19,6 +22,8 @@ function RouterComponent() {
           />
         ))}
       </Routes>
+      </Wrapper>
+      <Footer/>
     </>
   );
 }
