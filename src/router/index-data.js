@@ -4,6 +4,8 @@ const Home = lazy(() => import("./../layouts/Home/index"))
 const About = lazy(() => import("./../layouts/About/index"))
 const Contact = lazy(() => import("./../layouts/Contact/index"))
 const Ratings = lazy(() => import("../layouts/Ratings/index"))
+const Ranking = lazy(() => import("../layouts/Ranking/index"))
+const Analytics = lazy(() => import("../layouts/analytics/index"))
 
 export const RouterData = [
     {
@@ -26,4 +28,15 @@ export const RouterData = [
         path : "/ratings",
         component : <Ratings/>
     },
+    {
+        id: 5,
+        path: "/ranking",
+        component: <Ranking/>
+    },
+    {
+        id: 6,
+        path: "/analytics",
+        component: <Analytics/>
+    }
+
 ]

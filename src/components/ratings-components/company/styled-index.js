@@ -8,7 +8,17 @@ export const WrapperPress = styled.div`
   @media only screen and (max-width: 425px) {
     border-radius: 0;
     box-shadow: none;
+    padding: 10px;
+
+    .row {
+      margin: 0 !important;
+    }
+
+    .col {
+      padding: 0 !important;
+    }
   }
+
   h2 {
     font-family: "Gilroy";
     font-style: normal;
@@ -32,6 +42,9 @@ export const WrapperPress = styled.div`
       outline: none;
       padding: 10px;
       margin-bottom: 15px;
+      @media only screen and (max-width: 320px) {
+        width: 100%;
+      }
     }
 
     .input-group {
@@ -41,6 +54,14 @@ export const WrapperPress = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
+      /* width: 100%; */
+
+      @media only screen and (max-width: 425px) {
+        width: 94.5%;
+      }
+      @media only screen and (max-width: 375px) {
+        width: 94%;
+      }
 
       i {
         color: #1e1e1e;
@@ -114,5 +135,21 @@ export const WrapperPress = styled.div`
   }
   .ant-table-wrapper {
     width: 100% !important;
+  }
+
+  .col-media {
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+  .ant-table-cell {
+    @media only screen and (max-width: 425px) {
+      padding: 12px 6px !important;
+      font-size: 12px !important;
+    }
+    @media only screen and (max-width: 375px) {
+      padding: 12px 3px !important;
+      font-size: 10px !important;
+    }
   }
 `;

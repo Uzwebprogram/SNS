@@ -24,7 +24,7 @@ const Company = () => {
                 <i class="bx bx-search"></i>
               </div>
             </Col>
-            <Col lg={4} className="col">
+            <Col lg={4} className="col col-media">
               <div className="radio-box">
                 <input
                   type="radio"
@@ -58,8 +58,8 @@ const Company = () => {
             </Col>
           </Row>
         </form>
-        <Row>
-          <Col lg={12} md={12} sm={12}>
+        <Row className="row">
+          <Col lg={12} md={12} sm={12} className="col">
             <Table />
           </Col>
         </Row>

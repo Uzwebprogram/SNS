@@ -5,12 +5,33 @@ import { WrapperPress } from "./styled-index";
 import cardImg from "../../../assest/home-comp/cardimg.png";
 import { Col, Row } from "react-grid-system";
 
-const Analytics = () => {
+const Analytics = ({ isSelect }) => {
   const arr = [1, 2, 3, 4];
   return (
     <>
       <WrapperPress>
         <h2>Аналитика</h2>
+        {isSelect == true ? (
+          <div className="select-box">
+            <select>
+              <option value="Все отрасли">Все отрасли</option>
+              <option value="Все отрасли">Все отрасли</option>
+              <option value="Все отрасли">Все отрасли</option>
+              <option value="Все отрасли">Все отрасли</option>
+            </select>
+            <CommonButton
+              style={{
+                color: "#FFFFFF",
+                borderColor: "#FFFFFF",
+                display: "inline-block",
+                padding: "8px 30px",
+              }}
+              type={"button"}
+            >
+              Поделиться
+            </CommonButton>
+          </div>
+        ) : null}
         <Row className="row">
           {arr.map(() => (
             <Col lg={6} md={6} sm={12} sx={12}>

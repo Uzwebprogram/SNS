@@ -3,12 +3,22 @@ import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
 
-const Ranking = () => {
+const Ranking = ({ isSelect }) => {
   const arr = [1, 2, 3, 4];
   return (
     <>
-      <WrapperPress>
+      <WrapperPress style={isSelect == true ? {marginTop:0} : {marginTop: 20}}>
         <h2>Рэнкинги</h2>
+        {isSelect == true ? (
+          <div className="select-box">
+            <select>
+              <option value="Все отрасли">Все отрасли</option>
+              <option value="Все отрасли">Все отрасли</option>
+              <option value="Все отрасли">Все отрасли</option>
+              <option value="Все отрасли">Все отрасли</option>
+            </select>
+          </div>
+        ) : null}
         {arr.map(() => (
           <div>
             <Row className="row">

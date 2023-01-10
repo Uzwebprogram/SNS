@@ -10,7 +10,36 @@ export const WrapperPress = styled.div`
     margin-top: 0;
     border-radius: 0;
     box-shadow: none;
+
+    .row {
+      margin: 0 !important;
+    }
   }
+
+  .select-box {
+    width: 100%;
+    margin-bottom: 20px;
+    select {
+      width: 60%;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      outline: none;
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+      letter-spacing: 0.01em;
+      color: #1e1e1e;
+      padding: 10px 30px 10px 10px;
+
+      @media only screen and (max-width: 425px) {
+        width: 100%;
+      }
+    }
+  }
+
   h2 {
     font-family: "Gilroy";
     font-style: normal;

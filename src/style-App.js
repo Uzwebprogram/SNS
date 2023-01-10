@@ -15,6 +15,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
     background-color: #F5F5F5;
+
+    @media only screen and (max-width: 425px) {
+      background-color: #fff;
+    }
   }
 `;
 
@@ -24,5 +28,8 @@ export const WrapperContainer = styled.div`
   margin: 0 auto;
   @media only screen and (max-width: 1221px) {
     width: 95%;
+  }
+  @media only screen and (max-width: 425px) {
+    width: 100%;
   }
 `;
