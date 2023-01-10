@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SliderWrapper } from "./styled-index";
-import sliderImg from "../../../assest/home-comp/laptopslider.png";
+import sliderImg from "../../../assets/home-comp/laptopslider.png";
 
 // Import Swiper styles
 import "swiper/css";

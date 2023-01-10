@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.div`
   width: 100%;
-  background: #1b1a1a;
-  border: 1px solid #2c2c2c;
+  background: ${(props) => (props.bgColor ? "#1b1a1a" : "#fff")};
+  border: 1px solid ${(props) => (props.isBorder ? "#2c2c2c" : "transparent")};
   border-radius: 15px;
   margin-bottom: 25px;
- 
 
   .card-content {
     padding: 10px 20px;
@@ -17,7 +16,7 @@ export const CardWrapper = styled.div`
       font-size: 17px;
       line-height: 130%;
       letter-spacing: 0.01em;
-      color: #ffffff;
+      color: ${(props) => (props.bgColor ? "#fff" : "#000")};
     }
     .p2 {
       font-family: "Montserrat";
@@ -26,7 +25,7 @@ export const CardWrapper = styled.div`
       font-size: 15px;
       line-height: 130%;
       letter-spacing: 0.01em;
-      color: #ffffff;
+      color: ${(props) => (props.bgColor ? "#fff" : "#000")};
     }
 
     span,
