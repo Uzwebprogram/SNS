@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { WrapperContainer } from '../../../style-App'
-import { Wrapper } from './styled-index'
+import { Wrapper , Section } from './styled-index'
 import {useTranslation} from "react-i18next"
 import LanguageHeader from '../header-language';
 import ModalCommon from '../../common/Modal/Modal';
@@ -11,13 +11,13 @@ function HeaderTop() {
   const HandleOpen = () => setOpen(true)
   const HandleClose = () => setOpen(false)
   return (
-      <>
+      <Section>
           <WrapperContainer>
         <Wrapper>
             <a href="mailto:uzexp@gmail.ru">uzexp@gmail.ru</a>
             <a href="tel:+998 (90) 900 00 00">+998 (90) 900 00 00</a>
-            <a href="insta"><i class='bx bxl-instagram'></i></a>
-            <a href="telegram"><i class='bx bxl-telegram' ></i></a>
+            <a href="insta" className='logo-insta'><i class='bx bxl-instagram'></i></a>
+            <a href="telegram" className='logo-tg'><i class='bx bxl-telegram' ></i></a>
             <div>
             <button onClick={HandleOpen}>
               <i class='bx bx-user-circle'></i>
@@ -30,7 +30,7 @@ function HeaderTop() {
     <ModalCommon  height={518} handleClose={HandleClose} open={open}>
     <Auth/>
     </ModalCommon>
-      </>
+      </Section>
   )
 }
 

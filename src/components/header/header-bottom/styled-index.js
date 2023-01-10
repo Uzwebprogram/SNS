@@ -24,6 +24,11 @@ export const Section = styled.div`
         border-top-right-radius: 25px !important;
         border-bottom-right-radius: 25px !important;
     }
+    @media only screen and (max-width:920px) {
+        .search{
+        display: none;
+    }
+    }
 `
 export const Wrapper = styled.div`
     display: flex;
@@ -37,6 +42,9 @@ export const Wrapper = styled.div`
         justify-content: space-between;
         margin: 0;
         padding: 0;
+        @media only screen and (max-width:920px) {
+            display: none;
+        }
         li{
             margin: 0;
             padding: 0;
@@ -52,4 +60,12 @@ export const Wrapper = styled.div`
             }
         }
     }
+`
+export const MobileDiv = styled.div`
+    display: none;
+    @media only screen and (max-width:920px) {
+            display: flex;
+            justify-content: space-between;
+            width: 13%;
+        }
 `

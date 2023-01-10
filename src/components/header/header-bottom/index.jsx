@@ -1,12 +1,15 @@
 import { WrapperContainer } from "../../../style-App"
-import { Section, Wrapper } from "./styled-index"
+import { Section, Wrapper, MobileDiv } from "./styled-index"
 import Logo from "./../../../assets/Header/logo.png"
 import { AudioOutlined } from '@ant-design/icons';
 import { Input, Space } from 'antd';
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
+import Hamburger from "./../../../assets/Header/hamburger.svg"
+import SearchIcon from "./../../../assets/Header/search.svg"
+import CloseIcon from "./../../../assets/Header/close-icon.svg"
 const { Search } = Input;
-function HeaderBottom() {
+function HeaderBottom({HandleOpen , close , SearchOpen , closSearch , closeSearchSet}) {
     const onSearch = (value) => console.log(value);
     const {t , i18n} = useTranslation();
     const dataLink = [
@@ -52,6 +55,7 @@ function HeaderBottom() {
                     style={{
                         width: 300,
                     }}
+                    className="search"
             />
             <ul>
                 {dataLink.map((elem , index) =>
@@ -62,6 +66,12 @@ function HeaderBottom() {
                             </li>
                 )}
             </ul>
+            <MobileDiv>
+                {!closSearch ? <img src={SearchIcon} width={18} onClick={SearchOpen} height={18} alt="" />:<img src={CloseIcon} width={18} onClick={closeSearchSet} height={18} alt="" />}
+                
+                
+                    <img src={Hamburger} onClick={HandleOpen} width={18} height={18}  alt="" />
+                </MobileDiv>
                 </Wrapper>
         </WrapperContainer>
         </Section>
