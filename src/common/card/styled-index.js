@@ -29,6 +29,9 @@ export const CardWrapper = styled.div`
       line-height: 130%;
       letter-spacing: 0.01em;
       color: ${(props) => (props.bgColor ? "#000" : "#fff")};
+
+      text-decoration:dotted;
+
     }
 
     span,
