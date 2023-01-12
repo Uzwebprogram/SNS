@@ -9,7 +9,7 @@ const Analytics = lazy(() => import("../layouts/analytics/index"))
 const Agency = lazy(() => import("../layouts/Agency/index"))
 const Methodology = lazy(() => import("../layouts/Methodology/index"))
 const Uslugi = lazy(() => import("../layouts/uslugi/index"))
-
+const Details = lazy(() => import("../layouts/details/index"))
 export const RouterData = [
     {
         id : 1,
@@ -55,6 +55,11 @@ export const RouterData = [
         id: 9,
         path: '/uslugi',
         component : <Uslugi/>
+    },
+    {
+        id: 10,
+        path: '/details',
+        component : <Details/>
     }
 
 ]

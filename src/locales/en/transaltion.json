@@ -47,5 +47,13 @@
          "14" : "Internal control service",
          "15" : " online form",
          "16" : "You can express your remark or suggestion by filling out the"
+    },
+    "details" : {
+        "0" : "INN",
+         "1" :"Phone number",
+         "2" : "OKED",
+         "3" : "Email",
+         "4" : "Address",
+         "5" : "Details of 'SNS' Rating Agency"
     }
 }

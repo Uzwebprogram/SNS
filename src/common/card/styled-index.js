@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.div`
   width: 100%;
-  background: ${(props) => (props.bgColor ? "#1b1a1a" : "#fff")};
-  border: 1px solid ${(props) => (props.isBorder ? "#2c2c2c" : "transparent")};
+  background: ${(props) => (props.bgColor ? "#fff" : "#1b1a1a")};
+  border: 1px solid ${(props) => (props.isBorder ? "transparent" : "#2c2c2c")};
   border-radius: 15px;
   margin-bottom: 25px;
 
@@ -16,7 +16,7 @@ export const CardWrapper = styled.div`
       font-size: 17px;
       line-height: 130%;
       letter-spacing: 0.01em;
-      color: ${(props) => (props.bgColor ? "#fff" : "#000")};
+      color: ${(props) => (props.bgColor ? "#000" : "#fff")};
     }
     .p2 {
       font-family: "Montserrat";
@@ -25,7 +25,8 @@ export const CardWrapper = styled.div`
       font-size: 15px;
       line-height: 130%;
       letter-spacing: 0.01em;
-      color: ${(props) => (props.bgColor ? "#fff" : "#000")};
+      color: ${(props) => (props.bgColor ? "#000" : "#fff")};
+      text-decoration:dotted;
     }
 
     span,

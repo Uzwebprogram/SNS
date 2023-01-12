@@ -47,5 +47,13 @@
          "14" : "Ichki nazorat xizmati",
          "15" : "bildirishingiz mumkin",
          "16" : "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali "
+    },
+    "details" : {
+        "0": "INN",
+         "1" :"Telefon raqami",
+         "2": "OK",
+         "3" : "Elektron pochta",
+         "4" : "Manzil",
+         "5" : "'SNS' reyting agentligi tafsilotlari"
     }
 }
