@@ -9,6 +9,9 @@ export const CardWrapper = styled.div`
 
   .card-content {
     padding: 10px 20px;
+    /* @media only screen and (max-width: 425px) {
+      padding: 10px 0;
+    } */
     .p1 {
       font-family: "Montserrat";
       font-style: normal;
@@ -26,7 +29,9 @@ export const CardWrapper = styled.div`
       line-height: 130%;
       letter-spacing: 0.01em;
       color: ${(props) => (props.bgColor ? "#000" : "#fff")};
+
       text-decoration:dotted;
+
     }
 
     span,

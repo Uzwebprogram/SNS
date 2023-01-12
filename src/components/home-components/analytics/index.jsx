@@ -34,7 +34,7 @@ const Analytics = ({ isSelect }) => {
         ) : null}
         <Row className="row">
           {arr.map(() => (
-            <Col lg={6} md={6} sm={12} sx={12}>
+            <Col lg={6} md={6} sm={12} sx={12} className='col'>
               <CommonCard
                 imgSrc={cardImg}
                 text1={

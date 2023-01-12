@@ -6,6 +6,7 @@ export const WrapperPress = styled.div`
   border-radius: 15px;
   padding: 25px;
   margin-top: 20px;
+  margin-top: ${(props) => (props.isMargin ? "0" : "20px")};
   @media only screen and (max-width: 425px) {
     border-radius: 0;
     box-shadow: none;

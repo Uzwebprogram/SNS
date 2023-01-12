@@ -15,6 +15,12 @@ export const WrapperPress = styled.div`
     }
   }
 
+  .col {
+    @media only screen and (max-width: 320px) {
+      padding: 0 !important;
+    }
+  }
+
   .card-wrapper {
     width: 100%;
     display: flex;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-grid-system";
 import { Section } from "./styled-index";
-import { WrapperContainer } from "../../style-App";
+import { ComponentContainer } from "./styled-index";
 import PressCenter from "../home-components/press-center/index";
 import Calling from "../calling";
 import Methodology from "./methodology/index";
@@ -10,7 +10,7 @@ const MethodologyComponent = () => {
   return (
     <>
       <Section>
-        <WrapperContainer>
+        <ComponentContainer>
           <Row className="row">
             <Col lg={8} md={12} sm={12} sx={12} className="col">
               <Methodology />
@@ -20,7 +20,7 @@ const MethodologyComponent = () => {
               <Calling />
             </Col>
           </Row>
-        </WrapperContainer>
+        </ComponentContainer>
       </Section>
     </>
   );

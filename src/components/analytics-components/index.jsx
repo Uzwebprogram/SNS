@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-grid-system";
 import { Section } from "./styled-index";
-import { WrapperContainer } from "../../style-App";
+import { ComponentContainer } from "./styled-index";
 import Calling from "../calling";
 import Analytics from "../home-components/analytics";
 import Surway from "./surway";
@@ -11,7 +11,7 @@ const AnalyticsComponent = () => {
   return (
     <>
       <Section>
-        <WrapperContainer>
+        <ComponentContainer>
           <Row className="row">
             <Col lg={8} md={12} sm={12} sx={12} className="col">
               <Analytics isSelect={true} />
@@ -22,7 +22,7 @@ const AnalyticsComponent = () => {
               <Calling />
             </Col>
           </Row>
-        </WrapperContainer>
+        </ComponentContainer>
       </Section>
     </>
   );

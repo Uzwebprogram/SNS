@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   .row {
-    margin: 0;
+    margin: 0 !important;
   }
 
   @media only screen and (max-width: 425px) {
@@ -11,7 +11,7 @@ export const Section = styled.div`
     }
   }
 `;
-export const WrapperContainer = styled.div`
+export const ComponentContainer = styled.div`
   max-width: 1230px;
   width: 100%;
   margin: 0 auto;
@@ -19,6 +19,6 @@ export const WrapperContainer = styled.div`
     width: 95%;
   }
   @media only screen and (max-width: 425px) {
-    width: 85%;
+    width: 100%;
   }
 `;
