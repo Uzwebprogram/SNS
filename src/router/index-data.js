@@ -10,9 +10,10 @@ const Methodology = lazy(() => import("../layouts/Methodology/index"));
 const Uslugi = lazy(() => import("../layouts/uslugi/index"));
 const Faq = lazy(() => import("../layouts/faq/index"));
 const Disclosure = lazy(() => import("../layouts/disclosure"));
-const RatingNeeded = lazy(() => import('../layouts/rating-needed/index'))
-const RatingScales = lazy(() => import('../layouts/rating-scales/index'))
-const Details = lazy(() => import("../layouts/details/index"))
+const RatingNeeded = lazy(() => import("../layouts/rating-needed/index"));
+const RatingScales = lazy(() => import("../layouts/rating-scales/index"));
+const Details = lazy(() => import("../layouts/details/index"));
+const CompanyProfile = lazy(() => import("../layouts/company-profile/index"))
 
 export const RouterData = [
   {
@@ -80,10 +81,14 @@ export const RouterData = [
     path: "/ratingscales",
     component: <RatingScales />,
   },
-   {
-        id: 14,
-        path: '/details',
-        component : <Details/>
-    }
+  {
+    id: 14,
+    path: "/details",
+    component: <Details />,
+  },
+  {
+    id: 15,
+    path: "/companyprofile",
+    component: <CompanyProfile />,
+  },
 ];
-
