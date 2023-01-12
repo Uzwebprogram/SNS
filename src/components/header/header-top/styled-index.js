@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
     align-items: center;
     margin-left: auto;
     padding: 11px 0px;
+    background-color: white;
     @media only screen and (max-width:720px) {
         width: 100%;
         .logo-insta{
@@ -66,4 +67,7 @@ export const Wrapper = styled.div`
         }
         }
     }
+`
+export const Section = styled.div`
+    background-color: white;
 `
