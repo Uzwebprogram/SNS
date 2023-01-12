@@ -9,6 +9,9 @@ export const CardWrapper = styled.div`
 
   .card-content {
     padding: 10px 20px;
+    /* @media only screen and (max-width: 425px) {
+      padding: 10px 0;
+    } */
     .p1 {
       font-family: "Montserrat";
       font-style: normal;

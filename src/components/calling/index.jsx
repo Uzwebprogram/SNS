@@ -2,10 +2,10 @@ import React from "react";
 import CommonButton from "../../common/button";
 import { WrapperPress } from "./styled-index";
 
-const Calling = () => {
+const Calling = ({isMargin}) => {
   return (
     <>
-      <WrapperPress>
+      <WrapperPress isMargin={isMargin}>
         <div className="scales-div">
           <h2>Комерческая служба</h2>
           <div className="call-div">

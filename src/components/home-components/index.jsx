@@ -2,7 +2,7 @@ import React from "react";
 import SliderComponent from "./slider-component";
 import { Row, Col } from "react-grid-system";
 import { Section } from "./styled-index";
-import { WrapperContainer } from "./styled-index";
+import { ComponentContainer } from "./styled-index";
 import PressCenter from "./press-center";
 import Comentary from "./comentary";
 import News from "./news";
@@ -13,8 +13,8 @@ const HomeComponent = () => {
   return (
     <>
       <Section>
-        <WrapperContainer>
-        <Row className="row">
+        <ComponentContainer>
+          <Row className="row">
             <Col lg={8} md={12} sm={12} sx={12} className="col">
               <SliderComponent />
               <Analytics />
@@ -26,7 +26,7 @@ const HomeComponent = () => {
               <News />
             </Col>
           </Row>
-        </WrapperContainer>
+        </ComponentContainer>
       </Section>
     </>
   );

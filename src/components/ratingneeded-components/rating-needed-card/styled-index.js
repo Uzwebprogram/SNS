@@ -9,10 +9,6 @@ export const WrapperPress = styled.div`
     margin-top: 0;
     border-radius: 0;
     box-shadow: none;
-
-    .row {
-      margin: 0 !important;
-    }
   }
 
   h2 {
@@ -24,30 +20,16 @@ export const WrapperPress = styled.div`
     margin-top: 0;
     letter-spacing: 0.01em;
     color: #1e1e1e;
+    margin-bottom: 30px;
   }
+
   p {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 130%;
+    line-height: 150%;
     letter-spacing: 0.01em;
     color: #1e1e1e;
-    margin: 0;
-  }
-
-  .bold-p {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 130%;
-    /* or 21px */
-    letter-spacing: 0.01em;
-    color: #1e1e1e;
-    margin: 0 365px 20px 0;
-    @media only screen and (max-width: 425px) {
-      margin: 0 0 20px 0;
-    }
   }
 `;
