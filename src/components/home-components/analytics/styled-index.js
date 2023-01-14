@@ -37,11 +37,14 @@ export const WrapperPress = styled.div`
     margin-top: 0;
     letter-spacing: 0.01em;
     color: #fff;
+    margin-bottom: 10px;
+    padding-left: 20px;
   }
 
   .select-box {
     width: 100%;
     margin-bottom: 20px;
+    padding: 0 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;

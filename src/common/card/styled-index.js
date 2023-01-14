@@ -30,8 +30,7 @@ export const CardWrapper = styled.div`
       letter-spacing: 0.01em;
       color: ${(props) => (props.bgColor ? "#000" : "#fff")};
 
-      text-decoration:dotted;
-
+      text-decoration: dotted;
     }
 
     span,
@@ -52,6 +51,8 @@ export const CardWrapper = styled.div`
     padding: 2px;
     img {
       width: 100%;
+      height: 230px;
+      border-radius: 10px;
     }
   }
 `;

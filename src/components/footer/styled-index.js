@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
       margin-bottom: 61px;
     }
     p {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
       font-size: 16px;
@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
       color: #ffffff;
     }
     span {
-      font-family: "Montserrat";
+      font-family: "";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -54,7 +54,7 @@ export const Wrapper = styled.div`
       p {
         margin: 0;
         padding: 0;
-        font-family: "Gilroy";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -98,7 +98,7 @@ export const Wrapper = styled.div`
     margin: 0 !important;
 
     a {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -112,7 +112,7 @@ export const Wrapper = styled.div`
     margin: 0 !important;
 
     h3 {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
       font-size: 16px;
@@ -121,7 +121,7 @@ export const Wrapper = styled.div`
       color: #ffffff;
     }
     p {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -133,7 +133,7 @@ export const Wrapper = styled.div`
         width: 100%;
       }
       a {
-        font-family: "Gilroy";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
