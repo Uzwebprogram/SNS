@@ -21,9 +21,10 @@ function SearchInput({SearchModal , SearchClose}) {
                     }}
                     className="search"
             />
-    </Wrapper>
-                    <Overlay open={SearchModal} onClick={SearchClose}>
+                            <Overlay open={SearchModal} onClick={SearchClose}>
                     </Overlay>
+    </Wrapper>
+
         </>
   )
 }

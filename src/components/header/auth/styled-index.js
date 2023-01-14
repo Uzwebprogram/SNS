@@ -50,7 +50,7 @@ export const Wrapper = styled.div`
         color: #FFFFFF;
         padding: 11px 47px;
         cursor: pointer;
-        @media only screen and (max-width:520px) {
+        @media only screen and (max-width:826px) {
         padding: 11px 37px;
         font-size: 12px;
         }

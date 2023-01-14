@@ -1,6 +1,6 @@
 import { WrapperContainer } from "../../../style-App"
 import { Section, Wrapper, MobileDiv } from "./styled-index"
-import Logo from "./../../../assets/Header/logo.png"
+import Logo from "./../../../assets/Header/logo.svg"
 import { AudioOutlined } from '@ant-design/icons';
 import { Input, Space } from 'antd';
 import { useTranslation } from "react-i18next";

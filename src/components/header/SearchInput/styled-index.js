@@ -15,7 +15,7 @@ border-radius: 7px;
 `
 export const Overlay = styled.div`
     display: ${(props) => (props.open ? "block" : "none")};
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0);
     width: 100%;
     height: 100vh;
 `
