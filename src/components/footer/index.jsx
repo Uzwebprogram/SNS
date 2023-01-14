@@ -2,7 +2,7 @@ import React from 'react'
 import { Col , Row } from 'react-grid-system'
 import { WrapperContainer } from '../../style-App'
 import { Wrapper } from './styled-index'
-import Logo from "./../../assets/Header/logo.png"
+import Logo from "./../../assets/Header/logo.svg"
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { dataLink } from '../../utils/data-link'
@@ -17,17 +17,17 @@ function Footer() {
     {
       id : 2, 
       title: "Footer.4",
-      link : "/"
+      link : "/methodology"
     },
     {
       id : 3, 
       title: "Footer.5",
-      link : "/"
+      link : "/disclosure"
     },   
      {
       id : 4, 
       title: "Footer.6",
-      link : "/"
+      link : "/details"
     },
     {
       id : 5, 

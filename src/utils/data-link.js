@@ -17,17 +17,17 @@ export const dataLink = [
     {
         id: 4,
         title : "Header.5",
-        link : "/"
+        link : "/uslugi"
     },        
     {
         id: 5,
         title : "Header.6",
-        link : "/"
+        link : "/agency"
     },
     {
         id: 6,
         title : "Header.7",
-        link : "/"
+        link : "/faq"
     },
 ]
 

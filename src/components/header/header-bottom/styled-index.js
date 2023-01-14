@@ -23,6 +23,7 @@ export const Section = styled.div`
         border: 2px solid white;
         border-top-right-radius: 25px !important;
         border-bottom-right-radius: 25px !important;
+        padding-bottom: 7px !important;
     }
     @media only screen and (max-width:920px) {
         .search{
@@ -48,7 +49,10 @@ export const Wrapper = styled.div`
         li{
             margin: 0;
             padding: 0;
+            display: flex;
             p{
+                margin: 0;
+                padding: 0;
                 font-family: 'Gilroy';
                 font-style: normal;
                 font-weight: 500;

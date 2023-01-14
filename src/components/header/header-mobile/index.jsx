@@ -1,6 +1,6 @@
 import React from 'react'
 import { Wrapper ,Overlay} from './styled-index'
-import Logo from "./../../../assets/Header/logo.png"
+import Logo from "./../../../assets/Header/logo.svg"
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import RusLogo from "./../../../assets/Header/ru-flag.svg"
@@ -24,7 +24,7 @@ function HeaderMobile({open , HandleClose}) {
         <ul>
                 {dataLink.map((elem , index) =>
                                 <li key={index}>
-                                <NavLink style={{textDecoration:"none"}} to={elem.link}>
+                                <NavLink style={{textDecoration:"none"}} onClick={() => HandleClose()} to={elem.link}>
                                     <p>{t(elem.title)}</p>
                                 </NavLink>
                             </li>
