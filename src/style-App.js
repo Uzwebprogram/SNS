@@ -14,7 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     overflow-x: hidden;
     background-color: #F5F5F5;
-    font-family: 'Montserrat' !important;
     
 
     @media only screen and (max-width: 425px) {

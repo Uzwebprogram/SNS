@@ -6,7 +6,7 @@ const CommonCard = ({ imgSrc, text1, text2, text3,text4, text5, spanText, bgColo
     <>
       <CardWrapper bgColor={bgColor} isBorder={isBorder}>
         <div className="card-img">
-          <img src={imgSrc} alt="image" />
+          <img src={imgSrc} alt="image"  />
         </div>
         <div className="card-content">
           <p className='p1'>{text1}</p>

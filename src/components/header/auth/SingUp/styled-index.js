@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
-
+   
 export const Wrapper = styled.form`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 100%;
   margin: 10px 0;
+  padding: 40px;
   @media only screen and (max-width:826px) {
     padding: 16px;
-    width: 280px;
+    width: 300px;
     }
+
   label {
     font-family: 'Montserrat';
     font-style: normal;
@@ -20,7 +22,6 @@ export const Wrapper = styled.form`
     letter-spacing: 0.01em;
     color: #1F1F1F;
     margin: 10px 0;
-    color: #1E1E1E;
     @media only screen and (max-width:520px) {
     font-size: 16px;
     }
@@ -36,11 +37,11 @@ export const Wrapper = styled.form`
     background-color: #F5F5F5;
     border-radius: 7px;
     @media only screen and (max-width:826px) {
-    width: 85%;
+    width: 90%;
     }
   }
   input[type="radio"]{
-    width: 10% !important;
+    width: 3% !important;
   }
 
   span {
@@ -52,13 +53,13 @@ export const Wrapper = styled.form`
     letter-spacing: 0.01em;
     color: #1E1E1E;
     @media only screen and (max-width:520px) {
-    font-size: 12px;
+    font-size: 10px;
     }
   }
   button{
     background: #2F66B8;
     border-radius: 15px;
-    font-family: 'Gilroy';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;

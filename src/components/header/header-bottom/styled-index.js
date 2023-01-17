@@ -53,7 +53,7 @@ export const Wrapper = styled.div`
             p{
                 margin: 0;
                 padding: 0;
-                font-family: 'Gilroy';
+                font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;

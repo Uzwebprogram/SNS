@@ -12,7 +12,7 @@ export const WrapperPress = styled.div`
     box-shadow: none;
   }
   h2 {
-    font-family: "Gilroy";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -35,7 +35,7 @@ export const WrapperPress = styled.div`
     }
 
     time {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -45,7 +45,7 @@ export const WrapperPress = styled.div`
     }
 
     span {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 12px;

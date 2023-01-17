@@ -68,7 +68,7 @@ export const Wrapper = styled.div`
     }
     h2{
         text-align: center;
-        font-family: 'Gilroy';
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
         font-size: 30px;

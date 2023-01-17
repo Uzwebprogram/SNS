@@ -1,179 +1,179 @@
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-ExtraBold.woff');
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-        url('Gilroy-ExtraBold.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraBold.woff');
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+        url('Montserrat-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Heavy.woff');
-    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
-        url('Gilroy-Heavy.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-Heavy.woff');
+    src: local('Montserrat Heavy'), local('Montserrat-Heavy'),
+        url('Montserrat-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-LightItalic.woff');
-    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
-        url('Gilroy-LightItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-LightItalic.woff');
+    src: local('Montserrat Light Italic'), local('Montserrat-LightItalic'),
+        url('Montserrat-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-ThinItalic.woff');
-    src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
-        url('Gilroy-ThinItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-ThinItalic.woff');
+    src: local('Montserrat Thin Italic'), local('Montserrat-ThinItalic'),
+        url('Montserrat-ThinItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-BlackItalic.woff');
-    src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
-        url('Gilroy-BlackItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-BlackItalic.woff');
+    src: local('Montserrat Black Italic'), local('Montserrat-BlackItalic'),
+        url('Montserrat-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-BoldItalic.woff');
-    src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
-        url('Gilroy-BoldItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-BoldItalic.woff');
+    src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),
+        url('Montserrat-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-SemiBold.woff');
-    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-        url('Gilroy-SemiBold.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.woff');
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+        url('Montserrat-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-UltraLightItalic.woff');
-    src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
-        url('Gilroy-UltraLightItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-UltraLightItalic.woff');
+    src: local('Montserrat UltraLight Italic'), local('Montserrat-UltraLightItalic'),
+        url('Montserrat-UltraLightItalic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-SemiBoldItalic.woff');
-    src: local('Gilroy SemiBold Italic'), local('Gilroy-SemiBoldItalic'),
-        url('Gilroy-SemiBoldItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBoldItalic.woff');
+    src: local('Montserrat SemiBold Italic'), local('Montserrat-SemiBoldItalic'),
+        url('Montserrat-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Light.woff');
-    src: local('Gilroy Light'), local('Gilroy-Light'),
-        url('Gilroy-Light.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-Light.woff');
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+        url('Montserrat-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-MediumItalic.woff');
-    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
-        url('Gilroy-MediumItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-MediumItalic.woff');
+    src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'),
+        url('Montserrat-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-ExtraBoldItalic.woff');
-    src: local('Gilroy ExtraBold Italic'), local('Gilroy-ExtraBoldItalic'),
-        url('Gilroy-ExtraBoldItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraBoldItalic.woff');
+    src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'),
+        url('Montserrat-ExtraBoldItalic.woff') format('woff');
     font-weight: 800;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Regular.woff');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('Gilroy-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.woff');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-HeavyItalic.woff');
-    src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
-        url('Gilroy-HeavyItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-HeavyItalic.woff');
+    src: local('Montserrat Heavy Italic'), local('Montserrat-HeavyItalic'),
+        url('Montserrat-HeavyItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Medium.woff');
-    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-        url('Gilroy-Medium.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.woff');
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+        url('Montserrat-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-RegularItalic.woff');
-    src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
-        url('Gilroy-RegularItalic.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-RegularItalic.woff');
+    src: local('Montserrat Regular Italic'), local('Montserrat-RegularItalic'),
+        url('Montserrat-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-UltraLight.woff');
-    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
-        url('Gilroy-UltraLight.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-UltraLight.woff');
+    src: local('Montserrat UltraLight'), local('Montserrat-UltraLight'),
+        url('Montserrat-UltraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Bold.woff');
-    src: local('Gilroy Bold'), local('Gilroy-Bold'),
-        url('Gilroy-Bold.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.woff');
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('Montserrat-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Thin.woff');
-    src: local('Gilroy Thin'), local('Gilroy-Thin'),
-        url('Gilroy-Thin.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-Thin.woff');
+    src: local('Montserrat Thin'), local('Montserrat-Thin'),
+        url('Montserrat-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Black.woff');
-    src: local('Gilroy Black'), local('Gilroy-Black'),
-        url('Gilroy-Black.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('Montserrat-Black.woff');
+    src: local('Montserrat Black'), local('Montserrat-Black'),
+        url('Montserrat-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }

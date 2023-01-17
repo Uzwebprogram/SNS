@@ -29,7 +29,7 @@ export const WrapperPress = styled.div`
     flex-wrap: wrap;
   }
   h2 {
-    font-family: "Gilroy";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -37,11 +37,14 @@ export const WrapperPress = styled.div`
     margin-top: 0;
     letter-spacing: 0.01em;
     color: #fff;
+    margin-bottom: 10px;
+    padding-left: 20px;
   }
 
   .select-box {
     width: 100%;
     margin-bottom: 20px;
+    padding: 0 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +61,7 @@ export const WrapperPress = styled.div`
       border: 1px solid #2c2c2c;
       border-radius: 5px;
       outline: none;
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -87,7 +90,7 @@ export const WrapperPress = styled.div`
     }
 
     time {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 12px;

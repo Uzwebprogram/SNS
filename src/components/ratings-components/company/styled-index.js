@@ -20,7 +20,7 @@ export const WrapperPress = styled.div`
   }
 
   h2 {
-    font-family: "Gilroy";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -84,7 +84,7 @@ export const WrapperPress = styled.div`
         margin: 0 10px 0 0;
       }
       label {
-        font-family: "Gilroy";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 12px;

@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
     background: #2F66B8;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 15px 15px;
-    height: 80%;
+    height: 85%;
     z-index:110;
     top:${(props) => (props.open ? "0px" : "-600px")};
     transition: 1s;
@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
             p{
                 margin: 0;
                 padding: 0;
-                font-family: 'Gilroy';
+                font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;

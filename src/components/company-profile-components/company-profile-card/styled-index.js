@@ -24,7 +24,7 @@ export const WrapperPress = styled.div`
       border: 1px solid #cccccc;
       border-radius: 5px;
       outline: none;
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -41,7 +41,7 @@ export const WrapperPress = styled.div`
   }
 
   h2 {
-    font-family: "Gilroy";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -52,7 +52,7 @@ export const WrapperPress = styled.div`
   }
 
   h3 {
-    font-family: "Gilroy";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -93,7 +93,7 @@ export const WrapperPress = styled.div`
       }
 
       th {
-        font-family: "Gilroy";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -103,7 +103,7 @@ export const WrapperPress = styled.div`
       }
 
       td {
-        font-family: "Gilroy";
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
