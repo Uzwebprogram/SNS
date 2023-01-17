@@ -1,10 +1,20 @@
+
+
 import { createSlice , createAsyncThunk } from "@reduxjs/toolkit";
 import { API_URL } from "../../utils/api";
 import axios from "axios";
-export const Register = createAsyncThunk('user/register' , async(body)=>{
-    console.log(body);
-    return await axios.post(`${API_URL}/register` , body)
-    .then(res => res)
+import Cookies from "universal-cookie";
+    const cookies = new Cookies();
+export const Register = createAsyncThunk('user/register' , async function(body, {rejectWithValue}){
+    try {
+        const res = await axios.post(`${API_URL}/register` , body)
+        return {
+            verifyCodeSuccess : res.data?.token,
+            verifyUserData : res.data?.data
+        }
+    } catch (error) {
+        return  rejectWithValue(error)
+    }
 })
 export const Users = createAsyncThunk('user/get' , async() =>{
     return await axios.get(`${API_URL}/users`)
@@ -15,10 +25,11 @@ const UserSlice = createSlice({
     name : "user",
     initialState:{
         Register:{
-            Error : false,
+            Error : "",
             Success : false,
             Loading : false,
-            Token : ""
+            Token : "",
+            UserData : [],
         },
         Users:{
             Error : false,
@@ -26,6 +37,11 @@ const UserSlice = createSlice({
             Loading : false,
             Data : []
         }
+    },
+    reducers:{
+        addToken:(state , action) =>{
+            state.verifyCodeSuccess = cookies.get("AuthTokenUser")
+        },
     },
     extraReducers :{
             [Register.pending]:(state , action) =>{
@@ -35,15 +51,16 @@ const UserSlice = createSlice({
                 state.Register.Success = true
                 state.Register.Loading = false
                 state.Register.Error = false
-                state.Register.Token = action.payload
+                state.Register.Token = cookies.set("AuthTokenUser", action.payload.verifyCodeSuccess) 
+                state.Register.UserData = cookies.set("AuthDataUser", action.payload.verifyUserData) 
             },
             [Register.rejected]:(state , action) =>{
                 state.Register.Success = false
                 state.Register.Loading = false
-                state.Register.Error = true
+                state.Register.Error = action.payload
                 state.Register.Token = ''
             }
     }
 })
-export const {} = UserSlice.actions;
+export const {addToken} = UserSlice.actions;
 export default UserSlice.reducer

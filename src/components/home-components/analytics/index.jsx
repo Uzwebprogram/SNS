@@ -1,4 +1,8 @@
+
+import React, { useEffect } from "react";
+
 import React, { useEffect, useState } from "react";
+
 import CommonButton from "../../../common/button";
 import CommonCard from "../../../common/card";
 import { NavLink } from "react-router-dom";
@@ -22,6 +26,9 @@ const Analytics = ({ isSelect }) => {
   };
   // format date api function
 
+  const arr = [1, 2, 3, 4];
+
+
   const LangVal = () => {
     return window.localStorage.getItem("i18nextLng");
   };
@@ -29,6 +36,11 @@ const Analytics = ({ isSelect }) => {
   const dispatch = useDispatch();
   const getAnalytic = useSelector((state) => state.analytic.getanalytic?.Data);
   console.log(getAnalytic);
+
+
+  useEffect(() => {
+    dispatch(GetAnalytic());
+  }, []);
 
   const [sorts, setSorts] = useState("");
 
@@ -49,6 +61,7 @@ const Analytics = ({ isSelect }) => {
       arr.push(elem.category_name);
     }
   });
+
 
   return (
     <>
@@ -77,6 +90,35 @@ const Analytics = ({ isSelect }) => {
           </div>
         ) : null}
         <Row className="row">
+
+          {getAnalytic.map((elem) => (
+            <Col lg={6} md={6} sm={12} sx={12} className="col">
+              <CommonCard
+                imgSrc={elem.img}
+                text1={
+                  LangVal() == "ru"
+                    ? elem.title_ru
+                    : LangVal() == "uz"
+                    ? elem.title_uz
+                    : LangVal() == "en"
+                    ? elem.title_en
+                    : elem.title_ru
+                }
+                text2={
+                  LangVal() == "ru"
+                    ? elem.description_ru
+                    : LangVal() == "uz"
+                    ? elem.description_uz
+                    : LangVal() == "en"
+                    ? elem.description_en
+                    : elem.description_ru
+                }
+                spanText={elem.data_date}
+                time={DateFormat(elem.date)}
+              />
+            </Col>
+          ))}
+
           {getAnalytic.map((elem) =>
             sorts == elem.category_name || sorts == "" ? (
               <Col lg={6} md={6} sm={12} sx={12} className="col">
@@ -110,6 +152,7 @@ const Analytics = ({ isSelect }) => {
               </Col>
             ) : null
           )}
+
         </Row>
       </WrapperPress>
     </>

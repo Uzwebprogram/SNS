@@ -27,7 +27,11 @@
         "13" : "Register",
         "14" : "Authorization",
         "15" : "Remember",
-        "16" : "Enter your password"
+        "16" : "Enter your password",
+        "17" : "A company with that name is registered!",
+        "18" : "Password do not match",
+        "19" : "Email or password is wrong!"
+
     },
     "Footer" : {
         "0" : "Address",

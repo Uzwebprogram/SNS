@@ -33,7 +33,7 @@ function Auth() {
           </button>
         )}
       </div>
-            {authButton ? <SingUp /> :  <SingIn /> }
+            {authButton ? <SingIn/> :  <SingUp/> }
     </Wrapper>
   );
 }

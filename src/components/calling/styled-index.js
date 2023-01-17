@@ -12,7 +12,7 @@ export const WrapperPress = styled.div`
     box-shadow: none;
   }
   h2 {
-    font-family: "Gilroy";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -45,7 +45,7 @@ export const WrapperPress = styled.div`
     input {
       border: 1px solid #cccccc;
       border-radius: 5px;
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;

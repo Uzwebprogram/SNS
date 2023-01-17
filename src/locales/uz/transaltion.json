@@ -27,7 +27,11 @@
          "13" : "Ro'yxatdan o'tish",
          "14" : "Avtorizatsiya",
          "15" : "Eslab qoling",
-         "16" : "Parolingizni kiriting"
+         "16" : "Parolingizni kiriting",
+         "17" : "Shunday nomdagi kompaniya ro'yxatdan o'tgan!",
+        "18" : "Parol mos kelmaydi",
+        "19" : "Email yoki parol xato !"
+
     },
     "Footer" : {
         "0" : "Manzil",
@@ -46,7 +50,7 @@
          "13" : "Foydalanuvchi shartnomasi",
          "14" : "Ichki nazorat xizmati",
          "15" : "bildirishingiz mumkin",
-         "16" : "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali "
+         "16" : "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali"
     },
     "details" : {
         "0": "INN",

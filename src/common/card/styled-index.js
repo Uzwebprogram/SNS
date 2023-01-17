@@ -35,7 +35,7 @@ export const CardWrapper = styled.div`
 
     span,
     time {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
       font-size: 12px;

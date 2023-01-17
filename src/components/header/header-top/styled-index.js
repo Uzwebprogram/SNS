@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
         }
     }
     a {
-        font-family: 'Gilroy';
+        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -31,6 +31,12 @@ export const Wrapper = styled.div`
     }
     @media only screen and (max-width:920px) {
         width: 100%;
+    }
+    @media only  screen and (max-width:380px) {
+        a{
+        font-size: 10px !important;
+        }
+        font-size: 10px !important;
     }
     a i {
         color: #616262;
@@ -48,7 +54,7 @@ export const Wrapper = styled.div`
         p{
             margin: 0;
             padding: 0;
-            font-family: 'Gilroy';
+            font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
             font-size: 14px;

@@ -88,7 +88,7 @@ export const SliderWrapper = styled.div`
     }
 
     time {
-      font-family: "Gilroy";
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
