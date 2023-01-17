@@ -13,7 +13,9 @@ const Disclosure = lazy(() => import("../layouts/disclosure"));
 const RatingNeeded = lazy(() => import("../layouts/rating-needed/index"));
 const RatingScales = lazy(() => import("../layouts/rating-scales/index"));
 const Details = lazy(() => import("../layouts/details/index"));
-const CompanyProfile = lazy(() => import("../layouts/company-profile/index"))
+const CompanyProfile = lazy(() => import("../layouts/company-profile/index"));
+const AnalyticMore = lazy(() => import("../layouts/analytic-more/index"));
+const PersonalCabinet = lazy(() => import("../layouts/personal-cabinet/index"));
 
 export const RouterData = [
   {
@@ -90,5 +92,15 @@ export const RouterData = [
     id: 15,
     path: "/companyprofile",
     component: <CompanyProfile />,
+  },
+  {
+    id: 16,
+    path: "/analyticmore/:id",
+    component: <AnalyticMore />,
+  },
+  {
+    id: 17,
+    path: "/lichniykabinet",
+    component: <PersonalCabinet />
   },
 ];

@@ -60,7 +60,7 @@ export const WrapperPress = styled.div`
         width: 94.5%;
       }
       @media only screen and (max-width: 375px) {
-        width: 94%;
+        width: 100%;
       }
 
       i {
@@ -71,8 +71,19 @@ export const WrapperPress = styled.div`
       input {
         outline: none;
         border: none;
-        width: 100%;
+        width: 95%;
+
+        @media only screen and (max-width: 375px) {
+          width: 90%;
+        }
       }
+    }
+
+    input:focus {
+      width: 100%;
+    }
+    input:focus ~ i {
+      display: none;
     }
 
     .radio-box {

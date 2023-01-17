@@ -15,6 +15,11 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     background-color: #F5F5F5;
     font-family: 'Montserrat' !important;
+
+
+    h2{
+      margin-bottom: 20px;
+    }
     
 
     @media only screen and (max-width: 425px) {
@@ -34,5 +39,3 @@ export const WrapperContainer = styled.div`
     width: 92%;
   }
 `;
-
-
