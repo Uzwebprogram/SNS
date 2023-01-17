@@ -5,6 +5,7 @@ export const WrapperPress = styled.div`
   box-shadow: 0px 4px 20px -10px #cccccc;
   border-radius: 15px;
   padding: 25px;
+  margin-top: ${(props) => (props.isMargin ? "20px" : "0")};
 
   @media only screen and (max-width: 768px) {
     margin-top: 20px;
@@ -13,9 +14,9 @@ export const WrapperPress = styled.div`
     border-radius: 0;
     box-shadow: none;
 
-.col{
-    padding: 0 !important;
-}
+    .col {
+      padding: 0 !important;
+    }
   }
   h2 {
     font-family: "Montserrat";

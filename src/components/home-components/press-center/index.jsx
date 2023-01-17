@@ -1,13 +1,15 @@
 import React from "react";
 import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
+import { useTranslation } from "react-i18next";
 
 const PressCenter = () => {
   const arr = [1, 2, 3, 4];
+  const {t, i18n} = useTranslation()
   return (
     <>
       <WrapperPress>
-        <h2>Пресс-центр</h2>
+        <h2>{t("Home.4")}</h2>
         {arr.map(() => (
           <div className="press-content">
             <p>
@@ -28,7 +30,7 @@ const PressCenter = () => {
           }}
           type={"button"}
         >
-          Все новости
+         {t("Home.6")}
         </CommonButton>
       </WrapperPress>
     </>

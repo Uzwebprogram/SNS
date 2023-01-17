@@ -1,17 +1,16 @@
 import React from "react";
 import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
+import { useTranslation } from "react-i18next";
 
 const RatingScales = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <WrapperPress>
         <div className="scales-div">
-          <h2>Рейтинговые шкалы</h2>
-          <p>
-            Рейтинговые шкалы, используемые «Эксперт РА», прогнозы по рейтингам
-            и cтатус «под наблюдением»
-          </p>
+          <h2>{t("Rating.8")}</h2>
+          <p>{t("Rating.9")}</p>
           <CommonButton
             style={{
               color: "#1E1E1E",
@@ -22,15 +21,12 @@ const RatingScales = () => {
             }}
             type={"button"}
           >
-            Подробнее
+            {t("Rating.10")}
           </CommonButton>
         </div>
         <div className="scales-div">
-          <h2>Зачем нужен рейтинг?</h2>
-          <p>
-            Перечень нормативных и иных актов, содержащих требования о наличии
-            кредитных рейтингов АО "Эксперт РА"
-          </p>
+          <h2>{t("Rating.11")}</h2>
+          <p>{t("Rating.12")}</p>
           <CommonButton
             style={{
               color: "#1E1E1E",
@@ -41,7 +37,7 @@ const RatingScales = () => {
             }}
             type={"button"}
           >
-            Подробнее
+            {t("Rating.10")}
           </CommonButton>
         </div>
       </WrapperPress>

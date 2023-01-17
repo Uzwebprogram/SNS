@@ -4,27 +4,28 @@ import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
 import ModalCommon from "../../common/Modal/Modal";
 import Auth from "../../header/auth";
-import Cookies from 'universal-cookie/cjs/Cookies';
+import Cookies from "universal-cookie/cjs/Cookies";
 import { NavLink } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 
 const Modul = ({ isSelect }) => {
+  const { t, i18n } = useTranslation();
   const arr = [1, 2, 3, 4];
   const cookies = new Cookies();
-  const [open , setOpen] = useState(false)
-  const HandleOpen = () => setOpen(true)
-  const HandleClose = () => setOpen(false)
+  const [open, setOpen] = useState(false);
+  const HandleOpen = () => setOpen(true);
+  const HandleClose = () => setOpen(false);
   return (
     <>
       <WrapperPress>
-        <h2>Модуль</h2>
-        <p>Информация только для авторизованных пользователей</p>
-        {!cookies.get("AuthTokenUser") ?  <p className="red-text">
-          Информация будет доступна только после регистрации
-        </p> : null}
+        <h2>{t("Analytic.3")}</h2>
+        <p>{t("Analytic.4")}</p>
+        {!cookies.get("AuthTokenUser") ? (
+          <p className="red-text">{t("Analytic.5")}</p>
+        ) : null}
 
-      {!cookies.get("AuthTokenUser") ? 
-            <CommonButton
+        {!cookies.get("AuthTokenUser") ? (
+          <CommonButton
             style={{
               color: "#1E1E1E",
               borderColor: "#1E1E1E",
@@ -35,28 +36,28 @@ const Modul = ({ isSelect }) => {
             type={"button"}
             onClick={HandleOpen}
           >
-            Регистрация
-          </CommonButton>:  
-                      <CommonButton
-                      style={{
-                        color: "#1E1E1E",
-                        borderColor: "#1E1E1E",
-                        display: "inline-block",
-                        marginTop: "30px",
-                        padding: "8px 30px",
-                      }}
-                      type={"button"}
-                    >
-                        <NavLink to={"/lichniykabinet"} >
-                        личный кабинет
-                        </NavLink>
-                    </CommonButton>
-    }
+            {t("Analytic.6")}
+          </CommonButton>
+        ) : (
+          <CommonButton
+            style={{
+              color: "#1E1E1E",
+              borderColor: "#1E1E1E",
+              display: "inline-block",
+              marginTop: "30px",
+              padding: "8px 30px",
+            }}
+            type={"button"}
+          >
+            <NavLink className='personal-link' to={"/lichniykabinet"}>{t("Analytic.67")}</NavLink>
+          </CommonButton>
+        )}
       </WrapperPress>
-      {!cookies.get("AuthTokenUser") ? 
-   <ModalCommon  height={518} handleClose={HandleClose} open={open}>
-    <Auth/>
-    </ModalCommon> : null } 
+      {!cookies.get("AuthTokenUser") ? (
+        <ModalCommon height={518} handleClose={HandleClose} open={open}>
+          <Auth />
+        </ModalCommon>
+      ) : null}
     </>
   );
 };

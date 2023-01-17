@@ -1,63 +1,136 @@
 {
-    "Header":{
-        "0":"Login",
-        "1" :"Company, research",
-        "2" : "Ratings",
-        "3" :"Rankings",
-        "4" :"Analytics",
-        "5" : "Services",
-        "6" : "About agency",
-        "7" : "FAQ",
-        "8" : "Tashkent, Chilanzar district, Bunyodkor street, 57"
-    },
-    "Auth" : {
-        "0" : "Registration",
-        "1" : "Login",
-        "2" : "Company name",
-        "3" : "El",
-        "4" : "INN",
-        "5" : "Enter your E-mail",
-        "6" : "Receive email newsletters to this email",
-        "7" : "OGRN",
-        "8" : "Checkpoint",
-        "9" : "Country",
-        "10" : "Create a strong password",
-        "11" : "Confirm password",
-        "12" : "I accept the terms of the user agreement and the policy regarding the processing of personal data",
-        "13" : "Register",
-        "14" : "Authorization",
-        "15" : "Remember",
-        "16" : "Enter your password",
-        "17" : "A company with that name is registered!",
-        "18" : "Password do not match",
-        "19" : "Email or password is wrong!"
-
-    },
-    "Footer" : {
-        "0" : "Address",
-         "1" : "Contacts",
-         "2" : "Information",
-         "3" : "SNS company news",
-         "4" : "Methodology" ,
-         "5" : "Disclosure",
-         "6" : "Details",
-         "7" : "Jobs",
-         "8" : "Press Centre",
-         "9" : "© 2022 Expert RA JSC. All site materials are the intellectual property of Expert RA JSC (except when other authorship is expressly indicated) and protected by law. The information provided is intended for informational use only.",
-         "10" : "This information may not be distributed in any way and in any form without prior consent from the Agency and reference to the source www.raexpert.ru Use of information in violation of these requirements is prohibited.",
-         "11" : "The ratings express the opinion of JSC 'Expert RA' and do not constitute a fact finding or recommendation to buy, hold or sell certain securities or assets, make investment decisions. The agency does not assume any responsibility in connection with any consequences , interpretations, conclusions, recommendations and other actions directly or indirectly related to the rating assessment, the rating actions performed by the Agency, as well as the conclusions and conclusions contained in the rating report and press releases issued by the agency, or the absence of all of the above. the current state of the rating is the official website of JSC 'Expert RA'",
-         "12" : "Personal Data Processing Policy",
-         "13" : "User Agreement",
-         "14" : "Internal control service",
-         "15" : " online form",
-         "16" : "You can express your remark or suggestion by filling out the"
-    },
-    "details" : {
-        "0" : "INN",
-         "1" :"Phone number",
-         "2" : "OKED",
-         "3" : "Email",
-         "4" : "Address",
-         "5" : "Details of 'SNS' Rating Agency"
-    }
+  "Header": {
+    "0": "Login",
+    "1": "Company, research",
+    "2": "Ratings",
+    "3": "Rankings",
+    "4": "Analytics",
+    "5": "Services",
+    "6": "About agency",
+    "7": "FAQ",
+    "8": "Tashkent, Chilanzar district, Bunyodkor street, 57"
+  },
+  "Home": {
+    "0": "Long load of the corporate sector: who is it easy now?",
+    "1": "Analytics",
+    "2": "Rankings",
+    "3": "View all",
+    "4": "Press Centre",
+    "5": "Comments",
+    "6": "All news",
+    "7": "SNS company news"
+  },
+  "Calling": {
+    "0": "Commercial service",
+    "1": "Internal control service",
+    "2": "Media contacts",
+    "3": "Daily Email",
+    "4": "Details"
+  },
+  "Rating": {
+    "0": "Company ratings",
+    "1": "Only withdrawn",
+    "2": "Only under supervision",
+    "3": "Share",
+    "4": "Object",
+    "5": "Rating",
+    "6": "Forecast",
+    "7": "Updated",
+    "8": "Rating scales",
+    "9": "Rating scales used by 'Expert RA', rating forecasts and 'under supervision' status",
+    "10": "More",
+    "11": "Why do we need a rating?",
+    "12": "List of regulations and other acts containing requirements for the availability of credit ratings of JSC 'Expert RA'"
+  },
+  "Ranking": {
+    "0": "What is Ranking?",
+    "1": "Ranking of Russian leasing companies for the first 9 months of 2022 Expert RA announces an update of the methodology for assigning credit ratings to project companies' Expert RA' announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companies credit ratings for project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companiesRanking of Russian leasing companies for 9 months of 2022 Ranking of Russian leasing companies for 9 months of 2022 Ranking of Russian leasing companies for 9 months of 2022 Ranking of Russian leasing companies Based on the results of 9 months of 2022, Expert RA Ranking announces an update of the methodology for assigning credit ratings to project companies"
+  },
+  "Analytic": {
+    "0": "Pass the survey",
+    "1": "Expert RA announces an update of the methodology for assigning credit ratings to project companies",
+    "2": "View all",
+    "3": "Module",
+    "4": "Information for authorized users only",
+    "5": "Information will be available only after registration",
+    "6": "Registration",
+    "7": "Personal account"
+  },
+  "Uslugi": {
+    "0": "Services",
+    "1": "All services"
+  },
+  "Agency": {
+    "0": "About agency",
+    "1": "Ranking of Russian leasing companies based on the results of 9 months of 2022",
+    "2": "Expert RA is included in the register of credit rating agencies of the Bank of Russia (xlsx), and is also included in the lists of independent verifiers of green and social bonds of the International Capital Markets Association (ICMA), the Moscow Exchange and VEB.RF. The ratings of the agency are included in the lists of official requirements for banks, insurers, pension funds, issuers.The agency's ratings are used by the Bank of Russia, the Ministry of Finance, the Ministry of Economic Development, the Moscow Exchange, as well as hundreds of companies and authorities when conducting contests and tenders.As of January 1, 2022, the agency supports more than 700 credit ratings, including 449 issuer ratings and 334 bond issue ratings.We firmly hold leading positions in the ratings of credit institutions, insurance companies, companies in the financial and non-financial sector.The agency annually publishes more than 50 public studies and industry reviews on macroeconomics, insurance, banking sector, management assets, leasing and other sectors of the economy."
+  },
+  "Faq": {
+    "0": "Questions to experts"
+  },
+  "Methodology": {
+    "0": "Methodology"
+  },
+  "Disclosure": {
+    "0": "Disclosure"
+  },
+  "Details": {
+    "0": "Details of the Rating Agency 'SNS'",
+    "1": "INN",
+    "2": "Phone number",
+    "3": "OKED",
+    "4": "Email",
+    "5": "Address",
+    "6": "Company references",
+    "7": "Expert RA announces an update of the methodology for assigning credit ratings to project companies"
+  },
+  "Auth": {
+    "0": "Registration",
+    "1": "Login",
+    "2": "Company name",
+    "3": "El",
+    "4": "INN",
+    "5": "Enter your E-mail",
+    "6": "Receive email newsletters to this email",
+    "7": "OGRN",
+    "8": "Checkpoint",
+    "9": "Country",
+    "10": "Create a strong password",
+    "11": "Confirm password",
+    "12": "I accept the terms of the user agreement and the policy regarding the processing of personal data",
+    "13": "Register",
+    "14": "Authorization",
+    "15": "Remember",
+    "16": "Enter your password",
+    "17": "A company with that name is registered!",
+    "18": "Password do not match",
+    "19": "Email or password is wrong!"
+  },
+  "Footer": {
+    "0": "Address",
+    "1": "Contacts",
+    "2": "Information",
+    "3": "SNS company news",
+    "4": "Methodology",
+    "5": "Disclosure",
+    "6": "Details",
+    "7": "Jobs",
+    "8": "Press Centre",
+    "9": "© 2022 Expert RA JSC. All site materials are the intellectual property of Expert RA JSC (except when other authorship is expressly indicated) and protected by law. The information provided is intended for informational use only.",
+    "10": "This information may not be distributed in any way and in any form without prior consent from the Agency and reference to the source www.raexpert.ru Use of information in violation of these requirements is prohibited.",
+    "11": "The ratings express the opinion of JSC 'Expert RA' and do not constitute a fact finding or recommendation to buy, hold or sell certain securities or assets, make investment decisions. The agency does not assume any responsibility in connection with any consequences , interpretations, conclusions, recommendations and other actions directly or indirectly related to the rating assessment, the rating actions performed by the Agency, as well as the conclusions and conclusions contained in the rating report and press releases issued by the agency, or the absence of all of the above. the current state of the rating is the official website of JSC 'Expert RA'",
+    "12": "Personal Data Processing Policy",
+    "13": "User Agreement",
+    "14": "Internal control service",
+    "15": " online form",
+    "16": "You can express your remark or suggestion by filling out the"
+  },
+  "details": {
+    "0": "INN",
+    "1": "Phone number",
+    "2": "OKED",
+    "3": "Email",
+    "4": "Address",
+    "5": "Details of 'SNS' Rating Agency"
+  }
 }

@@ -2,13 +2,17 @@ import React from "react";
 import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
+import { useTranslation } from "react-i18next";
 
 const Ranking = ({ isSelect }) => {
   const arr = [1, 2, 3, 4];
+  const {t, i18n} = useTranslation()
   return (
     <>
-      <WrapperPress style={isSelect == true ? {marginTop:0} : {marginTop: 20}}>
-        <h2>Рэнкинги</h2>
+      <WrapperPress
+        style={isSelect == true ? { marginTop: 0 } : { marginTop: 20 }}
+      >
+        <h2>{t("Home.2")}</h2>
         {isSelect == true ? (
           <div className="select-box">
             <select>
@@ -35,6 +39,7 @@ const Ranking = ({ isSelect }) => {
             <hr />
           </div>
         ))}
+
         <CommonButton
           style={{
             color: "#1E1E1E",
@@ -45,7 +50,7 @@ const Ranking = ({ isSelect }) => {
           }}
           type={"button"}
         >
-          Посмотреть все
+          {t("Home.3")}
         </CommonButton>
       </WrapperPress>
     </>

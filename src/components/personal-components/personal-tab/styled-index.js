@@ -34,6 +34,9 @@ export const WrapperPress = styled.div`
     padding: 11px 20px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    @media only screen and (max-width: 425px) {
+      border-radius: 0;
+    }
   }
   @media only screen and (max-width: 425px) {
     margin-top: 0;

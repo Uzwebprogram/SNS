@@ -6,8 +6,9 @@ import cardImg from "../../../assets/home-comp/cardimg.png";
 import { Col, Row } from "react-grid-system";
 import { GetUslugi } from "../../../redux/uslugi/index";
 import { useDispatch, useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 
-const UslugiCard = () => {
+const UslugiCard = ({ isMargin, isBtn }) => {
   const LangVal = () => {
     return window.localStorage.getItem("i18nextLng");
   };
@@ -19,10 +20,12 @@ const UslugiCard = () => {
     dispatch(GetUslugi());
   }, []);
 
+  const { t, i18n } = useTranslation();
+
   return (
     <>
-      <WrapperPress>
-        <h2>Услуги</h2>
+      <WrapperPress isMargin={isMargin}>
+        <h2>{t("Uslugi.0")}</h2>
 
         <Row className="row">
           {getUslugi.map((elem) => (
@@ -56,18 +59,20 @@ const UslugiCard = () => {
             </Col>
           ))}
         </Row>
-        <CommonButton
-          style={{
-            color: "#1E1E1E",
-            borderColor: "#1E1E1E",
-            display: "inline-block",
-            marginTop: "30px",
-            padding: "8px 30px",
-          }}
-          type={"button"}
-        >
-          Все услуги
-        </CommonButton>
+        {isBtn == true ? (
+          <CommonButton
+            style={{
+              color: "#1E1E1E",
+              borderColor: "#1E1E1E",
+              display: "inline-block",
+              marginTop: "30px",
+              padding: "8px 30px",
+            }}
+            type={"button"}
+          >
+            {t("Uslugi.1")}
+          </CommonButton>
+        ) : null}
       </WrapperPress>
     </>
   );

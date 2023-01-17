@@ -1,63 +1,136 @@
 {
-    "Header":{
-        "0":"Kirish",
-        "1":"Kompaniya, tadqiqot",
-         "2": "Reytinglar",
-         "3":"Renking",
-         "4" :"Tahlil",
-         "5" : "Xizmatlar",
-         "6" : "Agentlik haqida",
-         "7" : "FAQ",
-         "8": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
-    },
-    "Auth" : {
-        "0" : "Ro'yxatdan o'tish",
-         "1": "Kirish",
-         "2": "Kompaniya nomi",
-         "3" : "Elektron",
-         "4": "INN",
-         "5" : "Elektron pochtangizni kiriting",
-         "6" : "Ushbu e-pochtaga elektron pochta xabarlarini olish",
-         "7": "OGRN",
-         "8" : "Nazorat punkti",
-         "9" : "Mamlakat",
-         "10" : "Kuchli parol yarating",
-         "11" : "Parolni tasdiqlang",
-         "12" : "Men foydalanuvchi shartnomasi shartlarini va shaxsiy ma'lumotlarni qayta ishlash siyosatini qabul qilaman",
-         "13" : "Ro'yxatdan o'tish",
-         "14" : "Avtorizatsiya",
-         "15" : "Eslab qoling",
-         "16" : "Parolingizni kiriting",
-         "17" : "Shunday nomdagi kompaniya ro'yxatdan o'tgan!",
-        "18" : "Parol mos kelmaydi",
-        "19" : "Email yoki parol xato !"
-
-    },
-    "Footer" : {
-        "0" : "Manzil",
-         "1" : "Kontaktlar",
-         "2" : "Ma'lumot",
-         "3" : "SNS kompaniyasi yangiliklari",
-         "4" : "Metodologiya" ,
-         "5" : "Oshkor qilish",
-         "6" : "Tafsilotlar",
-         "7" : "Ishlar",
-         "8" : "Matbuot markazi",
-         "9" : "© 2022 'Ekspert RA' AJ. Saytning barcha materiallari 'Ekspert RA' OAJning intellektual mulki hisoblanadi (boshqa mualliflik aniq ko'rsatilgan hollar bundan mustasno) va qonun bilan himoyalangan. Taqdim etilgan ma'lumotlar faqat ma'lumot olish uchun mo'ljallangan.",
-         "10" : "Ushbu ma'lumotni Agentlikning oldindan roziligisiz va www.raexpert.ru manbasiga havolasiz hech qanday tarzda va har qanday shaklda tarqatish mumkin emas. Ushbu talablarni buzgan holda ma'lumotlardan foydalanish taqiqlanadi.",
-         "11" : "Reytinglar 'Ekspert RA' OAJning fikrini ifodalaydi va ma'lum bir qimmatli qog'ozlar yoki aktivlarni sotib olish, ushlab turish yoki sotish, investitsiya qarorlarini qabul qilish bo'yicha fakt yoki tavsiyani tashkil etmaydi. Agentlik bilan bog'liq holda hech qanday javobgarlik zimmasiga olmaydi. Reytingni baholash bilan bevosita yoki bilvosita bog'liq bo'lgan har qanday oqibatlar, sharhlar, xulosalar, tavsiyalar va boshqa harakatlar, Agentlik tomonidan amalga oshirilgan reyting harakatlari, shuningdek, reyting hisobotida va agentlik tomonidan e'lon qilingan press-relizlarda mavjud bo'lgan xulosalar va xulosalar yoki yuqorida aytilganlarning barchasi yo'qligi.Reytingning hozirgi holati 'Ekspert RA' OAJning rasmiy sayti",
-         "12" : "Shaxsiy ma'lumotlarni qayta ishlash siyosati",
-         "13" : "Foydalanuvchi shartnomasi",
-         "14" : "Ichki nazorat xizmati",
-         "15" : "bildirishingiz mumkin",
-         "16" : "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali"
-    },
-    "details" : {
-        "0": "INN",
-         "1" :"Telefon raqami",
-         "2": "OK",
-         "3" : "Elektron pochta",
-         "4" : "Manzil",
-         "5" : "'SNS' reyting agentligi tafsilotlari"
-    }
+  "Header": {
+    "0": "Kirish",
+    "1": "Kompaniya, tadqiqot",
+    "2": "Reytinglar",
+    "3": "Renking",
+    "4": "Tahlil",
+    "5": "Xizmatlar",
+    "6": "Agentlik haqida",
+    "7": "FAQ",
+    "8": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
+  },
+  "Home": {
+    "0": "Korporativ sektorning uzoq yuki: endi kimga oson?",
+    "1": "Tahlil",
+    "2": "Reytinglar",
+    "3": "Hammasini ko'rish",
+    "4": "Matbuot markazi",
+    "5": "Izohlar",
+    "6": "Barcha yangiliklar",
+    "7": "SNS kompaniyasi yangiliklari"
+  },
+  "Calling": {
+    "0": "Tijorat xizmati",
+    "1": "Ichki nazorat xizmati",
+    "2": "Media kontaktlari",
+    "3": "Kundalik elektron pochta",
+    "4": "Batafsil"
+  },
+  "Rating": {
+    "0": "Kompaniya reytinglari",
+    "1": "Faqat qaytarib olingan",
+    "2": "Faqat nazorat ostida",
+    "3": "Ulashish",
+    "4": "Ob'ekt",
+    "5": "Reyting",
+    "6": "Prognoz",
+    "7": "Yangilangan",
+    "8": "Baho shkalasi",
+    "9": "Expert RA tomonidan qo'llaniladigan reyting shkalasi, reyting prognozlari va 'nazorat ostida' holati",
+    "10": "Ko'proq",
+    "11": "Nega bizga reyting kerak?",
+    "12": "'Ekspert RA' OAJning kredit reytinglari mavjudligiga qo'yiladigan talablarni o'z ichiga olgan normativ-huquqiy hujjatlar va boshqa hujjatlar ro'yxati"
+  },
+  "Ranking": {
+    "0": "Reyting nima?",
+    "1": "Rossiya lizing kompaniyalarining 2022-yilning dastlabki 9 oyi uchun reytingi Expert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi 'Expert RA' loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladiExpert RA loyiha kompaniyalari uchun kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi 'Expert RA' loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi Rossiya lizing kompaniyalarining 2022 yilning 9 oyi uchun reytingi Rossiya lizing kompaniyalarining 9 oylik reytingi 2022 yil 9 oylik Rossiya lizing kompaniyalari reytingi Rossiya lizing kompaniyalari reytingi 2022 yilning 9 oyi natijalariga ko'ra Expert RA Ranking loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi."
+  },
+  "Analytic": {
+    "0": "So'rovdan o'tish",
+    "1": "Ekspert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi",
+    "2": "Hammasini ko'rish",
+    "3": "Modul",
+    "4": "Faqat vakolatli foydalanuvchilar uchun ma'lumot",
+    "5": "Ma'lumot faqat ro'yxatdan o'tgandan keyin mavjud bo'ladi",
+    "6": "Ro'yxatdan o'tish",
+    "7": "Shaxsiy hisob"
+  },
+  "Uslugi": {
+    "0": "Xizmatlar",
+    "1": "Barcha xizmatlar"
+  },
+  "Agency": {
+    "0": "Agentlik haqida",
+    "1": "Rossiya lizing kompaniyalarining 2022-yil 9 oyi yakunlari bo‘yicha reytingi",
+    "2": "Ekspert RA Rossiya Bankining kredit reyting agentliklari reestriga (xlsx) kiritilgan, shuningdek, Xalqaro kapital bozorlari assotsiatsiyasining (ICMA) yashil va ijtimoiy obligatsiyalarini mustaqil tekshiruvchilar ro'yxatiga kiritilgan, Moskva birjasi va VEB.RF.Agentlik reytinglari banklar, sug'urtalovchilar, pensiya jamg'armalari, emitentlar uchun rasmiy talablar ro'yxatiga kiritilgan.Agentlik reytinglaridan Rossiya Banki, Moliya vazirligi, Rossiya Federatsiyasi Vazirligi Iqtisodiy rivojlanish, Moskva birjasi, shuningdek, tanlov va tenderlar o'tkazishda yuzlab kompaniyalar va organlar. 2022 yil 1 yanvar holatiga agentlik 700 dan ortiq kredit reytinglarini qo'llab-quvvatlaydi, shu jumladan 449 emitent reytingi va 334 obligatsiyalar reytingi. kredit tashkilotlari, sugʻurta kompaniyalari, moliyaviy va nomoliyaviy sektordagi kompaniyalar reytinglarida yetakchi oʻrinlarni egallaydi. Agentlik har yili makroiqtisodiyot, sugʻurta, bank sektori, menejment boʻyicha 50 dan ortiq jamoatchilik tadqiqotlari va soha sharhlarini nashr etadi. aktivlar, lizing va iqtisodiyotning boshqa tarmoqlari"
+  },
+  "Faq": {
+    "0": "Mutaxassislarga savollar"
+  },
+  "Methodology": {
+    "0": "Metodologiya"
+  },
+  "Disclosure": {
+    "0": "Oshkora qilish"
+  },
+  "Details": {
+    "0": "'SNS' reyting agentligi tafsilotlari",
+    "1": "INN",
+    "2": "Telefon raqami",
+    "3": "OK",
+    "4": "Elektron pochta",
+    "5": "Manzil",
+    "6": "Kompaniya ma'lumotlari",
+    "7": "Ekspert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi"
+  },
+  "Auth": {
+    "0": "Ro'yxatdan o'tish",
+    "1": "Kirish",
+    "2": "Kompaniya nomi",
+    "3": "Elektron",
+    "4": "INN",
+    "5": "Elektron pochtangizni kiriting",
+    "6": "Ushbu e-pochtaga elektron pochta xabarlarini olish",
+    "7": "OGRN",
+    "8": "Nazorat punkti",
+    "9": "Mamlakat",
+    "10": "Kuchli parol yarating",
+    "11": "Parolni tasdiqlang",
+    "12": "Men foydalanuvchi shartnomasi shartlarini va shaxsiy ma'lumotlarni qayta ishlash siyosatini qabul qilaman",
+    "13": "Ro'yxatdan o'tish",
+    "14": "Avtorizatsiya",
+    "15": "Eslab qoling",
+    "16": "Parolingizni kiriting",
+    "17": "Shunday nomdagi kompaniya ro'yxatdan o'tgan!",
+    "18": "Parol mos kelmaydi",
+    "19": "Email yoki parol xato !"
+  },
+  "Footer": {
+    "0": "Manzil",
+    "1": "Kontaktlar",
+    "2": "Ma'lumot",
+    "3": "SNS kompaniyasi yangiliklari",
+    "4": "Metodologiya",
+    "5": "Oshkor qilish",
+    "6": "Tafsilotlar",
+    "7": "Ishlar",
+    "8": "Matbuot markazi",
+    "9": "© 2022 'Ekspert RA' AJ. Saytning barcha materiallari 'Ekspert RA' OAJning intellektual mulki hisoblanadi (boshqa mualliflik aniq ko'rsatilgan hollar bundan mustasno) va qonun bilan himoyalangan. Taqdim etilgan ma'lumotlar faqat ma'lumot olish uchun mo'ljallangan.",
+    "10": "Ushbu ma'lumotni Agentlikning oldindan roziligisiz va www.raexpert.ru manbasiga havolasiz hech qanday tarzda va har qanday shaklda tarqatish mumkin emas. Ushbu talablarni buzgan holda ma'lumotlardan foydalanish taqiqlanadi.",
+    "11": "Reytinglar 'Ekspert RA' OAJning fikrini ifodalaydi va ma'lum bir qimmatli qog'ozlar yoki aktivlarni sotib olish, ushlab turish yoki sotish, investitsiya qarorlarini qabul qilish bo'yicha fakt yoki tavsiyani tashkil etmaydi. Agentlik bilan bog'liq holda hech qanday javobgarlik zimmasiga olmaydi. Reytingni baholash bilan bevosita yoki bilvosita bog'liq bo'lgan har qanday oqibatlar, sharhlar, xulosalar, tavsiyalar va boshqa harakatlar, Agentlik tomonidan amalga oshirilgan reyting harakatlari, shuningdek, reyting hisobotida va agentlik tomonidan e'lon qilingan press-relizlarda mavjud bo'lgan xulosalar va xulosalar yoki yuqorida aytilganlarning barchasi yo'qligi.Reytingning hozirgi holati 'Ekspert RA' OAJning rasmiy sayti",
+    "12": "Shaxsiy ma'lumotlarni qayta ishlash siyosati",
+    "13": "Foydalanuvchi shartnomasi",
+    "14": "Ichki nazorat xizmati",
+    "15": "bildirishingiz mumkin",
+    "16": "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali"
+  },
+  "details": {
+    "0": "INN",
+    "1": "Telefon raqami",
+    "2": "OK",
+    "3": "Elektron pochta",
+    "4": "Manzil",
+    "5": "'SNS' reyting agentligi tafsilotlari"
+  }
 }

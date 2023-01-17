@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import Cookies from "universal-cookie/cjs/Cookies";
 const Home = lazy(() => import("./../layouts/Home/index"));
 const About = lazy(() => import("./../layouts/About/index"));
 const Contact = lazy(() => import("./../layouts/Contact/index"));
@@ -16,6 +17,10 @@ const Details = lazy(() => import("../layouts/details/index"));
 const CompanyProfile = lazy(() => import("../layouts/company-profile/index"));
 const AnalyticMore = lazy(() => import("../layouts/analytic-more/index"));
 const PersonalCabinet = lazy(() => import("../layouts/personal-cabinet/index"));
+
+const cookies = new Cookies();
+
+const personalData = cookies.get("AuthDataUser");
 
 export const RouterData = [
   {
@@ -101,6 +106,6 @@ export const RouterData = [
   {
     id: 17,
     path: "/lichniykabinet",
-    component: <PersonalCabinet />
+    component: <PersonalCabinet />,
   },
 ];

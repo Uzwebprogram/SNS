@@ -6,9 +6,11 @@ import {
   AccordionHeader,
   AccordionItem,
 } from "reactstrap";
+import { useTranslation } from "react-i18next";
 
 const FaqCard = () => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+  const {t, i18n} = useTranslation()
   const [open, setOpen] = useState("1");
   const toggle = (id) => {
     if (open === id) {
@@ -20,7 +22,7 @@ const FaqCard = () => {
   return (
     <>
       <WrapperPress>
-        <h2>Вопросы экспертам</h2>
+        <h2>{t("Faq.0")}</h2>
 
         <div className="select-box">
           <select>

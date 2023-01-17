@@ -3,12 +3,14 @@ import { Col, Row } from "react-grid-system";
 import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
 import Table from "./table";
+import { useTranslation } from "react-i18next";
 
 const Company = () => {
+  const {t, i18n} = useTranslation()
   return (
     <>
       <WrapperPress>
-        <h2>Рейтинги компаний</h2>
+        <h2>{t("Rating.0")}</h2>
         <form>
           <Row className="row">
             <Col lg={8} className="col">
@@ -32,7 +34,7 @@ const Company = () => {
                   name="radio-name1"
                   value="Только отозванные"
                 />
-                <label for="radio1">Только отозванные</label>
+                <label for="radio1">{t("Rating.1")}</label>
               </div>
               <div className="radio-box">
                 <input
@@ -41,7 +43,7 @@ const Company = () => {
                   name="radio-name2"
                   value="Только под наблюдением"
                 />
-                <label for="radio2">Только под наблюдением</label>
+                <label for="radio2">{t("Rating.2")}</label>
               </div>
               <CommonButton
                 style={{
@@ -53,7 +55,7 @@ const Company = () => {
                 }}
                 type={"button"}
               >
-                Поделиться
+                {t("Rating.3")}
               </CommonButton>
             </Col>
           </Row>

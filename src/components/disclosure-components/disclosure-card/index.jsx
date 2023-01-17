@@ -2,13 +2,15 @@ import React from "react";
 import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
+import { useTranslation } from "react-i18next";
 
 const DisclosureCard = () => {
+  const {t, i18n} = useTranslation()
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <>
       <WrapperPress>
-        <h2>Раскрытие информации</h2>
+        <h2>{t("Disclosure.0")}</h2>
 
         {arr.map(() => (
           <div>

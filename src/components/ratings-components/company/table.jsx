@@ -1,23 +1,8 @@
 import React, { useState } from "react";
-import { Button, Table } from "antd";
-const columns = [
-  {
-    title: "Объект",
-    dataIndex: "object",
-  },
-  {
-    title: "Рейтинг",
-    dataIndex: "reting",
-  },
-  {
-    title: "Прогноз",
-    dataIndex: "protsent",
-  },
-  {
-    title: "Обновлен",
-    dataIndex: "obnavit",
-  },
-];
+import { Table } from "antd";
+import { useTranslation } from "react-i18next";
+// const { t, i18n } = useTranslation();
+
 const data = [];
 for (let i = 0; i < 46; i++) {
   data.push({
@@ -29,8 +14,28 @@ for (let i = 0; i < 46; i++) {
   });
 }
 const Tables = () => {
+  const { t, i18n } = useTranslation();
+  const columns = [
+    {
+      title: `${t("Rating.4")}`,
+      dataIndex: "object",
+    },
+    {
+      title: `${t("Rating.5")}`,
+      dataIndex: "reting",
+    },
+    {
+      title: `${t("Rating.6")}`,
+      dataIndex: "protsent",
+    },
+    {
+      title: `${t("Rating.7")}`,
+      dataIndex: "obnavit",
+    },
+  ];
+ 
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
-  
+
   const onSelectChange = (newSelectedRowKeys) => {
     console.log("selectedRowKeys changed: ", newSelectedRowKeys);
     setSelectedRowKeys(newSelectedRowKeys);

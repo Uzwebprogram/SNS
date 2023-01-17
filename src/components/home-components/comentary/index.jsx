@@ -1,12 +1,14 @@
 import React from "react";
 import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
+import { useTranslation } from "react-i18next";
 
 const Comentary = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <WrapperPress>
-        <h2>Комментарии</h2>
+        <h2>{t("Home.5")}</h2>
 
         <div className="press-content">
           <p>ЦБ оставил ключевую ставку неизменной. Что будет с ипотекой?</p>
@@ -41,7 +43,7 @@ const Comentary = () => {
           }}
           type={"button"}
         >
-          Посмотреть все
+         {t("Home.3")}
         </CommonButton>
       </WrapperPress>
     </>

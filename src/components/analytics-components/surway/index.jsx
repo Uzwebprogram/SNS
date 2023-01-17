@@ -2,16 +2,17 @@ import React from "react";
 import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
+import { useTranslation } from "react-i18next";
 
 const Surway = ({isMargin}) => {
+  const {t, i18n} = useTranslation()
   const arr = [1, 2, 3, 4];
   return (
     <>
       <WrapperPress isMargin={isMargin}>
-        <h2>Пройдите опрос</h2>
+        <h2>{t("Analytic.0")}</h2>
         <p>
-          «Эксперт РА» сообщает об обновлении методологии присвоения рейтингов
-          кредитоспособности проектным компаниям
+        {t("Analytic.1")}
         </p>
         <CommonButton
           style={{
@@ -23,7 +24,7 @@ const Surway = ({isMargin}) => {
           }}
           type={"button"}
         >
-          Посмотреть все
+          {t("Analytic.2")}
         </CommonButton>
       </WrapperPress>
     </>

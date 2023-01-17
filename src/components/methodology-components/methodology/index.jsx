@@ -1,49 +1,80 @@
-import React from "react";
-import CommonButton from "../../../common/button";
+import React, { useEffect, useState } from "react";
 import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
+import { GetMethodology } from "../../../redux/methodology/index";
+import { useDispatch, useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 const Methodology = ({ isSelect }) => {
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+  const { t, i18n } = useTranslation();
+  const LangVal = () => {
+    return window.localStorage.getItem("i18nextLng");
+  };
+
+  const dispatch = useDispatch();
+  const getMethodology = useSelector(
+    (state) => state.methodology.getmethodology?.Data
+  );
+  console.log(getMethodology);
+
+  const [sorts, setSorts] = useState("");
+
+  let arr = [];
+  let findData = null;
+  console.log(arr);
+
+  const Handlechange = (e) => {
+    setSorts(e.target.value);
+  };
+
+  getMethodology.map((elem) => {
+    if (!arr.includes(elem.category_name)) {
+      arr.push(elem.category_name);
+    }
+  });
+
+  useEffect(() => {
+    dispatch(GetMethodology());
+  }, []);
   return (
     <>
       <WrapperPress>
-        <h2>Методология</h2>
+        <h2>{t("Methodology.0")}</h2>
 
         <div className="select-box">
-          <select>
-            <option value="Действующие методолгия">
-              Действующие методолгия
-            </option>
-            <option value="Действующие методолгия">
-              Действующие методолгия
-            </option>
-            <option value="Действующие методолгия">
-              Действующие методолгия
-            </option>
-            <option value="Действующие методолгия">
-              Действующие методолгия
-            </option>
+          <select onChange={Handlechange}>
+            {arr.map((elem, index) => (
+              <option key={index} value={elem}>
+                {elem}
+              </option>
+            ))}
           </select>
         </div>
 
-        {arr.map(() => (
-          <div>
-            <Row className="row">
-              <Col lg={8} md={8} sm={6} sx={6} className="col">
-                <a href="cardimg.png" download>
-                  Рэнкинг лизинговых компаний России по итогам 9 месяцев 2022
-                  года. pdf
-                </a>
-              </Col>
-              <Col lg={4} md={4} sm={6} sx={6} className="col">
-                <span>164.67kb</span>
-              </Col>
-            </Row>
-            <hr />
-          </div>
-        ))}
-       
+        {getMethodology.map((elem) =>
+          sorts == elem.category_name || sorts == "" ? (
+            <div>
+              <Row className="row">
+                <Col lg={8} md={8} sm={6} sx={6} className="col">
+                  <a href={elem.pdf} download="МИНИ ПАКЕТ">
+                    {LangVal() == "ru"
+                      ? elem.title_ru
+                      : LangVal() == "uz"
+                      ? elem.title_uz
+                      : LangVal() == "en"
+                      ? elem.title_en
+                      : elem.title_ru}
+                    .pdf
+                  </a>
+                </Col>
+                <Col lg={4} md={4} sm={6} sx={6} className="col">
+                  <span>{elem.size}</span>
+                </Col>
+              </Row>
+              <hr />
+            </div>
+          ) : null
+        )}
       </WrapperPress>
     </>
   );

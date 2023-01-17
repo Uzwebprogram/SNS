@@ -14,7 +14,7 @@ const AnalyticsComponent = () => {
         <ComponentContainer>
           <Row className="row">
             <Col lg={8} md={12} sm={12} sx={12} className="col">
-              <Analytics isSelect={true} />
+              <Analytics isSelect={true} isBtn={true} />
             </Col>
             <Col lg={4} md={12} sm={12} sx={12} className="col">
               <Surway />
