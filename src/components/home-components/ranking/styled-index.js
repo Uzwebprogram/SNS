@@ -6,6 +6,10 @@ export const WrapperPress = styled.div`
   border-radius: 15px;
   padding: 25px;
   margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: #1e1e1e;
+  }
   @media only screen and (max-width: 425px) {
     margin-top: 0;
     border-radius: 0;
@@ -53,7 +57,7 @@ export const WrapperPress = styled.div`
 
   .col {
     margin: 10px 0;
-    p {
+    a {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;
@@ -62,6 +66,7 @@ export const WrapperPress = styled.div`
       letter-spacing: 0.01em;
       color: #1e1e1e;
       margin: 0;
+      text-decoration: none;
     }
 
     time {

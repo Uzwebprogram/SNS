@@ -1,75 +1,102 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Section = styled.div`
-    padding:  10px 0;
-    background-color: #2F66B8;
-    .ant-input{
-        :hover{
-            border: 1px solid white;
-            outline: none;
-        }
-        :active{
-            border: 1px solid white;
-            outline: none;
-        }
-        border: 1px solid  white;
-        border-radius: 25px;
-        outline: none;
+  padding: 10px 0;
+  background-color: #2f66b8;
+  .ant-input {
+    :hover {
+      border: 1px solid white;
+      outline: none;
     }
-    .ant-btn {
-        :hover{
-            border: transparent;
-        }
-        border: 2px solid white;
-        border-top-right-radius: 25px !important;
-        border-bottom-right-radius: 25px !important;
-        padding-bottom: 7px !important;
+    :active {
+      border: 1px solid white;
+      outline: none;
     }
-    @media only screen and (max-width:920px) {
-        .search{
-        display: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    outline: none;
+  }
+  .ant-btn {
+    :hover {
+      border: transparent;
     }
+    border: 2px solid white;
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    padding-bottom: 7px !important;
+  }
+  @media only screen and (max-width: 920px) {
+    .search {
+      display: none;
     }
-`
+  }
+`;
 export const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .modals {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    top: 100%;
+    left: 0;
+  }
+  .navlink {
+    text-decoration: none;
+    color: #000;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  .modal-contents {
+    background: #fff;
+    margin-left: 13%;
+    width: 350px;
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 3px 8px #888888;
+  }
+  .nomodals {
+    display: none;
+  }
+  ul {
     display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    width: 60%;
     justify-content: space-between;
-    align-items: center;
-    ul{
-        display: flex;
-        text-decoration: none;
-        list-style-type: none;
-        width: 60%;
-        justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    @media only screen and (max-width: 920px) {
+      display: none;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      p {
         margin: 0;
         padding: 0;
-        @media only screen and (max-width:920px) {
-            display: none;
-        }
-        li{
-            margin: 0;
-            padding: 0;
-            display: flex;
-            p{
-                margin: 0;
-                padding: 0;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 17px;
-                letter-spacing: 0.01em;
-                color: #FFFFFF;
-
-            }
-        }
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+      }
     }
-`
+  }
+`;
 export const MobileDiv = styled.div`
-    display: none;
-    @media only screen and (max-width:920px) {
-            display: flex;
-            justify-content: space-between;
-            width: 13%;
-        }
-`
+  display: none;
+  @media only screen and (max-width: 920px) {
+    display: flex;
+    justify-content: space-between;
+    width: 13%;
+  }
+`;

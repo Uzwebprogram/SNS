@@ -30,14 +30,11 @@ const Analytics = ({ isSelect, isBtn }) => {
 
   const dispatch = useDispatch();
   const getAnalytic = useSelector((state) => state.analytic.getanalytic?.Data);
-  console.log(getAnalytic);
+
 
   const [sorts, setSorts] = useState("");
 
   let arr = [];
-  let findData = null;
-  console.log(arr);
-
   const Handlechange = (e) => {
     setSorts(e.target.value);
   };
@@ -59,6 +56,7 @@ const Analytics = ({ isSelect, isBtn }) => {
         {isSelect == true ? (
           <div className="select-box">
             <select onChange={Handlechange}>
+            <option value="">{t("Select.1")}</option>
               {arr.map((elem, index) => (
                 <option key={index} value={elem}>
                   {elem}
@@ -82,7 +80,7 @@ const Analytics = ({ isSelect, isBtn }) => {
           {getAnalytic.map((elem) =>
             sorts == elem.category_name || sorts == "" ? (
               <Col lg={6} md={6} sm={12} sx={12} className="col">
-                <NavLink className="link" to={`/analyticmore/:${elem.id}`}>
+                <NavLink className="link" to={`/analyticmore/${elem.id}`}>
                   <CommonCard
                     id={elem.id}
                     imgSrc={elem.img}

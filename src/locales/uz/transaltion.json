@@ -74,16 +74,29 @@
   "Disclosure": {
     "0": "Oshkora qilish"
   },
-  "Details": {
-    "0": "'SNS' reyting agentligi tafsilotlari",
-    "1": "INN",
-    "2": "Telefon raqami",
-    "3": "OK",
-    "4": "Elektron pochta",
-    "5": "Manzil",
-    "6": "Kompaniya ma'lumotlari",
-    "7": "Ekspert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi"
+  "Requisites": {
+    "0": "INN",
+    "1": "OGRN",
+    "2": "Nazorat punkti",
+    "3": "Mamlakat",
+    "4": "Tafsilotlar",
+    "5": "Kompaniya reytinglari",
+    "6": "Nomoliyaviy kompaniyalarning kredit reytinglari",
+    "7": "Reyting",
+    "8": "Prognoz",
+    "9": "Yangilangan",
+    "10": "Sertifikat",
+    "11": "Yuklab olish"
   },
+  "References": {
+    "0": "Kompaniya eslatishi",
+    "1": "Ekspert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi"
+  },
+  "Select": {
+    "0": "Barcha savollar",
+    "1": "Barcha sohalar",
+    "2": "Ish metodologiyasi"
+   },
   "Auth": {
     "0": "Ro'yxatdan o'tish",
     "1": "Kirish",

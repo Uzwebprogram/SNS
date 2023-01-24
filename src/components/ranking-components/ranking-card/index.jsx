@@ -4,9 +4,8 @@ import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
 import { useTranslation } from "react-i18next";
 
-const RankingCard = ({ isSelect }) => {
+const RankingCard = () => {
   const { t, i18n } = useTranslation();
-  const arr = [1, 2, 3, 4];
   return (
     <>
       <WrapperPress>

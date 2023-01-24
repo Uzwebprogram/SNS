@@ -95,7 +95,7 @@ export const RouterData = [
   },
   {
     id: 15,
-    path: "/companyprofile",
+    path: "/companyprofile/:id",
     component: <CompanyProfile />,
   },
   {

@@ -6,26 +6,13 @@ import { ComponentContainer } from "./styled-index";
 import Surway from "../../components/analytics-components/surway/index";
 import Modul from "../../components/analytics-components/modul/index";
 import Calling from "../../components/calling";
-import { GetAnalytic } from "../../redux/analytic/index";
+import { GetAnalytic, GetAnalyticId } from "../../redux/analytic/index";
 import { useDispatch, useSelector } from "react-redux";
 
 const AnalyticMore = () => {
   const { id } = useParams();
   console.log();
-  const idAnalitka = id.split(":");
-  // format date api function
-  const DateFormat = (date) => {
-    var d = new Date(date),
-      month = "" + (d.getMonth() + 1),
-      day = "" + d.getDate(),
-      year = d.getFullYear();
-
-    if (month.length < 2) month = "0" + month;
-    if (day.length < 2) day = "0" + day;
-
-    return [day, month, year].join("/");
-  };
-  // format date api function
+  window.localStorage.setItem("AnalyticId", id);
 
   const LangVal = () => {
     return window.localStorage.getItem("i18nextLng");
@@ -36,9 +23,13 @@ const AnalyticMore = () => {
   useEffect(() => {
     dispatch(GetAnalytic());
   }, []);
-  console.log();
-  const analyticMore = getAnalytic.find((elem) => elem.id == idAnalitka[1]);
-  console.log(analyticMore);
+
+  useEffect(() => {
+    dispatch(GetAnalyticId(window.localStorage.getItem("AnalyticId")));
+  });
+  const getAnalyticId = useSelector(
+    (state) => state.analytic.getanalyticId?.Data
+  );
 
   return (
     <>
@@ -47,29 +38,37 @@ const AnalyticMore = () => {
           <Row className="row">
             <Col lg={8} md={12} sm={12} sx={12} className="col">
               <WrapperPress>
-                <h2>
-                  {LangVal() == "ru"
-                    ? analyticMore.title_ru
-                    : LangVal() == "uz"
-                    ? analyticMore.title_uz
-                    : LangVal() == "en"
-                    ? analyticMore.title_en
-                    : analyticMore.title_ru}
-                </h2>
-                <p>
-                  {LangVal() == "ru"
-                    ? analyticMore.description_ru
-                    : LangVal() == "uz"
-                    ? analyticMore.description_uz
-                    : LangVal() == "en"
-                    ? analyticMore.description_en
-                    : analyticMore.description_ru}
-                </p>
-                <img className="analytic-img" src={analyticMore.img} alt="image" />
+                {getAnalyticId.map((elem) => (
+                  <>
+                    <h2>
+                      {LangVal() == "ru"
+                        ? elem.title_ru
+                        : LangVal() == "uz"
+                        ? elem.title_uz
+                        : LangVal() == "en"
+                        ? elem.title_en
+                        : elem.title_ru}
+                    </h2>
+                    <p>
+                      {LangVal() == "ru"
+                        ? elem.description_ru
+                        : LangVal() == "uz"
+                        ? elem.description_uz
+                        : LangVal() == "en"
+                        ? elem.description_en
+                        : elem.description_ru}
+                    </p>
+                    <img
+                      className="analytic-img"
+                      src={elem.img}
+                      alt="image"
+                    />
+                  </>
+                ))}
               </WrapperPress>
             </Col>
             <Col lg={4} md={12} sm={12} sx={12} className="col">
-              <Surway isMargin/>
+              <Surway isMargin />
               <Modul />
               <Calling />
             </Col>

@@ -43,6 +43,7 @@ const Methodology = ({ isSelect }) => {
 
         <div className="select-box">
           <select onChange={Handlechange}>
+            <option value="">{t("Select.2")}</option>
             {arr.map((elem, index) => (
               <option key={index} value={elem}>
                 {elem}

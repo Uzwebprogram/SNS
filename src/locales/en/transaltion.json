@@ -74,15 +74,28 @@
   "Disclosure": {
     "0": "Disclosure"
   },
-  "Details": {
-    "0": "Details of the Rating Agency 'SNS'",
-    "1": "INN",
-    "2": "Phone number",
-    "3": "OKED",
-    "4": "Email",
-    "5": "Address",
-    "6": "Company references",
-    "7": "Expert RA announces an update of the methodology for assigning credit ratings to project companies"
+  "Requisites": {
+    "0": "INN",
+    "1": "OGRN",
+    "2": "Checkpoint",
+    "3": "Country",
+    "4": "Details",
+    "5": "Company ratings",
+    "6": "Credit ratings of non-financial companies",
+    "7": "Rating",
+    "8": "Forecast",
+    "9": "Updated",
+    "10": "Certificate",
+    "11": "Download"
+  },
+  "References": {
+    "0": "Company mentions",
+    "1": "Expert RA announces an update of the methodology for assigning credit ratings to project companies"
+  },
+  "Select": {
+    "0": "All questions",
+    "1": "All industries",
+    "2": "Working methodology"
   },
   "Auth": {
     "0": "Registration",

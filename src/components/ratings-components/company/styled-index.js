@@ -5,6 +5,17 @@ export const WrapperPress = styled.div`
   box-shadow: 0px 4px 20px -10px #cccccc;
   border-radius: 15px;
   padding: 25px;
+
+  .navlink {
+    text-decoration: none;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #2c2c2c;
+  }
   @media only screen and (max-width: 425px) {
     border-radius: 0;
     box-shadow: none;
@@ -93,6 +104,7 @@ export const WrapperPress = styled.div`
 
       input {
         margin: 0 10px 0 0;
+        cursor: pointer;
       }
       label {
         font-family: "Montserrat";
