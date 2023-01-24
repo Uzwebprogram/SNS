@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     border-radius: 0px 0px 15px 15px;
     height: 85%;
     z-index:110;
-    top:${(props) => (props.open ? "0px" : "-600px")};
+    top:${(props) => (props.open ? "0px" : "-1000px")};
     transition: 1s;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;

@@ -70,7 +70,7 @@ const Ranking = ({ isSelect, isBtn }) => {
             <div>
               <Row className="row">
                 <Col lg={6} md={8} sm={6} sx={6} className="col">
-                  <a href="/ranking">
+                  <a href={elem.link} target={"_blank"}>
                     {LangVal() == "ru"
                       ? elem.title_ru
                       : LangVal() == "uz"
