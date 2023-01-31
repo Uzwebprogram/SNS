@@ -4,7 +4,9 @@ import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
 import { useTranslation } from "react-i18next";
 import { GetRanking } from "../../../redux/ranking/index";
+import { GetRankingId } from "../../../redux/ranking/index";
 import { useDispatch, useSelector } from "react-redux";
+import Tables from "./table";
 
 const Ranking = ({ isSelect, isBtn }) => {
   const { t, i18n } = useTranslation();
@@ -28,14 +30,15 @@ const Ranking = ({ isSelect, isBtn }) => {
 
   const dispatch = useDispatch();
   const getRanking = useSelector((state) => state.ranking.getranking?.Data);
+  console.log(getRanking);
 
   const [sorts, setSorts] = useState("");
 
   let arr = [];
-  let findData = null;
 
   const Handlechange = (e) => {
     setSorts(e.target.value);
+    // dispatch(GetRankingId());
   };
 
   useEffect(() => {
@@ -50,6 +53,7 @@ const Ranking = ({ isSelect, isBtn }) => {
   return (
     <>
       <WrapperPress
+        id="rankin"
         style={isSelect == true ? { marginTop: 0 } : { marginTop: 20 }}
       >
         <h2>{t("Home.2")}</h2>
@@ -65,29 +69,7 @@ const Ranking = ({ isSelect, isBtn }) => {
             </select>
           </div>
         ) : null}
-        {getRanking.map((elem) =>
-          sorts == elem.category_name || sorts == "" ? (
-            <div>
-              <Row className="row">
-                <Col lg={6} md={8} sm={6} sx={6} className="col">
-                  <a href={elem.link} target={"_blank"}>
-                    {LangVal() == "ru"
-                      ? elem.title_ru
-                      : LangVal() == "uz"
-                      ? elem.title_uz
-                      : LangVal() == "en"
-                      ? elem.title_en
-                      : elem.title_ru}
-                  </a>
-                </Col>
-                <Col lg={6} md={4} sm={6} sx={6} className="col">
-                  <time>{DateFormat(elem.date)}</time>
-                </Col>
-              </Row>
-              <hr />
-            </div>
-          ) : null
-        )}
+        <Tables sorts={sorts} />
 
         {isBtn == true ? null : (
           <CommonButton
@@ -100,7 +82,9 @@ const Ranking = ({ isSelect, isBtn }) => {
             }}
             type={"button"}
           >
-            <a className="a" href="/ranking">{t("Home.3")}</a>
+            <a className="a" href="/ranking">
+              {t("Home.3")}
+            </a>
           </CommonButton>
         )}
       </WrapperPress>

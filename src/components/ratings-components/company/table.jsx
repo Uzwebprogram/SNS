@@ -12,6 +12,7 @@ const Tables = ({ sorts, search }) => {
   const data = [];
   const dispatch = useDispatch();
   const getBanks = useSelector((state) => state.banks.getbanks?.Data);
+  console.log(getBanks);
   const getBanksId = useSelector((state) => state.banks.getbanksId?.Data);
   const getBankSearch = useSelector(
     (state) => state.banks.getbanksSearch?.Data
@@ -31,17 +32,17 @@ const Tables = ({ sorts, search }) => {
         ),
         reting: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.raiting}
+            {elem.raiting.slice(0, 1).map((e) => e.raiting)}
           </NavLink>
         ),
         protsent: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.prognoz}
+            {elem.raiting.slice(0, 1).map((e) => e.prognoz)}
           </NavLink>
         ),
         obnavit: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.update_date}
+            {elem.raiting.slice(0, 1).map((e) => e.update_date)}
           </NavLink>
         ),
       });
@@ -57,17 +58,17 @@ const Tables = ({ sorts, search }) => {
         ),
         reting: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.raiting}
+            {elem.raiting.slice(0, 1).map((e) => e.raiting)}
           </NavLink>
         ),
         protsent: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.prognoz}
+            {elem.raiting.slice(0, 1).map((e) => e.prognoz)}
           </NavLink>
         ),
         obnavit: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.update_date}
+            {elem.raiting.slice(0, 1).map((e) => e.update_date)}
           </NavLink>
         ),
       });
@@ -84,17 +85,17 @@ const Tables = ({ sorts, search }) => {
           ),
           reting: (
             <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-              {elem.raiting}
+              {elem.raiting.slice(0, 1).map((e) => e.raiting)}
             </NavLink>
           ),
           protsent: (
             <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-              {elem.prognoz}
+              {elem.raiting.slice(0, 1).map((e) => e.prognoz)}
             </NavLink>
           ),
           obnavit: (
             <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-              {elem.update_date}
+              {elem.raiting.slice(0, 1).map((e) => e.update_date)}
             </NavLink>
           ),
         });
@@ -148,7 +149,13 @@ const Tables = ({ sorts, search }) => {
           {hasSelected ? `Selected ${selectedRowKeys.length} items` : ""}
         </span>
       </div>
-      <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+      <div className="table-scroll">
+        <Table
+          rowSelection={rowSelection}
+          columns={columns}
+          dataSource={data}
+        />
+      </div>
     </div>
   );
 };

@@ -18,7 +18,7 @@ function HeaderTop() {
           <WrapperContainer>
         <Wrapper>
             <a className='tel-gmail' href="mailto:uzexp@gmail.ru">uzexp@gmail.ru</a>
-            <a className='tel-gmail' href="tel:+998 (90) 900 00 00">+998 (90) 900 00 00</a>
+            <a className='tel-gmail tel-none' href="tel:+998 (90) 900 00 00">+998 (90) 900 00 00</a>
             <a href="insta" className='logo-insta'><i class='bx bxl-instagram'></i></a>
             <a href="telegram" className='logo-tg'><i class='bx bxl-telegram' ></i></a>
             <div>

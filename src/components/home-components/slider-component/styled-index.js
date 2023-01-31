@@ -5,6 +5,10 @@ export const SliderWrapper = styled.div`
     width: 100%;
     height: 400px;
     border-radius: 15px;
+    .link {
+      text-decoration: none;
+      color: #fff;
+    }
     @media only screen and (max-width: 425px) {
       border-radius: 0;
     }
@@ -75,16 +79,16 @@ export const SliderWrapper = styled.div`
     right: 40px;
 
     @media only screen and (max-width: 425px) {
-      left: -315px;
-      bottom: 70px;
+      left: 315px;
+      bottom: 50px;
     }
     @media only screen and (max-width: 375px) {
-      left: -270px;
-      bottom: 70px;
+      left: 270px;
+      bottom: 50px;
     }
     @media only screen and (max-width: 320px) {
-      left: -200px;
-      bottom: 70px;
+      left: 230px;
+      bottom: 50px;
     }
 
     time {

@@ -5,7 +5,11 @@ export const WrapperPress = styled.div`
   box-shadow: 0px 4px 20px -10px #cccccc;
   border-radius: 15px;
   padding: 25px;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  .links {
+    color: #000;
+    text-decoration: none;
+  }
   @media only screen and (max-width: 425px) {
     margin-top: 0;
     border-radius: 0;
@@ -27,15 +31,13 @@ export const WrapperPress = styled.div`
     color: #1e1e1e;
   }
   p {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 130%;
-      letter-spacing: 0.01em;
-      color: #1e1e1e;
-      margin: 0;
-    }
-
-  
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #1e1e1e;
+    margin: 0;
+  }
 `;

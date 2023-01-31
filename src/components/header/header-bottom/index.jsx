@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { WrapperContainer } from "../../../style-App";
 import { Section, Wrapper, MobileDiv } from "./styled-index";
 import Logo from "./../../../assets/Header/logo.svg";
@@ -12,6 +13,8 @@ import CloseIcon from "./../../../assets/Header/close-icon.svg";
 import { dataLink } from "../../../utils/data-link";
 import { GetBanksSearch } from "../../../redux/bank/index";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-scroll";
+import { HashLink } from "react-router-hash-link";
 const { Search } = Input;
 function HeaderBottom({
   HandleOpen,
@@ -20,6 +23,7 @@ function HeaderBottom({
   closSearch,
   closeSearchSet,
 }) {
+  const pathname = useLocation();
   const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
   const [search, setSearch] = useState("");
@@ -37,9 +41,9 @@ function HeaderBottom({
     <Section>
       <WrapperContainer>
         <Wrapper>
-          <NavLink to={"/"}>
+          <HashLink to={"/#home"} smooth>
             <img src={Logo} alt="" />
-          </NavLink>
+          </HashLink>
           <Search
             placeholder={t("Header.1")}
             onInput={onSearch}
@@ -51,9 +55,14 @@ function HeaderBottom({
           <ul>
             {dataLink.map((elem, index) => (
               <li key={index}>
-                <NavLink style={{ textDecoration: "none" }} to={elem.link}>
+                <HashLink
+                  smooth
+                  style={{ textDecoration: "none" }}
+                  className={pathname == `${elem.link}` ? "active" : "links"}
+                  to={elem.link}
+                >
                   <p>{t(elem.title)}</p>
-                </NavLink>
+                </HashLink>
               </li>
             ))}
           </ul>

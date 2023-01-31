@@ -8,7 +8,7 @@ import { GetAnalytic } from "../../../redux/analytic";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
-const Analytics = ({ isSelect, isBtn }) => {
+const Analytics = ({ isSelect, isBtn, isMargin }) => {
   const { t, i18n } = useTranslation();
   // format date api function
   const DateFormat = (date) => {
@@ -51,7 +51,7 @@ const Analytics = ({ isSelect, isBtn }) => {
 
   return (
     <>
-      <WrapperPress>
+      <WrapperPress isMargin={isMargin}>
         <h2>{t("Home.1")}</h2>
         {isSelect == true ? (
           <div className="select-box">
@@ -121,7 +121,7 @@ const Analytics = ({ isSelect, isBtn }) => {
             }}
             type={"button"}
           >
-            {t("Home.3")}
+           <NavLink className='links' to='/analytics'> {t("Home.3")}</NavLink>
           </CommonButton>
         )}
       </WrapperPress>

@@ -5,9 +5,13 @@ export const WrapperPress = styled.div`
   box-shadow: 0px 4px 20px -10px #cccccc;
   border-radius: 15px;
   padding: 25px;
-  margin-top: 20px;
+  margin-top: ${(props) => (props.isMargin ? "0" : "20px")};
 
   .link {
+    text-decoration: none;
+  }
+  .links {
+    color: #fff;
     text-decoration: none;
   }
   @media only screen and (max-width: 425px) {

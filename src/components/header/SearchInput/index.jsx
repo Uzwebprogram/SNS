@@ -3,12 +3,27 @@ import { AudioOutlined } from "@ant-design/icons";
 import { Input, Space } from "antd";
 import { useTranslation } from "react-i18next";
 import { Wrapper, Overlay } from "./styled-index";
+import { GetBanksSearch } from "../../../redux/bank/index";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 const { Search } = Input;
+
 function SearchInput({ SearchModal, SearchClose }) {
   const { t, i18n } = useTranslation();
 
-  const onSearch = (value) => console.log(value);
-    
+  const [search, setSearch] = useState("");
+  console.log(search);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const onSearch = (value) => {
+    setSearch(value.target.value);
+    dispatch(GetBanksSearch(value.target.value));
+  };
+  const getBankSearch = useSelector(
+    (state) => state.banks.getbanksSearch?.Data
+  );
+
   return (
     <>
       <Wrapper SearchModal={SearchModal}>
@@ -23,7 +38,32 @@ function SearchInput({ SearchModal, SearchClose }) {
           className="search"
         />
         <Overlay open={SearchModal} onClick={SearchClose}></Overlay>
+        <div
+        onClick={() => setSearch("")}
+        className={!search == "" ? "modals" : "nomodals"}
+      >
+        <div className="modal-contents">
+          {!search == ""
+            ? getBankSearch.map((elem) => (
+                <>
+                  <button
+                    id={elem.bank_id}
+                    onClick={async (e) => {
+                      await navigate(`/companyprofile/${e.target.id}`);
+                      window.location.reload();
+                    }}
+                    className="navlink"
+                  >
+                    {elem.companyname}
+                  </button>
+                  <br />
+                </>
+              ))
+            : null}
+        </div>
+      </div>
       </Wrapper>
+      
     </>
   );
 }

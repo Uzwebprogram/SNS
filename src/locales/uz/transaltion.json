@@ -18,14 +18,20 @@
     "4": "Matbuot markazi",
     "5": "Izohlar",
     "6": "Barcha yangiliklar",
-    "7": "SNS kompaniyasi yangiliklari"
+    "7": "SNS kompaniyasi yangiliklari",
+    "8": "Bank sektori tahlili!",
+    "9": "2022 yil uchun sug'urta xizmatlari bozori tahlili!",
+    "10": "2021 yil uchun lizing xizmatlari bozori tahlili!",
+    "11": "Mikrokreditlar bozori tahlili!",
+    "12": "O‘zbekiston davlat qarzining o‘sishi qanday xavf-xatarlardan iborat!"
   },
   "Calling": {
     "0": "Tijorat xizmati",
     "1": "Ichki nazorat xizmati",
     "2": "Media kontaktlari",
     "3": "Kundalik elektron pochta",
-    "4": "Batafsil"
+    "4": "Batafsil",
+    "5": "Ulashish"
   },
   "Rating": {
     "0": "Kompaniya reytinglari",
@@ -35,16 +41,22 @@
     "4": "Ob'ekt",
     "5": "Reyting",
     "6": "Prognoz",
-    "7": "Yangilangan",
+    "7": "Matbuot xabari",
     "8": "Baho shkalasi",
     "9": "Expert RA tomonidan qo'llaniladigan reyting shkalasi, reyting prognozlari va 'nazorat ostida' holati",
     "10": "Ko'proq",
     "11": "Nega bizga reyting kerak?",
-    "12": "'Ekspert RA' OAJning kredit reytinglari mavjudligiga qo'yiladigan talablarni o'z ichiga olgan normativ-huquqiy hujjatlar va boshqa hujjatlar ro'yxati"
+    "12": "'Ekspert RA' OAJning kredit reytinglari mavjudligiga qo'yiladigan talablarni o'z ichiga olgan normativ-huquqiy hujjatlar va boshqa hujjatlar ro'yxati",
+    "13": "Chorak",
+    "14": "Atribut",
+    "15": "Yil",
+    "16": "milliard so'm"
   },
   "Ranking": {
     "0": "Reyting nima?",
-    "1": "Rossiya lizing kompaniyalarining 2022-yilning dastlabki 9 oyi uchun reytingi Expert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi 'Expert RA' loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladiExpert RA loyiha kompaniyalari uchun kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi 'Expert RA' loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi Rossiya lizing kompaniyalarining 2022 yilning 9 oyi uchun reytingi Rossiya lizing kompaniyalarining 9 oylik reytingi 2022 yil 9 oylik Rossiya lizing kompaniyalari reytingi Rossiya lizing kompaniyalari reytingi 2022 yilning 9 oyi natijalariga ko'ra Expert RA Ranking loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi."
+    "1": "Rossiya lizing kompaniyalarining 2022-yilning 9 oyi yakunlari bo‘yicha reytingi 'Ekspert RA' reytinglarni belgilash metodologiyasining yangilanishini e’lon qiladi...",
+    "2": "Barcha reytinglar",
+    "3": "Rossiya lizing kompaniyalarining 2022-yilning birinchi 9 oyi uchun reytingi Expert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi. loyiha kompaniyalariga kredit reytinglari Expert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Rossiya lizing kompaniyalari reytingi 2022 yilning 9 oyi yakunlari bo'yicha Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Expert RA Ranking loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi."
   },
   "Analytic": {
     "0": "So'rovdan o'tish",
@@ -96,7 +108,7 @@
     "0": "Barcha savollar",
     "1": "Barcha sohalar",
     "2": "Ish metodologiyasi"
-   },
+  },
   "Auth": {
     "0": "Ro'yxatdan o'tish",
     "1": "Kirish",

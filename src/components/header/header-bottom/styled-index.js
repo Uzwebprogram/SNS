@@ -36,6 +36,19 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  .links {
+    p {
+      margin: 0;
+    }
+  }
+
+  .active {
+    p {
+      margin: 0;
+      border-bottom: 2px solid #fff;
+    }
+  }
+
   .modals {
     position: absolute;
     width: 100%;
@@ -43,6 +56,7 @@ export const Wrapper = styled.div`
     background: transparent;
     top: 100%;
     left: 0;
+    z-index: 1000;
   }
   .navlink {
     text-decoration: none;

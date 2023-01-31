@@ -33,7 +33,22 @@ const CompanyProfileCard = ({ isSelect }) => {
           <>
             <h2>{elem.companyname}</h2>
             <div>
-              <h3>{t("Requisites.4")}</h3>
+              <div className="df">
+                <h3>{t("Requisites.4")}</h3>
+                <CommonButton
+                  style={{
+                    color: "#fff",
+                    borderColor: "#2F66B8",
+                    background: "#2F66B8",
+                    display: "inline-block",
+                    marginTop: "12px",
+                    padding: "8px 50px",
+                  }}
+                  type={"button"}
+                >
+                  {t("Rating.3")}
+                </CommonButton>
+              </div>
               <hr className="hr" />
               <Row className="row">
                 <Col lg={6} md={8} sm={6} sx={6} className="col">
@@ -78,56 +93,54 @@ const CompanyProfileCard = ({ isSelect }) => {
               </Row>
               <hr />
             </div>
-            <div>
-              <Row className="row">
-                <Col lg={6} md={8} sm={6} sx={6} className="col">
-                  <p>{t("Requisites.10")}</p>
-                </Col>
-                <Col lg={6} md={4} sm={6} sx={6} className="col">
-                  <CommonButton
-                    style={{
-                      borderColor: "#2F66B8",
-                      background: "#2F66B8",
-                      display: "inline-block",
-                      padding: "8px 30px",
-                    }}
-                    type={"button"}
-                  >
-                    <a
-                      className="a"
-                      target="_blank"
-                      href={elem.image}
-                      download
-                      rel="noreferrer"
-                    >
-                      {t("Requisites.11")}
-                    </a>
-                  </CommonButton>
-                </Col>
-              </Row>
-            </div>
             <div className="table-box">
               <h3>{t("Requisites.5")}</h3>
               <hr className="hr" />
 
               <p>{t("Requisites.6")}</p>
 
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th>{t("Requisites.7")}</th>
-                    <th>{t("Requisites.8")}</th>
-                    <th>{t("Requisites.9")}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>{elem.raiting}</td>
-                    <td>{elem.prognoz}</td>
-                    <td>{elem.update_date}</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="table-scroll">
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>{t("Requisites.7")}</th>
+                      <th>{t("Requisites.8")}</th>
+                      <th>{t("Requisites.9")}</th>
+                      <th>{t("Requisites.10")}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {elem.raiting.map((elem) => (
+                      <tr>
+                        <td className="td">{elem.raiting}</td>
+                        <td className="td">{elem.prognoz}</td>
+                        <td className="td">{elem.update_date}</td>
+                        <td className="td td-btn">
+                          <CommonButton
+                            style={{
+                              borderColor: "#2F66B8",
+                              background: "#2F66B8",
+                              display: "inline-block",
+                              padding: "0 10px",
+                            }}
+                            type={"button"}
+                          >
+                            <a
+                              className="a"
+                              target="_blank"
+                              href={elem.image}
+                              download
+                              rel="noreferrer"
+                            >
+                              {t("Requisites.11")}
+                            </a>
+                          </CommonButton>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </>
         ))}

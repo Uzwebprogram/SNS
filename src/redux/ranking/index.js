@@ -5,10 +5,20 @@ export const GetRanking = createAsyncThunk("ranking/get", async () => {
   return await axios.get(`${API_URL}/renkingi`).then((response) => response.data);
 });
 
+export const GetRankingId = createAsyncThunk("rankingId/get", async (id) => {
+  return await axios.get(`${API_URL}/renkingi/${id}`).then((response) => response.data);
+});
+
 const RankingSlice = createSlice({
   name: "user",
   initialState: {
     getranking: {
+      Error: false,
+      Success: false,
+      Loading: false,
+      Data: [],
+    },
+    getrankingId: {
       Error: false,
       Success: false,
       Loading: false,
@@ -30,6 +40,22 @@ const RankingSlice = createSlice({
       state.getranking.Loading = false;
       state.getranking.Error = true;
       state.getranking.Data = [];
+    },
+
+    [GetRankingId.pending]: (state, action) => {
+      state.getrankingId.Loading = true;
+    },
+    [GetRankingId.fulfilled]: (state, action) => {
+      state.getrankingId.Success = true;
+      state.getrankingId.Loading = false;
+      state.getrankingId.Error = false;
+      state.getrankingId.Data = action.payload;
+    },
+    [GetRankingId.rejected]: (state, action) => {
+      state.getrankingId.Success = false;
+      state.getrankingId.Loading = false;
+      state.getrankingId.Error = true;
+      state.getrankingId.Data = [];
     },
   },
 });

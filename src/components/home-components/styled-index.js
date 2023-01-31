@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
+overflow-x: hidden;
   .row {
     margin: 0 !important;
   }

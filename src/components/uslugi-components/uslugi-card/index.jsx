@@ -7,6 +7,7 @@ import { Col, Row } from "react-grid-system";
 import { GetUslugi } from "../../../redux/uslugi/index";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
+import {NavLink} from 'react-router-dom'
 
 const UslugiCard = ({ isMargin, isBtn }) => {
   const LangVal = () => {
@@ -70,7 +71,7 @@ const UslugiCard = ({ isMargin, isBtn }) => {
             }}
             type={"button"}
           >
-            {t("Uslugi.1")}
+            <NavLink className='links' to='/uslugi'>{t("Uslugi.1")}</NavLink>
           </CommonButton>
         ) : null}
       </WrapperPress>

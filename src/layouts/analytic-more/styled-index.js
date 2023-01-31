@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   padding: 30px 0;
+  .dfs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   /* @media only screen and (max-width: 425px) {
     overflow-x: hidden;

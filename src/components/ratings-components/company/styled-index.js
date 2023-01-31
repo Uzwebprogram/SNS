@@ -6,6 +6,21 @@ export const WrapperPress = styled.div`
   border-radius: 15px;
   padding: 25px;
 
+  .table-scroll {
+    @media only screen and (max-width: 425px) {
+      width: 378px !important;
+      overflow-x: scroll !important;
+    }
+    @media only screen and (max-width: 375px) {
+      width: 345px !important;
+      overflow-x: scroll !important;
+    }
+    @media only screen and (max-width: 375px) {
+      width: 300px !important;
+      overflow-x: scroll !important;
+    }
+  }
+
   .navlink {
     text-decoration: none;
     font-family: "Gilroy";
@@ -68,7 +83,7 @@ export const WrapperPress = styled.div`
       /* width: 100%; */
 
       @media only screen and (max-width: 425px) {
-        width: 94.5%;
+        width: 100%;
       }
       @media only screen and (max-width: 375px) {
         width: 100%;
@@ -121,6 +136,15 @@ export const WrapperPress = styled.div`
   .ant-table-selection,
   .ant-checkbox-wrapper {
     display: none !important;
+  }
+
+  .ant-table-row:hover {
+    background: #f5f5f5 !important;
+    color: #fff !important;
+  }
+
+  .ant-table-wrapper .ant-table-tbody > tr > td {
+    padding: 10px !important;
   }
 
   .ant-table-tbody > .ant-table-row > td:nth-child(1) {

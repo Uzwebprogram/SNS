@@ -18,14 +18,20 @@
     "4": "Press Centre",
     "5": "Comments",
     "6": "All news",
-    "7": "SNS company news"
+    "7": "SNS company news",
+    "8": "Banking sector analysis!",
+    "9": "Analysis of the insurance services market for 2022!",
+    "10": "Analysis of the leasing services market for 2021!",
+    "11": "Analysis of the microcredit market!",
+    "12": "What are the risks of growth of public debt of Uzbekistan!"
   },
   "Calling": {
     "0": "Commercial service",
     "1": "Internal control service",
     "2": "Media contacts",
     "3": "Daily Email",
-    "4": "Details"
+    "4": "Details",
+    "5": "Share"
   },
   "Rating": {
     "0": "Company ratings",
@@ -35,16 +41,22 @@
     "4": "Object",
     "5": "Rating",
     "6": "Forecast",
-    "7": "Updated",
+    "7": "Press Release",
     "8": "Rating scales",
     "9": "Rating scales used by 'Expert RA', rating forecasts and 'under supervision' status",
     "10": "More",
     "11": "Why do we need a rating?",
-    "12": "List of regulations and other acts containing requirements for the availability of credit ratings of JSC 'Expert RA'"
+    "12": "List of regulations and other acts containing requirements for the availability of credit ratings of JSC 'Expert RA'",
+    "13": "Quarter",
+    "14": "Attribute",
+    "15": "Year",
+    "16": "billion sum"
   },
   "Ranking": {
     "0": "What is Ranking?",
-    "1": "Ranking of Russian leasing companies for the first 9 months of 2022 Expert RA announces an update of the methodology for assigning credit ratings to project companies' Expert RA' announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companies credit ratings for project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companiesRanking of Russian leasing companies for 9 months of 2022 Ranking of Russian leasing companies for 9 months of 2022 Ranking of Russian leasing companies for 9 months of 2022 Ranking of Russian leasing companies Based on the results of 9 months of 2022, Expert RA Ranking announces an update of the methodology for assigning credit ratings to project companies"
+    "1": "Ranking of Russian leasing companies based on the results of 9 months of 2022 'Expert RA' announces an update of the methodology for assigning ratings...",
+    "2": "All rankings",
+    "3": "Ranking of Russian leasing companies for the first 9 months of 2022 Expert RA announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companies Expert RA announces an update of the methodology for assigning credit ratings to project companiesRanking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Expert RA Ranking announces an update of the methodology for assigning credit ratings to project companies"
   },
   "Analytic": {
     "0": "Pass the survey",

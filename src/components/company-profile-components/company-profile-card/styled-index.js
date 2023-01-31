@@ -6,6 +6,18 @@ export const WrapperPress = styled.div`
   border-radius: 15px;
   padding: 25px;
   margin-top: 20px;
+  overflow-x: hidden;
+  .df {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media only screen and (max-width: 425px) {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
   .a {
     color: #fff;
     text-decoration: none;
@@ -82,6 +94,34 @@ export const WrapperPress = styled.div`
       text-decoration-line: underline;
       color: #1e1e1e;
       margin-top: 30px;
+    }
+    .table-scroll {
+      @media only screen and (max-width: 425px) {
+        width: 378px !important;
+        overflow-x: scroll !important;
+        .table {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 375px) {
+        width: 345px !important;
+        overflow-x: scroll !important;
+        .table {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 320px) {
+        width: 250px !important;
+        overflow-x: scroll !important;
+
+        .table {
+          width: 100%;
+
+          .td-btn {
+            margin-right: 50px;
+          }
+        }
+      }
     }
 
     .table {

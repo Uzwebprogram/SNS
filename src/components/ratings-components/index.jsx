@@ -9,7 +9,7 @@ import Calling from "../calling";
 const RatingsComponent = () => {
   return (
     <>
-      <Section>
+      <Section id="rating">
         <ComponentContainer>
           <Row className="row">
             <Col lg={8} md={12} sm={12} sx={12} className="col">

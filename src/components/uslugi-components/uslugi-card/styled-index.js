@@ -7,6 +7,11 @@ export const WrapperPress = styled.div`
   padding: 25px;
   margin-top: ${(props) => (props.isMargin ? "20px" : "0")};
 
+  .links {
+    color: #000;
+    text-decoration: none;
+  }
+
   @media only screen and (max-width: 768px) {
     margin-top: 20px;
   }

@@ -85,18 +85,6 @@ const Company = () => {
                 />
                 <label for="radio2">{t("Rating.2")}</label>
               </div>
-              <CommonButton
-                style={{
-                  color: "#1E1E1E",
-                  borderColor: "#1E1E1E",
-                  display: "inline-block",
-                  marginTop: "12px",
-                  padding: "8px 50px",
-                }}
-                type={"button"}
-              >
-                {t("Rating.3")}
-              </CommonButton>
             </Col>
           </Row>
         </form>
