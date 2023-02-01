@@ -48,19 +48,13 @@ function Footer() {
                  <Col className='Footer-top-left' lg={3} md={12}>
                     <img src={Logo} width={123} height={35} alt="images logo" />
                     <p>{t("Footer.0")}</p>
-                    <span>Представленная информация предназначена для использования </span>
+                    <span>Узбекистан, г.Ташкент, ул.Бузбозор, 5. </span>
                  </Col>
                  <Col className='Footer-top-ul'  md={12} lg={3}>
                     <ul>
                       <p>{t("Footer.1")}</p>
                       <li>
-                            <a href="tel:+998990202020">+998 (90) 900 00 00</a>
-                      </li>
-                      <li>
-                            <a href="tel:+998990202020">+998 (90) 900 00 00</a>
-                      </li>
-                      <li>
-                            <a href="mailto:sns.uz@gmail.ru">sns.uz@gmail.ru</a>
+                            <a href="mailto:info@snsratings.uz">info@snsratings.uz</a>
                       </li>
                     </ul>
                  </Col>

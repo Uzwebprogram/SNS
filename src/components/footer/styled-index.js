@@ -33,7 +33,6 @@ export const Wrapper = styled.div`
       color: #ffffff;
     }
     span {
-      font-family: "";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;

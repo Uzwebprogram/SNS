@@ -8,6 +8,7 @@ import Comentary from "./comentary";
 import News from "./news";
 import Ranking from "./ranking";
 import Analytics from "./analytics";
+import Calling from "../calling";
 
 const HomeComponent = () => {
   return (
@@ -23,7 +24,8 @@ const HomeComponent = () => {
             <Col lg={4} md={12} sm={12} sx={12} className="col">
               <PressCenter />
               <Comentary />
-              <News />
+              <Calling/>
+              {/* <News /> */}
             </Col>
           </Row>
         </ComponentContainer>
