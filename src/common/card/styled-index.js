@@ -7,6 +7,13 @@ export const CardWrapper = styled.div`
   border-radius: 15px;
   margin-bottom: 25px;
 
+  .col {
+    padding: 0 !important;
+  }
+  .col-content {
+    padding-left: 0 !important;
+  }
+
   .card-content {
     padding: 10px 20px;
     /* @media only screen and (max-width: 425px) {
@@ -49,9 +56,13 @@ export const CardWrapper = styled.div`
   }
   .card-img {
     padding: 2px;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end; */
     img {
       width: 100%;
-      height: 230px;
+      height: 100%;
       border-radius: 10px;
     }
   }

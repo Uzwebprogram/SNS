@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
-  padding: 30px 0;
+  padding: 0 0 30px 0;
 
   /* @media only screen and (max-width: 425px) {
     overflow-x: hidden;

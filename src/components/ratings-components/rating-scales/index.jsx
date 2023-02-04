@@ -2,6 +2,7 @@ import React from "react";
 import CommonButton from "../../../common/button";
 import { WrapperPress } from "./styled-index";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const RatingScales = () => {
   const { t, i18n } = useTranslation();
@@ -9,7 +10,7 @@ const RatingScales = () => {
     <>
       <WrapperPress>
         <div className="scales-div">
-          <h2>{t("Rating.8")}</h2>
+          <h2>{t("Ranking.4")}</h2>
           <p>{t("Rating.9")}</p>
           <CommonButton
             style={{
@@ -21,7 +22,10 @@ const RatingScales = () => {
             }}
             type={"button"}
           >
-            {t("Rating.10")}
+            <NavLink className="links" to="/whatisrating">
+              {" "}
+              {t("Rating.10")}
+            </NavLink>
           </CommonButton>
         </div>
         <div className="scales-div">

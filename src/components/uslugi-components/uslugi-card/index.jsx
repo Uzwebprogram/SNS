@@ -7,7 +7,7 @@ import { Col, Row } from "react-grid-system";
 import { GetUslugi } from "../../../redux/uslugi/index";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
-import {NavLink} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 const UslugiCard = ({ isMargin, isBtn }) => {
   const LangVal = () => {
@@ -30,33 +30,33 @@ const UslugiCard = ({ isMargin, isBtn }) => {
 
         <Row className="row">
           {getUslugi.map((elem) => (
-            <Col lg={6} md={6} sm={12} sx={12} className="col">
-              <CommonCard
-                bgColor
-                isBorder
-                isTime={true}
-                imgSrc={elem.img}
-                text1={
-                  LangVal() == "ru"
-                    ? elem.title_ru
-                    : LangVal() == "uz"
-                    ? elem.title_uz
-                    : LangVal() == "en"
-                    ? elem.title_en
-                    : elem.title_ru
-                }
-                text2={
-                  LangVal() == "ru"
-                    ? elem.description_ru
-                    : LangVal() == "uz"
-                    ? elem.description_uz
-                    : LangVal() == "en"
-                    ? elem.description_en
-                    : elem.description_ru
-                }
-                spanText={"Российская газета"}
-                time={"16/12/2021"}
-              />
+            <Col lg={12} md={12} sm={12} sx={12} className="col">
+              <div className="uslugi-wrapper">
+                <div className="uslugi-box">
+                  <h4>
+                    {LangVal() == "ru"
+                      ? elem.title_ru
+                      : LangVal() == "uz"
+                      ? elem.title_uz
+                      : LangVal() == "en"
+                      ? elem.title_en
+                      : elem.title_ru}
+                  </h4>
+                  <p>
+                    {LangVal() == "ru"
+                      ? elem.description_ru
+                      : LangVal() == "uz"
+                      ? elem.description_uz
+                      : LangVal() == "en"
+                      ? elem.description_en
+                      : elem.description_ru}
+                  </p>
+                  <time>16/12/2021</time>
+                </div>
+                <div className="arrow-box">
+                  <i class="bx bx-chevron-right"></i>
+                </div>
+              </div>
             </Col>
           ))}
         </Row>
@@ -71,7 +71,9 @@ const UslugiCard = ({ isMargin, isBtn }) => {
             }}
             type={"button"}
           >
-            <NavLink className='links' to='/uslugi'>{t("Uslugi.1")}</NavLink>
+            <NavLink className="links" to="/uslugi">
+              {t("Uslugi.1")}
+            </NavLink>
           </CommonButton>
         ) : null}
       </WrapperPress>

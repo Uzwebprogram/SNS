@@ -79,7 +79,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
         <Row className="row">
           {getAnalytic.map((elem) =>
             sorts == elem.category_name || sorts == "" ? (
-              <Col lg={6} md={6} sm={12} sx={12} className="col">
+              <Col lg={12} md={12} sm={12} sx={12} className="col">
                 <NavLink className="link" to={`/analyticmore/${elem.id}`}>
                   <CommonCard
                     id={elem.id}
@@ -103,7 +103,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
                         : elem.description_ru
                     }
                     spanText={elem.data_date}
-                    time={DateFormat(elem.date)}
+                    // time={DateFormat(elem.date)}
                   />
                 </NavLink>
               </Col>

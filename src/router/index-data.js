@@ -18,7 +18,8 @@ const CompanyProfile = lazy(() => import("../layouts/company-profile/index"));
 const AnalyticMore = lazy(() => import("../layouts/analytic-more/index"));
 const PersonalCabinet = lazy(() => import("../layouts/personal-cabinet/index"));
 const WhatIsRanking = lazy(() => import("../layouts/what-is-ranking/index"));
-const RankingProfile = lazy(() => import("../layouts/ranking-profile/index"))
+const RankingProfile = lazy(() => import("../layouts/ranking-profile/index"));
+const WhatIsRating = lazy(() => import("../layouts/what-is-rating/index"))
 
 const cookies = new Cookies();
 
@@ -119,5 +120,10 @@ export const RouterData = [
     id: 19,
     path: "/rankingprofile/:id",
     component: <RankingProfile/>
+  },
+  {
+    id: 20,
+    path: "/whatisrating",
+    component: <WhatIsRating/>
   }
 ];
