@@ -55,14 +55,13 @@ function HeaderBottom({
           <ul>
             {dataLink.map((elem, index) => (
               <li key={index}>
-                <HashLink
-                  smooth
+                <NavLink
                   style={{ textDecoration: "none" }}
                   className={pathname == `${elem.link}` ? "active" : "links"}
                   to={elem.link}
                 >
                   <p>{t(elem.title)}</p>
-                </HashLink>
+                </NavLink>
               </li>
             ))}
           </ul>

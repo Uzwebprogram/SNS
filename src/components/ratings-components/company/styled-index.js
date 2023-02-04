@@ -5,6 +5,19 @@ export const WrapperPress = styled.div`
   box-shadow: 0px 4px 20px -10px #cccccc;
   border-radius: 15px;
   padding: 25px;
+  margin-top: ${(props) => (props.isMargin ? "20px" : "0")};
+
+  select option:disabled {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    background: #c1c1c1;
+  }
+
+  .links {
+    text-decoration: none;
+    color: #000;
+  }
 
   .table-scroll {
     @media only screen and (max-width: 425px) {

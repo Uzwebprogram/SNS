@@ -3,6 +3,19 @@ import styled from "styled-components";
 export const Section = styled.div`
   padding: 10px 0;
   background-color: #2f66b8;
+
+  .links {
+    p {
+      margin: 0;
+    }
+  }
+
+  .active {
+    p {
+      margin: 0;
+      border-bottom: 2px solid #fff !important;
+    }
+  }
   .ant-input {
     :hover {
       border: 1px solid white;
@@ -35,19 +48,6 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  .links {
-    p {
-      margin: 0;
-    }
-  }
-
-  .active {
-    p {
-      margin: 0;
-      border-bottom: 2px solid #fff;
-    }
-  }
 
   .modals {
     position: absolute;
