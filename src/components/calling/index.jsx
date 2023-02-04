@@ -11,22 +11,22 @@ const Calling = ({ isMargin }) => {
         <div className="scales-div">
           <h2>{t("Calling.0")}</h2>
           <div className="call-div">
-            <a href="tel: +7 (495) 231-70-84">+7 (495) 231-70-84</a>
-            <a href="tel: +7 (495) 231-70-84">+7 (495) 231-70-84</a>
+            <a href="tel: +998 94 636 11 47 ">+998 94 636 11 47 </a>
+            <a href="tel:  +998 71 268 34 31"> +998 71 268 34 31</a>
           </div>
         </div>
         <div className="scales-div">
           <h2>{t("Calling.1")}</h2>
           <div className="call-div">
-            <a href="tel: +7 (495) 231-70-84">+7 (495) 231-70-84</a>
-            <a href="tel: +7 (495) 231-70-84">+7 (495) 231-70-84</a>
+          <a href="tel: +998 94 636 11 47 ">+998 94 636 11 47 </a>
+            <a href="tel:  +998 71 268 34 31"> +998 71 268 34 31</a>
           </div>
         </div>
         <div className="scales-div">
           <h2>{t("Calling.2")}</h2>
           <div className="call-div">
-            <a href="tel: +7 (495) 231-70-84">+7 (495) 231-70-84</a>
-            <a href="tel: +7 (495) 231-70-84">+7 (495) 231-70-84</a>
+          <a href="tel: +998 94 636 11 47 ">+998 94 636 11 47 </a>
+            <a href="tel:  +998 71 268 34 31"> +998 71 268 34 31</a>
           </div>
         </div>
         <div className="scales-div">
