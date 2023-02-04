@@ -92,7 +92,6 @@ function Footer() {
                  <Col className='Footer-Bottom-left' lg={7} md={12}>
                   <p>{t("Footer.9")}</p>
                   <p>{t("Footer.10")}</p>
-                  <p>{t("Footer.11")}</p>
                   <Row >
                     <Col className='Footer-Bottom-left-bottom' lg={7} md={12}>
                       <a href="#">{t("Footer.12")}</a>
