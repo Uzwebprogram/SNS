@@ -14,9 +14,8 @@ function Header() {
     return(
         <>
                 <Wrapper>
-        <HeaderTop/>
-        <HeaderBottom closSearch={SearchModal} closeSearchSet={() => setSearchModal(false)} SearchOpen={() => setSearchModal(true)} HandleOpen={() => setHamburger(true)} HandleClose={() => setHamburger(true)}/>
-        <HeaderMobile open={HeaderHamburger} HandleClose={() => setHamburger(false)}/>
+        <HeaderBottom closSearch={SearchModal} closeSearchSet={() => setSearchModal(false)} SearchOpen={() => setSearchModal(true)} HandleOpen2={() => setHamburger(true)} HandleClose2={() => setHamburger(true)}/>
+        <HeaderMobile open={HeaderHamburger} HandleClose2={() => setHamburger(false)}/>
         <SearchInput SearchModal={SearchModal} SearchClose={() => setSearchModal(false)}/>
         </Wrapper>
 

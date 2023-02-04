@@ -7,7 +7,7 @@ import RusLogo from "./../../../assets/Header/ru-flag.svg";
 import UzbLogo from "./../../../assets/Header/yz-flag.svg";
 import EngLogo from "./../../../assets/Header/en-flag.svg";
 import { dataLink } from "./../../../utils/data-link";
-function HeaderMobile({ open, HandleClose }) {
+function HeaderMobile({ open, HandleClose2 }) {
   const { t, i18n } = useTranslation();
   const handleLang = (e) => {
     const lang = e.target.id;
@@ -19,14 +19,14 @@ function HeaderMobile({ open, HandleClose }) {
       <Wrapper open={open}>
         <div className="Top">
           <img src={Logo} alt="" />
-          <span onClick={HandleClose}>&times;</span>
+          <span onClick={HandleClose2}>&times;</span>
         </div>
         <ul>
           {dataLink.map((elem, index) => (
             <li key={index}>
               <NavLink
                 style={{ textDecoration: "none" }}
-                onClick={() => HandleClose()}
+                onClick={() => HandleClose2()}
                 to={elem.link}
               >
                 <p>{t(elem.title)}</p>
@@ -50,7 +50,7 @@ function HeaderMobile({ open, HandleClose }) {
         <br />
         <a href="tel:+998 (90) 900 00 00">+998 (90) 900 00 00</a>
       </Wrapper>
-      <Overlay onClick={HandleClose} open={open}></Overlay>
+      <Overlay onClick={HandleClose2} open={open}></Overlay>
     </>
   );
 }

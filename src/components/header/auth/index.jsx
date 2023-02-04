@@ -4,7 +4,7 @@ import SingIn from "./SingIn";
 import SingUp from "./SingUp";
 import { Wrapper } from "./styled-index";
 
-function Auth() {
+function Auth({HandleClose3}) {
   const { t, i18n } = useTranslation();
   const [authButton, setAuthButton] = useState(false);
   function LanguageValue() {
@@ -12,7 +12,10 @@ function Auth() {
   }
   return (
     <Wrapper>
+        <div className="top">
         <h2>{authButton ? t("Auth.1") : t("Auth.0")}</h2>
+        <span onClick={HandleClose3}>&times;</span>
+        </div>
       <div
         className="buttons"
         style={LanguageValue() == "uz" ? { width: "340px" } : { width: "300px" }}

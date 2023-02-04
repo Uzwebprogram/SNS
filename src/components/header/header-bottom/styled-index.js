@@ -49,6 +49,51 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  .links {
+    p {
+      margin: 0;
+    }
+  }
+
+  .active {
+    p {
+      margin: 0;
+      border-bottom: 2px solid #fff;
+    }
+  }
+
+  .Auth{
+    button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    p {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.01em;
+      color: #1e1e1e;
+      @media only screen and (max-width: 560px) {
+        font-size: 12px;
+      }
+    }
+    i {
+      font-size: 24px;
+      margin-right: 5px;
+      color: white;
+      @media only screen and (max-width: 560px) {
+        font-size: 18px;
+      }
+    }
+  }
+  }
+
   .modals {
     position: absolute;
     width: 100%;
@@ -81,7 +126,7 @@ export const Wrapper = styled.div`
     display: flex;
     text-decoration: none;
     list-style-type: none;
-    width: 60%;
+    width: 50%;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -105,12 +150,41 @@ export const Wrapper = styled.div`
       }
     }
   }
+  .Auth{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    @media only screen and (max-width: 920px) {
+      display: none;
+    }
+    i {
+      font-weight: 400;
+      font-size: 24px;
+      color: white;
+    }
+  }
 `;
 export const MobileDiv = styled.div`
   display: none;
   @media only screen and (max-width: 920px) {
     display: flex;
     justify-content: space-between;
-    width: 13%;
+    align-items: center;
+    width: 25%;
+    .AuthMobile{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    i {
+      font-weight: 400;
+      font-size: 24px;
+      color: white;
+    }
   }
+  }
+
 `;
