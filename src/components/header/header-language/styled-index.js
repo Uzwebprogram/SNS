@@ -4,15 +4,19 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width:920px) {
+    display: none;
+    }
     select{
         background-color: transparent;
-        color: black;
-        padding: 6px 8px;
+        color: white;
+        padding: 2px 3px;
         border: none;
         cursor: pointer;
         outline: none;
     }
     select option{
+        color: black;
     }
     a{
         background: #FFD700;
@@ -63,7 +67,7 @@ button{
     }
     select{
         background-color: transparent;
-        color: black;
+        color: white;
         padding: 3px 5px;
         border: none;
         cursor: pointer;

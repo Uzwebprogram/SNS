@@ -14,21 +14,29 @@ import { dataLink } from "../../../utils/data-link";
 import { GetBanksSearch } from "../../../redux/bank/index";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-scroll";
+import Cookies from 'universal-cookie/cjs/Cookies';
 import { HashLink } from "react-router-hash-link";
+import ModalCommon from "../../common/Modal/Modal";
+import Auth from "../auth";
+import LanguageHeader from "../header-language";
 const { Search } = Input;
 function HeaderBottom({
-  HandleOpen,
+  HandleOpen2,
   close,
   SearchOpen,
   closSearch,
   closeSearchSet,
 }) {
+  const [open , setOpen] = useState(false)
+  const HandleOpen = () => setOpen(true)
+  const HandleClose3 = () => setOpen(false)
   const pathname = useLocation();
   const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
   const [search, setSearch] = useState("");
   console.log(search);
   const navigate = useNavigate();
+  const cookies = new Cookies();
 
   const onSearch = (value) => {
     setSearch(value.target.value);
@@ -66,7 +74,13 @@ function HeaderBottom({
               </li>
             ))}
           </ul>
+          <div className="Auth">
+              {!cookies.get("AuthTokenUser") ?  <i onClick={HandleOpen} class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
+            </div>
           <MobileDiv>
+          <div className="AuthMobile">
+              {!cookies.get("AuthTokenUser") ?  <i onClick={HandleOpen} class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
+            </div>
             {!closSearch ? (
               <img
                 src={SearchIcon}
@@ -87,7 +101,7 @@ function HeaderBottom({
 
             <img
               src={Hamburger}
-              onClick={HandleOpen}
+              onClick={HandleOpen2}
               width={18}
               height={18}
               alt=""
@@ -117,6 +131,12 @@ function HeaderBottom({
                 : null}
             </div>
           </div>
+
+            {!cookies.get("AuthTokenUser") ? 
+   <ModalCommon  height={518} handleClose={HandleClose3} open={open}>
+    <Auth HandleClose3={HandleClose3}/>
+    </ModalCommon> : null } 
+    <LanguageHeader/>
         </Wrapper>
       </WrapperContainer>
     </Section>

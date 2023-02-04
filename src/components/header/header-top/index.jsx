@@ -21,20 +21,10 @@ function HeaderTop() {
             <a className='tel-gmail tel-none' href="tel:+998 (90) 900 00 00">+998 (90) 900 00 00</a>
             <a href="insta" className='logo-insta'><i class='bx bxl-instagram'></i></a>
             <a href="telegram" className='logo-tg'><i class='bx bxl-telegram' ></i></a>
-            <div>
-            <button onClick={HandleOpen}>
-              {!cookies.get("AuthTokenUser") ?  <i class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
-              <p>{!cookies.get("AuthTokenUser") ?  t("Header.0") :  null}</p>
-              </button>
-            </div>
-            <LanguageHeader/>
         </Wrapper>
     </WrapperContainer>
    
-   {!cookies.get("AuthTokenUser") ? 
-   <ModalCommon  height={518} handleClose={HandleClose} open={open}>
-    <Auth/>
-    </ModalCommon> : null } 
+
       </Section>
   )
 }
