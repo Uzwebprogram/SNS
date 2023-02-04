@@ -39,7 +39,7 @@
     "2": "Faqat nazorat ostida",
     "3": "Ulashish",
     "4": "Ob'ekt",
-    "5": "Reyting",
+    "5": "Reyting / Reyting turi",
     "6": "Prognoz",
     "7": "Matbuot xabari",
     "8": "Baho shkalasi",
@@ -109,6 +109,11 @@
     "0": "Barcha savollar",
     "1": "Barcha sohalar",
     "2": "Ish metodologiyasi"
+  },
+  "Selects": {
+    "0": "MOLIYA SEKTORI",
+    "1": "KORPORATİY SEKTOR",
+    "2": "MOLIYA QUVVATLARI"
   },
   "Auth": {
     "0": "Ro'yxatdan o'tish",

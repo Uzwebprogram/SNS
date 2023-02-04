@@ -6,6 +6,13 @@ export const WrapperPress = styled.div`
   border-radius: 15px;
   padding: 25px;
   margin-top: 20px;
+
+  select option:disabled {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    background: #c1c1c1;
+  }
   a {
     text-decoration: none;
     color: #1e1e1e;

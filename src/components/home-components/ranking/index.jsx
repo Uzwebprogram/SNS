@@ -61,7 +61,18 @@ const Ranking = ({ isSelect, isBtn }) => {
           <div className="select-box">
             <select onChange={Handlechange}>
               <option value="">{t("Select.1")}</option>
-              {arr.map((elem, index) => (
+              <option disabled value="ФИНАНСОВЫЙ СЕКТОР">
+                ФИНАНСОВЫЙ СЕКТОР
+              </option>
+              {arr.slice(0,7).map((elem, index) => (
+                <option key={index} value={elem}>
+                  {elem}
+                </option>
+              ))}
+              <option disabled value="КОРПОРАТИВНЫЙ СЕКТОР">
+                КОРПОРАТИВНЫЙ СЕКТОР
+              </option>
+              {arr.slice(7,8).map((elem, index) => (
                 <option key={index} value={elem}>
                   {elem}
                 </option>

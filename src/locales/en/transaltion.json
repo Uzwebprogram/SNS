@@ -39,7 +39,7 @@
     "2": "Only under supervision",
     "3": "Share",
     "4": "Object",
-    "5": "Rating",
+    "5": "Rating / Rating type",
     "6": "Forecast",
     "7": "Press Release",
     "8": "Rating scales",
@@ -51,6 +51,11 @@
     "14": "Attribute",
     "15": "Year",
     "16": "billion sum"
+  },
+  "Selects": {
+    "0": "FINANCIAL SECTOR",
+    "1": "CORPORATE SECTOR",
+    "2": "FINANCIAL INSTRUMENTS"
   },
   "Ranking": {
     "0": "What is Ranking?",
