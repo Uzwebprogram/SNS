@@ -50,28 +50,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                 </CommonButton>
               </div>
               <hr className="hr" />
-              <Row className="row">
-                <Col lg={6} md={8} sm={6} sx={6} className="col">
-                  <p>{t("Requisites.0")}</p>
-                </Col>
-                <Col lg={6} md={4} sm={6} sx={6} className="col">
-                  <span>{elem.inn}</span>
-                </Col>
-              </Row>
-              <hr />
-            </div>
-            <div>
-              <Row className="row">
-                <Col lg={6} md={8} sm={6} sx={6} className="col">
-                  <p>{t("Requisites.1")}</p>
-                </Col>
-                <Col lg={6} md={4} sm={6} sx={6} className="col">
-                  <span>{elem.ogrn}</span>
-                </Col>
-              </Row>
-              <hr />
-            </div>
-            <div>
+              <div>
               <Row className="row">
                 <Col lg={6} md={8} sm={6} sx={6} className="col">
                   <p>{t("Requisites.2")}</p>
@@ -82,6 +61,28 @@ const CompanyProfileCard = ({ isSelect }) => {
               </Row>
               <hr />
             </div>
+              <Row className="row">
+                <Col lg={6} md={8} sm={6} sx={6} className="col">
+                  <p>{t("Requisites.0")}</p>
+                </Col>
+                <Col lg={6} md={4} sm={6} sx={6} className="col">
+                  <span>{elem.ogrn}</span>
+                </Col>
+              </Row>
+              <hr />
+            </div>
+            <div>
+              <Row className="row">
+                <Col lg={6} md={8} sm={6} sx={6} className="col">
+                  <p>{t("Requisites.1")}</p>
+                </Col>
+                <Col lg={6} md={4} sm={6} sx={6} className="col">
+                  <span>{elem.inn}</span>
+                </Col>
+              </Row>
+              <hr />
+            </div>
+
             <div>
               <Row className="row">
                 <Col lg={6} md={8} sm={6} sx={6} className="col">
