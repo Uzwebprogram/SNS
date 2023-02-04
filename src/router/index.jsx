@@ -5,6 +5,7 @@ import { RouterData } from "./index-data";
 import { Wrapper } from "./styled-index";
 import Footer from "../components/footer";
 function RouterComponent() {
+  
   return (
     <>
       <Header />

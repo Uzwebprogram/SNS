@@ -11,6 +11,9 @@ import CommonButton from "../../common/button";
 import { useTranslation } from "react-i18next";
 
 const AnalyticMore = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   console.log();
