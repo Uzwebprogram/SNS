@@ -258,7 +258,7 @@ export const WrapperPress = styled.div `
     @media only screen and (max-width: 426px) {
       padding: 12px 6px !important;
       font-size: 12px !important;
-      column-count: 2 !important;
+      column-count: 1 !important;
     }
     @media only screen and (max-width: 375px) {
       padding: 12px 3px !important;

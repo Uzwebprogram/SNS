@@ -39,7 +39,7 @@
     "2": "Only under supervision",
     "3": "Share",
     "4": "Object",
-    "5": "Rating / Rating type",
+    "5": "Rating",
     "6": "Forecast",
     "7": "Press Release",
     "8": "Rating scales",
@@ -52,7 +52,8 @@
     "15": "Year",
     "16": "billion sum",
     "17": "Select a year" ,
-    "18": "Select a quarter"
+    "18": "Select a quarter",
+    "19": "Rating type"
   },
   "Selects": {
     "0": "FINANCIAL SECTOR",
@@ -157,8 +158,9 @@
     "6": "Details",
     "7": "Jobs",
     "8": "Press Center",
-    "9": "The rating agency 'STANDARD AND SENSETIVE RATINGS' was established in April 2019, as part of the implementation of Government decisions aimed at improving the rating of Uzbekistan and in order to provide rating services to financial and credit institutions of the Republic. Credit and solvency ratings are assigned within the framework of the developed RA 'SNS RATINGS' of procedures and methodological recommendations for conducting a rating assessment of financial and credit institutions of the Republic of Uzbekistan.",
-    "10": "Currently, RA 'SNS RATINGS', in accordance with the concluded agreements, has begun work on assigning a rating and quarterly monitoring of the assigned rating to institutions of the banking and financial sector, insurance market enterprises, members of the National Association of Financial Market Participants and members of the National Association Microfinance Institutions.At the same time, negotiations are also being held with the country's leading JSCs on the subject of concluding an agreement on assigning a credit rating to an issuer of securities.",
+    "9": "All site materials are the intellectual property of Standard and Sensetive Ratings LLC",
+    "10": "The information provided is for informational purposes only.",
+    "11": "The ratings express the opinion of Standard and Sensetive Ratings LLC and do not constitute a fact-finding or recommendation to buy, hold or sell certain securities or assets, to make investment decisions. The agency does not assume any responsibility in connection with any consequences, interpretations, conclusions, recommendations and other actions directly or indirectly related to the rating assessment, the rating actions taken by the Agency, as well as the conclusions and conclusions contained in the rating report and press releases issued by the agency, or the absence of all of the above. , reflecting the current state of the rating, is the official website of OOO 'Standard and Sensetive Ratings'",
     "12": "Personal Data Processing Policy",
     "13": "User Agreement",
     "14": "Internal control service",

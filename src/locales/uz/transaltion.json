@@ -39,7 +39,7 @@
     "2": "Faqat nazorat ostida",
     "3": "Ulashish",
     "4": "Ob'ekt",
-    "5": "Reyting / Reyting turi",
+    "5": "Reyting",
     "6": "Prognoz",
     "7": "Matbuot xabari",
     "8": "Baho shkalasi",
@@ -52,7 +52,8 @@
     "15": "Yil",
     "16": "milliard so'm",
     "17": "Yilni tanlang",
-    "18": "Kvartalni tanlang "
+    "18": "Kvartalni tanlang ",
+    "19": "Reyting turi"
   },
   "Ranking": {
     "0": "Reyting nima?",
@@ -157,8 +158,9 @@
     "6": "Tafsilotlar",
     "7": "Ishlar",
     "8": "Matbuot markazi",
-    "9": "STANDART VA SENSETIVE RATINGS” reyting agentligi 2019-yil aprel oyida O‘zbekistonning reytingini yaxshilashga qaratilgan Hukumat qarorlarini amalga oshirish doirasida hamda respublika moliya-kredit institutlariga reyting xizmatlarini ko‘rsatish maqsadida tashkil etilgan. Kredit va to'lov qobiliyati reytinglari O'zbekiston Respublikasi moliya-kredit institutlarining reyting baholashini o'tkazish bo'yicha ishlab chiqilgan 'SNS RATINGS' RA tartibi va uslubiy tavsiyalari doirasida beriladi.",
-    "10": "Hozirgi vaqtda “SNS RATINGS” RA, tuzilgan shartnomalarga muvofiq, bank-moliya sektori institutlari, sugʻurta bozori korxonalari, ATB aʼzolariga reyting belgilash va berilgan reytingning har choraklik monitoringi boʻyicha ishlarni boshladi. Moliyaviy bozor ishtirokchilari milliy assotsiatsiyasi va Mikromoliya tashkilotlari milliy assotsiatsiyasi aʼzolari.Shu bilan birga, qimmatli qogʻozlar emitentiga kredit reytingini berish toʻgʻrisida shartnoma tuzish yuzasidan mamlakatimizning yetakchi AJlar bilan ham muzokaralar olib borilmoqda.",
+    "9": "Barcha sayt materiallari Standard and Sensetive Ratings MChJning intellektual mulki hisoblanadi",
+    "10": "Taqdim etilgan ma'lumotlar faqat ma'lumot olish uchun mo'ljallangan.",
+    "11": "Reytinglar Standard and Sensetive Ratings MChJ fikrini ifodalaydi va ma'lum qimmatli qog'ozlar yoki aktivlarni sotib olish, saqlash yoki sotish yoki investitsiya qarorlarini qabul qilish bo'yicha faktlarni aniqlash yoki tavsiyani tashkil etmaydi. Agentlik reytingni baholash bilan bevosita yoki bilvosita bog'liq bo'lgan har qanday oqibatlar, sharhlar, xulosalar, tavsiyalar va boshqa harakatlar, agentlik tomonidan amalga oshirilgan reyting harakatlari, shuningdek reyting hisobotida keltirilgan xulosalar va xulosalar bilan bog'liq holda hech qanday javobgarlikni o'z zimmasiga olmaydi. va agentlik tomonidan chiqarilgan press-relizlar yoki yuqorida aytilganlarning barchasi yo'qligi. Reytingning hozirgi holatini aks ettiruvchi yagona manba 'Standard and Sensetive Ratings' OOO rasmiy sayti hisoblanadi.",
     "12": "Shaxsiy ma'lumotlarni qayta ishlash siyosati",
     "13": "Foydalanuvchi shartnomasi",
     "14": "Ichki nazorat xizmati",
