@@ -106,6 +106,7 @@ const Tables = ({
                 <NavLink className="navlink" to={`/rankingprofile/${elem.id}`}>
                   {elem.about_renking.slice(0, 1).map((e) => e.atribut)}
                 </NavLink>
+                
               ),
             });
           }
