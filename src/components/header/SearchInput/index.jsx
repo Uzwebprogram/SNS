@@ -12,7 +12,6 @@ function SearchInput({ SearchModal, SearchClose }) {
   const { t, i18n } = useTranslation();
 
   const [search, setSearch] = useState("");
-  console.log(search);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 

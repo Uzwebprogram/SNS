@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 const Information = () => {
   const cookies = new Cookies();
   const personalData = cookies.get("AuthDataUser");
-  console.log(personalData);
 
   const navigate = useNavigate();
 

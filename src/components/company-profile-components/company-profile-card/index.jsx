@@ -23,7 +23,6 @@ const CompanyProfileCard = ({ isSelect }) => {
     dispatch(GetBanksIds(window.localStorage.getItem("MoreId")));
   }, []);
 
-  console.log(banksId);
   return (
     <>
       <WrapperPress
@@ -98,7 +97,6 @@ const CompanyProfileCard = ({ isSelect }) => {
               <h3>{t("Requisites.5")}</h3>
               <hr className="hr" />
 
-              <p>{t("Requisites.6")}</p>
 
               <div className="table-scroll">
                 <table className="table">
@@ -129,7 +127,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                             <a
                               className="a"
                               target="_blank"
-                              href={elem.image}
+                              href={elem.sertifikat}
                               download
                               rel="noreferrer"
                             >

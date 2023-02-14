@@ -52,6 +52,21 @@ export const RouterData = [
     component: <Ranking />,
   },
   {
+    id: 5,
+    path: "/ranking/:CategoryName",
+    component: <Ranking />,
+  },
+  {
+    id: 5,
+    path: "/ranking/:CategoryName/:atributs",
+    component: <Ranking />,
+  },
+  {
+    id: 5,
+    path: "/ranking/:CategoryName/:atributs/:Year1/:Year2",
+    component: <Ranking />,
+  },
+  {
     id: 6,
     path: "/analytics",
     component: <Analytics />,

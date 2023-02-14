@@ -11,7 +11,6 @@ const RankingCard = () => {
   function GetLanguageValue() {
     return cookies.get("i18next")
   }
-  console.log(GetLanguageValue());
   return (
     <>
       <WrapperPress>

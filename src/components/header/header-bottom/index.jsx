@@ -34,7 +34,6 @@ function HeaderBottom({
   const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
   const [search, setSearch] = useState("");
-  console.log(search);
   const navigate = useNavigate();
   const cookies = new Cookies();
 

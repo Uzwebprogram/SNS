@@ -8,7 +8,15 @@ export const GetRanking = createAsyncThunk("ranking/get", async () => {
 export const GetRankingId = createAsyncThunk("rankingId/get", async (id) => {
   return await axios.get(`${API_URL}/renkingi/${id}`).then((response) => response.data);
 });
-
+export const GetRankingFilterYear = createAsyncThunk("rankingFilterYear/get", async ({year1 , year2}) => {
+  return await axios.get(`${API_URL}/renkingi?year1=${year1}&year2=${year2}`).then((response) => response.data);
+});
+export const GetRankingFilterKvartal = createAsyncThunk("rankingFilterKvartal/get", async ({kvartal1 , kvartal2}) => {
+  return await axios.get(`${API_URL}/renkingi?kvartal1=${kvartal1}&kvartal2=${kvartal2}`).then((response) => response.data);
+});
+export const GetRankingFilterAtribut = createAsyncThunk("rankingFilter/get", async (atribut) => {
+  return await axios.get(`${API_URL}/renkingi?atribut=${atribut}`).then((response) => response.data);
+});
 const RankingSlice = createSlice({
   name: "user",
   initialState: {
@@ -19,6 +27,24 @@ const RankingSlice = createSlice({
       Data: [],
     },
     getrankingId: {
+      Error: false,
+      Success: false,
+      Loading: false,
+      Data: [],
+    },
+    getRankingFilterYear: {
+      Error: false,
+      Success: false,
+      Loading: false,
+      Data: [],
+    },
+    getRankingFilterKvartal: {
+      Error: false,
+      Success: false,
+      Loading: false,
+      Data: [],
+    },
+    getRankingFilterAtribut: {
       Error: false,
       Success: false,
       Loading: false,
@@ -56,6 +82,51 @@ const RankingSlice = createSlice({
       state.getrankingId.Loading = false;
       state.getrankingId.Error = true;
       state.getrankingId.Data = [];
+    },
+    [GetRankingFilterYear.pending]: (state, action) => {
+      state.getRankingFilterYear.Loading = true;
+    },
+    [GetRankingFilterYear.fulfilled]: (state, action) => {
+      state.getRankingFilterYear.Success = true;
+      state.getRankingFilterYear.Loading = false;
+      state.getRankingFilterYear.Error = false;
+      state.getRankingFilterYear.Data = action.payload;
+    },
+    [GetRankingFilterYear.rejected]: (state, action) => {
+      state.getRankingFilterYear.Success = false;
+      state.getRankingFilterYear.Loading = false;
+      state.getRankingFilterYear.Error = true;
+      state.getRankingFilterYear.Data = [];
+    },
+    [GetRankingFilterKvartal.pending]: (state, action) => {
+      state.getRankingFilterKvartal.Loading = true;
+    },
+    [GetRankingFilterKvartal.fulfilled]: (state, action) => {
+      state.getRankingFilterKvartal.Success = true;
+      state.getRankingFilterKvartal.Loading = false;
+      state.getRankingFilterKvartal.Error = false;
+      state.getRankingFilterKvartal.Data = action.payload;
+    },
+    [GetRankingFilterKvartal.rejected]: (state, action) => {
+      state.getRankingFilterKvartal.Success = false;
+      state.getRankingFilterKvartal.Loading = false;
+      state.getRankingFilterKvartal.Error = true;
+      state.getRankingFilterKvartal.Data = [];
+    },
+    [GetRankingFilterAtribut.pending]: (state, action) => {
+      state.getRankingFilterAtribut.Loading = true;
+    },
+    [GetRankingFilterAtribut.fulfilled]: (state, action) => {
+      state.getRankingFilterAtribut.Success = true;
+      state.getRankingFilterAtribut.Loading = false;
+      state.getRankingFilterAtribut.Error = false;
+      state.getRankingFilterAtribut.Data = action.payload;
+    },
+    [GetRankingFilterAtribut.rejected]: (state, action) => {
+      state.getRankingFilterAtribut.Success = false;
+      state.getRankingFilterAtribut.Loading = false;
+      state.getRankingFilterAtribut.Error = true;
+      state.getRankingFilterAtribut.Data = [];
     },
   },
 });

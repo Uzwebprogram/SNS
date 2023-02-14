@@ -15,13 +15,11 @@ const Methodology = ({ isSelect }) => {
   const getMethodology = useSelector(
     (state) => state.methodology.getmethodology?.Data
   );
-  console.log(getMethodology);
 
   const [sorts, setSorts] = useState("");
 
   let arr = [];
   let findData = null;
-  console.log(arr);
 
   const Handlechange = (e) => {
     setSorts(e.target.value);

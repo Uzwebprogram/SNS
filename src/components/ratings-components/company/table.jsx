@@ -12,7 +12,6 @@ const Tables = ({ sorts, search }) => {
   const data = [];
   const dispatch = useDispatch();
   const getBanks = useSelector((state) => state.banks.getbanks?.Data);
-  console.log(getBanks);
   const getBanksId = useSelector((state) => state.banks.getbanksId?.Data);
   const getBankSearch = useSelector(
     (state) => state.banks.getbanksSearch?.Data
@@ -126,7 +125,6 @@ const Tables = ({ sorts, search }) => {
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
 
   const onSelectChange = (newSelectedRowKeys) => {
-    console.log("selectedRowKeys changed: ", newSelectedRowKeys);
     setSelectedRowKeys(newSelectedRowKeys);
   };
   const rowSelection = {

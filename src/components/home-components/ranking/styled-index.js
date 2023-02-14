@@ -1,11 +1,86 @@
 import styled from "styled-components";
 
-export const WrapperPress = styled.div`
+export const WrapperPress = styled.div `
   background: #ffffff;
   box-shadow: 0px 4px 20px -10px #cccccc;
   border-radius: 15px;
   padding: 25px;
   margin-top: 20px;
+
+  .year-form{
+    width: 60%;
+    margin: 10px 0;
+
+    @media only screen and (max-width: 768px) {
+          width: 100%;
+    }
+   
+
+    h4{
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    button{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-top: 23px;
+    padding: 8px 50px;
+    background: rgb(47, 102, 184);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    }
+
+    
+  }
+
+  .year-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 525px) {
+      display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    }
+  }
+
+  .year-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    div{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      p{
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+    div:nth-child(2){
+        margin-left: 30px;
+      }
+    
+  }
+
+  .year-select{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+   padding: 10px 30px;
+   margin-right: 10px;
+  }
 
   select option:disabled {
     color: black;
@@ -29,7 +104,7 @@ export const WrapperPress = styled.div`
 
   .select-box {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     select {
       width: 60%;
       border: 1px solid #cccccc;
@@ -44,6 +119,10 @@ export const WrapperPress = styled.div`
       letter-spacing: 0.01em;
       color: #1e1e1e;
       padding: 10px 30px 10px 10px;
+
+      @media only screen and (max-width: 768px) {
+          width: 100%;
+    }
 
       @media only screen and (max-width: 425px) {
         width: 100%;
@@ -104,6 +183,18 @@ export const WrapperPress = styled.div`
     display: none !important;
   }
 
+  .ant-table-row:nth-child(1){
+    .ant-table-cell{
+      padding: 1px !important;
+      font-weight: bold !important;
+    }
+    
+  }
+  .ant-table-row:nth-child(1):hover{
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
   .ant-table-wrapper .ant-table-tbody > tr > td {
     padding: 10px !important;
   }
@@ -155,28 +246,47 @@ export const WrapperPress = styled.div`
       margin-top: 20px;
     }
   }
+
+
   .ant-table-cell {
-    @media only screen and (max-width: 425px) {
+    /* display: flex; */
+    /* @media only screen and (max-width: 768px) {
+      padding: 12px 6px !important;
+      column-count: 4 !important;
+    } */
+    @media only screen and (max-width: 426px) {
       padding: 12px 6px !important;
       font-size: 12px !important;
+      column-count: 2 !important;
     }
     @media only screen and (max-width: 375px) {
       padding: 12px 3px !important;
       font-size: 10px !important;
+      column-count: 2 !important;
     }
   }
   .table-scroll {
-    @media only screen and (max-width: 425px) {
-      width: 378px !important;
+    @media only screen and (max-width: 626px) {
+      width: auto !important;
       overflow-x: scroll !important;
     }
     @media only screen and (max-width: 375px) {
-      width: 345px !important;
+      width: auto !important;
       overflow-x: scroll !important;
     }
     @media only screen and (max-width: 320px) {
-      width: 250px !important;
+      width: auto !important;
       overflow-x: scroll !important;
     }
   }
+  a{
+    display: flex;
+    justify-content: center;
+    p{
+      width: 55px;
+    }
+  }
+.ant-table-cell{
+  text-align: center !important;
+}
 `;
