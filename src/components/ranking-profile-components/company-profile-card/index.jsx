@@ -26,7 +26,6 @@ const CompanyProfileCard = ({ isSelect }) => {
     return window.localStorage.getItem("i18nextLng");
   };
 
-  console.log(rankingId);
   return (
     <>
       <WrapperPress
@@ -106,16 +105,14 @@ const CompanyProfileCard = ({ isSelect }) => {
               <hr />
             </div>
             <div className="table-box">
-              <h3>{t("Requisites.5")}</h3>
+              <h3>{t("Ranking.5")}</h3>
               <hr className="hr" />
-
-              <p>{t("Requisites.6")}</p>
 
               <div className="table-scroll">
                 <table className="table">
                   <thead>
                     <tr>
-                      <th>{t("Requisites.7")}</th>
+                      <th>{t("Ranking.6")}</th>
                       <th>{t("Rating.13")}</th>
                       <th>{t("Rating.14")}</th>
                       <th>{t("Rating.15")}</th>

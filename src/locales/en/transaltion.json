@@ -50,7 +50,9 @@
     "13": "Quarter",
     "14": "Attribute",
     "15": "Year",
-    "16": "billion sum"
+    "16": "billion sum",
+    "17": "Select a year" ,
+    "18": "Select a quarter"
   },
   "Selects": {
     "0": "FINANCIAL SECTOR",
@@ -62,7 +64,15 @@
     "1": "Ranking of Russian leasing companies based on the results of 9 months of 2022 'Expert RA' announces an update of the methodology for assigning ratings...",
     "2": "All rankings",
     "3": "Ranking of Russian leasing companies for the first 9 months of 2022 Expert RA announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companies Expert RA announces an update of the methodology for assigning credit ratings to project companiesRanking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Expert RA Ranking announces an update of the methodology for assigning credit ratings to project companies",
-    "4": "What is Rating?"
+    "4": "What is Rating?",
+    "5": "Company ranking",
+    "6": "% share",
+    "7" : "Choose an industry!",
+     "8" : "Select an indicator !",
+     "9" : "start",
+      "10" : "end",
+      "11" : "year",
+      "12" : "% changes"
   },
   "Analytic": {
     "0": "Pass the survey",

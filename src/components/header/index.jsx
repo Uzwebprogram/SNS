@@ -10,7 +10,6 @@ function Header() {
     const [HeaderHamburger , setHamburger] = useState(false) 
     const [SearchModal , setSearchModal] = useState(false)
         const cookies = new Cookies();
-        console.log(cookies.get("AuthDataUser"));
     return(
         <>
                 <Wrapper>

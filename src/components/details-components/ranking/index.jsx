@@ -17,7 +17,7 @@ const RankingDetails = ({ isSelect }) => {
               <p>{t("details.0")}</p>
             </Col>
             <Col lg={6} md={4} sm={6} sx={6} className="col">
-              <span>0411015060</span>
+              <span>306298843</span>
             </Col>
           </Row>
           <hr />
@@ -28,7 +28,7 @@ const RankingDetails = ({ isSelect }) => {
               <p>{t("details.1")}</p>
             </Col>
             <Col lg={6} md={4} sm={6} sx={6} className="col">
-              <span>+998 (90) 000 00 00</span>
+              <span>+998 (94)-636-11-47</span>
             </Col>
           </Row>
           <hr />
@@ -39,7 +39,7 @@ const RankingDetails = ({ isSelect }) => {
               <p>{t("details.2")}</p>
             </Col>
             <Col lg={6} md={4} sm={6} sx={6} className="col">
-              <span>0411015060</span>
+              <span>70220</span>
             </Col>
           </Row>
           <hr />
@@ -50,7 +50,7 @@ const RankingDetails = ({ isSelect }) => {
               <p>{t("details.3")}</p>
             </Col>
             <Col lg={6} md={4} sm={6} sx={6} className="col">
-              <span>sns.info@gmail.ru</span>
+              <span>info@snsratings.uz</span>
             </Col>
           </Row>
           <hr />
@@ -61,7 +61,7 @@ const RankingDetails = ({ isSelect }) => {
               <p>{t("details.4")}</p>
             </Col>
             <Col lg={6} md={4} sm={6} sx={6} className="col">
-              <span>г. Ташкент, ул. Николя, дом 13/2</span>
+              <span>Узбекистан, г.Ташкент, М.Улугбекский район ул.Бузбозор, дом 5.</span>
             </Col>
           </Row>
           <hr />
@@ -71,7 +71,7 @@ const RankingDetails = ({ isSelect }) => {
           width="100%"
           height="350"
           id="gmap_canvas"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2996.5214925859855!2d69.2630588!3d41.3192722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48a714abe43eb81d!2zTFVYSE9VU0UgLSDRgdGC0YPQtNC40Y8g0LTQuNC30LDQudC90LAg0Lgg0LDRgNGF0LjRgtC10LrRgtGD0YDQvdC-0LPQviDQv9GA0L7QtdC60YLQuNGA0L7QstCw0L3QuNGP!5e0!3m2!1sru!2s!4v1671194816522!5m2!1sru!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.527781651001!2d69.32191512880705!3d41.31913541296703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4fcf39b69b9%3A0x969e73a76eff1dbb!2zNSBCdXogQm96b3Iga28nY2hhc2ksIFRhc2hrZW50LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1675689171157!5m2!1sru!2s"
           frameborder="0"
           scrolling="no"
           marginheight="0"

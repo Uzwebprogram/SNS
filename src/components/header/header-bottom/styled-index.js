@@ -17,6 +17,7 @@ export const Section = styled.div`
     }
   }
   .ant-input {
+    padding: 4.3px 11px !important;
     :hover {
       border: 1px solid white;
       outline: none;

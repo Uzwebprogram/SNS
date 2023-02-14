@@ -16,7 +16,6 @@ const AnalyticMore = () => {
   }, [])
   const { id } = useParams();
   const { t, i18n } = useTranslation();
-  console.log();
   window.localStorage.setItem("AnalyticId", id);
 
   const LangVal = () => {
