@@ -106,6 +106,9 @@ const Tables = ({ sorts, search }) => {
           rowSelection={rowSelection}
           columns={columns}
           dataSource={data}
+          scroll={{
+            x: 200,
+          }}
         />
       </div>
     </div>
