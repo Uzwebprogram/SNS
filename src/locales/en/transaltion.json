@@ -1,5 +1,176 @@
 {
-    "Header":{
-        "0":"Hello"
-    }
+  "Header": {
+    "0": "Login",
+    "1": "Company, research",
+    "2": "Ratings",
+    "3": "Rankings",
+    "4": "Analytics",
+    "5": "Services",
+    "6": "About agency",
+    "7": "FAQ",
+    "8": "Tashkent, Chilanzar district, Bunyodkor street, 57"
+  },
+  "Home": {
+    "0": "Long load of the corporate sector: who is it easy now?",
+    "1": "Analytics",
+    "2": "Rankings",
+    "3": "View all",
+    "4": "Press Center",
+    "5": "Comments",
+    "6": "All news",
+    "7": "SNS company news",
+    "8": "Banking sector analysis!",
+    "9": "Analysis of the insurance services market for 2022!",
+    "10": "Analysis of the leasing services market for 2021!",
+    "11": "Analysis of the microcredit market!",
+    "12": "What are the risks of growth of public debt of Uzbekistan!"
+  },
+  "Calling": {
+    "0": "Commercial service",
+    "1": "Internal control service",
+    "2": "Media contacts",
+    "3": "Daily Email",
+    "4": "Details",
+    "5": "Share"
+  },
+  "Rating": {
+    "0": "Company ratings",
+    "1": "Only withdrawn",
+    "2": "Only under supervision",
+    "3": "Share",
+    "4": "Object",
+    "5": "Rating / Rating type",
+    "6": "Forecast",
+    "7": "Press Release",
+    "8": "Rating scales",
+    "9": "Rating scales used by 'Expert RA', rating forecasts and 'under supervision' status",
+    "10": "More",
+    "11": "Why do we need a rating?",
+    "12": "List of regulations and other acts containing requirements for the availability of credit ratings of JSC 'Expert RA'",
+    "13": "Quarter",
+    "14": "Attribute",
+    "15": "Year",
+    "16": "billion sum",
+    "17": "Select a year" ,
+    "18": "Select a quarter"
+  },
+  "Selects": {
+    "0": "FINANCIAL SECTOR",
+    "1": "CORPORATE SECTOR",
+    "2": "FINANCIAL INSTRUMENTS"
+  },
+  "Ranking": {
+    "0": "What is Ranking?",
+    "1": "Ranking of Russian leasing companies based on the results of 9 months of 2022 'Expert RA' announces an update of the methodology for assigning ratings...",
+    "2": "All rankings",
+    "3": "Ranking of Russian leasing companies for the first 9 months of 2022 Expert RA announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companies Expert RA announces an update of the methodology for assigning credit ratings to project companiesRanking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Expert RA Ranking announces an update of the methodology for assigning credit ratings to project companies",
+    "4": "What is Rating?",
+    "5": "Company ranking",
+    "6": "% share",
+    "7" : "Choose an industry!",
+     "8" : "Select an indicator !",
+     "9" : "start",
+      "10" : "end",
+      "11" : "year",
+      "12" : "% changes"
+  },
+  "Analytic": {
+    "0": "Pass the survey",
+    "1": "Expert RA announces an update of the methodology for assigning credit ratings to project companies",
+    "2": "View all",
+    "3": "Module",
+    "4": "Information for authorized users only",
+    "5": "Information will be available only after registration",
+    "6": "Registration",
+    "7": "Personal account"
+  },
+  "Uslugi": {
+    "0": "Services",
+    "1": "All services"
+  },
+  "Agency": {
+    "0": "About agency",
+    "1": "Standard and Sensitive Ratings is an independent rating agency",
+    "2": "Our main task is to provide market participants with high-quality analytical market reviews and, using ratings, report on the reliability of companies and their financial instruments. Our team of specialists consists of analysts and methodologists with 10 years of experience."
+  },
+  "Faq": {
+    "0": "Questions to experts"
+  },
+  "Methodology": {
+    "0": "Methodology"
+  },
+  "Disclosure": {
+    "0": "Disclosure"
+  },
+  "Requisites": {
+    "0": "INN",
+    "1": "License",
+    "2": "Foundation date",
+    "3": "Country",
+    "4": "Details",
+    "5": "Company ratings",
+    "6": "Credit ratings of non-financial companies",
+    "7": "Rating",
+    "8": "Forecast",
+    "9": "Updated",
+    "10": "Certificate",
+    "11": "Download"
+  },
+  "References": {
+    "0": "Company mentions",
+    "1": "Expert RA announces an update of the methodology for assigning credit ratings to project companies"
+  },
+  "Select": {
+    "0": "All questions",
+    "1": "All industries",
+    "2": "Working methodology"
+  },
+  "Auth": {
+    "0": "Registration",
+    "1": "Login",
+    "2": "Company name",
+    "3": "El",
+    "4": "INN",
+    "5": "Enter your E-mail",
+    "6": "Receive email newsletters to this email",
+    "7": "License",
+    "8": "Foundation date",
+    "9": "Country",
+    "10": "Create a strong password",
+    "11": "Confirm password",
+    "12": "I accept the terms of the user agreement and the policy regarding the processing of personal data",
+    "13": "Register",
+    "14": "Authorization",
+    "15": "Remember",
+    "16": "Enter your password",
+    "17": "A company with that name is registered!",
+    "18": "Password do not match",
+    "19": "Email or password is wrong!"
+  },
+  "Footer": {
+    "0": "Address",
+    "1": "Contacts",
+    "2": "Information",
+    "3": "SNS company news",
+    "4": "Methodology",
+    "5": "Disclosure",
+    "6": "Details",
+    "7": "Jobs",
+    "8": "Press Center",
+    "9": "The rating agency 'STANDARD AND SENSETIVE RATINGS' was established in April 2019, as part of the implementation of Government decisions aimed at improving the rating of Uzbekistan and in order to provide rating services to financial and credit institutions of the Republic. Credit and solvency ratings are assigned within the framework of the developed RA 'SNS RATINGS' of procedures and methodological recommendations for conducting a rating assessment of financial and credit institutions of the Republic of Uzbekistan.",
+    "10": "Currently, RA 'SNS RATINGS', in accordance with the concluded agreements, has begun work on assigning a rating and quarterly monitoring of the assigned rating to institutions of the banking and financial sector, insurance market enterprises, members of the National Association of Financial Market Participants and members of the National Association Microfinance Institutions.At the same time, negotiations are also being held with the country's leading JSCs on the subject of concluding an agreement on assigning a credit rating to an issuer of securities.",
+    "12": "Personal Data Processing Policy",
+    "13": "User Agreement",
+    "14": "Internal control service",
+    "15": " online form",
+    "16": "You can express your remark or suggestion by filling out the"
+  },
+  "details": {
+    "0": "INN",
+    "1": "Phone number",
+    "2": "OKED",
+    "3": "Email",
+    "4": "Address",
+    "5": "Details of 'SNS' Rating Agency"
+  }
 }
