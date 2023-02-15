@@ -43,7 +43,8 @@ export const WrapperPress = styled.div `
     @media only screen and (max-width: 525px) {
       display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: column; 
+    
     }
   }
 

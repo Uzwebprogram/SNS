@@ -106,6 +106,7 @@ const Tables = ({
                 <NavLink className="navlink" to={`/rankingprofile/${elem.id}`}>
                   {elem.about_renking.slice(0, 1).map((e) => e.atribut)}
                 </NavLink>
+                
               ),
             });
           }
@@ -445,6 +446,9 @@ const Tables = ({
           rowSelection={rowSelection}
           columns={columns}
           dataSource={data}
+          scroll={{
+            x: 200,
+          }}
         />
       </div>
     </div>
