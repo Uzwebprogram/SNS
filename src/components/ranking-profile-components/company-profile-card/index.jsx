@@ -117,7 +117,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                       <th>{t("Rating.14")}</th>
                       <th>{t("Rating.15")}</th>
                       <th>{t("Rating.16")}</th>
-                      <th>{t("Rating.19")}</th>
+                      <th>{t("Rating.20")}</th>
                     </tr>
                   </thead>
                   <tbody>

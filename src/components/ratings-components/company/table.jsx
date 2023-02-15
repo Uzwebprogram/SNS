@@ -34,6 +34,11 @@ const Tables = ({ sorts, search }) => {
             {elem.raiting.slice(0, 1).map((e) => e.raiting)}
           </NavLink>
         ),
+        bidreting: (
+          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+            {elem.raiting.map((e) => e.type_reting)}
+          </NavLink>
+        ),
         protsent: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
             {elem.raiting.slice(0, 1).map((e) => e.prognoz)}
@@ -58,6 +63,11 @@ const Tables = ({ sorts, search }) => {
         reting: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
             {elem.raiting.slice(0, 1).map((e) => e.raiting)}
+          </NavLink>
+        ),
+        bidreting: (
+          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+            {elem.raiting.slice(0, 1).map((e) => e.type_reting)}
           </NavLink>
         ),
         protsent: (
@@ -87,6 +97,11 @@ const Tables = ({ sorts, search }) => {
               {elem.raiting.slice(0, 1).map((e) => e.raiting)}
             </NavLink>
           ),
+          bidreting: (
+            <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+              {elem.raiting.slice(0, 1).map((e) => e.type_reting)}
+            </NavLink>
+          ),
           protsent: (
             <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
               {elem.raiting.slice(0, 1).map((e) => e.prognoz)}
@@ -111,6 +126,10 @@ const Tables = ({ sorts, search }) => {
     {
       title: `${t("Rating.5")}`,
       dataIndex: "reting",
+    },
+    {
+      title: `${t("Rating.19")}`,
+      dataIndex: "bidreting",
     },
     {
       title: `${t("Rating.6")}`,
@@ -152,6 +171,9 @@ const Tables = ({ sorts, search }) => {
           rowSelection={rowSelection}
           columns={columns}
           dataSource={data}
+          scroll={{
+            x: 200,
+          }}
         />
       </div>
     </div>

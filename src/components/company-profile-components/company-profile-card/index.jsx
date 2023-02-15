@@ -102,7 +102,8 @@ const CompanyProfileCard = ({ isSelect }) => {
                 <table className="table">
                   <thead>
                     <tr>
-                      <th>{t("Requisites.7")}</th>
+                      <th>{t("Rating.5")}</th>
+                      <th>{t("Rating.19")}</th>
                       <th>{t("Requisites.8")}</th>
                       <th>{t("Requisites.9")}</th>
                       <th>{t("Requisites.10")}</th>
@@ -112,6 +113,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                     {elem.raiting.map((elem) => (
                       <tr>
                         <td className="td">{elem.raiting}</td>
+                        <td className="td">{elem.type_reting}</td>
                         <td className="td">{elem.prognoz}</td>
                         <td className="td">{elem.update_date}</td>
                         <td className="td td-btn">

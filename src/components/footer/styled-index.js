@@ -67,7 +67,8 @@ export const Wrapper = styled.div`
       }
       li {
         list-style-type: none;
-        a {
+        
+        span,a {
           text-decoration: none;
           font-family: "Montserrat";
           font-style: normal;
