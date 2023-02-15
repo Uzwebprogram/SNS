@@ -192,6 +192,16 @@ const Tables = ({
                         </p>
                   </NavLink>
                 ),
+                rank:(
+                  <NavLink
+                  className="navlink"
+                  to={`/rankingprofile/${elem.id}`}
+                >
+                    <p>                    {elem.about_renking
+                    .filter((e) => atributs == e.atribut)
+                    .map((item) => item.ranges)}</p>
+                </NavLink> 
+                ),
                 foiz: (
                   <NavLink>
                     {financial( +elem.about_renking
@@ -393,6 +403,11 @@ const Tables = ({
       title: `${t("Rating.16")}`,
       dataIndex: "mlrd",
       width:160
+    },
+    {
+      title: `${t("Rating.19")}`,
+      dataIndex: "rank",
+      width:60
     },
     {
       title: `${t("Ranking.12")}`,
