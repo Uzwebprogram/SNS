@@ -19,6 +19,7 @@ import { HashLink } from "react-router-hash-link";
 import ModalCommon from "../../common/Modal/Modal";
 import Auth from "../auth";
 import LanguageHeader from "../header-language";
+import { GetAnalyticSearch } from "../../../redux/analytic";
 const { Search } = Input;
 function HeaderBottom({
   HandleOpen2,
@@ -36,13 +37,20 @@ function HeaderBottom({
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
   const cookies = new Cookies();
+  function GetLanguageValue() {
+    return cookies.get("i18next")
+  }
+  const onSearch = (e) => {
+    setSearch(e.target.value);
+    dispatch(GetBanksSearch(e.target.value));
+   dispatch(GetAnalyticSearch(e.target.value))
 
-  const onSearch = (value) => {
-    setSearch(value.target.value);
-    dispatch(GetBanksSearch(value.target.value));
   };
   const getBankSearch = useSelector(
     (state) => state.banks.getbanksSearch?.Data
+  );
+  const GetAnalyticaSearch = useSelector(
+    (state) => state.analytic.getanalyticSearch.Data
   );
   return (
     <Section>
@@ -109,25 +117,39 @@ function HeaderBottom({
             onClick={() => setSearch("")}
             className={!search == "" ? "modals" : "nomodals"}
           >
-            <div className="modal-contents">
-              {!search == ""
-                ? getBankSearch.map((elem) => (
-                    <>
-                      <button
-                        id={elem.bank_id}
-                        onClick={async (e) => {
-                          await navigate(`/companyprofile/${e.target.id}`);
-                          window.location.reload();
-                        }}
-                        className="navlink"
-                      >
-                        {elem.companyname}
-                      </button>
-                      <br />
-                    </>
-                  ))
-                : null}
-            </div>
+        <div className="modal-contents">
+        <p className="padding-header">{t("Header.9")}</p>
+        <hr /> 
+          {!search == ""
+            ? getBankSearch.map((elem) => (
+                <>
+                  <button
+                    id={elem.bank_id}
+                    onClick={async (e) => {
+                      await navigate(`/companyprofile/${e.target.id}`);
+                      window.location.reload();
+                    }}
+                    className="navlink"
+                  >
+                    {elem.companyname}
+                  </button>
+                  <br />
+                </>
+              ))
+            : null}
+            <p className="padding-header">{t("Header.4")}</p>
+            <hr /> 
+            {!search == "" ? GetAnalyticaSearch.map(elem =>               
+             <>
+                  <a href={elem.analitka_pdf}
+                    className="navlink-href"
+                  >
+                    
+                    {GetLanguageValue() == 'uz' ? elem.title_uz : GetLanguageValue() == 'ru' ? elem.title_ru : GetLanguageValue() == 'en' ? elem.title_en : null}
+                  </a>
+                  <br  />
+                </> ): null}
+        </div>
           </div>
 
             {!cookies.get("AuthTokenUser") ? 

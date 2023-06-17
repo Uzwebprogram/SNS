@@ -4,6 +4,9 @@ import axios from "axios";
 export const GetAnalytic = createAsyncThunk("analytic/get", async () => {
   return await axios.get(`${API_URL}/analitika`).then((response) => response.data);
 });
+export const GetAnalyticSearch = createAsyncThunk("analyticSearch /getSearch", async (searchAnalitca) => {
+  return await axios.get(`${API_URL}/analitika?search=${searchAnalitca}`).then((response) => response.data);
+});
 export const GetAnalyticId = createAsyncThunk("analyticId/get", async (id) => {
   return await axios.get(`${API_URL}/analitika/${id}`).then((response) => response.data);
 });
@@ -12,6 +15,12 @@ const AnalyticSlice = createSlice({
   name: "user",
   initialState: {
     getanalytic: {
+      Error: false,
+      Success: false,
+      Loading: false,
+      Data: [],
+    },
+    getanalyticSearch: {
       Error: false,
       Success: false,
       Loading: false,
@@ -39,6 +48,21 @@ const AnalyticSlice = createSlice({
       state.getanalytic.Loading = false;
       state.getanalytic.Error = true;
       state.getanalytic.Data = [];
+    },
+    [GetAnalyticSearch.pending]: (state, action) => {
+      state.getanalyticSearch.Loading = true;
+    },
+    [GetAnalyticSearch.fulfilled]: (state, action) => {
+      state.getanalyticSearch.Success = true;
+      state.getanalyticSearch.Loading = false;
+      state.getanalyticSearch.Error = false;
+      state.getanalyticSearch.Data = action.payload;
+    },
+    [GetAnalyticSearch.rejected]: (state, action) => {
+      state.getanalyticSearch.Success = false;
+      state.getanalyticSearch.Loading = false;
+      state.getanalyticSearch.Error = true;
+      state.getanalyticSearch.Data = [];
     },
 
     [GetAnalyticId.pending]: (state, action) => {

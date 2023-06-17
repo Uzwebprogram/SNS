@@ -117,7 +117,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                       <th>{t("Rating.14")}</th>
                       <th>{t("Rating.15")}</th>
                       <th>{t("Rating.16")}</th>
-                      <th>{t("Rating.20")}</th>
+                      <th>{t("Rating.19")}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -126,7 +126,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                         <tr>
                           <td className="td">{e.raiting}</td>
                           <td className="td">{e.kvartal}</td>
-                          <td className="td">{e.atribut}</td>
+                          <td className="td">{LangVal() == 'uz' ? e.atribut : LangVal() == 'ru' ? e.atribut_ru : LangVal() == 'en' ? e.atribut_en : null}</td>
                           <td className="td">{e.god}</td>
                           <td className="td">{e.sum}</td>
                           <td className="td">{e.ranges}</td>

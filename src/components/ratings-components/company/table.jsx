@@ -35,9 +35,9 @@ const Tables = ({ sorts, search }) => {
           </NavLink>
         ),
         bidreting: (
-          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+          <a className="navlink" href={elem.raiting.map((e) => e.link)}>
             {elem.raiting.map((e) => e.type_reting)}
-          </NavLink>
+          </a>
         ),
         protsent: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
@@ -66,9 +66,9 @@ const Tables = ({ sorts, search }) => {
           </NavLink>
         ),
         bidreting: (
-          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+          <a className="navlink" href={elem.raiting.map((e) => e.link)}>
             {elem.raiting.slice(0, 1).map((e) => e.type_reting)}
-          </NavLink>
+          </a>
         ),
         protsent: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
@@ -98,9 +98,9 @@ const Tables = ({ sorts, search }) => {
             </NavLink>
           ),
           bidreting: (
-            <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+            <a className="navlink" href={elem.raiting.map((e) => e.link)}>
               {elem.raiting.slice(0, 1).map((e) => e.type_reting)}
-            </NavLink>
+            </a>
           ),
           protsent: (
             <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
@@ -128,7 +128,7 @@ const Tables = ({ sorts, search }) => {
       dataIndex: "reting",
     },
     {
-      title: `${t("Rating.19")}`,
+      title: `${t("Rating.20")}`,
       dataIndex: "bidreting",
     },
     {

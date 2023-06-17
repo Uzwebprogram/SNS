@@ -39,7 +39,8 @@ const PressCenter = () => {
       <WrapperPress>
         <h2>{t("Home.4")}</h2>
         {getPress.map((elem) => (
-          <div className="press-content">
+          <>
+                    <a  href={elem.press_center_pdf} className="press-content">
             <p>
               {LangVal() == "ru"
                 ? elem.description_ru
@@ -51,7 +52,8 @@ const PressCenter = () => {
             </p>
             <time>{DateFormat(elem.date)}</time>
             <hr />
-          </div>
+          </a>
+          </>
         ))}
         <CommonButton
           style={{

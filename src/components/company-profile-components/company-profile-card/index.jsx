@@ -96,14 +96,12 @@ const CompanyProfileCard = ({ isSelect }) => {
             <div className="table-box">
               <h3>{t("Requisites.5")}</h3>
               <hr className="hr" />
-
-
               <div className="table-scroll">
                 <table className="table">
                   <thead>
                     <tr>
                       <th>{t("Rating.5")}</th>
-                      <th>{t("Rating.19")}</th>
+                      <th>{t("Rating.20")}</th>
                       <th>{t("Requisites.8")}</th>
                       <th>{t("Requisites.9")}</th>
                       <th>{t("Requisites.10")}</th>
@@ -113,7 +111,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                     {elem.raiting.map((elem) => (
                       <tr>
                         <td className="td">{elem.raiting}</td>
-                        <td className="td">{elem.type_reting}</td>
+                        <td className="td"><a href={elem.link}>{elem.type_reting}</a></td>
                         <td className="td">{elem.prognoz}</td>
                         <td className="td">{elem.update_date}</td>
                         <td className="td td-btn">

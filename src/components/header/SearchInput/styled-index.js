@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
     width: 100%;
     height: 100vh;
     background: transparent;
-    top: 20%;
+    top: 14%;
     left: 0;
     z-index: 1000;
   }
@@ -27,14 +27,31 @@ export const Wrapper = styled.div`
     border: none;
     background: transparent;
     outline: none;
+    margin-bottom : 10px
+  }
+  .navlink-href {
+    text-decoration: none;
+    color: #000;
+    border: none;
+    background: transparent;
+    margin-top:10px;
+  }
+  .padding-header{
+    margin : 0px;
+    padding : 0px;
+    font-size : 20px;
+    font-weight : 700;
+  }
+  hr{
+    margin: 0;
+    padding: 0;
   }
   .modal-contents {
     background: #fff;
     margin-left: 3%;
-    width: 358px;
+    width: 320px;
     padding: 20px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 3px 8px #888888;
   }
   .nomodals {

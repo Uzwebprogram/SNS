@@ -97,7 +97,7 @@ export const Wrapper = styled.div`
 
   .modals {
     position: absolute;
-    width: 100%;
+    width: 60%;
     height: 100vh;
     background: transparent;
     top: 100%;
@@ -113,12 +113,29 @@ export const Wrapper = styled.div`
   }
   .modal-contents {
     background: #fff;
-    margin-left: 13%;
     width: 350px;
+    margin-left: 26.5%;
     padding: 20px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0 3px 8px #888888;
+  }
+  .navlink-href {
+    text-decoration: none;
+    color: #000;
+    border: none;
+    background: transparent;
+    margin-top:10px;
+  }
+  .padding-header{
+    margin : 0px;
+    padding : 0px;
+    font-size : 20px;
+    font-weight : 700;
+  }
+  hr{
+    margin: 0;
+    padding: 0;
   }
   .nomodals {
     display: none;
