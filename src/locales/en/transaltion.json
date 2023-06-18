@@ -9,7 +9,7 @@
     "6": "About agency",
     "7": "FAQ",
     "8": "Tashkent, Chilanzar district, Bunyodkor street, 57",
-    "9" : "Companies"
+    "9": "Companies"
   },
   "Home": {
     "0": "Long load of the corporate sector: who is it easy now?",
@@ -52,7 +52,7 @@
     "14": "Attribute",
     "15": "Year",
     "16": "billion sum",
-    "17": "Select a year" ,
+    "17": "Select a year",
     "18": "Select a quarter",
     "19": "Place",
     "20": "Rating type"
@@ -70,16 +70,16 @@
     "4": "What is Rating?",
     "5": "Company ranking",
     "6": "share",
-    "7" : "Choose an industry!",
-     "8" : "Select an indicator !",
-     "9" : "start",
-      "10" : "end",
-      "11" : "year",
-      "12" : "changes",
-      "13" : "All Attributes",
-      "14" : "FINANCIAL SECTOR",
-       "15" : "CORPORATE SECTOR",
-       "16" : "filter"
+    "7": "Choose an industry!",
+    "8": "Select an indicator !",
+    "9": "start",
+    "10": "end",
+    "11": "year",
+    "12": "changes",
+    "13": "All Attributes",
+    "14": "FINANCIAL SECTOR",
+    "15": "CORPORATE SECTOR",
+    "16": "filter"
   },
   "Analytic": {
     "0": "Pass the survey",
@@ -182,5 +182,28 @@
     "5": "Details of 'SNS' Rating Agency",
     "6": "Company references",
     "7": "Expert RA announces an update of the methodology for assigning credit ratings to project companies"
+  },
+  "Consultant": {
+    "0": "STANDARD AND SENSITIVE RATINGS",
+    "1": "Your quality and reliability consultant",
+    "2": "Consultation",
+    "3": "Reliability of the company",
+    "4": "We are a national rating agency specializing in assessing the financial stability of companies and debt instruments. We believe that our main task is to provide objective and reliable information about the financial reliability and stability of the subjects of the Republic of Uzbekistan. Our team of experts collects and conducts analytical research for financial market participants on a daily basis.",
+    "5": "Facts",
+    "6": "years on the market",
+    "7": "specialists",
+    "8": "current methodologies",
+    "9": "companies cooperate with us",
+    "10": "Our methodologies",
+    "11": "For this, our team of specialists has developed several methodologies for assessing the quality of companies. With the help of our information and analytical services, you will have information about the state of the company in your arsenal:",
+    "12": "The rating shows the level of financial stability and the forecast of the company's activities for the next 12 months",
+    "13": "Ranking shows what position the company occupies in the industry by key indicators and track trends",
+    "14": "Assigned",
+    "15": "credit ratings",
+    "16": "solvency ratings",
+    "17": "Securities issuer ratings",
+    "18": "Principles and Values",
+    "19": "Independence and Transparency. In our work, we value the trust of market participants and everyone can get acquainted with our methodologies for assigning ratings. In case of disputes, we are always open to dialogue.",
+    "20": "Protection and confidentiality. We feel responsible and guarantee companies that their information will not fall into the hands of interested or third parties."
   }
 }

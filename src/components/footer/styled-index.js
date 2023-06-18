@@ -5,6 +5,9 @@ export const Wrapper = styled.div`
   background-color: #1b1a1a;
   padding-top: 50px;
   padding-bottom: 50px;
+  .footer_row{
+    margin: 0 !important;
+  }
   hr {
     /* width: 100%; */
     background-color: #616262;

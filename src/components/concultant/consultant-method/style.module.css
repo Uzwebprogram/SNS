@@ -1,0 +1,63 @@
+.consultant_methodology_section {
+  padding: 50px 0;
+}
+
+.method_row {
+  margin: 0 !important;
+}
+
+.method_col > h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 110%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.method_col > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.method_col_item {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+.method_col_item > i {
+  font-size: 30px;
+  font-weight: bold;
+  color: #b4b4b4;
+  margin-right: 20px;
+}
+.method_col_item > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 160%;
+  color: #000000;
+}
+
+.number {
+  font-family: "Montserrat";
+  font-style: bold;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+  color: #2f66b8;
+}
+
+.count_wrap {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -44,6 +44,9 @@ export const Section = styled.div`
       display: none;
     }
   }
+  @media only screen and (max-width: 425px) {
+    padding: 10px 15px;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -63,36 +66,36 @@ export const Wrapper = styled.div`
     }
   }
 
-  .Auth{
+  .Auth {
     button {
-    background-color: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    p {
-      margin: 0;
-      padding: 0;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
-      letter-spacing: 0.01em;
-      color: #1e1e1e;
-      @media only screen and (max-width: 560px) {
-        font-size: 12px;
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: #1e1e1e;
+        @media only screen and (max-width: 560px) {
+          font-size: 12px;
+        }
+      }
+      i {
+        font-size: 24px;
+        margin-right: 5px;
+        color: white;
+        @media only screen and (max-width: 560px) {
+          font-size: 18px;
+        }
       }
     }
-    i {
-      font-size: 24px;
-      margin-right: 5px;
-      color: white;
-      @media only screen and (max-width: 560px) {
-        font-size: 18px;
-      }
-    }
-  }
   }
 
   .modals {
@@ -125,15 +128,15 @@ export const Wrapper = styled.div`
     color: #000;
     border: none;
     background: transparent;
-    margin-top:10px;
+    margin-top: 10px;
   }
-  .padding-header{
-    margin : 0px;
-    padding : 0px;
-    font-size : 20px;
-    font-weight : 700;
+  .padding-header {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 700;
   }
-  hr{
+  hr {
     margin: 0;
     padding: 0;
   }
@@ -168,7 +171,7 @@ export const Wrapper = styled.div`
       }
     }
   }
-  .Auth{
+  .Auth {
     background-color: transparent;
     border: none;
     display: flex;
@@ -191,18 +194,17 @@ export const MobileDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 25%;
-    .AuthMobile{
-    background-color: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    i {
-      font-weight: 400;
-      font-size: 24px;
-      color: white;
+    .AuthMobile {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      i {
+        font-weight: 400;
+        font-size: 24px;
+        color: white;
+      }
     }
   }
-  }
-
 `;

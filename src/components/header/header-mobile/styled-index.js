@@ -9,12 +9,13 @@ export const Wrapper = styled.div`
     background: #2f66b8;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 15px 15px;
-    height: 85%;
+    height: auto;
     z-index: 110;
     top: ${(props) => (props.open ? "0px" : "-1000px")};
     transition: 1s;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    padding-bottom: 20px  ;
     .Top {
       padding: 20px;
       display: flex;
@@ -55,7 +56,7 @@ export const Wrapper = styled.div`
       justify-content: space-between;
       align-items: center;
       width: 35%;
-      margin-top: 50px;
+      margin-top: 20px;
       margin-left: 20px;
       button {
         background-color: transparent;

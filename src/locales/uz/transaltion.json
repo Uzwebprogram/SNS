@@ -9,7 +9,7 @@
     "6": "Agentlik haqida",
     "7": "FAQ",
     "8": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy",
-    "9" : "Kompaniyalar"
+    "9": "Kompaniyalar"
   },
   "Home": {
     "0": "Korporativ sektorning uzoq yuki: endi kimga oson?",
@@ -54,7 +54,7 @@
     "16": "milliard so'm",
     "17": "Yilni tanlang",
     "18": "Kvartalni tanlang ",
-    "19" : "O'rin",
+    "19": "O'rin",
     "20": "Reyting turi"
   },
   "Ranking": {
@@ -65,16 +65,16 @@
     "4": "Reyting nima?",
     "5": "Kompaniya ranking",
     "6": "ulush",
-    "7" : "Sanoatni tanlang!",
-     "8" : "Indikatorni tanlang !",
-     "9" : "Boshi",
-     "10" : "oxiri",
-     "11" : "yil",
-     "12" : "Oʻzgarishlar",
-     "13" : "Barcha atributlar",
-     "14" : "MOLIYA SEKTORI",
-       "15" : "KORPORATİY SEKTOR",
-       "16" : "filter"
+    "7": "Sanoatni tanlang!",
+    "8": "Indikatorni tanlang !",
+    "9": "Boshi",
+    "10": "oxiri",
+    "11": "yil",
+    "12": "Oʻzgarishlar",
+    "13": "Barcha atributlar",
+    "14": "MOLIYA SEKTORI",
+    "15": "KORPORATİY SEKTOR",
+    "16": "filter"
   },
   "Analytic": {
     "0": "So'rovdan o'tish",
@@ -182,5 +182,28 @@
     "5": "'SNS' reyting agentligi tafsilotlari",
     "6": "Kompaniya ma'lumotlari",
     "7": "Ekspert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi"
+  },
+  "Consultant": {
+    "0": "STANDART VA SEZONLI reytinglar",
+    "1": "Sizning sifat va ishonchlilik bo'yicha maslahatchi",
+    "2": "Maslahat",
+    "3": "Kompaniyaning ishonchliligi",
+    "4": "Biz milliy reyting agentligimiz, kompaniyalarning moliyaviy barqarorligini va qarz vositalarini baholash bo'yicha ixtisoslashganmiz. Bizning asosiy vazifamiz O'zbekiston Respublikasi sub'ektlarining moliyaviy ishonchliligi va barqarorligi to'g'risida ob'ektiv va ishonchli ma'lumotlarni taqdim etishdir, deb hisoblaymiz. Bizning mutaxassislar jamoasi har kuni moliya bozori ishtirokchilari uchun tahliliy tadqiqotlar to'playdi va olib boradi.",
+    "5": "Faktlar",
+    "6": "bozorda yillar",
+    "7": "mutaxassislar",
+    "8": "amaldagi metodologiyalar",
+    "9": "kompaniyalar biz bilan hamkorlik qilmoqda",
+    "10": "Bizning metodologiyalarimiz",
+    "11": "buning uchun bizning mutaxassislar jamoasi kompaniyalar sifatini baholash uchun bir nechta metodologiyalarni ishlab chiqdilar. Bizning axborot va tahliliy xizmatlarimiz yordamida sizning arsenalingizda kompaniyaning holati to'g'risida ma'lumot bo'ladi:",
+    "12": "reyting moliyaviy barqarorlik darajasi va kompaniyaning kelgusi 12 oy uchun prognozini ko'rsatadi",
+    "13": "Ranking kompaniyaning asosiy ko'rsatkichlar bo'yicha sohada qanday pozitsiyani egallashini va tendentsiyalarni kuzatib borishini ko'rsatadi",
+    "14": "Tayinlangan",
+    "15": "kredit reytinglari",
+    "16": "to'lov qobiliyati reytinglari",
+    "17": "qimmatli qog'ozlar emitentining reytingi",
+    "18": "Printsiplar va qadriyatlar",
+    "19": "Mustaqillik va shaffoflik. O'z ishimizda biz bozor ishtirokchilarining ishonchini qadrlaymiz va har kim bizning reyting metodologiyalarimiz bilan tanishishi mumkin. Agar bahsli vaziyatlar yuzaga kelsa, biz doimo muloqotga ochiqmiz.",
+    "20": "Himoya va maxfiylik. Biz mas'uliyatni his qilamiz va kompaniyalarga ularning ma'lumotlari manfaatdor yoki uchinchi tomon qo'liga tushmasligiga kafolat beramiz."
   }
 }

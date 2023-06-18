@@ -40,7 +40,7 @@ function Footer() {
     <Wrapper>
       <WrapperContainer>
         <div className="FooterTop">
-          <Row>
+          <Row className="footer_row">
             <Col className="Footer-top-left" lg={3} md={12}>
               <img src={Logo} width={123} height={35} alt="images logo" />
             </Col>
@@ -86,7 +86,7 @@ function Footer() {
       <hr />
       <WrapperContainer>
         <div className="FooterBoottom">
-          <Row>
+          <Row className="footer_row">
             <Col className="Footer-Bottom-left" lg={7} md={12}>
               <p>{t("Footer.9")}</p>
               <p>{t("Footer.10")}</p>

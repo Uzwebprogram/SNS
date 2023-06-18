@@ -4,8 +4,10 @@ import Header from "../components/header";
 import { RouterData } from "./index-data";
 import { Wrapper } from "./styled-index";
 import Footer from "../components/footer";
+import styles from './style.module.css'
+import HashLoader from "react-spinners/HashLoader";
 function RouterComponent() {
-  
+
   return (
     <>
       <Header />
@@ -16,7 +18,9 @@ function RouterComponent() {
               key={elem.id}
               path={elem.path}
               element={
-                <Suspense fallback={<h1>Loading...</h1>}>
+                <Suspense fallback={<div className={styles.loader_wrapp}>
+                  <HashLoader size={70} color="#368fd7" />
+                </div>}>
                   {elem.component}
                 </Suspense>
               }
