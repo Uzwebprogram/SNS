@@ -28,7 +28,7 @@ function HeaderBottom({
   closSearch,
   closeSearchSet,
 }) {
-  const [open , setOpen] = useState(false)
+  const [open, setOpen] = useState(false)
   const HandleOpen = () => setOpen(true)
   const HandleClose3 = () => setOpen(false)
   const pathname = useLocation();
@@ -81,11 +81,11 @@ function HeaderBottom({
             ))}
           </ul>
           <div className="Auth">
-              {!cookies.get("AuthTokenUser") ?  <i onClick={HandleOpen} class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
-            </div>
+            {!cookies.get("AuthTokenUser") ? <i onClick={HandleOpen} class='bx bx-user-circle'></i> : <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
+          </div>
           <MobileDiv>
-          <div className="AuthMobile">
-              {!cookies.get("AuthTokenUser") ?  <i onClick={HandleOpen} class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
+            <div className="AuthMobile">
+              {!cookies.get("AuthTokenUser") ? <i onClick={HandleOpen} class='bx bx-user-circle'></i> : <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
             </div>
             {!closSearch ? (
               <img
@@ -117,6 +117,7 @@ function HeaderBottom({
             onClick={() => setSearch("")}
             className={!search == "" ? "modals" : "nomodals"}
           >
+
         <div className="modal-contents">
         <p className="padding-header">{t("Header.9")}</p>
         <hr /> 
@@ -150,13 +151,14 @@ function HeaderBottom({
                   <br  />
                 </> ): null}
         </div>
+
           </div>
 
-            {!cookies.get("AuthTokenUser") ? 
-   <ModalCommon  height={518} handleClose={HandleClose3} open={open}>
-    <Auth HandleClose3={HandleClose3}/>
-    </ModalCommon> : null } 
-    <LanguageHeader/>
+          {!cookies.get("AuthTokenUser") ?
+            <ModalCommon height={518} handleClose={HandleClose3} open={open}>
+              <Auth HandleClose3={HandleClose3} />
+            </ModalCommon> : null}
+          <LanguageHeader />
         </Wrapper>
       </WrapperContainer>
     </Section>
