@@ -27,7 +27,7 @@ function HeaderBottom({
   closSearch,
   closeSearchSet,
 }) {
-  const [open , setOpen] = useState(false)
+  const [open, setOpen] = useState(false)
   const HandleOpen = () => setOpen(true)
   const HandleClose3 = () => setOpen(false)
   const pathname = useLocation();
@@ -73,11 +73,11 @@ function HeaderBottom({
             ))}
           </ul>
           <div className="Auth">
-              {!cookies.get("AuthTokenUser") ?  <i onClick={HandleOpen} class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
-            </div>
+            {!cookies.get("AuthTokenUser") ? <i onClick={HandleOpen} class='bx bx-user-circle'></i> : <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
+          </div>
           <MobileDiv>
-          <div className="AuthMobile">
-              {!cookies.get("AuthTokenUser") ?  <i onClick={HandleOpen} class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
+            <div className="AuthMobile">
+              {!cookies.get("AuthTokenUser") ? <i onClick={HandleOpen} class='bx bx-user-circle'></i> : <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
             </div>
             {!closSearch ? (
               <img
@@ -112,29 +112,29 @@ function HeaderBottom({
             <div className="modal-contents">
               {!search == ""
                 ? getBankSearch.map((elem) => (
-                    <>
-                      <button
-                        id={elem.bank_id}
-                        onClick={async (e) => {
-                          await navigate(`/companyprofile/${e.target.id}`);
-                          window.location.reload();
-                        }}
-                        className="navlink"
-                      >
-                        {elem.companyname}
-                      </button>
-                      <br />
-                    </>
-                  ))
+                  <>
+                    <button
+                      id={elem.bank_id}
+                      onClick={async (e) => {
+                        await navigate(`/companyprofile/${e.target.id}`);
+                        window.location.reload();
+                      }}
+                      className="navlink"
+                    >
+                      {elem.companyname}
+                    </button>
+                    <br />
+                  </>
+                ))
                 : null}
             </div>
           </div>
 
-            {!cookies.get("AuthTokenUser") ? 
-   <ModalCommon  height={518} handleClose={HandleClose3} open={open}>
-    <Auth HandleClose3={HandleClose3}/>
-    </ModalCommon> : null } 
-    <LanguageHeader/>
+          {!cookies.get("AuthTokenUser") ?
+            <ModalCommon height={518} handleClose={HandleClose3} open={open}>
+              <Auth HandleClose3={HandleClose3} />
+            </ModalCommon> : null}
+          <LanguageHeader />
         </Wrapper>
       </WrapperContainer>
     </Section>
