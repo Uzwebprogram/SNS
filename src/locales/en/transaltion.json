@@ -8,7 +8,8 @@
     "5": "Services",
     "6": "About agency",
     "7": "FAQ",
-    "8": "Tashkent, Chilanzar district, Bunyodkor street, 57"
+    "8": "Tashkent, Chilanzar district, Bunyodkor street, 57",
+    "9" : "Companies"
   },
   "Home": {
     "0": "Long load of the corporate sector: who is it easy now?",
@@ -43,17 +44,18 @@
     "6": "Forecast",
     "7": "Press Release",
     "8": "Rating scales",
-    "9": "Rating scales used by 'Expert RA', rating forecasts and 'under supervision' status",
+    "9": "Rating - play an important role in reducing information uncertainty in the interaction between the rating subject and its partners and clients.",
     "10": "More",
     "11": "Why do we need a rating?",
-    "12": "List of regulations and other acts containing requirements for the availability of credit ratings of JSC 'Expert RA'",
+    "12": "Importance - the usefulness of the assigned rating differs depending on the status of the participant",
     "13": "Quarter",
     "14": "Attribute",
     "15": "Year",
     "16": "billion sum",
     "17": "Select a year" ,
     "18": "Select a quarter",
-    "19": "Rating type"
+    "19": "Place",
+    "20": "Rating type"
   },
   "Selects": {
     "0": "FINANCIAL SECTOR",
@@ -62,18 +64,22 @@
   },
   "Ranking": {
     "0": "What is Ranking?",
-    "1": "Ranking of Russian leasing companies based on the results of 9 months of 2022 'Expert RA' announces an update of the methodology for assigning ratings...",
-    "2": "All rankings",
+    "1": "The concept of 'ranking' is often confused with the term 'rating'. Any rating is based on a subjective assessment, which is based either on a specific criterion or on a certain calculation system",
+    "2": "More",
     "3": "Ranking of Russian leasing companies for the first 9 months of 2022 Expert RA announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companiesExpert RA announces an update of the methodology for assigning credit ratings to project companies Expert RA announces an update of the methodology for assigning credit ratings to project companiesRanking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Ranking of Russian leasing companies for the results of 9 months of 2022 Expert RA Ranking announces an update of the methodology for assigning credit ratings to project companies",
     "4": "What is Rating?",
     "5": "Company ranking",
-    "6": "% share",
+    "6": "share",
     "7" : "Choose an industry!",
      "8" : "Select an indicator !",
      "9" : "start",
       "10" : "end",
       "11" : "year",
-      "12" : "% changes"
+      "12" : "changes",
+      "13" : "All Attributes",
+      "14" : "FINANCIAL SECTOR",
+       "15" : "CORPORATE SECTOR",
+       "16" : "filter"
   },
   "Analytic": {
     "0": "Pass the survey",

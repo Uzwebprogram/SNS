@@ -24,7 +24,7 @@ const HomeComponent = () => {
             </Col>
             <Col lg={4} md={12} sm={12} sx={12} className="col">
               <PressCenter />
-              <Comentary />
+              {/* <Comentary /> */}
               <Calling />
               {/* <News /> */}
             </Col>

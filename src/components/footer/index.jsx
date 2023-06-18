@@ -9,11 +9,7 @@ import { dataLink } from "../../utils/data-link";
 function Footer() {
   const { t, i18n } = useTranslation();
   const dataLinkFooter = [
-    {
-      id: 1,
-      title: "Footer.3",
-      link: "/",
-    },
+
     {
       id: 2,
       title: "Footer.4",
@@ -95,22 +91,7 @@ function Footer() {
               <p>{t("Footer.9")}</p>
               <p>{t("Footer.10")}</p>
               <p>{t("Footer.11")}</p>
-              {/* <Row>
-                <Col className="Footer-Bottom-left-bottom" lg={7} md={12}>
-                  <a href="#">{t("Footer.12")}</a>
-                </Col>
-                <Col lg={5} md={12} className="Footer-Bottom-left-bottom">
-                  <a href="#">{t("Footer.13")}</a>
-                </Col>
-              </Row> */}
             </Col>
-            {/* <Col lg={5} md={12} className="Footer-Bottom-right">
-              <h3>{t("Footer.14")}</h3>
-              <p>
-                {t("Footer.16")}
-                <a href="#">{t("Footer.15")}</a>
-              </p>
-            </Col> */}
           </Row>
         </div>
       </WrapperContainer>

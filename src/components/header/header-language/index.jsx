@@ -19,13 +19,6 @@ function LanguageHeader({ HandleClick }) {
 
   return (
     <Wrapper>
-      {LanguValue() === "ru" ? (
-        <img src={RusLogo} width={24} height={18} alt="" />
-      ) : LanguValue() === "en" ? (
-        <img src={EngLogo} width={32} height={28} alt="" />
-      ) : LanguValue() === "uz" ? (
-        <img src={UzbLogo} width={24} height={18} alt="" />
-      ) : null}
       <select onChange={handleLang}>
         {LanguValue() === "ru" ? (
           <>

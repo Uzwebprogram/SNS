@@ -8,7 +8,8 @@
     "5": "Xizmatlar",
     "6": "Agentlik haqida",
     "7": "FAQ",
-    "8": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy"
+    "8": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy",
+    "9" : "Kompaniyalar"
   },
   "Home": {
     "0": "Korporativ sektorning uzoq yuki: endi kimga oson?",
@@ -43,32 +44,37 @@
     "6": "Prognoz",
     "7": "Matbuot xabari",
     "8": "Baho shkalasi",
-    "9": "Expert RA tomonidan qo'llaniladigan reyting shkalasi, reyting prognozlari va 'nazorat ostida' holati",
+    "9": "Reyting - reyting sub'ekti va uning hamkorlari va mijozlari o'rtasidagi o'zaro munosabatlarda axborot noaniqligini kamaytirishda muhim rol o'ynaydi.",
     "10": "Ko'proq",
     "11": "Nega bizga reyting kerak?",
-    "12": "'Ekspert RA' OAJning kredit reytinglari mavjudligiga qo'yiladigan talablarni o'z ichiga olgan normativ-huquqiy hujjatlar va boshqa hujjatlar ro'yxati",
+    "12": "Ahamiyat - tayinlangan reytingning foydaliligi ishtirokchining holatiga qarab farq qiladi",
     "13": "Chorak",
     "14": "Atribut",
     "15": "Yil",
     "16": "milliard so'm",
     "17": "Yilni tanlang",
     "18": "Kvartalni tanlang ",
-    "19": "Reyting turi"
+    "19" : "O'rin",
+    "20": "Reyting turi"
   },
   "Ranking": {
-    "0": "Reyting nima?",
-    "1": "Rossiya lizing kompaniyalarining 2022-yilning 9 oyi yakunlari bo‘yicha reytingi 'Ekspert RA' reytinglarni belgilash metodologiyasining yangilanishini e’lon qiladi...",
-    "2": "Barcha reytinglar",
+    "0": "Ranking nima?",
+    "1": "'Ranking' tushunchasi ko'pincha 'reyting' atamasi bilan chalkashib ketadi. Har qanday reyting sub'ektiv bahoga asoslanadi, u yo ma'lum bir mezon yoki ma'lum bir hisoblash tizimiga asoslanadi",
+    "2": "Batafsil",
     "3": "Rossiya lizing kompaniyalarining 2022-yilning birinchi 9 oyi uchun reytingi Expert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi. loyiha kompaniyalariga kredit reytinglari Expert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Rossiya lizing kompaniyalari reytingi 2022 yilning 9 oyi yakunlari bo'yicha Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Expert RA Ranking loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi.",
     "4": "Reyting nima?",
     "5": "Kompaniya ranking",
-    "6": "% ulush",
+    "6": "ulush",
     "7" : "Sanoatni tanlang!",
      "8" : "Indikatorni tanlang !",
-     "9" : "boshlanish",
+     "9" : "Boshi",
      "10" : "oxiri",
      "11" : "yil",
-     "12" : "Oʻzgarishlar %"
+     "12" : "Oʻzgarishlar",
+     "13" : "Barcha atributlar",
+     "14" : "MOLIYA SEKTORI",
+       "15" : "KORPORATİY SEKTOR",
+       "16" : "filter"
   },
   "Analytic": {
     "0": "So'rovdan o'tish",

@@ -96,7 +96,6 @@ export const WrapperPress = styled.div`
   .table-box {
     margin-top: 90px;
     width: 100%;
-
     p {
       font-family: "Montserrat";
       font-style: normal;
@@ -111,7 +110,7 @@ export const WrapperPress = styled.div`
     }
 
     .table {
-      width: 67.5%;
+      width: 79.5%;
 
       tbody,
       td,

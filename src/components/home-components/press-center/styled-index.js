@@ -21,6 +21,8 @@ export const WrapperPress = styled.div`
   }
 
   .press-content {
+    text-decoration : none;
+    list-style-type : none;
     p {
       font-family: "Montserrat";
       font-style: normal;
@@ -29,6 +31,7 @@ export const WrapperPress = styled.div`
       line-height: 130%;
       letter-spacing: 0.01em;
       color: #1e1e1e;
+
     }
 
     time {

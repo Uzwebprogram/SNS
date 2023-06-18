@@ -35,15 +35,17 @@ const Tables = ({
     reting: Year1 == undefined ? `${t("Ranking.11")}` : `${Year1}  | ${Year2} `,
     obnavit: null,
     mlrd: Year1 == undefined ? `${t("Ranking.11")}` : `${Year1}  | ${Year2} `,
+    rank: Year1 == undefined ? `${t("Ranking.11")}` : `${Year1}  | ${Year2} `,
   });
+  console.log(arr3);
+  console.log(getranking);
   const dispatch = useDispatch();
-
   const getrankingId = useSelector((state) => state.ranking.getrankingId?.Data);
   // eslint-disable-next-line no-lone-blocks, no-unused-expressions
   {
     atribut == false
       ? getranking?.map((elem) => {
-          if (sorts == elem.category_name || sorts == undefined) {
+          if (sorts == elem.category_name || sorts == elem.category_name_ru || sorts == elem.category_name_en || sorts == undefined) {
             data.push({
               key: elem.id,
               object: (
@@ -60,11 +62,6 @@ const Tables = ({
               protsent: (
                 <NavLink className="navlink" to={`/rankingprofile/${elem.id}`}>
                   {elem.inn}
-                </NavLink>
-              ),
-              reting: (
-                <NavLink className="navlink" to={`/rankingprofile/${elem.id}`}>
-                  {elem.about_renking.slice(0, 1).map((e) => e.raiting)}
                 </NavLink>
               ),
 
@@ -78,7 +75,7 @@ const Tables = ({
         })
       : yearBoolean == false
       ? arr3?.map((elem) => {
-          if (sorts == elem.category_name || sorts == undefined) {
+          if (sorts == elem.category_name || sorts == elem.category_name_ru || sorts == elem.category_name_en || sorts == undefined) {
             data.push({
               key: elem.id,
               object: (
@@ -92,11 +89,6 @@ const Tables = ({
                     : elem.title_ru}
                 </NavLink>
               ),
-              reting: (
-                <NavLink className="navlink" to={`/rankingprofile/${elem.id}`}>
-                  {elem.about_renking.slice(0, 1).map((e) => e.raiting)}
-                </NavLink>
-              ),
               protsent: (
                 <NavLink className="navlink" to={`/rankingprofile/${elem.id}`}>
                   {elem.inn}
@@ -106,14 +98,13 @@ const Tables = ({
                 <NavLink className="navlink" to={`/rankingprofile/${elem.id}`}>
                   {elem.about_renking.slice(0, 1).map((e) => e.atribut)}
                 </NavLink>
-                
               ),
             });
           }
         })
       : AtributBoolean == false
       ? arr4.map((elem) =>
-          elem.about_renking.filter((e) => atributs == e.atribut)
+          elem.about_renking.filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en)
             ? data.push({
                 key: elem.id,
                 object: (
@@ -137,7 +128,7 @@ const Tables = ({
                   >
                       <p>
                       {elem.about_renking
-                      .filter((e) => atributs == e.atribut)
+                      .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en)
                       .slice(0, 1)
                       .map((item) => item.raiting)}
                       </p>
@@ -147,7 +138,7 @@ const Tables = ({
                     </span>
                           <p>
                           {elem.about_renking
-                      .filter((e) => atributs == e.atribut)
+                      .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en)
                       .slice(1, 2)
                       .map((item) => item.raiting)}
                           </p>
@@ -161,24 +152,13 @@ const Tables = ({
                     {elem.inn}
                   </NavLink>
                 ),
-                obnavit: (
-                  <NavLink
-                    className="navlink"
-                    to={`/rankingprofile/${elem.id}`}
-                  >
-                    {elem.about_renking
-                      .filter((e) => atributs == e.atribut)
-                      .slice(0, 1)
-                      .map((item) => item.atribut)}
-                  </NavLink>
-                ),
                 mlrd: (
                   <NavLink
                     className="navlink"
                     to={`/rankingprofile/${elem.id}`}
                   >
                       <p>                    {elem.about_renking
-                      .filter((e) => atributs == e.atribut)
+                      .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en)
                       .slice(0, 1)
                       .map((item) => item.sum)}</p>
                     <span style={{ fontWeight: "bold", fontSize: "16px" }}>
@@ -187,42 +167,70 @@ const Tables = ({
                     </span>
                         <p>
                         {elem.about_renking
-                      .filter((e) => atributs == e.atribut)
+                      .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en)
                       .slice(1, 2)
                       .map((item) => item.sum)}
                         </p>
                   </NavLink>
+                ),
+                obnavit: (
+                  <NavLink
+                    className="navlink"
+                    to={`/rankingprofile/${elem.id}`}
+                  >
+                    {elem.about_renking
+                      .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en)
+                      .slice(0, 1)
+                      .map((item) => item.atribut)}
+                  </NavLink>
+                ),
+                rank:(
+                  <NavLink
+                  className="navlink"
+                  to={`/rankingprofile/${elem.id}`}
+                >
+                    <p>                   
+                       {elem.about_renking
+                    .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en).slice(0 , 1).map((item) => item.ranges)}</p>
+                    <span style={{ fontWeight: "bold", fontSize: "16px" }}>
+                      {" "}
+                      |{" "}
+                    </span>
+                    <p>                   
+                       {elem.about_renking
+                    .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en).slice(1 , 2).map((item) => item.ranges)}</p>
+                </NavLink> 
                 ),
                 foiz: (
                   <NavLink>
                     {financial( +elem.about_renking
                       .filter(
                         (e) =>
-                          atributs == e.atribut ||
-                          (Year1 == e.god && Year2 == e.god)
+                          atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                          (Year1 == e.god || Year2 == e.god)
                       )
                       .slice(1, 2)
                       .map((item) => Number(item.sum)) * 100 /
                       +elem.about_renking
                         .filter(
                           (e) =>
-                            atributs == e.atribut ||
-                            (Year1 == e.god && Year2 == e.god)
+                            atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                            (Year1 == e.god || Year2 == e.god)
                         )
                         .slice(0, 1)
                         .map((item) => Number(item.sum)) - 100) == -100  ? 0 : financial( +elem.about_renking
                           .filter(
                             (e) =>
-                              atributs == e.atribut ||
-                              (Year1 == e.god && Year2 == e.god)
+                              atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                              (Year1 == e.god || Year2 == e.god)
                           )
                           .slice(1, 2)
                           .map((item) => Number(item.sum)) * 100 /
                           +elem.about_renking
                             .filter(
                               (e) =>
-                                atributs == e.atribut ||
-                                (Year1 == e.god && Year2 == e.god)
+                                atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                                (Year1 == e.god || Year2 == e.god)
                             )
                             .slice(0, 1)
                             .map((item) => Number(item.sum)) - 100)}  %
@@ -232,7 +240,7 @@ const Tables = ({
             : null
         )
       : arr5.map((elem) =>
-          elem.about_renking.filter((e) => atributs == e.atribut)
+          elem.about_renking.filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en)
             ? data.push({
                 key: elem.id,
                 object: (
@@ -258,8 +266,8 @@ const Tables = ({
                           {elem.about_renking
                       .filter(
                         (e) =>
-                          atributs == e.atribut ||
-                          (Year1 == e.god && Year2 == e.god)
+                          atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                          (Year1 == e.god || Year2 == e.god)
                       )
                       .slice(0, 1)
                       .map((item) => item.raiting)}</p>
@@ -271,8 +279,8 @@ const Tables = ({
                         {elem.about_renking
                       .filter(
                         (e) =>
-                          atributs == e.atribut ||
-                          (Year1 == e.god && Year2 == e.god)
+                          atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                          (Year1 == e.god || Year2 == e.god)
                       )
                       .slice(1, 2)
                       .map((item) => item.raiting)}
@@ -288,20 +296,7 @@ const Tables = ({
 
                   </NavLink>
                 ),
-                obnavit: (
-                  <NavLink
-                    className="navlink"
-                    to={`/rankingprofile/${elem.id}`}
-                  >
-                    {elem.about_renking
-                      .filter(
-                        (e) =>
-                          ( atributs == e.atribut || Year1 == e.god && Year2 == e.god)
-                      )
-                      .slice(0, 1)
-                      .map((item) => item.atribut)}
-                  </NavLink>
-                ),
+
                 mlrd: (
                   <NavLink
                     className="navlink"
@@ -312,7 +307,7 @@ const Tables = ({
                       .filter(
                         (e) =>
                          
-                          (  atributs == e.atribut || Year1 == e.god && Year2 == e.god)
+                          (  atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en && Year1 == e.god || Year2 == e.god)
                       )
                       .slice(0, 1)
                       .map((item) => item.sum)}
@@ -325,8 +320,8 @@ const Tables = ({
                             {elem.about_renking
                       .filter(
                         (e) =>
-                          atributs == e.atribut ||
-                          (Year1 == e.god && Year2 == e.god)
+                          atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                          (Year1 == e.god || Year2 == e.god)
                       )
                       .slice(1, 2)
                       .map((item) => item.sum)}
@@ -334,36 +329,67 @@ const Tables = ({
 
                   </NavLink>
                 ),
+                obnavit: (
+                  <NavLink
+                    className="navlink"
+                    to={`/rankingprofile/${elem.id}`}
+                  >
+                    {elem.about_renking
+                      .filter(
+                        (e) =>
+                          ( atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en && Year1 == e.god || Year2 == e.god)
+                      )
+                      .slice(0, 1)
+                      .map((item) => item.atribut)}
+                  </NavLink>
+                ),
+                rank:(
+                  <NavLink
+                  className="navlink"
+                  to={`/rankingprofile/${elem.id}`}
+                >
+                    <p>                   
+                       {elem.about_renking
+                    .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en).slice(0 , 1).map((item) => item.ranges)}</p>
+                    <span style={{ fontWeight: "bold", fontSize: "16px" }}>
+                      {" "}
+                      |{" "}
+                    </span>
+                    <p>                   
+                       {elem.about_renking
+                    .filter((e) => atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en).slice(1 , 2).map((item) => item.ranges)}</p>
+                </NavLink> 
+                ),
                 foiz: (
                   <NavLink>
                     {financial( +elem.about_renking
                       .filter(
                         (e) =>
-                          atributs == e.atribut ||
-                          (Year1 == e.god && Year2 == e.god)
+                          atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                          (Year1 == e.god || Year2 == e.god)
                       )
                       .slice(1, 2)
                       .map((item) => Number(item.sum)) * 100 /
                       +elem.about_renking
                         .filter(
                           (e) =>
-                            atributs == e.atribut ||
-                            (Year1 == e.god && Year2 == e.god)
+                            atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                            (Year1 == e.god || Year2 == e.god)
                         )
                         .slice(0, 1)
                         .map((item) => Number(item.sum)) - 100) == -100  ? 0 : financial( +elem.about_renking
                           .filter(
                             (e) =>
-                              atributs == e.atribut ||
-                              (Year1 == e.god && Year2 == e.god)
+                              atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                              (Year1 == e.god || Year2 == e.god)
                           )
                           .slice(1, 2)
                           .map((item) => Number(item.sum)) * 100 /
                           +elem.about_renking
                             .filter(
                               (e) =>
-                                atributs == e.atribut ||
-                                (Year1 == e.god && Year2 == e.god)
+                                atributs == e.atribut || atributs == e.atribut_ru || atributs == e.atribut_en &&
+                                (Year1 == e.god || Year2 == e.god)
                             )
                             .slice(0, 1)
                             .map((item) => Number(item.sum)) - 100)}  %
@@ -385,15 +411,19 @@ const Tables = ({
       dataIndex: "protsent",
     },
     {
+      title: `${t("Rating.16")}`,
+      dataIndex: "mlrd",
+      width:100
+    },
+    {
       title: `${t("Ranking.6")}`,
       dataIndex: "reting",
       width:100
     },
-
     {
-      title: `${t("Rating.16")}`,
-      dataIndex: "mlrd",
-      width:160
+      title: `${t("Rating.19")}`,
+      dataIndex: "rank",
+      width:100
     },
     {
       title: `${t("Ranking.12")}`,
@@ -431,9 +461,7 @@ const Tables = ({
           rowSelection={rowSelection}
           columns={columns}
           dataSource={data}
-          scroll={{
-            x: 200,
-          }}
+          scroll={{ x: 240 }}
         />
       </div>
     </div>
