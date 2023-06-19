@@ -203,7 +203,86 @@
     "16": "solvency ratings",
     "17": "Securities issuer ratings",
     "18": "Principles and Values",
-    "19": "Independence and Transparency. In our work, we value the trust of market participants and everyone can get acquainted with our methodologies for assigning ratings. In case of disputes, we are always open to dialogue.",
-    "20": "Protection and confidentiality. We feel responsible and guarantee companies that their information will not fall into the hands of interested or third parties."
+    "19": "Independence and transparency.",
+    "20": "In our work, we value the trust of market participants and everyone can get acquainted with our methodology for assigning ratings. In case of disputes, we are always open to dialogue.",
+    "21": "Protection and confidentiality.",
+    "22": "We feel responsible and guarantee companies that their information will not fall into the hands of interested or third parties."
+  },
+
+  "Form": {
+    "0": "Leave a request for consultation!",
+    "1": "Company",
+    "2": "Full name",
+    "3": "Phone number",
+    "4": "Send"
+  },
+
+  "UslugiRating": {
+    "0": "Rating",
+    "1": "Many indicators are used to evaluate the company's performance, such as market position, financial indicators and much more. However, collecting and analyzing the necessary data requires a lot of time and effort.",
+    "2": " A company's rating is a reliable tool for assessing its quality and transparency. We have developed methodologies that allow us to derive a rating, taking into account the specifics of the industry and the company's activities. Our agency presents several types of rating, which takes into account the specifics of industries and the company's activities.",
+    "3": "Types of ratings",
+    "4": "Creditworthiness and reliability",
+    "5": "Solvency and reliability",
+    "6": "Issuer of securities",
+    "7": "Express rating",
+    "8": "Rating assignment process",
+    "9": "Rating users",
+    "10": "Companies",
+    "11": "Distinguish yourself from other borrowers and attract the attention of a wider range of investors",
+    "12": "Declare your effective financial activities without disclosing confidential information",
+    "13": "Reduce the cost of borrowing processes by improving the standards of disclosure of information about yourself",
+    "14": "Create a rating history, thereby improving the financial reputation of the company",
+    "15": "Get an independent assessment of its performance indicators, which allows you to draw conclusions and adjust the company's development strategy",
+    "16": "Investors",
+    "17": "Rating is a universal risk assessment tool",
+    "18": "Improving the standards of disclosure of information about borrowers",
+    "19": "Creating a comparable rating history of borrowers",
+    "20": "Providing financing for economically viable projects and informing the market about possible defaults",
+    "21": "The economy of the country",
+    "22": "Increasing the transparency of the functioning of the economy",
+    "23": "Ensuring the progressive development of the financial market"
+  },
+
+  "UslugiAnalytic": {
+    "0": "Analytical market research",
+    "1": "Analytical market research contains deep, structured information based on a detailed analysis of statistical and analytical data.",
+    "2": "Research structure",
+    "3": "General characteristics of the market",
+    "4": "Description of the market",
+    "5": "Analysis of market trends",
+    "6": "General market indicators, calculation of market capacity",
+    "7": "Segmentation and structuring of the market – market structure research",
+    "8": "Raw material base, production technology",
+    "9": "Production and sales dynamics",
+    "10": "Foreign trade",
+    "11": "Price and pricing in the market",
+    "12": "Consumers and their preferences",
+    "13": "Product distribution channels",
+    "14": "Assortment of market products",
+    "15": "Conclusions. Forecast indicators",
+    "16": "Investment attractiveness of the industry"
+  },
+
+  "FinanceConsult": {
+    "0": "Financial Consulting",
+    "1": "SNS Ratings agency specialists offer you their services in preparing investment presentations. Such a presentation is the main tool of communication with the investor, therefore it should be prepared at the appropriate level. ",
+    "2": "Based on your information and taking into account your goals, we will prepare a high-quality presentation that will help you correctly submit your idea to a future lender or decision maker.",
+    "3": "Prepared presentation:",
+    "4": "Will present your project in the best way",
+    "5": "Will highlight its strengths and competitive advantages",
+    "6": "Will justify the financial and investment attractiveness of the project",
+    "7": "The structure of the investment presentation",
+    "8": "*This structure can be modified according to your wishes to more fully take into account the specifics of your business.",
+    "9": "Project Concept",
+    "10": "Organizational and production process",
+    "11": "Product/service description for the Project",
+    "12": "Project Team",
+    "13": "Target market Passport",
+    "14": "Financial Project evaluation",
+    "15": "Necessary investments and directions of their use",
+    "16": "Indicators of investment attractiveness of the Project",
+    "17": "SWOT analysis of the Project",
+    "18": "Offer to the investor"
   }
 }

@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import Cookies from "universal-cookie/cjs/Cookies";
+
 const Home = lazy(() => import("./../layouts/Home/index"));
 const About = lazy(() => import("./../layouts/About/index"));
 const Contact = lazy(() => import("./../layouts/Contact/index"));
@@ -21,7 +22,9 @@ const WhatIsRanking = lazy(() => import("../layouts/what-is-ranking/index"));
 const RankingProfile = lazy(() => import("../layouts/ranking-profile/index"));
 const WhatIsRating = lazy(() => import("../layouts/what-is-rating/index"));
 const Consultant = lazy(() => import("../layouts/consultant/index"));
-
+const UslugiRating = lazy(() => import("../layouts/uslugi-rating/index"));
+const UslugiAnalytical = lazy(() => import("../layouts/uslugi-analytical"));
+const FinanceConsult = lazy(() => import("../layouts/finance-consult"));
 const cookies = new Cookies();
 
 const personalData = cookies.get("AuthDataUser");
@@ -146,5 +149,20 @@ export const RouterData = [
     id: 21,
     path: "/consultant",
     component: <Consultant />,
+  },
+  {
+    id: 22,
+    path: "uslugi/uslugirating",
+    component: <UslugiRating />,
+  },
+  {
+    id: 23,
+    path: "uslugi/uslugianalytic",
+    component: <UslugiAnalytical />,
+  },
+  {
+    id: 24,
+    path: "uslugi/uslugifinance",
+    component: <FinanceConsult />,
   },
 ];

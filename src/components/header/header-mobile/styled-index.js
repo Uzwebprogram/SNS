@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: none;
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 991px) {
     display: block;
     position: fixed;
     width: 100%;

@@ -203,7 +203,86 @@
     "16": "to'lov qobiliyati reytinglari",
     "17": "qimmatli qog'ozlar emitentining reytingi",
     "18": "Printsiplar va qadriyatlar",
-    "19": "Mustaqillik va shaffoflik. O'z ishimizda biz bozor ishtirokchilarining ishonchini qadrlaymiz va har kim bizning reyting metodologiyalarimiz bilan tanishishi mumkin. Agar bahsli vaziyatlar yuzaga kelsa, biz doimo muloqotga ochiqmiz.",
-    "20": "Himoya va maxfiylik. Biz mas'uliyatni his qilamiz va kompaniyalarga ularning ma'lumotlari manfaatdor yoki uchinchi tomon qo'liga tushmasligiga kafolat beramiz."
+    "19": "Mustaqillik va shaffoflik.",
+    "20": "o'z ishimizda biz bozor ishtirokchilarining ishonchini qadrlaymiz va har kim biz bilan tanishishi mumkin reyting berish metodologiyasi. Agar bahsli vaziyatlar yuzaga kelsa, biz doimo muloqotga ochiqmiz.",
+    "21": "Himoya va maxfiylik.",
+    "22": "biz mas'uliyatni his qilamiz va kompaniyalarga ularning ma'lumotlari manfaatdor yoki uchinchi tomon qo'liga tushmasligini ta'minlaymiz."
+  },
+
+  "Form": {
+    "0": "Maslahat uchun so'rov qoldiring!",
+    "1": "Kompaniya",
+    "2": "To'liq ism",
+    "3": "Telefon raqami",
+    "4": "Yuborish"
+  },
+
+  "UslugiRating": {
+    "0": "Reyting",
+    "1": "Kompaniya faoliyatini baholash uchun bozor pozitsiyasi, moliyaviy ko'rsatkichlar va boshqalar kabi ko'plab ko'rsatkichlardan foydalanadi. Biroq, kerakli ma'lumotlarni to'plash va tahlil qilish ko'p vaqt va kuch talab qiladi.",
+    "2": "Kompaniyaning reytingi uning sifati va shaffofligini baholashning ishonchli vositasidir. Biz sanoat va kompaniya faoliyatining o'ziga xos xususiyatlarini hisobga olgan holda reytingni chiqarishga imkon beradigan metodologiyalarni ishlab chiqdik. Bizning agentligimiz sanoatning o'ziga xos xususiyatlarini va kompaniya faoliyatini hisobga olgan holda reytingning bir nechta turlarini taqdim etadi.",
+    "3": "Reyting turlari",
+    "4": "Kreditga layoqatlilik va ishonchlilik",
+    "5": "To'lov qobiliyati va ishonchliligi",
+    "6": "Qimmatli qog'ozlar emitenti",
+    "7": "Ekspress reyting",
+    "8": "Reyting berish jarayoni",
+    "9": "Reyting foydalanuvchilari",
+    "10": "Kompaniyalar",
+    "11": "O'zingizni boshqa qarz oluvchilardan ajratib turing va investorlarning keng doirasini jalb qiling",
+    "12": "Maxfiy ma'lumotlarni oshkor qilmasdan samarali moliyaviy faoliyatingizni e'lon qilish",
+    "13": "O'z-o'zini oshkor qilish standartlarini takomillashtirish orqali qarz olish jarayonlarini arzonlashtirish",
+    "14": "Kompaniyaning moliyaviy obro'sini yaxshilash orqali reyting tarixini yaratish",
+    "15": "O'zingizning faoliyatingiz ko'rsatkichlarini mustaqil ravishda baholang, bu sizga xulosa chiqarish va kompaniyaning rivojlanish strategiyasini o'zgartirishga imkon beradi",
+    "16": "Investorlar",
+    "17": "Reyting-xavfni baholashning universal vositasi",
+    "18": "Qarz oluvchilarni oshkor qilish standartlarini takomillashtirish",
+    "19": "Qarz oluvchilarning taqqoslanadigan reyting tarixini yaratish",
+    "20": "Iqtisodiy jihatdan foydali loyihalarni moliyalashtirishni ta'minlash va bozorni mumkin bo'lgan defoltlar to'g'risida xabardor qilish",
+    "21": "Mamlakat iqtisodiyoti",
+    "22": "Iqtisodiyot faoliyatining shaffofligini oshirish",
+    "23": "Moliya bozorining izchil rivojlanishini ta'minlash"
+  },
+
+  "UslugiAnalytic": {
+    "0": "Analitik bozor tadqiqotlari",
+    "1": "Analitik bozor tadqiqotlari statistik va analitik ma'lumotlarning batafsil tahliliga asoslangan chuqur, tuzilgan ma'lumotlarni o'z ichiga oladi.",
+    "2": "Tadqiqot tuzilishi",
+    "3": "Bozorning umumiy xususiyatlari",
+    "4": "Bozor tavsifi",
+    "5": "Bozor tendentsiyalarini tahlil qilish",
+    "6": "Bozorning umumiy ko'rsatkichlari, bozor hajmini hisoblash",
+    "7": "Bozor segmentatsiyasi va tuzilishi-bozor tuzilishini o'rganish",
+    "8": "Xom ashyo bazasi, ishlab chiqarish texnologiyasi",
+    "9": "Ishlab chiqarish va sotish dinamikasi",
+    "10": "Tashqi savdo",
+    "11": "Bozorda narx va narxlash",
+    "12": "Iste'molchilar va ularning afzalliklari",
+    "13": "Mahsulot tarqatish kanallari",
+    "14": "Bozor mahsulotlari assortimenti",
+    "15": "Xulosalar. Prognoz ko'rsatkichlari",
+    "16": "Sanoatning investitsion jozibadorligi"
+  },
+
+  "FinanceConsult": {
+    "0": "Moliyaviy maslahat",
+    "1": "SNS Ratings agentligi mutaxassislari sizga investitsiya taqdimotlarini tayyorlashda o'z xizmatlarini taklif qilishadi. Bunday taqdimot investor bilan aloqa qilishning asosiy vositasidir, shuning uchun uni tegishli darajada tayyorlash kerak. ",
+    "2": "Sizning ma'lumotlaringizga asoslanib va maqsadlaringizni hisobga olgan holda, biz sizning fikringizni kelajakdagi qarz beruvchiga yoki qaror qabul qiluvchiga to'g'ri taqdim etishga yordam beradigan sifatli taqdimotni tayyorlaymiz.",
+    "3": "Tayyorlangan taqdimot:",
+    "4": "Sizning loyihangiz eng yaxshi tarzda taqdim etiladi",
+    "5": "Uning kuchli va raqobatdosh ustunliklarini yoritadi",
+    "6": "Loyihaning moliyaviy va investitsion jozibadorligini asoslaydi",
+    "7": "Investitsion taqdimot tuzilishi",
+    "8": "*Ushbu tuzilma sizning biznesingizning o'ziga xos xususiyatlarini to'liq hisobga olish uchun sizning xohishingizga ko'ra o'zgartirilishi mumkin.",
+    "9": "Loyiha Kontseptsiyasi",
+    "10": "Tashkiliy va ishlab chiqarish jarayoni",
+    "11": "Loyiha bo'yicha mahsulot / xizmat tavsifi",
+    "12": "Loyiha Jamoasi",
+    "13":"Maqsadli bozor pasporti",
+    "14":"Loyihani moliyaviy baholash",
+    "15": "Zarur investitsiyalar va ulardan foydalanish yo'nalishlari",
+    "16": "Loyihaning investitsion jozibadorligi ko'rsatkichlari",
+    "17": "Loyihaning SWOT tahlili",
+    "18": "Investorga taklif"
   }
 }

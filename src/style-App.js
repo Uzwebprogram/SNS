@@ -8,15 +8,16 @@ export const GlobalStyle = createGlobalStyle`
   html{
     scroll-behavior:smooth
     }
+
+    *{
+      font-family: 'Montserrat' !important;
+    }
     
   body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     background-color: #F5F5F5;
-
-    font-family: 'Montserrat' !important;
-
 
     h2{
       margin-bottom: 20px;

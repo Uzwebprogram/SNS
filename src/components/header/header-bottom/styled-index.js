@@ -39,7 +39,7 @@ export const Section = styled.div`
     border-bottom-right-radius: 25px !important;
     padding-bottom: 7px !important;
   }
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 991px) {
     .search {
       display: none;
     }
@@ -151,7 +151,7 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    @media only screen and (max-width: 920px) {
+    @media only screen and (max-width: 991px) {
       display: none;
     }
     li {
@@ -177,7 +177,7 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
-    @media only screen and (max-width: 920px) {
+    @media only screen and (max-width: 991px) {
       display: none;
     }
     i {
@@ -189,7 +189,7 @@ export const Wrapper = styled.div`
 `;
 export const MobileDiv = styled.div`
   display: none;
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 991px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
