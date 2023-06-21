@@ -74,7 +74,11 @@
     "13": "Barcha atributlar",
     "14": "MOLIYA SEKTORI",
     "15": "KORPORATİY SEKTOR",
-    "16": "filter"
+    "16": "Filter",
+    "17": "Ranking",
+    "18": "Bu aniq tushunilgan miqdoriy ifodaga ega bo'lgan aniq belgilangan ko'rsatkich asosida tuzilgan ro'yxat, jadval. Ko'pincha reytingda reyting ro'yxati indikatorning qiymatining pasayishi bo'yicha tuziladi.",
+    "19": "Rankingning o'ziga xos xususiyati",
+    "20": "Bu reyting natijasining ob'ektivligi. Reytingdan farqli o'laroq, bu har qanday yomon o'lchanadigan hodisa, jarayon, ko'rsatkichlar to'plamining sub'ektiv bahosi; Ranking-bu qiziqishning reyting ko'rsatkichi (belgisi) bo'yicha asl ro'yxatni aniq tartiblash imkoniyati. Reyting ko'pincha birlamchi tasniflash uchun ishlatiladi, Ranking esa aniq ma'lumotlarga asoslangan tartibdir."
   },
   "Analytic": {
     "0": "So'rovdan o'tish",
@@ -241,7 +245,69 @@
     "20": "Iqtisodiy jihatdan foydali loyihalarni moliyalashtirishni ta'minlash va bozorni mumkin bo'lgan defoltlar to'g'risida xabardor qilish",
     "21": "Mamlakat iqtisodiyoti",
     "22": "Iqtisodiyot faoliyatining shaffofligini oshirish",
-    "23": "Moliya bozorining izchil rivojlanishini ta'minlash"
+    "23": "Moliya bozorining izchil rivojlanishini ta'minlash",
+    "RatingType1": {
+      "0": "Kreditga layoqatlilik va ishonchlilik reytingi",
+      "1": "Ushbu turdagi reyting iqtisodiyotning moliyaviy sektori uchun mo'ljallangan va kompaniyalarning pul-kredit siyosatining nozik tomonlarini hisobga oladi. Reyting kredit kompaniyalari faoliyatini har tomonlama va puxta tahlil qiladi.",
+      "2": "Agentlik tomonidan tahlil o'tkazilgandan so'ng:",
+      "3": "kompaniyaning kuchli va zaif tomonlarini o'z ichiga olgan reyting hisoboti va tahlilchilarning tavsiyalari;",
+      "4": "Reyting sertifikati;",
+      "5": "Agentlikning Press-relizi;",
+      "6": "Reyting monitoringi.",
+      "7": "Reyting berish metodologiyasi haqida ko'proq ma'lumotni 'Metodologiya' bo'limida topishingiz mumkin",
+      "8": "Reyting quyidagilar uchun mo'ljallangan:",
+      "9": "Tijorat banklari",
+      "10": "Mikromoliya kompaniyalari",
+      "11": "Lombardlar",
+      "12": "Reytingni tayinlashning umumiy tuzilishi:",
+      "13": "Tashqi omillar (150)",
+      "14": "O'zbekiston iqtisodiyotining umumiy holati",
+      "15": "Iqtisodiyot sektorining holati",
+      "16": "Sanoatni tartibga solish",
+      "17": "Raqobatbardosh tendentsiyalar",
+      "18": "Bozor pozitsiyasi va istiqbollari",
+      "19": "Ichki omillar (150)",
+      "20": "Miqdoriy ko'rsatkichlar",
+      "21": "Moliyaviy holat",
+      "22": "Retrospektiv faoliyat",
+      "24": "Rivojlanish prognozlari",
+      "25": "Sifat ko'rsatkichlari",
+      "26": "Menejment",
+      "27": "Rivojlanish strategiyasi",
+      "28": "Moliyaviy moslashuvchanlik",
+      "29": "Reyting shkalasi",
+      "30": "Barcha kerakli ma'lumotlarni to'plaganimizdan so'ng, biz kompaniyaning tashqi va ichki omillarini tahlil qilamiz va reyting shkalasi bo'yicha baho beramiz.",
+      "31": "Prognozlar",
+      "32": "Reyting bahosiga, shuningdek, reyting berilgan paytdan boshlab tahlilchilar tomonidan keyingi 12 oy uchun prognoz beriladi. Prognozlar 4 xil:",
+      "33": "Ijobiy",
+      "34": "– reytingni oshirish ehtimoli",
+      "35": "Barqaror",
+      "36": "– reytingni saqlab qolish ehtimoli",
+      "37": "Salbiy",
+      "38": "– reytingni pasaytirish ehtimoli",
+      "39": "Rivojlanayotgan",
+      "40": "– reyting harakatlarining ikki yoki undan ortiq variantlari bir xil ehtimolga ega: reytingni saqlash, oshirish yoki pasaytirish"
+    },
+
+    "RatingType2": {
+      "0": "To'lov qobiliyati va ishonchliligi reytingi",
+      "1": "Reyting sug'urta kompaniyalari uchun mo'ljallangan:",
+      "2": "Umumiy sug'urta",
+      "3": "Hayotni sug'urtalash"
+    },
+    "RatingType3": {
+      "0": "Qimmatli qog'ozlar emitentining reytingi",
+      "1": "Aksiyadorlik jamiyatlari (AJ)",
+      "2": "Mas'uliyati cheklangan jamiyatlar (MCHJ)",
+      "3": "Emitentning fond bozoridagi raqobatbardosh pozitsiyalari",
+      "4": "Bozorda qimmatli qog'ozlarning jozibadorligi",
+      "5": "Qimmatli qog'ozlar bozori holati",
+      "6": "Ushbu turdagi reyting iqtisodiyotning moliyaviy bo'lmagan sektori uchun mo'ljallangan va moliya sohasidagi kompaniyalarga (tijorat banklari, sug'urta kompaniyalari va boshqalar) taalluqli emas. Kompaniyaning biznes hajmi va ko'lami reyting reytingiga ta'sir qilmaydi. Reytingda kompaniya faoliyatini har tomonlama va puxta tahlil qilish amalga oshiriladi."
+    },
+    "RatingType4": {
+      "0": "Ekspress reyting",
+      "1": "Ushbu turdagi reyting kompaniyaning moliyaviy barqarorligi va ishonchliligini baholashning soddalashtirilgan usuli hisoblanadi. Ushbu reytingning boshqalardan ajralib turadigan xususiyati shundaki, tahlilchilar chuqurlashmasdan qisqa iqtisodiy tadqiqotlar olib boradilar. Agar to'liq tahlilda 250 dan 350 gacha ko'rsatkichlar ko'rib chiqilsa, Ekspress tahlilda 100 ga yaqin ko'rsatkichlar ko'rib chiqiladi."
+    }
   },
 
   "UslugiAnalytic": {
@@ -278,8 +344,8 @@
     "10": "Tashkiliy va ishlab chiqarish jarayoni",
     "11": "Loyiha bo'yicha mahsulot / xizmat tavsifi",
     "12": "Loyiha Jamoasi",
-    "13":"Maqsadli bozor pasporti",
-    "14":"Loyihani moliyaviy baholash",
+    "13": "Maqsadli bozor pasporti",
+    "14": "Loyihani moliyaviy baholash",
     "15": "Zarur investitsiyalar va ulardan foydalanish yo'nalishlari",
     "16": "Loyihaning investitsion jozibadorligi ko'rsatkichlari",
     "17": "Loyihaning SWOT tahlili",

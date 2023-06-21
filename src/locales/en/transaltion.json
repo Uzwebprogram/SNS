@@ -79,7 +79,11 @@
     "13": "All Attributes",
     "14": "FINANCIAL SECTOR",
     "15": "CORPORATE SECTOR",
-    "16": "filter"
+    "16": "filter",
+    "17": "Ranking",
+    "18": "This is a list, a table built on the basis of a clearly defined indicator that has an unambiguously understood quantitative expression. Most often, in ranking, the ranked list is arranged in descending order of the value of some indicator.",
+    "19": "A distinctive feature of the ranking",
+    "20": "This is the objectivity of the ranking result. In contrast to the rating, which is a subjective assessment of some poorly measurable phenomenon, process, set of indicators; ranking is the ability to accurately rank the original list according to the ranking indicator (attribute) of interest. Rating is often used for primary classification, whereas ranking is ordering based on accurate data."
   },
   "Analytic": {
     "0": "Pass the survey",
@@ -241,7 +245,69 @@
     "20": "Providing financing for economically viable projects and informing the market about possible defaults",
     "21": "The economy of the country",
     "22": "Increasing the transparency of the functioning of the economy",
-    "23": "Ensuring the progressive development of the financial market"
+    "23": "Ensuring the progressive development of the financial market",
+
+    "RatingType1": {
+      "0": "Creditworthiness and reliability rating",
+      "1": "This type of rating is intended for the financial sector of the economy and takes into account the subtleties of monetary policy of companies. The rating provides a comprehensive and thorough analysis of the activities of credit companies.",
+      "2": "After the analysis, the agency provides:",
+      "3": "Rating report, which contains the strengths and weaknesses of the company, and recommendations of analysts;",
+      "4": "Rating certificate;",
+      "5": "Agency press release;",
+      "6": "Rating monitoring.",
+      "7": "For more information on the methodology of rating assignment, see the section 'Methodologies',",
+      "8": "The rating is intended for:",
+      "9": "Commercial banks",
+      "10": "Microfinance companies",
+      "11": "Pawnshops",
+      "12": "General structure of rating assignment:",
+      "13": "External factors (150)",
+      "14": " The general state of the economy of Uzbekistan",
+      "15": "The state of the economic sector",
+      "16": "Regulatory and regulatorylegal regulation of the industry",
+      "17": "Competitive trends",
+      "18": "Market position and prospects",
+      "19": "Internal factors (150)",
+      "20": " Quantitative indicators",
+      "21": "Financial condition",
+      "22": "Retrospective activity",
+      "24": "Development forecasts",
+      "25": "Quality indicators",
+      "26": "Management",
+      "27": "Development strategy",
+      "28": "Financial flexibility",
+      "29": "Rating scale",
+      "30": "After collecting all the necessary data, we analyze the external and internal factors of the company and output an assessment on a rating scale.",
+      "31": "Forecasts",
+      "32": " To the rating assessment, analysts also give a forecast for the next 12 months from the moment of assigning the rating. There are 4 types of forecasts:",
+      "33": "Positive",
+      "34": " – the probability of an increase in the rating",
+      "35": "Stable",
+      "36": " – the probability of maintaining the rating",
+      "37": "Negative",
+      "38": "– the probability of a rating downgrade",
+      "39": "Developing",
+      "40": " – two or more variants of rating actions are equally likely: saving, raising or lowering the rating"
+    },
+    "RatingType2": {
+      "0": "Solvency and reliability rating",
+      "1": "Rating is intended for insurance companies:",
+      "2": "General insurance",
+      "3": "Life insurance"
+    },
+    "RatingType3": {
+      "0": "Rating of the issuer of securities",
+      "1": "Joint Stock companies (JSC)",
+      "2": "Limited Liability Companies (LLC)",
+      "3": "The issuer's competitive positions on the stock market",
+      "4": "The attractiveness of the security on the market",
+      "5": "The state of the stock market",
+      "6": " This type of rating is intended for the non-financial sector of the economy and is not applicable to financial sector companies (commercial banks, insurance companies, etc.). The size and scale of the company's business does not affect the rating rating. The rating provides a comprehensive and thorough analysis of the company's activities."
+    },
+    "RatingType4": {
+      "0": "Express rating",
+      "1": " This type of rating is a more simplified method of assessing the financial stability and reliability of the company. A distinctive feature of this rating from others is that analysts conduct a brief economic study without deepening. If 250 to 350 indicators are considered in a full-fledged analysis, then about 100 indicators are considered in an express analysis."
+    }
   },
 
   "UslugiAnalytic": {
