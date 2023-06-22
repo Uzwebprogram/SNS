@@ -1,0 +1,31 @@
+.header_link_texts {
+  margin: 0 !important;
+}
+
+.ant-space-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Montserrat" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  -webkit-letter-spacing: 0.01em !important;
+  -moz-letter-spacing: 0.01em !important;
+  -ms-letter-spacing: 0.01em !important;
+  letter-spacing: 0 !important;
+  color: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ant-dropdown-menu-item:hover {
+  color: #fff !important;
+  background: #2f66b8 !important;
+}
+
+.ant-dropdown-menu-item.actives {
+  color: #fff !important;
+  background: #2f66b8 !important;
+}

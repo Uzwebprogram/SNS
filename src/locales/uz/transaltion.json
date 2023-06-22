@@ -9,7 +9,10 @@
     "6": "Agentlik haqida",
     "7": "FAQ",
     "8": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy",
-    "9": "Kompaniyalar"
+    "9": "Kompaniyalar",
+    "10": "Reyting",
+    "11": "Analitik bozor tadqiqotlari",
+    "12": "Moliyaviy maslahat"
   },
   "Home": {
     "0": "Korporativ sektorning uzoq yuki: endi kimga oson?",
@@ -246,6 +249,7 @@
     "21": "Mamlakat iqtisodiyoti",
     "22": "Iqtisodiyot faoliyatining shaffofligini oshirish",
     "23": "Moliya bozorining izchil rivojlanishini ta'minlash",
+    "24": "Reyting berish jarayoni",
     "RatingType1": {
       "0": "Kreditga layoqatlilik va ishonchlilik reytingi",
       "1": "Ushbu turdagi reyting iqtisodiyotning moliyaviy sektori uchun mo'ljallangan va kompaniyalarning pul-kredit siyosatining nozik tomonlarini hisobga oladi. Reyting kredit kompaniyalari faoliyatini har tomonlama va puxta tahlil qiladi.",

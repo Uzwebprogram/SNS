@@ -1,0 +1,26 @@
+.rating_proces {
+  padding: 50px 0;
+}
+
+.rating_proces_row {
+  margin: 0 !important;
+}
+
+.rating_proces_col {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.rating_proces_col > img {
+  height: 100vh;
+}
+
+.rating_proces_col > h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  color: #000;
+}

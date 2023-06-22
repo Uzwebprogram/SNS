@@ -9,7 +9,10 @@
     "6": "About agency",
     "7": "FAQ",
     "8": "Tashkent, Chilanzar district, Bunyodkor street, 57",
-    "9": "Companies"
+    "9": "Companies",
+    "10": "Rating",
+    "11": "Analytical market research",
+    "12": "Financial consulting"
   },
   "Home": {
     "0": "Long load of the corporate sector: who is it easy now?",
@@ -246,6 +249,7 @@
     "21": "The economy of the country",
     "22": "Increasing the transparency of the functioning of the economy",
     "23": "Ensuring the progressive development of the financial market",
+    "24": "Rating assignment process",
 
     "RatingType1": {
       "0": "Creditworthiness and reliability rating",
