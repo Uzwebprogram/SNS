@@ -117,7 +117,7 @@ function HeaderBottom({
                 <p>{t("Header.2")}</p>
               </NavLink>
             </li>
-            {/* ))} */}
+            
             <li >
               <NavLink
                 style={{ textDecoration: "none" }}

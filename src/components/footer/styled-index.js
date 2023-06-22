@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   background-color: #1b1a1a;
   padding-top: 50px;
   padding-bottom: 50px;
-  .footer_row{
+  .footer_row {
     margin: 0 !important;
   }
   hr {
@@ -50,6 +50,7 @@ export const Wrapper = styled.div`
     @media only screen and (max-width: 768px) {
       margin-bottom: 30px;
     }
+
     ul {
       margin: 0;
       padding: 0;
@@ -70,8 +71,9 @@ export const Wrapper = styled.div`
       }
       li {
         list-style-type: none;
-        
-        span,a {
+
+        span,
+        a {
           text-decoration: none;
           font-family: "Montserrat";
           font-style: normal;
@@ -80,6 +82,18 @@ export const Wrapper = styled.div`
           line-height: 130%;
           letter-spacing: 0.01em;
           color: #f5f5f5;
+        }
+      }
+      .links {
+        p {
+          margin: 0;
+        }
+      }
+
+      .active {
+        p {
+          margin: 0;
+          border-bottom: 2px solid #fff;
         }
       }
     }

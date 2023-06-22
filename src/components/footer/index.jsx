@@ -6,6 +6,9 @@ import Logo from "./../../assets/Header/logo.svg";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { dataLink } from "../../utils/data-link";
+import { DownOutlined } from '@ant-design/icons';
+import { Dropdown, Space } from 'antd';
+import './style.css'
 function Footer() {
   const { t, i18n } = useTranslation();
   const dataLinkFooter = [
@@ -36,6 +39,35 @@ function Footer() {
       link: "/",
     },
   ];
+  const items = [
+    {
+      label: <NavLink
+        style={{ textDecoration: "none" }}
+        to='/uslugi/uslugirating'
+      >
+        <p className='header_link_texts'>{t("Header.10")}</p>
+      </NavLink>,
+      key: '0',
+    },
+    {
+      label: <NavLink
+        style={{ textDecoration: "none" }}
+        to='/uslugi/uslugianalytic'
+      >
+        <p className='header_link_texts'>{t("Header.11")}</p>
+      </NavLink>,
+      key: '1',
+    },
+    {
+      label: <NavLink
+        style={{ textDecoration: "none" }}
+        to='/uslugi/uslugifinance'
+      >
+        <p className='header_link_texts'>{t("Header.12")}</p>
+      </NavLink>,
+      key: '3',
+    },
+  ];
   return (
     <Wrapper>
       <WrapperContainer>
@@ -59,13 +91,63 @@ function Footer() {
             <Col className="Footer-top-ul" md={12} lg={3}>
               <ul>
                 <p>{t("Footer.2")}</p>
-                {dataLink.map((elem, index) => (
-                  <li key={index}>
-                    <NavLink style={{ textDecoration: "none" }} to={elem.link}>
-                      <a href="#">{t(elem.title)}</a>
-                    </NavLink>
-                  </li>
-                ))}
+                <li>
+                  <NavLink
+                    style={{ textDecoration: "none" }}
+                    to='/ratings'
+                  >
+                    <a href="#">{t("Header.2")}</a>
+                  </NavLink>
+                </li>
+
+                <li >
+                  <NavLink
+                    style={{ textDecoration: "none" }}
+                    to='/ranking'
+                  >
+                    <a href="#">{t("Header.3")}</a>
+                  </NavLink>
+                </li>
+                <li >
+                  <NavLink
+                    style={{ textDecoration: "none" }}
+                    to='/analytics'
+                  >
+                    <a href="#">{t("Header.4")}</a>
+                  </NavLink>
+                </li>
+                <li >
+                  <Dropdown
+                    menu={{
+                      items,
+                    }}
+                    trigger={['click']}
+                  >
+
+                    <Space>
+                      {t("Header.5")}
+                      <DownOutlined />
+                    </Space>
+
+                  </Dropdown>
+                </li>
+                <li >
+                  <NavLink
+                    style={{ textDecoration: "none" }}
+                    to="/consultant"
+                  >
+                    <a href="#">{t("Header.6")}</a>
+                  </NavLink>
+                </li>
+                <li >
+                  <NavLink
+                    style={{ textDecoration: "none" }}
+                    to="/faq"
+                  >
+                    <a href="#">{t("Header.7")}</a>
+                  </NavLink>
+                </li>
+
               </ul>
             </Col>
             <Col className="Footer-top-ul" md={12} lg={3}>
@@ -79,6 +161,7 @@ function Footer() {
                   </li>
                 ))}
               </ul>
+
             </Col>
           </Row>
         </div>

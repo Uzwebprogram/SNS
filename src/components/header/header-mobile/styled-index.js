@@ -35,6 +35,9 @@ export const Wrapper = styled.div`
       padding: 0;
       margin-top: 5px;
       margin-left: 20px;
+      .drop_li{
+        margin-top: 20px;
+      }
       li {
         margin: 0;
         padding: 0;

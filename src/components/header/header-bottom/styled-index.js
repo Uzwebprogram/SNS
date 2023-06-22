@@ -53,19 +53,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  .links {
-    p {
-      margin: 0;
-    }
-  }
-
-  .active {
-    p {
-      margin: 0;
-      border-bottom: 2px solid #fff;
-    }
-  }
-
+  
   .Auth {
     button {
       background-color: transparent;
