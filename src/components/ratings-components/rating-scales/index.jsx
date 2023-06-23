@@ -22,7 +22,7 @@ const RatingScales = () => {
             }}
             type={"button"}
           >
-            <NavLink className="links" to="/whatisrating">
+            <NavLink className="links" to="/uslugi/uslugirating">
               {" "}
               {t("Rating.10")}
             </NavLink>

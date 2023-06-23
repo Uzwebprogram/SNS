@@ -202,17 +202,16 @@
     "8": "amaldagi metodologiyalar",
     "9": "kompaniyalar biz bilan hamkorlik qilmoqda",
     "10": "Bizning metodologiyalarimiz",
-    "11": "buning uchun bizning mutaxassislar jamoasi kompaniyalar sifatini baholash uchun bir nechta metodologiyalarni ishlab chiqdilar. Bizning axborot va tahliliy xizmatlarimiz yordamida sizning arsenalingizda kompaniyaning holati to'g'risida ma'lumot bo'ladi:",
-    "12": "reyting moliyaviy barqarorlik darajasi va kompaniyaning kelgusi 12 oy uchun prognozini ko'rsatadi",
-    "13": "Ranking kompaniyaning asosiy ko'rsatkichlar bo'yicha sohada qanday pozitsiyani egallashini va tendentsiyalarni kuzatib borishini ko'rsatadi",
+    "11": "Biz banklar va sug'urtalovchilarga reyting beramiz, har qanday hajmdagi moliyaviy bo'lmagan kompaniyalar iqtisodiyotning barcha tarmoqlaridan, xolding, lizing moliya kompaniyalari, shuningdek hokimiyat organlari:",
+    "13": "Biz muntazam ravishda tahliliy tadqiqotlarni nashr etamiz, biz eng yirik professional bilan faol hamkorlik qilamiz birlashmalar va ommaviy axborot vositalari tomonidan.",
+    "12": "Biz o'z ishimizda eng yuqori darajaga sodiq qolamiz maksimal shaffoflik bilan ajralib turadigan standartlar,aloqa ochiqligi va sifati.",
     "14": "Tayinlangan",
     "15": "kredit reytinglari",
     "16": "to'lov qobiliyati reytinglari",
     "17": "qimmatli qog'ozlar emitentining reytingi",
     "18": "Printsiplar va qadriyatlar",
     "19": "Mustaqillik va shaffoflik.",
-    "20": "o'z ishimizda biz bozor ishtirokchilarining ishonchini qadrlaymiz va har kim biz bilan tanishishi mumkin reyting berish metodologiyasi. Agar bahsli vaziyatlar yuzaga kelsa, biz doimo muloqotga ochiqmiz.",
-    "21": "Himoya va maxfiylik.",
+    "20": "Biz foydalanadigan har bir kishi uchun zarur deb hisoblaymiz bizning reytinglarimiz texnologiya va tamoyillarni tushundi ularni tayinlash, shuning uchun biz muntazam ravishda hisobotlarni nashr etamiz,tegishli ta'riflarni, mezonlarni tushuntirish va metodologiya.",
     "22": "biz mas'uliyatni his qilamiz va kompaniyalarga ularning ma'lumotlari manfaatdor yoki uchinchi tomon qo'liga tushmasligini ta'minlaymiz."
   },
 
@@ -226,8 +225,9 @@
 
   "UslugiRating": {
     "0": "Reyting",
-    "1": "Kompaniya faoliyatini baholash uchun bozor pozitsiyasi, moliyaviy ko'rsatkichlar va boshqalar kabi ko'plab ko'rsatkichlardan foydalanadi. Biroq, kerakli ma'lumotlarni to'plash va tahlil qilish ko'p vaqt va kuch talab qiladi.",
-    "2": "Kompaniyaning reytingi uning sifati va shaffofligini baholashning ishonchli vositasidir. Biz sanoat va kompaniya faoliyatining o'ziga xos xususiyatlarini hisobga olgan holda reytingni chiqarishga imkon beradigan metodologiyalarni ishlab chiqdik. Bizning agentligimiz sanoatning o'ziga xos xususiyatlarini va kompaniya faoliyatini hisobga olgan holda reytingning bir nechta turlarini taqdim etadi.",
+    "1": "Bu Agentlikning kreditga layoqatliligi haqidagi fikri umuman olganda yoki kredit bo'yicha baholangan shaxs uning individual moliyaviy majburiyatlari xavfi yoki moliyaviy vositalar.",
+    "2": "Agentlik tomonidan berilgan reyting reytingning defolt ehtimolini baholashda o'z majburiyatlari bo'yicha shaxslar.",
+    "26" : "Ushbu fikr asosida shakllanadi kompaniyani hisobga olgan holda kompleks tahlil qilish ham moliyaviy, ham sifat korporativ boshqaruv va biznes xatarlari darajasi.",
     "3": "Reyting turlari",
     "4": "Kreditga layoqatlilik va ishonchlilik",
     "5": "To'lov qobiliyati va ishonchliligi",
@@ -250,6 +250,7 @@
     "22": "Iqtisodiyot faoliyatining shaffofligini oshirish",
     "23": "Moliya bozorining izchil rivojlanishini ta'minlash",
     "24": "Reyting berish jarayoni",
+    "25" : "Kredit reytingi bu nima?",
     "RatingType1": {
       "0": "Kreditga layoqatlilik va ishonchlilik reytingi",
       "1": "Ushbu turdagi reyting iqtisodiyotning moliyaviy sektori uchun mo'ljallangan va kompaniyalarning pul-kredit siyosatining nozik tomonlarini hisobga oladi. Reyting kredit kompaniyalari faoliyatini har tomonlama va puxta tahlil qiladi.",
@@ -316,7 +317,8 @@
 
   "UslugiAnalytic": {
     "0": "Analitik bozor tadqiqotlari",
-    "1": "Analitik bozor tadqiqotlari statistik va analitik ma'lumotlarning batafsil tahliliga asoslangan chuqur, tuzilgan ma'lumotlarni o'z ichiga oladi.",
+    "1": "Analitik tadqiqot-bu tovarlar yoki xizmatlarning ma'lum bir bozoridagi vaziyatni o'rganishga qaratilgan chora-tadbirlar majmui. Aslida, bu xaridorlarning afzalliklari va xatti-harakatlarini aniqlash orqali ma'lumotlarni to'plash va tahlil qilishdir. Bunday tadqiqot kompaniyaning top-menejmentiga mahsulot yoki xizmatni ishlab chiqarish va sotishda to'g'ri boshqaruv qarorlarini qabul qilishga yordam beradi. Qoida tariqasida, u quyidagi maqsadlarda amalga oshiriladi:",
+    "17" : "Yangi mahsulotni bozorga chiqarish Reklama kampaniyasini ishlab chiqish va boshlash Kompaniyaning rebrendingi Bozor ulushini oshirish, sotishni ko'paytirish Biznesni keyingi bosqichga olib chiqish Biznes xatarlari va mumkin bo'lgan yo'qotishlarni minimallashtirish Bozorda raqobatbardoshlikni oshirish Bozordagi vaziyatning noaniqlik darajasini pasaytirish Analitik tadqiqotlar bozordagi mavjud vaziyatni hisobga olgan holda kompaniya strategiyasini shakllantirishning muhim qismidir. Bundan tashqari, bu uning kelajakdagi istiqbollarini baholashga yordam beradi, bu keyingi 3-5 yil uchun prognozlarda juda muhimdir.O'z mijozlariga haqiqatan ham yuqori sifatli natijalarni taqdim etish va to'g'ri tadqiqot o'tkazish uchun SNS Ratings tahlil qilish usullari va yondashuvlarining keng vositalarini qo'llaydi. Bu bozor yo'nalishining o'ziga xos xususiyatlarini hisobga oladi, chunki turli bozorlar uchun ularning ishlash qoidalari amal qiladi.",
     "2": "Tadqiqot tuzilishi",
     "3": "Bozorning umumiy xususiyatlari",
     "4": "Bozor tavsifi",
