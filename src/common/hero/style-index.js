@@ -22,6 +22,7 @@ export const HeroSection = styled.div`
   }
   @media only screen and (max-width: 426px) {
     padding: 180px 0;
+    height: 100%;
   }
   @media only screen and (max-width: 378px) {
     padding: 185px 0;
