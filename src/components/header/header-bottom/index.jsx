@@ -95,7 +95,7 @@ function HeaderBottom({
     <Section>
       <WrapperContainer>
         <Wrapper>
-          <HashLink to={"/#home"} smooth>
+          <HashLink to={"/"} smooth>
             <img src={Logo} alt="" />
           </HashLink>
           <Search
