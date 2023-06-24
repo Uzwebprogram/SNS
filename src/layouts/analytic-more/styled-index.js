@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
-  padding: 30px 0;
+  padding: 50px 0;
   .dfs {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 545px) {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
-
-  /* @media only screen and (max-width: 425px) {
-    overflow-x: hidden;
-  } */
 
   .row {
     margin: 0 !important;
