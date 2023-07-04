@@ -16,14 +16,11 @@ const ConsultantMethodology = ({ ...rest }) => {
                 <WrapperContainer>
                     <Row className={styles.method_row}>
                         <Col className={styles.method_col} lg={8} md={12} sm={12}>
-                            <h4>{t("Consultant.10")}</h4>
                             <p>{t("Consultant.11")}</p>
                             <div className={styles.method_col_item}>
-                                <i class='bx bxs-right-arrow-alt'></i>
                                 <p>{t("Consultant.12")}</p>
                             </div>
                             <div className={styles.method_col_item}>
-                                <i class='bx bxs-right-arrow-alt'></i>
                                 <p>{t("Consultant.13")}</p>
                             </div>
                         </Col>

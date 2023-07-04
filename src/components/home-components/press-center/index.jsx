@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { GetPressCenter } from "../../../redux/press-center";
 import { useDispatch, useSelector } from "react-redux/es/exports";
 
-const PressCenter = () => {
+const PressCenter = ({styles}) => {
   const arr = [1, 2, 3, 4];
   const { t, i18n } = useTranslation();
 
@@ -35,12 +35,12 @@ const PressCenter = () => {
   },[]);
 
   return (
-    <>
+    <div style={styles}>
       <WrapperPress>
         <h2>{t("Home.4")}</h2>
         {getPress.map((elem) => (
           <>
-                    <a  href={elem.press_center_pdf} className="press-content">
+                    <a  target={"_blank"} href={elem.press_center_pdf} className="press-content">
             <p>
               {LangVal() == "ru"
                 ? elem.description_ru
@@ -68,7 +68,7 @@ const PressCenter = () => {
           {t("Home.6")}
         </CommonButton>
       </WrapperPress>
-    </>
+    </div>
   );
 };
 

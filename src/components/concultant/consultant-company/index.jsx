@@ -13,7 +13,6 @@ const ConsultantCompany = () => {
                 <WrapperContainer>
                     <Row className={styles.consultant_row} >
                         <Col className={styles.consultant_col} lg={6} md={12} sm={12}>
-                            <h4>{t("Consultant.3")}</h4>
                             <p>{t("Consultant.4")}</p>
                         </Col>
                         <Col className={styles.consultant_col} lg={6} md={12} sm={12}>

@@ -72,8 +72,10 @@ const TypesRatings = () => {
         <WrapperContainer>
           <Row className={styles.types_rating_row}>
             <Col className={styles.types_rating_col} lg={6} md={12} sm={12}>
+            <h4>{t("UslugiRating.25")}</h4>
               <p>{t("UslugiRating.1")}</p>
               <p>{t("UslugiRating.2")}</p>
+              <p>{t("UslugiRating.26")}</p>
             </Col>
             <Col className={styles.types_rating_col} lg={6} md={12} sm={12}>
               <h4>{t("UslugiRating.3")}</h4>

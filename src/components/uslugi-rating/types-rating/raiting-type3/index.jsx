@@ -8,7 +8,9 @@ import './style.css'
 
 import ModalType1 from '../../../../assets/modal/modal3.1.png'
 import ModalType2 from '../../../../assets/modal/modal3.2.png'
-import ModatType4 from '../../../../assets/modal_img.svg'
+
+import ModatType4 from '../../../../assets/modal/modal1.4.svg'
+
 
 
 

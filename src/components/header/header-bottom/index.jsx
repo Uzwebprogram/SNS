@@ -95,7 +95,7 @@ function HeaderBottom({
     <Section>
       <WrapperContainer>
         <Wrapper>
-          <HashLink to={"/#home"} smooth>
+          <HashLink to={"/"} smooth>
             <img src={Logo} alt="" />
           </HashLink>
           <Search
@@ -235,6 +235,7 @@ function HeaderBottom({
                 <>
                   <a href={elem.analitka_pdf}
                     className="navlink-href"
+                    target={"_blank"}
                   >
 
                     {GetLanguageValue() == 'uz' ? elem.title_uz : GetLanguageValue() == 'ru' ? elem.title_ru : GetLanguageValue() == 'en' ? elem.title_en : null}

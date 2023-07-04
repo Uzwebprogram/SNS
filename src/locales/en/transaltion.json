@@ -202,16 +202,16 @@
     "8": "current methodologies",
     "9": "companies cooperate with us",
     "10": "Our methodologies",
-    "11": "For this, our team of specialists has developed several methodologies for assessing the quality of companies. With the help of our information and analytical services, you will have information about the state of the company in your arsenal:",
-    "12": "The rating shows the level of financial stability and the forecast of the company's activities for the next 12 months",
-    "13": "Ranking shows what position the company occupies in the industry by key indicators and track trends",
+    "11": "We assign ratings to banks and insurers,non-financial companies of all sizes from all sectors of the economy, holding, leasing and financial companies as well as government bodies:",
+    "13": "In our work we adhere to the highest standards, while being as transparent as possible, openness and quality of communication.",
+    "12": "We regularly publish analytical studies, We actively cooperate with the largest professional  associations and mass media.",
     "14": "Assigned",
     "15": "credit ratings",
     "16": "solvency ratings",
     "17": "Securities issuer ratings",
     "18": "Principles and Values",
     "19": "Independence and transparency.",
-    "20": "In our work, we value the trust of market participants and everyone can get acquainted with our methodology for assigning ratings. In case of disputes, we are always open to dialogue.",
+    "20": "We believe it is essential that everyone who uses We think it's important that everyone who uses our ratings understands the technology and the principles We believe it is essential for everyone who uses our ratings to understand the technology and principles behind them, so we regularly publish reports explaining the relevant definitions, criteria and methodology.",
     "21": "Protection and confidentiality.",
     "22": "We feel responsible and guarantee companies that their information will not fall into the hands of interested or third parties."
   },
@@ -226,8 +226,9 @@
 
   "UslugiRating": {
     "0": "Rating",
-    "1": "Many indicators are used to evaluate the company's performance, such as market position, financial indicators and much more. However, collecting and analyzing the necessary data requires a lot of time and effort.",
-    "2": " A company's rating is a reliable tool for assessing its quality and transparency. We have developed methodologies that allow us to derive a rating, taking into account the specifics of the industry and the company's activities. Our agency presents several types of rating, which takes into account the specifics of industries and the company's activities.",
+    "1": "This is the Agency's opinion on the creditworthiness of the Rated Entity as a whole or on the credit risk of risk of its individual financial liabilities or financial instruments.",
+    "2": "The rating assigned by the Agency is based on The rating assigned by the Agency is based on the assessment of the probability of default of the Rated Entity. of the Rated Entity's obligations. ",
+    "26" : "This opinion is formed on the basis of a comprehensive analysis of the company, which takes into account financial standing, the quality of corporate governance, and business risks.corporate governance and the level of business risks.",
     "3": "Types of ratings",
     "4": "Creditworthiness and reliability",
     "5": "Solvency and reliability",
@@ -250,7 +251,7 @@
     "22": "Increasing the transparency of the functioning of the economy",
     "23": "Ensuring the progressive development of the financial market",
     "24": "Rating assignment process",
-
+    "25" : "What is a credit rating?",
     "RatingType1": {
       "0": "Creditworthiness and reliability rating",
       "1": "This type of rating is intended for the financial sector of the economy and takes into account the subtleties of monetary policy of companies. The rating provides a comprehensive and thorough analysis of the activities of credit companies.",
@@ -316,7 +317,8 @@
 
   "UslugiAnalytic": {
     "0": "Analytical market research",
-    "1": "Analytical market research contains deep, structured information based on a detailed analysis of statistical and analytical data.",
+    "1": "Analytical research is a complex of activities aimed at studying the situation on a particular market for goods or services. In fact, it is the collection and analysis of information by determining the preferences and behavior of customers. Such research helps the top management of the company to make the right managerial decisions in the production and sale of a product or service. It is usually conducted for the following purposes:",
+    "17" : "Launch of a new product on the market Development and launch of advertising campaign Rebranding of the company To increase its market share and sales Reaching a new level of business Minimization of business risks and possible losses Increase of competitiveness on the market Reducing the level of uncertainty of the market situation Analytical study is an important part of company's strategy formation, taking into account current market situation. Moreover, it helps to assess company's future prospects, which is very important in forecasts for the next 3-5 years. SNS Ratings applies a wide range of methods and approaches to analysis in order to provide the clients with the really high quality results and conduct the correct research. It takes into account the specifics of the market area, because different markets have their own rules of work.",
     "2": "Research structure",
     "3": "General characteristics of the market",
     "4": "Description of the market",

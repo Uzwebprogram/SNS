@@ -9,7 +9,9 @@ import './style.css'
 import ModalType1 from '../../../../assets/modal/modal1.png'
 import ModalType2 from '../../../../assets/modal/modal1.2.png'
 import ModalType3 from '../../../../assets/modal/modal1.3.png'
-import ModatType4 from '../../../../assets/modal_img.svg'
+
+import ModatType4 from '../../../../assets/modal/modal1.4.svg'
+
 
 const RatingType4Modal = ({ handleOk3, handleCancel3, isModalOpen3 }) => {
     const { t } = useTranslation()

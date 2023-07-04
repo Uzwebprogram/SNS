@@ -75,7 +75,8 @@ function SearchInput({ SearchModal, SearchClose }) {
             {!search == "" ? GetAnalyticaSearch.map(elem =>               
              <>
                   <a href={elem.analitka_pdf}
-                    className="navlink-href"
+                  target={"_blank"}
+                  className="navlink-href"
                   >
                     
                     {GetLanguageValue() == 'uz' ? elem.title_uz : GetLanguageValue() == 'ru' ? elem.title_ru : GetLanguageValue() == 'en' ? elem.title_en : null}
