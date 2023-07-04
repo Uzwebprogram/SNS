@@ -23,7 +23,7 @@ const HomeComponent = () => {
               <Company isSelect={true} isBtn={true} isMargin={true} />
             </Col>
             <Col lg={4} md={12} sm={12} sx={12} className="col">
-              <PressCenter />
+              <PressCenter styles={{marginTop:"50px"}} />
               {/* <Comentary /> */}
               <Calling />
               {/* <News /> */}

@@ -14,7 +14,7 @@ const UslugiAnalyticSecond = () => {
                     <Row className={styles.consultant_row} >
                         <Col className={styles.consultant_col} lg={6} md={12} sm={12}>
                             <p>{t("UslugiAnalytic.1")}</p>
-                            <p>{t("UslugiAnalytic.17")}</p>
+                            <p style={{whiteSpace: "pre-wrap"}}>{t("UslugiAnalytic.17")}</p>
 
                         </Col>
                         <Col className={styles.consultant_col} lg={6} md={12} sm={12}>

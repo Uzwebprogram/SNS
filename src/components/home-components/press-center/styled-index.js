@@ -5,7 +5,6 @@ export const WrapperPress = styled.div`
   box-shadow: 0px 4px 20px -10px #cccccc;
   border-radius: 15px;
   padding: 25px;
-margin-top : 50px;
 
   @media only screen and (max-width: 425px) {
     border-radius: 0;

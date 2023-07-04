@@ -12,7 +12,7 @@ const Hero = () => {
                 className={styles.consultant_hero_box}
                 bgImg={HeroImg}
                 title={t("Consultant.1")}
-                text={t("Consultant.0")}
+                text={t("STANDARD AND SENSITIVE RATINGS")}
                 isBtn={true}
                 btn={t("Consultant.2")}
                 isText={true}

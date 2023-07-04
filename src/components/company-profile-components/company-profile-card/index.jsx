@@ -111,7 +111,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                     {elem.raiting.map((elem) => (
                       <tr>
                         <td className="td">{elem.raiting}</td>
-                        <td className="td"><a href={elem.link}>{elem.type_reting}</a></td>
+                        <td className="td"><a href={elem.link} target={"_blank"}>{elem.type_reting}</a></td>
                         <td className="td">{elem.prognoz}</td>
                         <td className="td">{elem.update_date}</td>
                         <td className="td td-btn">

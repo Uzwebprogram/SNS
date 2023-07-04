@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { GetBanks, GetBanksId } from "../../../redux/bank/index";
 import { useDispatch, useSelector } from "react-redux";
 import { Spin } from "antd";
-
+import Link from "./../../../assets/icons-link.png"
 const Tables = ({ sorts, search }) => {
   const { t, i18n } = useTranslation();
   const data = [];
@@ -35,8 +35,8 @@ const Tables = ({ sorts, search }) => {
           </NavLink>
         ),
         bidreting: (
-          <a className="navlink" href={elem.raiting.map((e) => e.link)}>
-            {elem.raiting.map((e) => e.type_reting)}
+          <a className="navlink" target={"_blank"} href={elem.raiting.map((e) => e.link)}>
+            {elem.raiting.slice(0, 1).map((e) => e.type_reting)}
           </a>
         ),
         protsent: (
@@ -45,9 +45,10 @@ const Tables = ({ sorts, search }) => {
           </NavLink>
         ),
         obnavit: (
-          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+          <a className="navlink" href={elem.raiting.slice(0, 1).map((e) => e.update_date_pdf)} target={"_blank"}>
             {elem.raiting.slice(0, 1).map((e) => e.update_date)}
-          </NavLink>
+            <img src={Link} width={17} style={{marginLeft:"10px"}} height={17} alt="" />
+          </a>
         ),
       });
     });
@@ -66,7 +67,7 @@ const Tables = ({ sorts, search }) => {
           </NavLink>
         ),
         bidreting: (
-          <a className="navlink" href={elem.raiting.map((e) => e.link)}>
+          <a className="navlink"  target={"_blank"} href={elem.raiting.map((e) => e.link)}>
             {elem.raiting.slice(0, 1).map((e) => e.type_reting)}
           </a>
         ),
@@ -76,9 +77,11 @@ const Tables = ({ sorts, search }) => {
           </NavLink>
         ),
         obnavit: (
-          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+          <a className="navlink" href={elem.raiting.slice(0, 1).map((e) => e.update_date_pdf)} target={"_blank"}>
             {elem.raiting.slice(0, 1).map((e) => e.update_date)}
-          </NavLink>
+            <img src={Link} width={17} style={{marginLeft:"10px"}} height={17} alt="" />
+
+          </a>
         ),
       });
     });
@@ -98,7 +101,7 @@ const Tables = ({ sorts, search }) => {
             </NavLink>
           ),
           bidreting: (
-            <a className="navlink" href={elem.raiting.map((e) => e.link)}>
+            <a className="navlink" target={"_blank"} href={elem.raiting.map((e) => e.link)}>
               {elem.raiting.slice(0, 1).map((e) => e.type_reting)}
             </a>
           ),
@@ -108,9 +111,11 @@ const Tables = ({ sorts, search }) => {
             </NavLink>
           ),
           obnavit: (
-            <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+            <a className="navlink" href={elem.raiting.slice(0, 1).map((e) => e.update_date_pdf)} target={"_blank"}>
               {elem.raiting.slice(0, 1).map((e) => e.update_date)}
-            </NavLink>
+            <img src={Link} width={17} style={{marginLeft:"10px"}} height={17} alt="" />
+
+            </a>
           ),
         });
       } else {
