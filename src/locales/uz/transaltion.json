@@ -195,7 +195,7 @@
     "1": "Sizning sifat va ishonchlilik bo'yicha maslahatchi",
     "2": "Maslahat",
     "3": "Kompaniyaning ishonchliligi",
-    "4": "Biz milliy reyting agentligimiz, kompaniyalarning moliyaviy barqarorligini va qarz vositalarini baholash bo'yicha ixtisoslashganmiz. Bizning asosiy vazifamiz O'zbekiston Respublikasi sub'ektlarining moliyaviy ishonchliligi va barqarorligi to'g'risida ob'ektiv va ishonchli ma'lumotlarni taqdim etishdir, deb hisoblaymiz. Bizning mutaxassislar jamoasi har kuni moliya bozori ishtirokchilari uchun tahliliy tadqiqotlar to'playdi va olib boradi.",
+    "4": "Biz milliy reyting agentligimiz, kompaniyalarning moliyaviy barqarorligini va qarz vositalarini baholash bo'yicha ixtisoslashganmiz.",
     "5": "Faktlar",
     "6": "bozorda yillar",
     "7": "mutaxassislar",
@@ -212,7 +212,9 @@
     "18": "Printsiplar va qadriyatlar",
     "19": "Mustaqillik va shaffoflik.",
     "20": "Biz foydalanadigan har bir kishi uchun zarur deb hisoblaymiz bizning reytinglarimiz texnologiya va tamoyillarni tushundi ularni tayinlash, shuning uchun biz muntazam ravishda hisobotlarni nashr etamiz,tegishli ta'riflarni, mezonlarni tushuntirish va metodologiya.",
-    "22": "biz mas'uliyatni his qilamiz va kompaniyalarga ularning ma'lumotlari manfaatdor yoki uchinchi tomon qo'liga tushmasligini ta'minlaymiz."
+    "22": "biz mas'uliyatni his qilamiz va kompaniyalarga ularning ma'lumotlari manfaatdor yoki uchinchi tomon qo'liga tushmasligini ta'minlaymiz.",
+    "23": "Bizning asosiy vazifamiz O'zbekiston Respublikasi sub'ektlarining moliyaviy ishonchliligi va barqarorligi to'g'risida ob'ektiv va ishonchli ma'lumotlarni taqdim etishdir, deb hisoblaymiz.",
+    "24": " Bizning mutaxassislar jamoasi har kuni moliya bozori ishtirokchilari uchun tahliliy tadqiqotlar to'playdi va olib boradi."
   },
 
   "Form": {

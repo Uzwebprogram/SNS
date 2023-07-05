@@ -12,10 +12,12 @@ const ConsultantCompany = () => {
             <div className={styles.consultant_company_section}>
                 <WrapperContainer>
                     <Row className={styles.consultant_row} >
-                        <Col className={styles.consultant_col} lg={6} md={12} sm={12}>
+                        <Col className={styles.consultant_col} lg={8} md={12} sm={12}>
                             <p>{t("Consultant.4")}</p>
+                            <p>{t("Consultant.23")}</p>
+                            <p>{t("Consultant.24")}</p>
                         </Col>
-                        <Col className={styles.consultant_col} lg={6} md={12} sm={12}>
+                        <Col className={styles.consultant_col} lg={4} md={12} sm={12}>
                             <div className={styles.col_img_box}>
                                 <img src={Consultant1} alt="image" />
                             </div>
