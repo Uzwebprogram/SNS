@@ -5,9 +5,17 @@
 .consultant_row {
   margin: 0 !important;
 }
+
+.consultant_col:nth-child(2){
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-end !important;
+}
+
 .col_img_box > img {
   box-shadow: -11px -11px 1px 0px #2f66b8;
   width: 100%;
+  height: 340px;
   object-fit: cover;
 }
 
@@ -28,6 +36,7 @@
   font-size: 19px;
   line-height: 160%;
   color: #000000;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 991px) {

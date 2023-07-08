@@ -16,6 +16,9 @@
   margin-bottom: 30px;
 }
 .method_col > p {
+  max-width: 710px;
+  text-align: justify;
+  margin-top: 83px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -42,6 +45,8 @@
   font-size: 19px;
   line-height: 160%;
   color: #000000;
+  max-width: 710px;
+  text-align: justify;
 }
 
 .number {

@@ -28,11 +28,17 @@
   font-size: 19px;
   line-height: 160%;
   color: #000000;
+  text-align: justify;
+  max-width: 740px;
 }
 
 @media only screen and (max-width: 991px) {
   .consultant_col {
     margin-bottom: 20px !important;
+  }
+
+  .consultant_col > p{
+    max-width: 100%;
   }
 }
 

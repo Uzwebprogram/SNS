@@ -139,27 +139,27 @@
   "1": "All industries",
   "2": "Working methodology"
   },
-  "Auth": {
-  "0": "Registration",
-  "1": "Login",
-  "2": "Company name",
-  "3": "El",
-  "4": "INN",
-  "5": "Enter your E-mail",
-  "6": "Receive email newsletters to this email",
-  "7": "License",
-  "8": "Foundation date",
-  "9": "Country",
-  "10": "Create a strong password",
-  "11": "Confirm password",
-  "12": "I accept the terms of the user agreement and the policy regarding the processing of personal data",
-  "13": "Register",
-  "14": "Authorization",
-  "15": "Remember",
-  "16": "Enter your password",
-  "17": "A company with that name is registered!",
-  "18": "Password do not match",
-  "19": "Email or password is wrong!"
+  "Auth": 
+    "0": "Registration",
+    "1": "Login",
+    "2": "Company name",
+    "3": "Email",
+    "4": "INN",
+    "5": "Enter your E-mail",
+    "6": "Receive email newsletters to this email",
+    "7": "License",
+    "8": "Foundation date",
+    "9": "Country",
+    "10": "Create a strong password",
+    "11": "Confirm password",
+    "12": "I accept the terms of the user agreement and the policy regarding the processing of personal data",
+    "13": "Register",
+    "14": "Authorization",
+    "15": "Remember",
+    "16": "Enter your password",
+    "17": "A company with that name is registered!",
+    "18": "Password do not match",
+    "19": "Email or password is wrong!"
   },
   "Footer": {
   "0": "Address",
@@ -214,6 +214,7 @@
   "20": "We believe it is essential that everyone who uses our ratings understand the technologies and how they are assigned, which is why we regularly publish reports explaining the relevant definitions, criteria and methodology.",
   "21": "Protection and confidentiality.",
   "22": "We feel responsible and guarantee companies that their information will not fall into the hands of interested parties or third parties."
+
   },
   
   "Form": {

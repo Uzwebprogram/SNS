@@ -37,7 +37,7 @@ function SingUp() {
     return(
         <Wrapper onSubmit={HandleSubmit}>
             <label htmlFor="name">{t("Auth.2")}</label>
-            <input ref={companynameRef} type="text" placeholder={t("Auth.3")} required />
+            <input ref={companynameRef} type="text" required />
             {result.Error?.response?.data?.message == 'Already exists' ? <p style={{color: "red"}}> {t("Auth.17")}</p>:null}
             <label  htmlFor="name">{t("Auth.4")}</label>
             <input ref={innRef} type="text"  required />
