@@ -24,7 +24,7 @@ const ResearchStructure = () => {
                         {t("UslugiAnalytic.5")}
                     </li>
                     <li>
-                        {t("UslugiAnalytic.6")}
+                        {t("UslugiAnalytic.40")}
                     </li>
                     <li>
                         {t("UslugiAnalytic.7")}
@@ -129,9 +129,7 @@ const ResearchStructure = () => {
                     <li>
                         {t("UslugiAnalytic.31")}
                     </li>
-                    <li>
-                        {t("UslugiAnalytic.32")}
-                    </li>
+
                 </ol>
             ),
         },
@@ -140,6 +138,20 @@ const ResearchStructure = () => {
             label: <>
                 <span className='span_number'>7</span>
                 <span className='span_text'>{t("UslugiAnalytic.14")}</span>
+            </>,
+            children: (
+                <ol className={styles.research_ol}>
+                    <li>
+                        {t("UslugiAnalytic.32")}
+                    </li>
+                </ol>
+            ),
+        },
+        {
+            key: '8',
+            label: <>
+                <span className='span_number'>8</span>
+                <span className='span_text'> {t("UslugiAnalytic.15")}</span>
             </>,
             children: (
                 <ol className={styles.research_ol}>
@@ -153,13 +165,13 @@ const ResearchStructure = () => {
                         {t("UslugiAnalytic.35")}
                     </li>
                 </ol>
-            ),
+            )
         },
         {
-            key: '8',
+            key: '9',
             label: <>
-                <span className='span_number'>8</span>
-                <span className='span_text'> {t("UslugiAnalytic.15")}</span>
+                <span className='span_number'>9</span>
+                <span className='span_text'> {t("UslugiAnalytic.16")}</span>
             </>,
             children: (
                 <ol className={styles.research_ol}>
@@ -174,32 +186,6 @@ const ResearchStructure = () => {
                     </li>
                     <li>
                         {t("UslugiAnalytic.39")}
-                    </li>
-                </ol>
-            )
-        },
-        {
-            key: '9',
-            label: <>
-                <span className='span_number'>9</span>
-                <span className='span_text'> {t("UslugiAnalytic.16")}</span>
-            </>,
-            children: (
-                <ol className={styles.research_ol}>
-                    <li>
-                        {t("UslugiAnalytic.4")}
-                    </li>
-                    <li>
-                        {t("UslugiAnalytic.5")}
-                    </li>
-                    <li>
-                        {t("UslugiAnalytic.6")}
-                    </li>
-                    <li>
-                        {t("UslugiAnalytic.7")}
-                    </li>
-                    <li>
-                        {t("UslugiAnalytic.8")}
                     </li>
                 </ol>
             ),
