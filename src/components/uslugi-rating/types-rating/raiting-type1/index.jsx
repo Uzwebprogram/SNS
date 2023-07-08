@@ -15,6 +15,7 @@ import ModatType4 from '../../../../assets/modal/modal1.4.svg'
 
 
 
+
 const RatingType1Modal = ({ handleOk, handleCancel, isModalOpen }) => {
     const { t } = useTranslation()
     return (
