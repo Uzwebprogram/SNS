@@ -13,7 +13,7 @@ const Hero = () => {
                 bgImg={HeroImg}
                 title={t("Consultant.1")}
                 text={t("STANDARD AND SENSITIVE RATINGS")}
-                isBtn={true}
+                isBtn={false}
                 btn={t("Consultant.2")}
                 isText={true}
             />

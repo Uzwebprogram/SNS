@@ -109,6 +109,7 @@ export const Wrapper = styled.div`
       line-height: 150%;
       letter-spacing: 0.01em;
       color: #f5f5f5;
+      text-align: justify;
     }
   }
   .Footer-Bottom-left-bottom {
