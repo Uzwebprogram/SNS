@@ -171,9 +171,9 @@
     "6": "Requisites",
     "7": "Job openings",
     "8": "Press Center",
-    "9": "All site materials are the intellectual property of Standard and Sensetive Ratings LLC",
+    "9": "All site materials are the intellectual property of 'Standard and Sensetive Ratings' LLC",
     "10": "The information provided is for informational purposes only.",
-    "11": "The ratings express the opinion of Standard and Sensetive Ratings LLC and do not constitute a fact-finding or recommendation to buy, hold or sell certain securities or assets, to make investment decisions. The agency does not assume any responsibility in connection with any consequences, interpretations, conclusions, recommendations and other actions directly or indirectly related to the rating assessment, the rating actions taken by the Agency, as well as the conclusions and conclusions contained in the rating report and press releases issued by the agency, or the absence of all of the above. The only source reflecting the current state of the rating is the official website of OOO 'Standard and Sensetive Ratings'.",
+    "11": "The ratings express the opinion of 'Standard and Sensetive Ratings' LLC and do not constitute a fact-finding or recommendation to buy, hold or sell certain securities or assets, to make investment decisions. The agency does not assume any responsibility in connection with any consequences, interpretations, conclusions, recommendations and other actions directly or indirectly related to the rating assessment, the rating actions taken by the Agency, as well as the conclusions and conclusions contained in the rating report and press releases issued by the agency, or the absence of all of the above. The only source reflecting the current state of the rating is the official website of OOO 'Standard and Sensetive Ratings'.",
     "12": "Personal Data Processing Policy",
     "13": "User Agreement",
     "14": "Internal control service",
@@ -213,7 +213,9 @@
     "19": "Independence and transparency.",
     "20": "We believe it is essential that everyone who uses our ratings understand the technologies and how they are assigned, which is why we regularly publish reports explaining the relevant definitions, criteria and methodology.",
     "21": "Protection and confidentiality.",
-    "22": "We feel responsible and guarantee companies that their information will not fall into the hands of interested parties or third parties."
+    "22": "We feel responsible and guarantee companies that their information will not fall into the hands of interested parties or third parties.",
+    "23": "We believe that our main task is to provide objective and reliable information on the financial reliability and stability of the subjects of the Republic of Uzbekistan.",
+    "24": "Our team of experts, on a daily basis, collects and conducts analytical research for financial market participants."
   },
 
   "Form": {
@@ -318,7 +320,7 @@
   "UslugiAnalytic": {
     "0": "Analytical market research",
     "1": "Analytical research is a set of measures aimed at studying the situation on a particular market of goods or services. In essence, it is the collection and analysis of information by determining the preferences and behavior of buyers. Such research helps the top-management of the company to make the right managerial decisions when producing and selling the product or service. It is usually conducted for the following purposes:",
-    "17": "Launch of a new product in the market \n - Development and launch of an advertising campaign \n - Company rebranding \n- Increase of market share, increase of sales volume \n - Entry of business to a new level \n - Minimization of business risks and possible losses \n - Increase of competitiveness in the market \n - Reduction of uncertainty of the market \n Analytical research is an important part of forming the company's strategy, considering the current market situation. At the same time it helps to evaluate the company's prospects in the future, which is very important in forecasts for the next 3-5 years. SNS Ratings applies a wide range of methods and approaches to analysis in order to provide our clients with really high quality results and conduct correct research. The specifics of the market areas are taken into account, as different markets have their own rules",
+    "17": "Launch of a new product in the market \n * Development and launch of an advertising campaign \n * Company rebranding \n * Increase of market share, increase of sales volume \n * Entry of business to a new level \n * Minimization of business risks and possible losses \n * Increase of competitiveness in the market \n * Reduction of uncertainty of the market \n Analytical research is an important part of forming the company's strategy, considering the current market situation. At the same time it helps to evaluate the company's prospects in the future, which is very important in forecasts for the next 3-5 years. \n  At the same time, the specific characteristics of the market orientation are production, because different markets have their own operating conditions.",
     "2": "Structure of the research",
     "3": "General characteristic of the market",
     "4": "Market Description.",
@@ -355,7 +357,8 @@
     "36": "SWOT analysis of market direction",
     "37": "PEST analysis of market influencing factors",
     "38": "Existing risks and barriers to market entry.",
-    "39": "Building a market risk map"
+    "39": "Building a market risk map",
+    "40": "General indicators of the market, calculation of market opportunities"
   },
 
   "FinanceConsult": {

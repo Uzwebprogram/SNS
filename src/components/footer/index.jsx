@@ -73,10 +73,10 @@ function Footer() {
       <WrapperContainer>
         <div className="FooterTop">
           <Row className="footer_row">
-            <Col className="Footer-top-left" lg={3} md={12}>
+            <Col className="Footer-top-left" lg={2} md={12}>
               <img src={Logo} width={123} height={35} alt="images logo" />
             </Col>
-            <Col className="Footer-top-ul" md={12} lg={3}>
+            <Col className="Footer-top-ul" md={12} lg={4}>
               <ul>
                 <p>{t("Footer.1")}</p>
                 <li>
@@ -84,7 +84,7 @@ function Footer() {
                 </li>
                 <li>
                   <p>{t("Footer.0")}</p>
-                  <span>Узбекистан, г.Ташкент, ул.Бузбозор, 5. </span>
+                  <span>Узбекистан, г.Ташкент,  ул.Бузбозор, 5. </span>
                 </li>
               </ul>
             </Col>
