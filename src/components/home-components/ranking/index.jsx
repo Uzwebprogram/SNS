@@ -130,7 +130,7 @@ const Ranking = ({ isSelect, isBtn }) => {
   const dataFilterKvartal = useSelector(
     (state) => state.ranking.getRankingFilterKvartal?.Data
   );
-  console.log(dataFilterKvartal);
+  // console.log(dataFilterKvartal);
   let arr4 = [];
   dataFilterYear.map((elem) => {
     if (elem.category_name == CategoryName || elem.category_name_ru == CategoryName || elem.category_name_en == CategoryName) {

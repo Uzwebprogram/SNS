@@ -37,8 +37,8 @@ const Tables = ({
     mlrd: Year1 == undefined ? `${t("Ranking.11")}` : `${Year1}  | ${Year2} `,
     rank: Year1 == undefined ? `${t("Ranking.11")}` : `${Year1}  | ${Year2} `,
   });
-  console.log(arr3);
-  console.log(getranking);
+  // console.log(arr3);
+  // console.log(getranking);
   const dispatch = useDispatch();
   const getrankingId = useSelector((state) => state.ranking.getrankingId?.Data);
   // eslint-disable-next-line no-lone-blocks, no-unused-expressions

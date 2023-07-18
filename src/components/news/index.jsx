@@ -32,7 +32,7 @@ const NewsComponent = ({ styles }) => {
 
   const dispatch = useDispatch();
   const getPress = useSelector((state) => state.pressCenter.getpresscenter?.Data)
-  console.log(getPress)
+  // console.log(getPress)
 
   useEffect(() => {
     dispatch(GetPressCenter());
