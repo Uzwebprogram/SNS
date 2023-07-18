@@ -4,8 +4,9 @@ import { WrapperPress } from "./styled-index";
 import { useTranslation } from "react-i18next";
 import { GetPressCenter } from "../../../redux/press-center";
 import { useDispatch, useSelector } from "react-redux/es/exports";
+import { NavLink } from "react-router-dom";
 
-const PressCenter = ({styles}) => {
+const PressCenter = ({ styles }) => {
   const arr = [1, 2, 3, 4];
   const { t, i18n } = useTranslation();
 
@@ -29,10 +30,11 @@ const PressCenter = ({styles}) => {
 
   const dispatch = useDispatch();
   const getPress = useSelector((state) => state.pressCenter.getpresscenter?.Data)
+  console.log(getPress)
 
   useEffect(() => {
     dispatch(GetPressCenter());
-  },[]);
+  }, []);
 
   return (
     <div style={styles}>
@@ -40,19 +42,19 @@ const PressCenter = ({styles}) => {
         <h2>{t("Home.4")}</h2>
         {getPress.map((elem) => (
           <>
-                    <a  target={"_blank"} href={elem.press_center_pdf} className="press-content">
-            <p>
-              {LangVal() == "ru"
-                ? elem.description_ru
-                : LangVal() == "uz"
-                ? elem.description_uz
-                : LangVal() == "en"
-                ? elem.description_en
-                : elem.description_ru}
-            </p>
-            <time>{DateFormat(elem.date)}</time>
-            <hr />
-          </a>
+            <a target={"_blank"} href={elem.press_center_pdf} className="press-content">
+              <p>
+                {LangVal() == "ru"
+                  ? elem.description_ru
+                  : LangVal() == "uz"
+                    ? elem.description_uz
+                    : LangVal() == "en"
+                      ? elem.description_en
+                      : elem.description_ru}
+              </p>
+              <time>{DateFormat(elem.date)}</time>
+              <hr />
+            </a>
           </>
         ))}
         <CommonButton
@@ -65,7 +67,9 @@ const PressCenter = ({styles}) => {
           }}
           type={"button"}
         >
-          {t("Home.6")}
+          <NavLink className='news_links' to='/news'>
+            {t("Home.6")}
+          </NavLink>
         </CommonButton>
       </WrapperPress>
     </div>
