@@ -36,7 +36,7 @@ function Footer() {
     {
       id: 6,
       title: "Footer.8",
-      link: "/",
+      link: "/news",
     },
   ];
   const items = [
