@@ -25,6 +25,7 @@ const Consultant = lazy(() => import("../layouts/consultant/index"));
 const UslugiRating = lazy(() => import("../layouts/uslugi-rating/index"));
 const UslugiAnalytical = lazy(() => import("../layouts/uslugi-analytical"));
 const FinanceConsult = lazy(() => import("../layouts/finance-consult"));
+const News = lazy(() => import("../layouts/news/index"))
 const cookies = new Cookies();
 
 const personalData = cookies.get("AuthDataUser");
@@ -169,5 +170,10 @@ export const RouterData = [
     id: 24,
     path: "uslugi/uslugifinance",
     component: <FinanceConsult />,
+  },
+  {
+    id: 24,
+    path: "/news",
+    component: <News />,
   },
 ];

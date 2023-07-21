@@ -2,6 +2,7 @@ import React from "react";
 import CommonButton from "../../common/button";
 import { WrapperPress } from "./styled-index";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const Calling = ({ isMargin }) => {
   const { t, i18n } = useTranslation();
@@ -43,7 +44,9 @@ const Calling = ({ isMargin }) => {
           }}
           type={"button"}
         >
-          {t("Calling.4")}
+          <NavLink className='contant_navlink' to='/details'>
+            {t("Calling.4")}
+          </NavLink>
         </CommonButton>
       </WrapperPress>
     </>

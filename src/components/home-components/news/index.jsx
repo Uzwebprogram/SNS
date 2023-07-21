@@ -31,7 +31,7 @@ const News = () => {
 
   useEffect(() => {
     dispatch(GetNews());
-  },[]);
+  }, []);
   return (
     <>
       <WrapperPress>
@@ -42,10 +42,10 @@ const News = () => {
               {LangVal() == "ru"
                 ? elem.description_ru
                 : LangVal() == "uz"
-                ? elem.description_uz
-                : LangVal() == "en"
-                ? elem.description_en
-                : elem.description_ru}
+                  ? elem.description_uz
+                  : LangVal() == "en"
+                    ? elem.description_en
+                    : elem.description_ru}
             </p>
             <time>{DateFormat(elem.date)}</time>
             <hr />

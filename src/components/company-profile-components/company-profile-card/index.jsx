@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { WrapperPress } from "./styled-index";
 import { Row, Col } from "react-grid-system";
 import { useTranslation } from "react-i18next";
@@ -6,8 +6,14 @@ import { useParams } from "react-router-dom";
 import { GetBanks, GetBanksIds } from "../../../redux/bank";
 import { useDispatch, useSelector } from "react-redux";
 import CommonButton from "../../../common/button";
+import RatingType1Modal from '../../uslugi-rating/types-rating/raiting-type1/index'
+import RatingType2Modal from '../../uslugi-rating/types-rating/raiting-type2/index'
+import RatingType3Modal from '../../uslugi-rating/types-rating/raiting-type3/index'
+import RatingType4Modal from '../../uslugi-rating/types-rating/raiting-type4/index'
 
 const CompanyProfileCard = ({ isSelect }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalId, setModalId] = useState()
   const { t, i18n } = useTranslation();
   const { id } = useParams();
   const dispatch = useDispatch();
@@ -22,6 +28,21 @@ const CompanyProfileCard = ({ isSelect }) => {
   useEffect(() => {
     dispatch(GetBanksIds(window.localStorage.getItem("MoreId")));
   }, []);
+
+  const handleId = (e) => {
+    // e.preventDefault()
+    setIsModalOpen(true)
+    setModalId(e.currentTarget?.id)
+  }
+
+
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <>
@@ -50,16 +71,16 @@ const CompanyProfileCard = ({ isSelect }) => {
               </div>
               <hr className="hr" />
               <div>
-              <Row className="row">
-                <Col lg={6} md={8} sm={6} sx={6} className="col">
-                  <p>{t("Requisites.2")}</p>
-                </Col>
-                <Col lg={6} md={4} sm={6} sx={6} className="col">
-                  <span>{elem.kpp}</span>
-                </Col>
-              </Row>
-              <hr />
-            </div>
+                <Row className="row">
+                  <Col lg={6} md={8} sm={6} sx={6} className="col">
+                    <p>{t("Requisites.2")}</p>
+                  </Col>
+                  <Col lg={6} md={4} sm={6} sx={6} className="col">
+                    <span>{elem.kpp}</span>
+                  </Col>
+                </Row>
+                <hr />
+              </div>
               <Row className="row">
                 <Col lg={6} md={8} sm={6} sx={6} className="col">
                   <p>{t("Requisites.0")}</p>
@@ -94,6 +115,10 @@ const CompanyProfileCard = ({ isSelect }) => {
               <hr />
             </div>
             <div className="table-box">
+              {modalId == 1 ? <RatingType1Modal handleCancel={handleCancel} isModalOpen={isModalOpen} /> : null}
+              {modalId == 2 ? <RatingType2Modal handleCancel1={handleCancel} isModalOpen1={isModalOpen} /> : null}
+              {modalId == 3 ? <RatingType3Modal handleCancel2={handleCancel} isModalOpen2={isModalOpen} /> : null}
+              {modalId == 4 ? <RatingType4Modal handleCancel3={handleCancel} isModalOpen3={isModalOpen} /> : null}
               <h3>{t("Requisites.5")}</h3>
               <hr className="hr" />
               <div className="table-scroll">
@@ -111,7 +136,20 @@ const CompanyProfileCard = ({ isSelect }) => {
                     {elem.raiting.map((elem) => (
                       <tr>
                         <td className="td">{elem.raiting}</td>
-                        <td className="td"><a href={elem.link} target={"_blank"}>{elem.type_reting}</a></td>
+                        <td className="td">
+                          <CommonButton
+                            style={{
+                              borderColor: "#3ab82f",
+                              background: "#3ab82f",
+                              display: "inline-block",
+                              padding: "0 10px",
+                              borderRadius: "10px"
+                            }}
+                            type={"button"}
+                          >
+                            <a onClick={handleId} id={elem.link}>{elem.type_reting}</a>
+                          </CommonButton>
+                        </td>
                         <td className="td">{elem.prognoz}</td>
                         <td className="td">{elem.update_date}</td>
                         <td className="td td-btn">

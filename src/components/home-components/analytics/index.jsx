@@ -30,7 +30,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
 
   const dispatch = useDispatch();
   const getAnalytic = useSelector((state) => state.analytic.getanalytic?.Data);
-  console.log(getAnalytic)
+  // console.log(getAnalytic)
 
 
   const [sorts, setSorts] = useState("");

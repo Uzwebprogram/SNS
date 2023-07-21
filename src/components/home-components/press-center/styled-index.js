@@ -53,4 +53,9 @@ export const WrapperPress = styled.div`
       display: none;
     }
   }
+
+  .news_links{
+    color: #000;
+    text-decoration: none;
+  }
 `;
