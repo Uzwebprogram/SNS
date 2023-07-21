@@ -84,7 +84,7 @@ function Footer() {
                 </li>
                 <li>
                   <p>{t("Footer.0")}</p>
-                  <span>Узбекистан, г.Ташкент,  ул.Бузбозор, 5. </span>
+                  <span>{t("Footer.17")}</span>
                 </li>
               </ul>
             </Col>
@@ -170,7 +170,7 @@ function Footer() {
       <WrapperContainer>
         <div className="FooterBoottom">
           <Row className="footer_row">
-            <Col className="Footer-Bottom-left" lg={7} md={12}>
+            <Col className="Footer-Bottom-left" lg={12} md={12}>
               <p>{t("Footer.9")}</p>
               <p>{t("Footer.10")}</p>
               <p>{t("Footer.11")}</p>

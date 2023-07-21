@@ -173,7 +173,7 @@ const Ranking = ({ isSelect, isBtn }) => {
         id="rankin"
         style={isSelect == true ? { marginTop: 0 } : { marginTop: 20 }}
       >
-        <h2>{t("Home.2")}</h2>
+        <h2>{t("Home.13")}</h2>
         {isSelect == true ? (
           <div className="select-box">
             <select onChange={Handlechange}>

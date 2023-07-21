@@ -73,7 +73,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
               }}
               type={"button"}
             >
-              Поделиться
+              {t("Calling.5")}
             </CommonButton>
           </div>
         ) : null}

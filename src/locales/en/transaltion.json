@@ -27,7 +27,8 @@
     "9": "Analysis of the insurance services market for 2022!",
     "10": "Analysis of the leasing services market for 2021!",
     "11": "Analysis of the microcredit market!",
-    "12": "What are the risks of growth of public debt of Uzbekistan!"
+    "12": "What are the risks of growth of public debt of Uzbekistan!",
+    "13" : "Rankings"
   },
   "Calling": {
     "0": "Commercial service",
@@ -117,7 +118,7 @@
     "0": "Disclosure"
   },
   "Requisites": {
-    "0": "INN",
+    "0": "TIN",
     "1": "License",
     "2": "Foundation date",
     "3": "Country",
@@ -144,7 +145,7 @@
     "1": "Login",
     "2": "Company name",
     "3": "Email",
-    "4": "INN",
+    "4": "TIN",
     "5": "Enter your E-mail",
     "6": "Receive email newsletters to this email",
     "7": "License",
@@ -178,10 +179,11 @@
     "13": "User Agreement",
     "14": "Internal control service",
     "15": " online form",
-    "16": "You can express your remark or suggestion by filling out the"
+    "16": "You can express your remark or suggestion by filling out the",
+    "17" : "Uzbekistan, Tashkent, Buz Bozor street, house 5."
   },
   "details": {
-    "0": "INN",
+    "0": "TIN",
     "1": "Phone number",
     "2": "OKED",
     "3": "Email",
@@ -320,7 +322,7 @@
   "UslugiAnalytic": {
     "0": "Analytical market research",
     "1": "Analytical research is a set of measures aimed at studying the situation on a particular market of goods or services. In essence, it is the collection and analysis of information by determining the preferences and behavior of buyers. Such research helps the top-management of the company to make the right managerial decisions when producing and selling the product or service. It is usually conducted for the following purposes:",
-    "17": "Launch of a new product in the market \n * Development and launch of an advertising campaign \n * Company rebranding \n * Increase of market share, increase of sales volume \n * Entry of business to a new level \n * Minimization of business risks and possible losses \n * Increase of competitiveness in the market \n * Reduction of uncertainty of the market \n Analytical research is an important part of forming the company's strategy, considering the current market situation. At the same time it helps to evaluate the company's prospects in the future, which is very important in forecasts for the next 3-5 years. \n  At the same time, the specific characteristics of the market orientation are production, because different markets have their own operating conditions.",
+    "17": "Launch of a new product in the market \n * Development and launch of an advertising campaign \n * Company rebranding \n * Increase of market share, increase of sales volume \n * Entry of business to a new level \n * Minimization of business risks and possible losses \n * Increase of competitiveness in the market \n * Reduction of uncertainty of the market \n Analytical research is an important part of forming the company's strategy, considering the current market situation. At the same time it helps to evaluate the company's prospects in the future, which is very important in forecasts for the next 3-5 years. \n To provide its clients with truly high-quality results and conduct correct research, SNS Ratings uses a wide range of methods and approaches to analysis \n  At the same time, the specific characteristics of the market orientation are production, because different markets have their own operating conditions.",
     "2": "Structure of the research",
     "3": "General characteristic of the market",
     "4": "Market Description.",

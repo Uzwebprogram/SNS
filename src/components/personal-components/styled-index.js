@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   padding: 0 0 30px 0;
-
+  margin-top : 50px;
   /* @media only screen and (max-width: 425px) {
     overflow-x: hidden;
   } */

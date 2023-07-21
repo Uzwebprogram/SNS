@@ -61,7 +61,7 @@ const RankingDetails = ({ isSelect }) => {
               <p>{t("details.4")}</p>
             </Col>
             <Col lg={6} md={4} sm={6} sx={6} className="col">
-              <span>Узбекистан, г.Ташкент, М.Улугбекский район ул.Бузбозор, дом 5.</span>
+              <span>{t("Footer.17")}</span>
             </Col>
           </Row>
           <hr />

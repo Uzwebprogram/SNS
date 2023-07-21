@@ -11,7 +11,7 @@
     "8": "Toshkent, Chilonzor tumani, Bunyodkor ko‘chasi, 57-uy",
     "9": "Kompaniyalar",
     "10": "Reyting",
-    "11": "Analitik bozor tadqiqotlari",
+    "11": "Bozor tahliliy tadqiqotlari",
     "12": "Moliyaviy maslahat"
   },
   "Home": {
@@ -27,7 +27,8 @@
     "9": "2022 yil uchun sug'urta xizmatlari bozori tahlili!",
     "10": "2021 yil uchun lizing xizmatlari bozori tahlili!",
     "11": "Mikrokreditlar bozori tahlili!",
-    "12": "O‘zbekiston davlat qarzining o‘sishi qanday xavf-xatarlardan iborat!"
+    "12": "O‘zbekiston davlat qarzining o‘sishi qanday xavf-xatarlardan iborat!",
+    "13" : "Renkinglar"
   },
   "Calling": {
     "0": "Tijorat xizmati",
@@ -44,7 +45,7 @@
     "3": "Ulashish",
     "4": "Obyekt",
     "5": "Reyting",
-    "6": "Prognoz",
+    "6": "Bashorat",
     "7": "Matbuot xabari",
     "8": "Baho shkalasi",
     "9": "Reyting - reyting subyekti va uning hamkorlari va mijozlari o'rtasidagi o'zaro munosabatlarda axborot noaniqligini kamaytirishda muhim rol o'ynaydi.",
@@ -67,12 +68,12 @@
     "3": "Rossiya lizing kompaniyalarining 2022-yilning birinchi 9 oyi uchun reytingi Expert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi. loyiha kompaniyalariga kredit reytinglari Expert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Rossiya lizing kompaniyalari reytingi 2022 yilning 9 oyi yakunlari bo'yicha Rossiya lizing kompaniyalarining 2022 yil 9 oyi yakunlari bo'yicha reytingi Expert RA Ranking loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanganligini e'lon qiladi.",
     "4": "Reyting nima?",
     "5": "Kompaniya renking",
-    "6": "ulush",
+    "6": "Ulush",
     "7": "Sanoatni tanlang!",
     "8": "Indikatorni tanlang !",
     "9": "Boshi",
-    "10": "oxiri",
-    "11": "yil",
+    "10": "Oxiri",
+    "11": "Yil",
     "12": "Oʻzgarishlar",
     "13": "Barcha atributlar",
     "14": "MOLIYA SEKTORI",
@@ -100,7 +101,7 @@
   "Agency": {
     "0": "Standard and Sensitive Ratings mustaqil reyting agentligidir",
     "1": "Rossiya lizing kompaniyalarining 2022-yil 9 oyi yakunlari bo‘yicha reytingi",
-    "2": "Bizning asosiy vazifamiz bozor ishtirokchilariga yuqori sifatli analitik bozor sharhlarini taqdim etish va reytinglardan foydalangan holda kompaniyalar va ularning moliyaviy vositalarining ishonchliligi haqida hisobot berishdir.Bizning mutaxassislar jamoasi 10 yillik tajribaga ega tahlilchilar va metodistlardan iborat."
+    "2": "Bizning asosiy vazifamiz bozor ishtirokchilariga yuqori sifatli bozor tahliliy  sharhlarini taqdim etish va reytinglardan foydalangan holda kompaniyalar va ularning moliyaviy vositalarining ishonchliligi haqida hisobot berishdir.Bizning mutaxassislar jamoasi 10 yillik tajribaga ega tahlilchilar va metodistlardan iborat."
   },
   "Faq": {
     "0": "Mutaxassislarga savollar"
@@ -120,7 +121,7 @@
     "5": "Kompaniya reytinglari",
     "6": "Nomoliyaviy kompaniyalarning kredit reytinglari",
     "7": "Reyting",
-    "8": "Prognoz",
+    "8": "Bashorat",
     "9": "Yangilangan",
     "10": "Sertifikat",
     "11": "Yuklab olish"
@@ -178,7 +179,8 @@
     "13": "Foydalanuvchi shartnomasi",
     "14": "Ichki nazorat xizmati",
     "15": "bildirishingiz mumkin",
-    "16": "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali"
+    "16": "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali",
+    "17" : "O‘zbekiston, Toshkent, Buz Bozor ko‘chasi, 5-uy."
   },
   "details": {
     "0": "INN",
@@ -205,7 +207,7 @@
     "11": "Biz banklar va sug'urtalovchilarga iqtisodiyotning barcha sohalaridagi har qanday hajmdagi moliyaviy bo'lmagan kompaniyalarga, xolding, lizing va moliya kompaniyalariga va hukumatlarga reyting beramiz",
     "13": "Biz muntazam ravishda tahliliy tadqiqotlarni nashr etamiz, eng yirik professional uyushmalar va ommaviy axborot vositalari bilan faol hamkorlik qilamiz.",
     "12": "Biz o'z ishimizda eng yuqori standartlarga rioya qilamiz, shu bilan birga maksimal shaffoflik , ochiqlik va aloqa sifati bilan ajralib turamiz.",
-    "14": "Tayinlangan",
+    "14": "Taqdim qilindi",
     "15": "kredit reytinglari",
     "16": "to'lov qobiliyati reytinglari",
     "17": "qimmatli qog'ozlar emitentining reytingi",
@@ -221,8 +223,8 @@
   "Form": {
     "0": "Maslahat uchun so'rov qoldiring!",
     "1": "Kompaniya",
-    "2": "To'liq ism",
-    "3": "Telefon raqami",
+    "2": "Ismingiz",
+    "3": "Telefon raqamingiz",
     "4": "Yuborish"
   },
 
@@ -278,15 +280,15 @@
       "20": "Miqdoriy ko'rsatkichlar",
       "21": "Moliyaviy holat",
       "22": "Retrospektiv faoliyat",
-      "24": "Rivojlanish prognozlari",
+      "24": "Rivojlanish Bashoratlari",
       "25": "Sifat ko'rsatkichlari",
       "26": "Menejment",
       "27": "Rivojlanish strategiyasi",
       "28": "Moliyaviy moslashuvchanlik",
       "29": "Reyting shkalasi",
       "30": "Barcha kerakli ma'lumotlarni to'plaganimizdan so'ng, biz kompaniyaning tashqi va ichki omillarini tahlil qilamiz va reyting shkalasi bo'yicha baho beramiz.",
-      "31": "Prognozlar",
-      "32": "Reyting bahosiga, shuningdek, reyting berilgan paytdan boshlab tahlilchilar tomonidan keyingi 12 oy uchun prognoz beriladi. Prognozlar 4 xil bo'ladi:",
+      "31": "Bashoratlar",
+      "32": "Reyting bahosiga, shuningdek, reyting berilgan paytdan boshlab tahlilchilar tomonidan keyingi 12 oy uchun Bashorat beriladi. Bashoratlar 4 xil bo'ladi:",
       "33": "Ijobiy",
       "34": "– reytingni oshirish ehtimoli",
       "35": "Barqaror",
@@ -319,9 +321,9 @@
   },
 
   "UslugiAnalytic": {
-    "0": "Analitik bozor tadqiqotlari",
-    "1": "Analitik tadqiqot - bu tovarlar yoki xizmatlarning ma'lum bir bozoridagi vaziyatni o'rganishga qaratilgan chora-tadbirlar majmui. Aslida, bu xaridorlarning afzalliklari va xatti-harakatlarini aniqlash orqali ma'lumotlarni to'plash va tahlil qilishdir. Bunday tadqiqot kompaniyaning top-menejmentiga mahsulot yoki xizmatni ishlab chiqarish va sotishda to'g'ri boshqaruv qarorlarini qabul qilishga yordam beradi. Odatda bu quyidagi maqsadlar uchun qilinadi:",
-    "17": "Bozorga yangi mahsulotni olib kirish \n * reklama kampaniyasini ishlab chiqish va ishga tushirish  \n * kompaniyaning rebrendingi \n * bozor ulushini oshirish, sotuvni ko'paytirish \n * biznesni keyingi bosqichga olib chiqish \n * biznes xatarlari va mumkin bo'lgan yo'qotishlarni minimallashtirish \n * bozorda raqobatbardoshlikni oshirish \n * Bozordagi vaziyatning noaniqlik darajasini pasaytirish \n Analitik tadqiqotlar - bozordagi mavjud vaziyatni hisobga olgan holda kompaniya strategiyasini shakllantirishning muhim qismidir. Bundan tashqari, bu uning kelajakdagi istiqbollarini baholashga yordam beradi, bu keyingi 3-5 yil uchun bashorat juda muhimdir. \n Shu bilan birga, bozor yo'nalishining o'ziga xos xususiyatlari hisobga olinadi, chunki turli bozorlarda o'z ish qoidalari mavjud.",
+    "0": "Bozor tahliliy tadqiqotlari",
+    "1": "Tahliliy tadqiqotlar - bu tovarlar yoki xizmatlarning ma'lum bir bozoridagi vaziyatni o'rganishga qaratilgan chora-tadbirlar majmui. Aslida, bu xaridorlarning afzalliklari va xatti-harakatlarini aniqlash orqali ma'lumotlarni to'plash va tahlil qilishdir. Bunday tadqiqot kompaniyaning top-menejmentiga mahsulot yoki xizmatni ishlab chiqarish va sotishda to'g'ri boshqaruv qarorlarini qabul qilishga yordam beradi. Odatda bu quyidagi maqsadlar uchun qilinadi:",
+    "17": "Bozorga yangi mahsulotni olib kirish \n * reklama kampaniyasini ishlab chiqish va ishga tushirish  \n * kompaniyaning rebrendingi \n * bozor ulushini oshirish, sotuvni ko'paytirish \n * biznesni keyingi bosqichga olib chiqish \n * biznes xatarlari va mumkin bo'lgan yo'qotishlarni minimallashtirish \n * bozorda raqobatbardoshlikni oshirish \n * Bozordagi vaziyatning noaniqlik darajasini pasaytirish \n Tahliliy tadqiqot - bozordagi mavjud vaziyatni hisobga olgan holda kompaniya strategiyasini shakllantirishning muhim qismidir. Bundan tashqari, bu uning kelajakdagi istiqbollarini baholashga yordam beradi, bu keyingi 3-5 yil uchun bashorat juda muhimdir. \n O'z mijozlariga haqiqatan ham yuqori sifatli natijalarni taqdim etish va to'g'ri tadqiqot o'tkazish uchun SNS Ratings tahlil qilish uchun keng ko'lamli usullar va yondashuvlardan foydalanadi. \n Shu bilan birga, bozor yo'nalishining o'ziga xos xususiyatlari hisobga olinadi, chunki turli bozorlarda o'z ish qoidalari mavjud.",
     "2": "Tadqiqot tuzilishi",
     "3": "Bozorning umumiy xususiyatlari",
     "4": "Bozor tavsifi",
@@ -351,8 +353,8 @@
     "30": "Iste'molchilarning qoniqish darajasi",
     "31": "Mahsulotlarni sotish kanallari (kanallar orqali sotish tavsifi va tuzilishi)",
     "32": "Bozorda mavjud bo'lgan mahsulotlar assortimenti",
-    "33": "Bozor rivojlanishining xulosalari va prognoz tendentsiyalari",
-    "34": "Bozorni rivojlantirish gipotezalarini qurish. Bozor rivojlanishining prognoz ko'rsatkichlari",
+    "33": "Bozor rivojlanishining xulosalari va Bashorat tendentsiyalari",
+    "34": "Bozorni rivojlantirish gipotezalarini qurish. Bozor rivojlanishining Bashorat ko'rsatkichlari",
     "35": "Bozorni rivojlantirish bo'yicha tavsiyalar",
     "36": "Bozor yo'nalishini SWOT tahlili",
     "37": "Bozorga ta'sir qiluvchi omillarning PEST tahlili",
