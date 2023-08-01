@@ -180,7 +180,8 @@
     "14": "Ichki nazorat xizmati",
     "15": "bildirishingiz mumkin",
     "16": "O'z fikr yoki taklifingizni onlayn shaklni to'ldirish orqali",
-    "17" : "O‘zbekiston, Toshkent, Buz Bozor ko‘chasi, 5-uy."
+    "17" : "O‘zbekiston, Toshkent, Buz Bozor ko‘chasi, 5-uy.",
+    "18" : "Bizning eski saytimiz"
   },
   "details": {
     "0": "INN",
@@ -188,7 +189,7 @@
     "2": "OK",
     "3": "Elektron pochta",
     "4": "Manzil",
-    "5": "'SNS' reyting agentligi tafsilotlari",
+    "5": "'SNS Ratings' RA rekvizitlari",
     "6": "Kompaniya ma'lumotlari",
     "7": "Ekspert RA loyiha kompaniyalariga kredit reytinglarini berish metodologiyasining yangilanishini e'lon qiladi"
   },

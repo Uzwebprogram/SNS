@@ -86,6 +86,10 @@ function Footer() {
                   <p>{t("Footer.0")}</p>
                   <span>{t("Footer.17")}</span>
                 </li>
+                <li>
+                  <p>{t("Footer.18")}</p>
+                  <a href="https://d-solar.uz">old.sns.uz</a>
+                </li>
               </ul>
             </Col>
             <Col className="Footer-top-ul" md={12} lg={3}>

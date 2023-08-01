@@ -56,12 +56,13 @@ const Tables = ({ sorts, search }) => {
         protsent: (
           <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
             {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
+          <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
           </a>
         ),
         obnavit: (
           <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
             {elem.raiting.slice(0 , 1).map((e) => e.update_date)}
-            <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
+            
           </a>
         ),
       });
@@ -88,12 +89,13 @@ const Tables = ({ sorts, search }) => {
         protsent: (
           <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
             {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
+          <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
           </a>
         ),
         obnavit: (
           <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
             {elem.raiting.slice(0 , 1).map((e) => e.update_date)}
-            <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
+            
           </a>
         ),
       });
@@ -121,13 +123,13 @@ const Tables = ({ sorts, search }) => {
           protsent: (
             <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
               {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
+            <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
             </a>
           ),
           obnavit: (
             <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
               {elem.raiting.slice(0 , 1).map((e) => e.update_date)}
-              <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
-
+              
             </a>
           ),
         });
@@ -156,6 +158,7 @@ const Tables = ({ sorts, search }) => {
     {
       title: `${t("Rating.7")}`,
       dataIndex: "protsent",
+      width: 130,
     },
   ];
 

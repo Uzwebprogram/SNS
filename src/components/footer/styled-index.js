@@ -27,6 +27,8 @@ export const Wrapper = styled.div`
       margin-bottom: 61px;
     }
     p {
+      margin: 0;
+      padding: 0;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
@@ -64,14 +66,13 @@ export const Wrapper = styled.div`
         line-height: 130%;
         letter-spacing: 0.01em;
         color: #ffffff;
-        margin-bottom: 19px;
         @media only screen and (max-width: 768px) {
           margin-bottom: 5px;
         }
       }
       li {
         list-style-type: none;
-
+        margin-bottom : 10px;
         span,
         a {
           text-decoration: none;
