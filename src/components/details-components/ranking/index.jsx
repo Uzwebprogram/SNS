@@ -71,7 +71,7 @@ const RankingDetails = ({ isSelect }) => {
           width="100%"
           height="350"
           id="gmap_canvas"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.527781651001!2d69.32191512880705!3d41.31913541296703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4fcf39b69b9%3A0x969e73a76eff1dbb!2zNSBCdXogQm96b3Iga28nY2hhc2ksIFRhc2hrZW50LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1675689171157!5m2!1sru!2s"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2996.3973050607333!2d69.3214937!3d41.3219732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4fb24a7eef5%3A0x6d968a38e10e5517!2zNS3QuSDQv9GALiDRg9C70LjRhtGLINCR0YPQt9Cx0L7Qt9C-0YAsINCi0LDRiNC60LXQvdGC!5e0!3m2!1sru!2s!4v1690525188854!5m2!1sru!2s"
           frameborder="0"
           scrolling="no"
           marginheight="0"

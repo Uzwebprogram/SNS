@@ -54,9 +54,9 @@ const Tables = ({ sorts, search }) => {
           </a>
         ),
         protsent: (
-          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+          <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
             {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
-          </NavLink>
+          </a>
         ),
         obnavit: (
           <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
@@ -86,9 +86,9 @@ const Tables = ({ sorts, search }) => {
           </a>
         ),
         protsent: (
-          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+          <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
             {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
-          </NavLink>
+          </a>
         ),
         obnavit: (
           <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
@@ -119,9 +119,9 @@ const Tables = ({ sorts, search }) => {
             </a>
           ),
           protsent: (
-            <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
+            <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
               {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
-            </NavLink>
+            </a>
           ),
           obnavit: (
             <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
@@ -151,11 +151,11 @@ const Tables = ({ sorts, search }) => {
     },
     {
       title: `${t("Rating.6")}`,
-      dataIndex: "protsent",
+      dataIndex: "obnavit",
     },
     {
       title: `${t("Rating.7")}`,
-      dataIndex: "obnavit",
+      dataIndex: "protsent",
     },
   ];
 
