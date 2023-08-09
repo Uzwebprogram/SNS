@@ -30,7 +30,10 @@ const CommonCard = ({
           </Col>
           <Col className="col" lg={4} md={4} sm={12}>
             <div className="card-img">
-              <img src={imgSrc} alt="image" />
+              <img style={{
+                width: "100%",
+                aspectRatio: "4 / 3",
+              }} src={imgSrc} alt="image" />
             </div>
           </Col>
         </Row>
