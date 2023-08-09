@@ -43,6 +43,15 @@ const PressCenter = ({ styles }) => {
         {getPress.map((elem) => (
           <>
             <a target={"_blank"} href={elem.press_center_pdf} className="press-content">
+            <h5>
+                {LangVal() == "ru"
+                  ? elem.title_ru
+                  : LangVal() == "uz"
+                    ? elem.title_uz
+                    : LangVal() == "en"
+                      ? elem.title_en
+                      : null}
+              </h5>
               <p>
                 {LangVal() == "ru"
                   ? elem.description_ru

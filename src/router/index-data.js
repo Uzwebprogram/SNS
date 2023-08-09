@@ -157,6 +157,11 @@ export const RouterData = [
     component: <UslugiRating />,
   },
   {
+    id: 22,
+    path: "uslugi/uslugirating/:id",
+    component: <UslugiRating />,
+  },
+  {
     id: 23,
     path: "uslugi/uslugianalytic",
     component: <UslugiAnalytical />,

@@ -47,7 +47,7 @@ const Company = ({ isSelect, isBtn, isMargin }) => {
                   <select onChange={Handlechange}>
                     <option value="">{t("Select.1")}</option>
                     <option disabled value="ФИНАНСОВЫЙ СЕКТОР">
-                      ФИНАНСОВЫЙ СЕКТОР
+                      {t("Ranking.14")}
                     </option>
                     {getCategorie.slice(0, 7).map((elem, index) => (
                       <option key={index} value={elem.category_id}>
@@ -61,7 +61,7 @@ const Company = ({ isSelect, isBtn, isMargin }) => {
                       </option>
                     ))}
                     <option disabled value="КОРПОРАТИВНЫЙ СЕКТОР">
-                      КОРПОРАТИВНЫЙ СЕКТОР
+                      {t("Ranking.15")}
                     </option>
                     {getCategorie.slice(7, 8).map((elem, index) => (
                       <option key={index} value={elem.category_id}>
@@ -75,7 +75,7 @@ const Company = ({ isSelect, isBtn, isMargin }) => {
                       </option>
                     ))}
                     <option disabled value="ФИНАНСОВЫЕ ИНСТРУМЕНТЫ">
-                      ФИНАНСОВЫЕ ИНСТРУМЕНТЫ
+                      {t("Selects.2")}
                     </option>
                     {getCategorie.slice(8, 10).map((elem, index) => (
                       <option key={index} value={elem.category_id}>
@@ -93,7 +93,7 @@ const Company = ({ isSelect, isBtn, isMargin }) => {
                     <input
                       type="search"
                       onInput={HandleSearch}
-                      placeholder="Название компании"
+                      placeholder={t("Auth.2")}
                     />
                     <i class="bx bx-search"></i>
                   </div>

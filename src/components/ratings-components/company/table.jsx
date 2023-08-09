@@ -12,10 +12,13 @@ import RatingType3Modal from '../../uslugi-rating/types-rating/raiting-type3/ind
 import RatingType4Modal from '../../uslugi-rating/types-rating/raiting-type4/index'
 
 import Link from "./../../../assets/icons-link.png"
+import { GetRaiting } from "../../../redux/raiting";
+import Cookies from "universal-cookie";
 const Tables = ({ sorts, search }) => {
   const { t, i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalId, setModalId] = useState()
+  const cookies = new Cookies
   const data = [];
   const dispatch = useDispatch();
   const getBanks = useSelector((state) => state.banks.getbanks?.Data);
@@ -26,14 +29,27 @@ const Tables = ({ sorts, search }) => {
   useEffect(() => {
     dispatch(GetBanks());
   }, []);
+  useEffect(() => {
+    dispatch(GetRaiting())
+  }, [])
+  function GetLanguageValue() {
+    return cookies.get("i18next")
+  }
+  const GetRating = useSelector((state) => state.raiting.getRaiting.Data)
+  function DateFunction(originalDateTime) {
+    const [datePart, timePart] = originalDateTime.split(' ');
+    const [year, month, day] = datePart.split('-');
 
+    const newFormattedDate = `${day}-${month}-${year}`;
+
+    return newFormattedDate
+  }
+  const GetRatingFilter = GetRating.filter(e => e.bank_id == getBanks.map(elem => elem.bank_id))
   const handleId = (e) => {
     // e.preventDefault()
     setIsModalOpen(true)
     setModalId(e.currentTarget?.id)
   }
-  console.log(modalId)
-
   if (sorts == "" && search == "") {
     getBanks.map((elem) => {
       data.push({
@@ -45,23 +61,24 @@ const Tables = ({ sorts, search }) => {
         ),
         reting: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.raiting.slice(0 , 1).map((e) => e.raiting)}
+            {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.raiting)}
           </NavLink>
         ),
         bidreting: (
-          <a className="navlink" onClick={handleId} id={elem.raiting.slice(0 , 1).map((e) => e.link)}>
-            {elem.raiting.slice(0 , 1).map((e) => e.type_reting)}
+          <a className="navlink" onClick={handleId} id={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.link)}>
+            {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) =>  GetLanguageValue() == 'ru' ?  e.type_reting : GetLanguageValue() == "uz"? e.type_reting_uz :GetLanguageValue() == "en"? e.type_reting_en :null)}
           </a>
         ),
         protsent: (
-          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
-          </NavLink>
+          <a className="navlink" href={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
+            {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => DateFunction(e.update_date))}
+          <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
+          </a>
         ),
         obnavit: (
-          <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
-            {elem.raiting.slice(0 , 1).map((e) => e.update_date)}
-            <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
+          <a className="navlink" href={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
+            {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => GetLanguageValue() == 'ru' ?  e.prognoz : GetLanguageValue() == "uz"? e.prognoz_uz :GetLanguageValue() == "en"? e.prognoz_en :null)}
+            
           </a>
         ),
       });
@@ -77,23 +94,24 @@ const Tables = ({ sorts, search }) => {
         ),
         reting: (
           <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.raiting.slice(0 , 1).map((e) => e.raiting)}
+            {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.raiting)}
           </NavLink>
         ),
         bidreting: (
-          <a className="navlink" onClick={handleId} id={elem.raiting.slice(0 , 1).map((e) => e.link)}>
-            {elem.raiting.slice(0 , 1).map((e) => e.type_reting)}
+          <a className="navlink" onClick={handleId} id={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.link)}>
+            {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.type_reting)}
           </a>
         ),
         protsent: (
-          <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-            {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
-          </NavLink>
+          <a className="navlink" href={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
+            {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => DateFunction(e.update_date))}
+          <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
+          </a>
         ),
         obnavit: (
-          <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
-            {elem.raiting.slice(0 , 1).map((e) => e.update_date)}
-            <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
+          <a className="navlink" href={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
+                       {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => GetLanguageValue() == 'ru' ?  e.prognoz : GetLanguageValue() == "uz"? e.prognoz_uz :GetLanguageValue() == "en"? e.prognoz_en :null)}
+            
           </a>
         ),
       });
@@ -110,24 +128,24 @@ const Tables = ({ sorts, search }) => {
           ),
           reting: (
             <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-              {elem.raiting.slice(0 , 1).map((e) => e.raiting)}
+              {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.raiting)}
             </NavLink>
           ),
           bidreting: (
-            <a className="navlink" onClick={handleId} id={elem.raiting.slice(0 , 1).map((e) => e.link)}>
-              {elem.raiting.slice(0 , 1).map((e) => e.type_reting)}
+            <a className="navlink" onClick={handleId} id={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.link)}>
+              {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.type_reting)}
             </a>
           ),
           protsent: (
-            <NavLink className="navlink" to={`/companyprofile/${elem.bank_id}`}>
-              {elem.raiting.slice(0 , 1).map((e) => e.prognoz)}
-            </NavLink>
+            <a className="navlink" href={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
+              {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => DateFunction(e.update_date))}
+            <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
+            </a>
           ),
           obnavit: (
-            <a className="navlink" href={elem.raiting.slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
-              {elem.raiting.slice(0 , 1).map((e) => e.update_date)}
-              <img src={Link} width={17} style={{ marginLeft: "10px" }} height={17} alt="" />
-
+            <a className="navlink" href={GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => e.update_date_pdf)} target={"_blank"}>
+                         {GetRating.filter(e => e.bank_id == elem.bank_id).slice(0 , 1).map((e) => GetLanguageValue() == 'ru' ?  e.prognoz : GetLanguageValue() == "uz"? e.prognoz_uz :GetLanguageValue() == "en"? e.prognoz_en :null)}
+              
             </a>
           ),
         });
@@ -151,11 +169,12 @@ const Tables = ({ sorts, search }) => {
     },
     {
       title: `${t("Rating.6")}`,
-      dataIndex: "protsent",
+      dataIndex: "obnavit",
     },
     {
       title: `${t("Rating.7")}`,
-      dataIndex: "obnavit",
+      dataIndex: "protsent",
+      width: 130,
     },
   ];
 

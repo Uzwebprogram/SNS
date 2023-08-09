@@ -9,10 +9,11 @@ import RatingType3Modal from './raiting-type3/index'
 import RatingType4Modal from './raiting-type4/index'
 
 import RatingType2Modal from './raiting-type2/index';
+import { useParams } from 'react-router-dom';
 
 const TypesRatings = () => {
   const { t } = useTranslation()
-
+  const {id} = useParams()
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalOpen1, setIsModalOpen1] = useState(false);
   const [isModalOpen2, setIsModalOpen2] = useState(false);
@@ -28,6 +29,7 @@ const TypesRatings = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+
   // rating type modal 1 function
   // rating type modal 2 function
   const showModal1 = () => {

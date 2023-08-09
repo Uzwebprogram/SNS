@@ -10,7 +10,8 @@ import RatingType1Modal from '../../uslugi-rating/types-rating/raiting-type1/ind
 import RatingType2Modal from '../../uslugi-rating/types-rating/raiting-type2/index'
 import RatingType3Modal from '../../uslugi-rating/types-rating/raiting-type3/index'
 import RatingType4Modal from '../../uslugi-rating/types-rating/raiting-type4/index'
-
+import { GetRaiting, GetRanking } from "../../../redux/raiting";
+import Cookies from "universal-cookie";
 const CompanyProfileCard = ({ isSelect }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalId, setModalId] = useState()
@@ -18,7 +19,7 @@ const CompanyProfileCard = ({ isSelect }) => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const getBanks = useSelector((state) => state.banks.getbanks?.Data);
-
+  const cookies = new Cookies();
   window.localStorage.setItem("MoreId", id);
 
   useEffect(() => {
@@ -28,7 +29,14 @@ const CompanyProfileCard = ({ isSelect }) => {
   useEffect(() => {
     dispatch(GetBanksIds(window.localStorage.getItem("MoreId")));
   }, []);
-
+  useEffect(() => {
+    dispatch(GetRaiting())
+  }, [])
+  const GetRating = useSelector((state) => state.raiting.getRaiting.Data)
+  const GetRatingFilter = GetRating.filter(e => e.bank_id == banksId.map(elem => elem.bank_id)[0])
+  function GetLanguageValue() {
+    return cookies.get("i18next")
+  }
   const handleId = (e) => {
     // e.preventDefault()
     setIsModalOpen(true)
@@ -43,7 +51,14 @@ const CompanyProfileCard = ({ isSelect }) => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  function DateFunction(originalDateTime) {
+    const [datePart, timePart] = originalDateTime.split(' ');
+    const [year, month, day] = datePart.split('-');
 
+    const newFormattedDate = `${day}-${month}-${year}`;
+
+    return newFormattedDate
+  }
   return (
     <>
       <WrapperPress
@@ -109,7 +124,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                   <p>{t("Requisites.3")}</p>
                 </Col>
                 <Col lg={6} md={4} sm={6} sx={6} className="col">
-                  <span>{elem.country}</span>
+                  <span>{GetLanguageValue() == 'ru' ? elem.country : GetLanguageValue() == 'uz' ? elem.country_uz : GetLanguageValue() == 'en' ? elem.country_en:null}</span>
                 </Col>
               </Row>
               <hr />
@@ -133,7 +148,7 @@ const CompanyProfileCard = ({ isSelect }) => {
                     </tr>
                   </thead>
                   <tbody>
-                    {elem.raiting.map((elem) => (
+                    {GetRatingFilter.map((elem) => (
                       <tr>
                         <td className="td">{elem.raiting}</td>
                         <td className="td">
@@ -147,11 +162,11 @@ const CompanyProfileCard = ({ isSelect }) => {
                             }}
                             type={"button"}
                           >
-                            <a onClick={handleId} id={elem.link}>{elem.type_reting}</a>
+                            <a onClick={handleId} id={elem.link}>{ GetLanguageValue() == 'ru' ? elem.type_reting : GetLanguageValue() == 'uz' ? elem.type_reting_uz : GetLanguageValue() == 'en' ? elem.type_reting_en :null}</a>
                           </CommonButton>
                         </td>
-                        <td className="td">{elem.prognoz}</td>
-                        <td className="td">{elem.update_date}</td>
+                        <td className="td">{GetLanguageValue() == 'ru' ? elem.prognoz : GetLanguageValue() == 'uz' ? elem.prognoz_uz : GetLanguageValue() == 'en' ? elem.prognoz_en :null}</td>
+                        <td className="td">{DateFunction(elem.update_date)}</td>
                         <td className="td td-btn">
                           <CommonButton
                             style={{

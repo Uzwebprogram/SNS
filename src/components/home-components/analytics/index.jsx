@@ -73,7 +73,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
               }}
               type={"button"}
             >
-              Поделиться
+              {t("Calling.5")}
             </CommonButton>
           </div>
         ) : null}
@@ -92,16 +92,16 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
                         ? elem.title_uz
                         : LangVal() == "en"
                         ? elem.title_en
-                        : elem.title_ru
+                        : null
                     }
                     text2={
                       LangVal() == "ru"
-                        ? elem.description_ru
+                        ? elem.description_en
                         : LangVal() == "uz"
                         ? elem.description_uz
                         : LangVal() == "en"
-                        ? elem.description_en
-                        : elem.description_ru
+                        ? elem.description_ru
+                        : null
                     }
                     spanText={elem.data_date}
                     // time={DateFormat(elem.date)}
