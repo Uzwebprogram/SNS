@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SliderWrapper } from "./styled-index";
 import sliderImg from "../../../assets/home-comp/laptopslider.png";
@@ -9,6 +9,8 @@ import slider2 from "../../../assets/home-comp/slider2.png";
 import slider3 from "../../../assets/home-comp/slider3.png";
 import slider4 from "../../../assets/home-comp/slider4.jpg";
 import slider5 from "../../../assets/home-comp/slider5.png";
+import { GetAnalytic } from "../../../redux/analytic";
+import { useDispatch, useSelector } from "react-redux";
 
 // Import Swiper styles
 import "swiper/css";
@@ -20,7 +22,29 @@ import { Pagination, Navigation } from "swiper";
 import CommonButton from "../../../common/button";
 
 const SliderComponent = () => {
+  const LangVal = () => {
+    return window.localStorage.getItem("i18nextLng");
+  };
   const { t, i18n } = useTranslation();
+  const dispatch = useDispatch();
+  const getAnalytic = useSelector((state) => state.analytic.getanalytic?.Data);
+  useEffect(() => {
+    dispatch(GetAnalytic())
+  }, [])
+  console.log(getAnalytic)
+  // format date api function
+  const DateFormat = (date) => {
+    var d = new Date(date),
+      month = "" + (d.getMonth() + 1),
+      day = "" + d.getDate(),
+      year = d.getFullYear();
+
+    if (month.length < 2) month = "0" + month;
+    if (day.length < 2) day = "0" + day;
+
+    return [day, month, year].join("/");
+  };
+  // format date api function
   const dataSlider = [
     {
       id: 1,
@@ -63,11 +87,19 @@ const SliderComponent = () => {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          {dataSlider.map((elem) => (
+          {getAnalytic.map((elem) => (
             <SwiperSlide key={elem.id}>
-              <img src={elem.imgUrl} alt="image" />
+              <img src={elem.img} alt="image" />
               <div className="slider-content">
-                <p>{elem.title}</p>
+                <p>{
+                  LangVal() == "ru"
+                    ? elem.title_ru
+                    : LangVal() == "uz"
+                      ? elem.title_uz
+                      : LangVal() == "en"
+                        ? elem.title_en
+                        : elem.title_ru
+                }</p>
                 <CommonButton
                   style={{ display: "inline-block", marginRight: "auto" }}
                   type={"button"}
@@ -77,7 +109,7 @@ const SliderComponent = () => {
                   </NavLink>
                 </CommonButton>
                 <div className="content-bottom">
-                  <time>08.08.28</time>
+                  <time>{elem.data_date}</time>
                 </div>
               </div>
             </SwiperSlide>
