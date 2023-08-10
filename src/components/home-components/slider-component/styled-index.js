@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SliderWrapper = styled.div`
-margin-top : 50px;
+  margin-top: 50px;
   .swiper {
     width: 100%;
     height: 400px;
@@ -58,7 +58,7 @@ margin-top : 50px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
-      font-size: 35px;
+      font-size: 30px;
       line-height: 130%;
       letter-spacing: 0.01em;
       color: #ffffff;
