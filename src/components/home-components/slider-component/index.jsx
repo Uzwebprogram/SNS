@@ -87,7 +87,9 @@ const SliderComponent = () => {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          {getAnalytic.slice(0, 4).map((elem) => (
+
+          {getAnalytic.slice(0,5).map((elem) => (
+
             <SwiperSlide key={elem.id}>
               <img src={elem.img} alt="image" />
               <div className="slider-content">
