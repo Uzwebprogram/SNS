@@ -87,9 +87,7 @@ const SliderComponent = () => {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-
-          {getAnalytic.slice(0,5).map((elem) => (
-
+          {getAnalytic.map((elem) => elem.status == 'актуальные' ?
             <SwiperSlide key={elem.id}>
               <img src={elem.img} alt="image" />
               <div className="slider-content">
@@ -106,16 +104,16 @@ const SliderComponent = () => {
                   style={{ display: "inline-block", marginRight: "auto" }}
                   type={"button"}
                 >
-                  <NavLink className="link" to="analytics">
+                  <a className="link" href={elem.analitka_pdf} target="_blank">
                     {t("Home.1")}
-                  </NavLink>
+                  </a>
                 </CommonButton>
                 <div className="content-bottom">
                   <time>{elem.data_date}</time>
                 </div>
               </div>
             </SwiperSlide>
-          ))}
+          :null)}
         </Swiper>
       </SliderWrapper>
     </>
