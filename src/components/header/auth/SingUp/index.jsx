@@ -11,7 +11,6 @@ function SingUp() {
     const companynameRef = useRef();
     const innRef = useRef();
     const emailRef = useRef();
-    const ogrnRef = useRef();
     const kppRef = useRef();
     const countryRef = useRef();
     const passwordRef = useRef();
@@ -23,8 +22,8 @@ function SingUp() {
             companyname : companynameRef.current.value,
             inn : innRef.current.value,
             email : emailRef.current.value,
-            ogrn : ogrnRef.current.value,
-            kpp : kppRef.current.value,
+            ogrn : "no content",
+            kpp : "no content",
             country : countryRef.current.value,
             password: passwordRef.current.value,
             repeat_password: repeat_passwordRef.current.value
@@ -37,7 +36,7 @@ function SingUp() {
     return(
         <Wrapper onSubmit={HandleSubmit}>
             <label htmlFor="name">{t("Auth.2")}</label>
-            <input ref={companynameRef} type="text" placeholder={t("Auth.3")} required />
+            <input ref={companynameRef} type="text" required />
             {result.Error?.response?.data?.message == 'Already exists' ? <p style={{color: "red"}}> {t("Auth.17")}</p>:null}
             <label  htmlFor="name">{t("Auth.4")}</label>
             <input ref={innRef} type="text"  required />
@@ -47,10 +46,6 @@ function SingUp() {
             <input type="radio"/>
             <span htmlFor="name">{t("Auth.6")}</span>
             </div>
-            <label htmlFor="name">{t("Auth.7")}</label>
-            <input ref={ogrnRef}  type="text" required />
-            <label htmlFor="name">{t("Auth.8")}</label>
-            <input  ref={kppRef} type="text" required />
             <label htmlFor="name">{t("Auth.9")}</label>
             <input ref={countryRef} type="text"  required />
             <label htmlFor="name">{t("Auth.10")}</label>

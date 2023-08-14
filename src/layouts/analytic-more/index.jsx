@@ -17,11 +17,9 @@ const AnalyticMore = () => {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   window.localStorage.setItem("AnalyticId", id);
-
   const LangVal = () => {
     return window.localStorage.getItem("i18nextLng");
   };
-
   const dispatch = useDispatch();
   const getAnalytic = useSelector((state) => state.analytic.getanalytic?.Data);
   useEffect(() => {
@@ -42,7 +40,7 @@ const AnalyticMore = () => {
           <Row className="row">
             <Col lg={8} md={12} sm={12} sx={12} className="col">
               <WrapperPress>
-                {getAnalyticId.map((elem) => (
+                {getAnalyticId.map((elem) =>  elem.id == id ?
                   <>
                     <div className="dfs">
                       <h2>
@@ -76,8 +74,8 @@ const AnalyticMore = () => {
                         : elem.description_ru}
                     </p>
                     <img className="analytic-img" src={elem.img} alt="image" />
-                  </>
-                ))}
+                  </> : null
+                )}
               </WrapperPress>
             </Col>
             <Col lg={4} md={12} sm={12} sx={12} className="col">

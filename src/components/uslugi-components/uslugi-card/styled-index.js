@@ -6,15 +6,12 @@ export const WrapperPress = styled.div`
   border-radius: 15px;
   padding: 25px;
   margin-top: ${(props) => (props.isMargin ? "20px" : "0")};
-
   .uslugi-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #2f66b8;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
     overflow-y: hidden;
     cursor: pointer;
   }
@@ -24,13 +21,11 @@ export const WrapperPress = styled.div`
   }
 
   .arrow-box {
-    background: #2f66b8;
     height: 100% !important;
     padding: 22px 20px;
-
     i {
       font-size: 35px;
-      color: #fff;
+      color: black;
     }
   }
 
@@ -49,6 +44,10 @@ export const WrapperPress = styled.div`
     .col {
       padding: 0 !important;
     }
+  }
+  .col:hover{
+    background-color: #e3e3e3;
+    border-radius: 20px;
   }
   h2 {
     font-family: "Montserrat";

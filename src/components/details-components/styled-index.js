@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
-  .row {
+  padding: 30px 0;
+   .row {
     margin: 0 !important;
   }
 

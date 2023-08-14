@@ -19,6 +19,11 @@ import { HashLink } from "react-router-hash-link";
 import ModalCommon from "../../common/Modal/Modal";
 import Auth from "../auth";
 import LanguageHeader from "../header-language";
+import { GetAnalyticSearch } from "../../../redux/analytic";
+import { DownOutlined } from '@ant-design/icons';
+import { Dropdown } from 'antd';
+import './style.css'
+
 const { Search } = Input;
 function HeaderBottom({
   HandleOpen2,
@@ -27,7 +32,7 @@ function HeaderBottom({
   closSearch,
   closeSearchSet,
 }) {
-  const [open , setOpen] = useState(false)
+  const [open, setOpen] = useState(false)
   const HandleOpen = () => setOpen(true)
   const HandleClose3 = () => setOpen(false)
   const pathname = useLocation();
@@ -36,19 +41,61 @@ function HeaderBottom({
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
   const cookies = new Cookies();
+  function GetLanguageValue() {
+    return cookies.get("i18next")
+  }
+  const onSearch = (e) => {
+    setSearch(e.target.value);
+    dispatch(GetBanksSearch(e.target.value));
+    dispatch(GetAnalyticSearch(e.target.value))
 
-  const onSearch = (value) => {
-    setSearch(value.target.value);
-    dispatch(GetBanksSearch(value.target.value));
   };
   const getBankSearch = useSelector(
     (state) => state.banks.getbanksSearch?.Data
   );
+  const GetAnalyticaSearch = useSelector(
+    (state) => state.analytic.getanalyticSearch.Data
+  );
+
+  const items = [
+    {
+      label: <NavLink
+        style={{ textDecoration: "none" }}
+        className={pathname == `/uslugi/uslugirating` ? "actives" : "isActives"}
+        to='/uslugi/uslugirating'
+      >
+        <p className='header_link_texts'>{t("Header.10")}</p>
+      </NavLink>,
+      key: '0',
+    },
+    {
+      label: <NavLink
+        style={{ textDecoration: "none" }}
+        className={pathname == `/uslugi/uslugianalytic` ? "actives" : "null"}
+        to='/uslugi/uslugianalytic'
+      >
+        <p className='header_link_texts'>{t("Header.11")}</p>
+      </NavLink>,
+      key: '1',
+    },
+    {
+      label: <NavLink
+        style={{ textDecoration: "none" }}
+        className={pathname == `/uslugi/uslugifinance` ? "actives" : "null"}
+        to='/uslugi/uslugifinance'
+      >
+        <p className='header_link_texts'>{t("Header.12")}</p>
+      </NavLink>,
+      key: '3',
+    },
+  ];
+
+
   return (
     <Section>
       <WrapperContainer>
         <Wrapper>
-          <HashLink to={"/#home"} smooth>
+          <HashLink to={"/"} smooth>
             <img src={Logo} alt="" />
           </HashLink>
           <Search
@@ -60,24 +107,76 @@ function HeaderBottom({
             className="search"
           />
           <ul>
-            {dataLink.map((elem, index) => (
-              <li key={index}>
-                <NavLink
-                  style={{ textDecoration: "none" }}
-                  className={pathname == `${elem.link}` ? "active" : "links"}
-                  to={elem.link}
-                >
-                  <p>{t(elem.title)}</p>
-                </NavLink>
-              </li>
-            ))}
+            {/* {dataLink.map((elem, index) => ( */}
+            <li>
+              <NavLink
+                style={{ textDecoration: "none" }}
+                className={pathname == `/ratings` ? "active" : "links"}
+                to='/ratings'
+              >
+                <p>{t("Header.2")}</p>
+              </NavLink>
+            </li>
+            
+            <li >
+              <NavLink
+                style={{ textDecoration: "none" }}
+                className={pathname == `/ranking` ? "active" : "links"}
+                to='/ranking'
+              >
+                <p>{t("Header.3")}</p>
+              </NavLink>
+            </li>
+            <li >
+              <NavLink
+                style={{ textDecoration: "none" }}
+                className={pathname == `/analytics` ? "active" : "links"}
+                to='/analytics'
+              >
+                <p>{t("Header.4")}</p>
+              </NavLink>
+            </li>
+            <li >
+              <Dropdown
+                menu={{
+                  items,
+                }}
+                trigger={['click']}
+              >
+
+                <Space>
+                  {t("Header.5")}
+                  <DownOutlined />
+                </Space>
+
+              </Dropdown>
+            </li>
+            <li >
+              <NavLink
+                style={{ textDecoration: "none" }}
+                className={pathname == `/consultant` ? "active" : "links"}
+                to="/consultant"
+              >
+                <p>{t("Header.6")}</p>
+              </NavLink>
+            </li>
+            <li >
+              <NavLink
+                style={{ textDecoration: "none" }}
+                className={pathname == `/faq` ? "active" : "links"}
+                to="/faq"
+              >
+                <p>{t("Header.7")}</p>
+              </NavLink>
+            </li>
+
           </ul>
           <div className="Auth">
-              {!cookies.get("AuthTokenUser") ?  <i onClick={HandleOpen} class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
-            </div>
+            {!cookies.get("AuthTokenUser") ? <i onClick={HandleOpen} class='bx bx-user-circle'></i> : <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
+          </div>
           <MobileDiv>
-          <div className="AuthMobile">
-              {!cookies.get("AuthTokenUser") ?  <i onClick={HandleOpen} class='bx bx-user-circle'></i> :  <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
+            <div className="AuthMobile">
+              {!cookies.get("AuthTokenUser") ? <i onClick={HandleOpen} class='bx bx-user-circle'></i> : <NavLink to="/lichniykabinet"><i class='bx bx-user-circle'></i></NavLink>}
             </div>
             {!closSearch ? (
               <img
@@ -109,32 +208,49 @@ function HeaderBottom({
             onClick={() => setSearch("")}
             className={!search == "" ? "modals" : "nomodals"}
           >
+
             <div className="modal-contents">
+              <p className="padding-header">{t("Header.9")}</p>
+              <hr />
               {!search == ""
                 ? getBankSearch.map((elem) => (
-                    <>
-                      <button
-                        id={elem.bank_id}
-                        onClick={async (e) => {
-                          await navigate(`/companyprofile/${e.target.id}`);
-                          window.location.reload();
-                        }}
-                        className="navlink"
-                      >
-                        {elem.companyname}
-                      </button>
-                      <br />
-                    </>
-                  ))
+                  <>
+                    <button
+                      id={elem.bank_id}
+                      onClick={async (e) => {
+                        await navigate(`/companyprofile/${e.target.id}`);
+                        window.location.reload();
+                      }}
+                      className="navlink"
+                    >
+                      {elem.companyname}
+                    </button>
+                    <br />
+                  </>
+                ))
                 : null}
+              <p className="padding-header">{t("Header.4")}</p>
+              <hr />
+              {!search == "" ? GetAnalyticaSearch.map(elem =>
+                <>
+                  <a href={elem.analitka_pdf}
+                    className="navlink-href"
+                    target={"_blank"}
+                  >
+
+                    {GetLanguageValue() == 'uz' ? elem.title_uz : GetLanguageValue() == 'ru' ? elem.title_ru : GetLanguageValue() == 'en' ? elem.title_en : null}
+                  </a>
+                  <br />
+                </>) : null}
             </div>
+
           </div>
 
-            {!cookies.get("AuthTokenUser") ? 
-   <ModalCommon  height={518} handleClose={HandleClose3} open={open}>
-    <Auth HandleClose3={HandleClose3}/>
-    </ModalCommon> : null } 
-    <LanguageHeader/>
+          {!cookies.get("AuthTokenUser") ?
+            <ModalCommon height={518} handleClose={HandleClose3} open={open}>
+              <Auth HandleClose3={HandleClose3} />
+            </ModalCommon> : null}
+          <LanguageHeader />
         </Wrapper>
       </WrapperContainer>
     </Section>

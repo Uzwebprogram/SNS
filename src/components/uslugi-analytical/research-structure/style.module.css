@@ -1,0 +1,55 @@
+.research_structure_section {
+  padding: 70px 0;
+}
+
+.research_structure_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 110%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.research_ol > li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 512px) {
+  .research_structure_title {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+}
+
+@media only screen and (max-width: 425px) {
+  .research_structure_title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .research_ol > li{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .research_structure_title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .research_structure_title {
+    font-size: 22px;
+  }
+  .research_ol > li{
+    font-size: 13px;
+  }
+}

@@ -43,7 +43,8 @@ export const WrapperPress = styled.div `
     @media only screen and (max-width: 525px) {
       display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: column; 
+    
     }
   }
 
@@ -190,9 +191,9 @@ export const WrapperPress = styled.div `
     }
     
   }
-  .ant-table-row:nth-child(1):hover{
-    background-color: #fff !important;
+  .ant-table-row:nth-child(1){
     color: #000 !important;
+    font-weight: bold !important;
   }
 
   .ant-table-wrapper .ant-table-tbody > tr > td {
@@ -201,7 +202,7 @@ export const WrapperPress = styled.div `
 
   .ant-table-row:hover {
     background: #f5f5f5 !important;
-    color: #fff !important;
+    color: black !important;
   }
 
   .ant-table-tbody > .ant-table-row > td:nth-child(1) {
@@ -282,7 +283,10 @@ export const WrapperPress = styled.div `
   a{
     display: flex;
     justify-content: center;
+    align-items: center;
     p{
+      margin: 0;
+      padding: 0;
       width: 55px;
     }
   }

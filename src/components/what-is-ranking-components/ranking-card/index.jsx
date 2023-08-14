@@ -18,133 +18,73 @@ const RankingCard = () => {
         {GetLanguageValue() == "ru" ? (
               <>
               <p>
-          <strong>Рейтинг</strong> – играют важную роль для снижения информационной неопределенности при взаимодействии между субъектом рейтингования и его партнерами и клиентами. 
-    Суть информационной неопределенности рассмотрим на примере кредитного рейтинга:
-    Например, кредитор (инвестор или компания) хочет вложиться – в компанию или в ценную бумагу (кто нуждается в привлечении капитала), но вопрос в том, что не всегда кредитор доверяет заемщику. Проблема в том, что у кредитора отсутствует достаточная информация о компании и о финансовых инструментах. Проблему информационного голода для принятия решения частично решается за счет использования рейтингов, предоставляющих существенную дополнительную информацию рынку. 
-    Проблема недостатка информации у кредитора и заемщика влечет две глобальные проблемы:
+          <strong>Ренкинг</strong>— список объектов (как правило, организаций), упорядоченный по определённому критерию, параметру или показателю.
     <br />
-    1. Опасение “ложного выбора” из-за возможности потери предоставляемых в долг средств;
+    Ренкинги применяются в экономике, бизнесе, маркетинге, спорте — в сферах, где есть необходимость по определённому числовому параметру отранжировать список компаний, претендентов, предложений, участников и т. п.Так, существуют ренкинги кредитных и микрофинансовых организаций, страховых и лизинговых компаний, контрагентов и т. д. Например, по ренкингу банков можно сделать вывод о том, в каком из них больше ставки по процентам.
     <br />
-    2. Моральные риски – связанные с нецелевым и неоговоренным использованием средств заемщиком. (может это всё проиллюстрируем?)
-    Таким образом кредитор вынужден осуществлять мониторинг заемщика, собирать информацию о нем, прогнозировать его финансовую стабильность 
-    И оценивать риски невозврата предоставленного кредита. Рейтинги оказывают содействие ему в этом вопросе.
+    Понятие «ренкинг» нередко путают с термином «рейтинг». В основе любого рейтинга лежит субъективная оценка, которая основывается либо на конкретном критерии, либо на определённой системе расчёта (возрастные рейтинги, рейтинг популярности телепрограммы и т. п.). Ренкинг же в большей степени относится к статистическим данным. Его отличительная черта — объективность результата ранжирования. В отличие от рейтинга, ренкинг не ставит своей целью что-либо оценивать — он даёт возможность точно «откалибровать» исходный список по интересующему признаку. При составлении ренкинга не требуется экспертное мнение — только точные данные.
     <br />
-    <strong>Важность</strong> – польза присвоенного рейтинга отличается в зависимости от статуса участника:
+    <strong>Нюансы:</strong>
         </p>
         <p>
-        1. Эмитент – наличие рейтинга позволяет облегчить выход капитала на рынок и привлечь инвестиции под более 
+        - Типовые показатели ренкинга, на основании которых производится ранжирование:
         <br />
-    низкую процентную ставку.
+        - Економические (размер прибыли, платёжеспособность и пр.);
     <br />
-    2. Инвестор – рейтинг ориентирует по отношению приемлемости или неприемлемости вложения денежных средств
-    в ценные бумаги выбранного эмитента.
+    - Натуральные (объём производства в штуках готовой продукции и пр.);
     <br />
-    3. Компания – сможет выявить текущие проблемы бизнеса и подумать, как их можно устранить
+    - Несмотря на кажущееся преимущество ренкинга перед рейтингом, второй термин более известен неспециалистам. Он же чаще упоминается в СМИ, также есть специальные рейтинговые агентства.
+    - Статистические (численность населения, количество покупок и пр.).
         </p>
         <p>
-        <strong>Виды рейтинга:</strong>
-    <br />
--  Рейтинг кредитоспособности и надежности компаний
-<br />
--  Рейтинг платежеспособности и надежности (для страховых компаний)
-<br />
--  Рейтинг качества и надежности обслуживания клиентов
-<br />
--  Рейтинг привлекательности ценных бумаг (акции, облигации)
-<br />
--  Экпресс-Рейтинг
-<br /><strong>Шкала: (раскрывающийся список)</strong>
-<br />
-<strong>Вместе с рейтингом получают:</strong> подробный рейтинговый отчет, будет под наблюдением 12 месяцев, прогноз
-Процесс присвоения рейтинга: <strong>(раскрывающийся список)</strong>
         </p>
               </>
         ) 
         
         : GetLanguageValue() == "uz" ? <>
-        <p>
-          <strong>Reyting</strong> - reyting sub'ekti va uning hamkorlari va mijozlari o'rtasidagi o'zaro munosabatlarda axborot noaniqligini kamaytirishda muhim rol o'ynaydi.
-    Kredit reytingi misolida axborot noaniqligining mohiyatini ko'rib chiqamiz:
-    Misol uchun, kreditor (investor yoki kompaniya) kompaniyaga yoki qimmatli qog'ozga sarmoya kiritmoqchi (kimga kapital jalb qilish kerak), ammo muammo shundaki, qarz beruvchi har doim ham qarz oluvchiga ishonmaydi. Muammo shundaki, qarz beruvchi kompaniya va moliyaviy vositalar haqida etarli ma'lumotga ega emas. Qaror qabul qilishda axborot ochligi muammosi bozorga sezilarli qo'shimcha ma'lumotlarni taqdim etadigan reytinglardan foydalanish orqali qisman hal qilinadi.
-    Qarz beruvchi va qarz oluvchidan ma'lumot etishmasligi muammosi ikkita global muammolarni keltirib chiqaradi:
-    <br />
-    1. Qarz qilingan mablag'larni yo'qotish ehtimoli tufayli "noto'g'ri tanlov" qo'rquvi;
-    <br />
-    2. Ma'naviy xavflar - qarz oluvchi tomonidan mablag'larni noto'g'ri ishlatish va maqsadsiz foydalanish bilan bog'liq. (buni tasvirlab bera olamizmi?)
-    Shunday qilib, qarz beruvchi qarz oluvchini kuzatishga, u haqida ma'lumot to'plashga, uning moliyaviy barqarorligini bashorat qilishga majbur
-    Va kreditni to'lamaslik xavfini baholang. Bu masalada unga reytinglar yordam beradi.
-    <br />
-    <strong>Muhimlik</strong> - tayinlangan reytingning foydaliligi ishtirokchining holatiga qarab farqlanadi:
-        </p>
-        <p>
-        1. Emitent - reytingning mavjudligi kapitalning bozorga kirishini va ko'proq ostida investitsiyalarni jalb qilishni osonlashtiradi
-        <br />
-    past foiz stavkasi.
-    <br />
-    2. Investor - pulni investitsiya qilishning maqbul yoki nomaqbulligiga nisbatan reyting yo'nalishi
-    tanlangan emitentning qimmatli qog'ozlariga.
-    <br />
-    3. Kompaniya - mavjud biznes muammolarini aniqlay oladi va ularni qanday bartaraf etish haqida o'ylaydi
-        </p>
-        <p>
-        <strong>Baho turlari:</strong>
-    <br />
-- kompaniyalarning kreditga layoqatliligi va ishonchliligi reytingi
-<br />
-- to'lov qobiliyati va ishonchlilik reytingi (sug'urta kompaniyalari uchun)
-<br />
-- mijozlarga xizmat ko'rsatish sifati va ishonchliligi reytingi
-<br />
-- qimmatli qog'ozlarning jozibadorligi reytingi (aksiya, obligatsiyalar)
-<br />
-- Ekspress reyting
-<br /><strong>Mashtab: (ochiladigan ro'yxat)</strong>
-<br />
-<strong>Reytingni olish bilan birga:</strong>batafsil reyting hisoboti, 12 oy davomida nazorat qilinadi, prognoz
-Baholash jarayoni: <strong>(ochiladigan roʻyxat)</strong>
-        </p> 
+<p>
+           <strong>Reyting</strong> - bu ma'lum bir mezon, parametr yoki ko'rsatkich bo'yicha tartiblangan ob'ektlar (odatda tashkilotlar) ro'yxati.
+     <br />
+     Reytinglar iqtisod, biznes, marketing, sport sohalarida - kompaniyalar ro'yxatini, ariza beruvchilar, takliflar, ishtirokchilar va boshqalarni ma'lum bir raqamli parametr bo'yicha tartiblash zarurati bo'lgan sohalarda qo'llaniladi.Shunday qilib, kredit va mikromoliya tashkilotlari reytinglari mavjud. , sug'urta va lizing kompaniyalari, pudratchilar va boshqalar. Masalan, banklar reytingiga ko'ra, ulardan qaysi biri yuqori foiz stavkasiga ega degan xulosaga kelish mumkin.
+     <br />
+     “Reyting” tushunchasi ko‘pincha “reyting” atamasi bilan chalkashib ketadi. Har qanday reyting sub'ektiv baholashga asoslangan bo'lib, u ma'lum bir mezonga yoki ma'lum bir hisoblash tizimiga (yosh reytinglari, teledasturning mashhurlik reytingi va boshqalar) asoslanadi. Reyting ko'proq statistik ma'lumotlar bilan bog'liq. Uning ajralib turadigan xususiyati reyting natijasining ob'ektivligidir. Reytingdan farqli o'laroq, reyting hech narsani baholashni maqsad qilmaydi - bu asl ro'yxatni qiziqish atributiga ko'ra aniq "kalibrlash" imkonini beradi. Reytingni tuzishda ekspert xulosasi talab qilinmaydi - faqat aniq ma'lumotlar.
+     <br />
+     <strong>Nyuanslar:</strong>
+         </p>
+         <p>
+         - Reyting tuziladigan tipik reyting ko'rsatkichlari:
+         <br />
+         - iqtisodiy (foydali marja, to'lov qobiliyati va boshqalar);
+     <br />
+     - tabiiy (tayyor mahsulot bo'laklarida ishlab chiqarish hajmi va boshqalar);
+     <br />
+     - Reytingdan ko'ra ko'rinib turgan ustunlikka qaramay, ikkinchi muddat mutaxassis bo'lmaganlarga yaxshi ma'lum. U ommaviy axborot vositalarida tez-tez tilga olinadi, maxsus reyting agentliklari ham bor.
+     - Statistik (aholi soni, xaridlar soni va boshqalar).
+         </p>
+         <p>
+         </p>
        </> : GetLanguageValue() == "en" ? <>
        <p>
-          <strong>Rating</strong> - play an important role in reducing information uncertainty in the interaction between the rating subject and its partners and clients.
-    Let us consider the essence of information uncertainty using the example of a credit rating:
-    For example, a lender (an investor or a company) wants to invest in a company or a security (who needs to raise capital), but the issue is that the lender does not always trust the borrower. The problem is that the lender does not have sufficient information about the company and financial instruments. The problem of information hunger for decision-making is partially solved by using ratings, which provide significant additional information to the market.
-    The problem of lack of information from the lender and the borrower entails two global problems:
-    <br />
-    1. Fear of a “false choice” due to the possibility of losing loaned funds;
-    <br />
-    2. Moral hazards - associated with the misuse and unspecified use of funds by the borrower. (can we illustrate this?)
-    Thus, the lender is forced to monitor the borrower, collect information about him, predict his financial stability
-    And assess the risks of non-repayment of the loan. Ratings assist him in this matter.
-    <br />
-    <strong>Importance</strong> - the usefulness of the assigned rating differs depending on the status of the participant:
-        </p>
-        <p>
-        1. Issuer - the presence of a rating makes it easier for capital to enter the market and attract investments under more
-        <br />
-    low interest rate.
-    <br />
-    2. Investor - the rating orients in relation to the acceptability or unacceptability of investing money
-    into securities of the selected issuer.
-    <br />
-    3. Company - will be able to identify current business problems and think about how they can be eliminated
-        </p>
-        <p>
-        <strong>Rating types:</strong>
-    <br />
-- Rating of creditworthiness and reliability of companies
-<br />
-- Rating of solvency and reliability (for insurance companies)
-<br />
-- Rating of quality and reliability of customer service
-<br />
-- Rating of the attractiveness of securities (stocks, bonds)
-<br />
-- Express Rating
-<br /><strong>Scale: (drop-down list)</strong>
-<br />
-<strong>Together with the rating receive:</strong> detailed rating report, will be monitored for 12 months, forecast
-Rating process: <strong>(dropdown list)</strong>
-        </p>
+           <strong>Ranking</strong> is a list of objects (usually organizations) ordered by a certain criterion, parameter or indicator.
+     <br />
+     Rankings are used in economics, business, marketing, sports - in areas where there is a need to rank the list of companies, applicants, proposals, participants, etc. by a certain numerical parameter. Thus, there are rankings of credit and microfinance organizations, insurance and leasing companies, contractors etc. For example, according to the ranking of banks, one can conclude which of them has a higher interest rate.
+     <br />
+     The concept of "ranking" is often confused with the term "rating". Any rating is based on a subjective assessment, which is based either on a specific criterion or on a certain calculation system (age ratings, popularity rating of a TV program, etc.). Ranking is more related to statistical data. Its distinguishing feature is the objectivity of the ranking result. Unlike rating, ranking does not aim to evaluate anything - it makes it possible to accurately “calibrate” the original list according to the attribute of interest. When compiling the ranking, no expert opinion is required - only accurate data.
+     <br />
+     <strong>Nuances:</strong>
+         </p>
+         <p>
+         - Typical ranking indicators, on the basis of which the ranking is made:
+         <br />
+         - Economic (profit margin, solvency, etc.);
+     <br />
+     - Natural (production volume in pieces of finished products, etc.);
+     <br />
+     - Despite the apparent advantage of ranking over rating, the second term is better known to non-specialists. He is more often mentioned in the media, there are also special rating agencies.
+     - Statistical (population, number of purchases, etc.).
+         </p>
+         <p>
+         </p>
        </> : null }
         
 

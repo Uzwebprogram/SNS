@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import Cookies from "universal-cookie/cjs/Cookies";
+
 const Home = lazy(() => import("./../layouts/Home/index"));
 const About = lazy(() => import("./../layouts/About/index"));
 const Contact = lazy(() => import("./../layouts/Contact/index"));
@@ -19,8 +20,12 @@ const AnalyticMore = lazy(() => import("../layouts/analytic-more/index"));
 const PersonalCabinet = lazy(() => import("../layouts/personal-cabinet/index"));
 const WhatIsRanking = lazy(() => import("../layouts/what-is-ranking/index"));
 const RankingProfile = lazy(() => import("../layouts/ranking-profile/index"));
-const WhatIsRating = lazy(() => import("../layouts/what-is-rating/index"))
-
+const WhatIsRating = lazy(() => import("../layouts/what-is-rating/index"));
+const Consultant = lazy(() => import("../layouts/consultant/index"));
+const UslugiRating = lazy(() => import("../layouts/uslugi-rating/index"));
+const UslugiAnalytical = lazy(() => import("../layouts/uslugi-analytical"));
+const FinanceConsult = lazy(() => import("../layouts/finance-consult"));
+const News = lazy(() => import("../layouts/news/index"))
 const cookies = new Cookies();
 
 const personalData = cookies.get("AuthDataUser");
@@ -129,16 +134,46 @@ export const RouterData = [
   {
     id: 18,
     path: "/whatisranking",
-    component: <WhatIsRanking/>
+    component: <WhatIsRanking />,
   },
   {
     id: 19,
     path: "/rankingprofile/:id",
-    component: <RankingProfile/>
+    component: <RankingProfile />,
   },
   {
     id: 20,
     path: "/whatisrating",
-    component: <WhatIsRating/>
-  }
+    component: <WhatIsRating />,
+  },
+  {
+    id: 21,
+    path: "/consultant",
+    component: <Consultant />,
+  },
+  {
+    id: 22,
+    path: "uslugi/uslugirating",
+    component: <UslugiRating />,
+  },
+  {
+    id: 22,
+    path: "uslugi/uslugirating/:id",
+    component: <UslugiRating />,
+  },
+  {
+    id: 23,
+    path: "uslugi/uslugianalytic",
+    component: <UslugiAnalytical />,
+  },
+  {
+    id: 24,
+    path: "uslugi/uslugifinance",
+    component: <FinanceConsult />,
+  },
+  {
+    id: 24,
+    path: "/news",
+    component: <News />,
+  },
 ];

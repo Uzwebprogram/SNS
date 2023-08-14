@@ -22,7 +22,7 @@ export const dataLink = [
     {
         id: 5,
         title : "Header.6",
-        link : "/agency"
+        link : "/consultant"
     },
     {
         id: 6,

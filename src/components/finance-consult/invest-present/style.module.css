@@ -1,0 +1,119 @@
+.invest_present_section {
+  padding: 50px 0;
+}
+
+.invest_present_title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.invest_present_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 160%;
+  text-align: center;
+  color: #575757;
+  margin-bottom: 30px;
+}
+
+.invest_present_row {
+  margin: 55px 0 0 0 !important;
+}
+
+.invest_present_col_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.invest_present_col_item > span {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #2f66b8;
+  border: 2px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 10px 15px;
+  margin-right: 20px;
+}
+
+.invest_present_col_item > p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #2f66b8;
+}
+
+@media only screen and (max-width: 991px) {
+  /* .invest_present_col {
+    margin-bottom: 30px !important;
+  } */
+}
+
+@media only screen and (max-width: 512px) {
+  .invest_present_title {
+    font-size: 30px;
+  }
+  .invest_present_text,
+  .invest_present_col_item > p,
+  .invest_present_col_item > span {
+    font-size: 17px;
+  }
+
+  .invest_present_col_item{
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .invest_present_title {
+    font-size: 26px;
+  }
+  .invest_present_text,
+  .invest_present_col_item > p,
+  .invest_present_col_item > span {
+    font-size: 16px;
+  }
+
+  .invest_present_col_item > span{
+    padding: 5px 13px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .invest_present_title {
+    font-size: 24px;
+  }
+  .invest_present_text,
+  .invest_present_col_item > p,
+  .invest_present_col_item > span {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .invest_present_title {
+    font-size: 22px;
+  }
+  .invest_present_text,
+  .invest_present_col_item > p,
+  .invest_present_col_item > span {
+    font-size: 14px;
+  }
+}

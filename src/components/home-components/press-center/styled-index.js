@@ -5,6 +5,7 @@ export const WrapperPress = styled.div`
   box-shadow: 0px 4px 20px -10px #cccccc;
   border-radius: 15px;
   padding: 25px;
+
   @media only screen and (max-width: 425px) {
     border-radius: 0;
     box-shadow: none;
@@ -21,6 +22,8 @@ export const WrapperPress = styled.div`
   }
 
   .press-content {
+    text-decoration : none;
+    list-style-type : none;
     p {
       font-family: "Montserrat";
       font-style: normal;
@@ -29,6 +32,7 @@ export const WrapperPress = styled.div`
       line-height: 130%;
       letter-spacing: 0.01em;
       color: #1e1e1e;
+
     }
 
     time {
@@ -48,5 +52,10 @@ export const WrapperPress = styled.div`
     hr {
       display: none;
     }
+  }
+
+  .news_links{
+    color: #000;
+    text-decoration: none;
   }
 `;

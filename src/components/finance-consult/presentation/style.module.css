@@ -1,0 +1,87 @@
+.presentation_section {
+  padding: 100px 0;
+}
+
+.presentation_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.presentation_row {
+  margin: 0 !important;
+}
+
+.presentation_col > img {
+  margin-bottom: 20px;
+}
+
+.presentation_col > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 160%;
+  color: #000000;
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 991px) {
+  .presentation_col {
+    margin-bottom: 30px !important;
+  }
+  .presentation_col > p {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .presentation_title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .presentation_col > p {
+    font-size: 17px;
+  }
+
+  .presentation_col {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .presentation_title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .presentation_col > p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .presentation_title {
+    font-size: 24px;
+  }
+  .presentation_col > p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .presentation_title {
+    font-size: 22px;
+  }
+  .presentation_col > p {
+    font-size: 14px;
+    text-align: center;
+  }
+}

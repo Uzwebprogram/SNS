@@ -30,6 +30,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
 
   const dispatch = useDispatch();
   const getAnalytic = useSelector((state) => state.analytic.getanalytic?.Data);
+  // console.log(getAnalytic)
 
 
   const [sorts, setSorts] = useState("");
@@ -43,7 +44,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
     dispatch(GetAnalytic());
   }, []);
 
-  getAnalytic.map((elem) => {
+  getAnalytic?.map((elem) => {
     if (!arr.includes(elem.category_name)) {
       arr.push(elem.category_name);
     }
@@ -72,7 +73,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
               }}
               type={"button"}
             >
-              Поделиться
+              {t("Calling.5")}
             </CommonButton>
           </div>
         ) : null}
@@ -80,7 +81,7 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
           {getAnalytic.map((elem) =>
             sorts == elem.category_name || sorts == "" ? (
               <Col lg={12} md={12} sm={12} sx={12} className="col">
-                <NavLink className="link" to={`/analyticmore/${elem.id}`}>
+                <a className="link" target={"_blank"} href={elem.analitka_pdf}>
                   <CommonCard
                     id={elem.id}
                     imgSrc={elem.img}
@@ -91,21 +92,21 @@ const Analytics = ({ isSelect, isBtn, isMargin }) => {
                         ? elem.title_uz
                         : LangVal() == "en"
                         ? elem.title_en
-                        : elem.title_ru
+                        : null
                     }
                     text2={
                       LangVal() == "ru"
-                        ? elem.description_ru
+                        ? elem.description_en
                         : LangVal() == "uz"
                         ? elem.description_uz
                         : LangVal() == "en"
-                        ? elem.description_en
-                        : elem.description_ru
+                        ? elem.description_ru
+                        : null
                     }
                     spanText={elem.data_date}
                     // time={DateFormat(elem.date)}
                   />
-                </NavLink>
+                </a>
               </Col>
             ) : null
           )}

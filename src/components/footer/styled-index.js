@@ -5,6 +5,9 @@ export const Wrapper = styled.div`
   background-color: #1b1a1a;
   padding-top: 50px;
   padding-bottom: 50px;
+  .footer_row {
+    margin: 0 !important;
+  }
   hr {
     /* width: 100%; */
     background-color: #616262;
@@ -24,6 +27,8 @@ export const Wrapper = styled.div`
       margin-bottom: 61px;
     }
     p {
+      margin: 0;
+      padding: 0;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
@@ -47,6 +52,7 @@ export const Wrapper = styled.div`
     @media only screen and (max-width: 768px) {
       margin-bottom: 30px;
     }
+
     ul {
       margin: 0;
       padding: 0;
@@ -60,13 +66,14 @@ export const Wrapper = styled.div`
         line-height: 130%;
         letter-spacing: 0.01em;
         color: #ffffff;
-        margin-bottom: 19px;
         @media only screen and (max-width: 768px) {
           margin-bottom: 5px;
         }
       }
       li {
         list-style-type: none;
+        margin-bottom : 10px;
+        span,
         a {
           text-decoration: none;
           font-family: "Montserrat";
@@ -76,6 +83,18 @@ export const Wrapper = styled.div`
           line-height: 130%;
           letter-spacing: 0.01em;
           color: #f5f5f5;
+        }
+      }
+      .links {
+        p {
+          margin: 0;
+        }
+      }
+
+      .active {
+        p {
+          margin: 0;
+          border-bottom: 2px solid #fff;
         }
       }
     }
@@ -91,6 +110,7 @@ export const Wrapper = styled.div`
       line-height: 150%;
       letter-spacing: 0.01em;
       color: #f5f5f5;
+      text-align: justify;
     }
   }
   .Footer-Bottom-left-bottom {
