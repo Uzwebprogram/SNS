@@ -58,7 +58,7 @@ export const SliderWrapper = styled.div`
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
-      font-size: 30px;
+      font-size: 26px;
       line-height: 130%;
       letter-spacing: 0.01em;
       color: #ffffff;
