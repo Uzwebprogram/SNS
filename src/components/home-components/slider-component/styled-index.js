@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SliderWrapper = styled.div`
-margin-top : 50px;
+  margin-top: 50px;
   .swiper {
     width: 100%;
     height: 400px;

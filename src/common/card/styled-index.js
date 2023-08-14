@@ -57,10 +57,12 @@ export const CardWrapper = styled.div`
   .card-img {
     padding: 2px;
     width: 100%;
-    /* display: flex;
+    height: 100%;
+    
+      /* display: flex;
     align-items: center;
     justify-content: flex-end; */
-    img {
+      img {
       width: 100%;
       height: 100%;
       border-radius: 10px;
