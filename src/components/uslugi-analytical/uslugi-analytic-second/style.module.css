@@ -1,0 +1,80 @@
+.consultant_company_section {
+  padding: 60px 0 30px 0;
+}
+
+.consultant_row {
+  margin: 0 !important;
+}
+.col_img_box > img {
+  box-shadow: -11px -11px 1px 0px #2f66b8;
+  width: 100%;
+  object-fit: cover;
+}
+
+.consultant_col > h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 110%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.consultant_col > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 160%;
+  color: #000000;
+  text-align: justify;
+  max-width: 740px;
+}
+
+@media only screen and (max-width: 991px) {
+  .consultant_col {
+    margin-bottom: 20px !important;
+  }
+  .consultant_col > p {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .consultant_col > h4 {
+    font-size: 30px;
+  }
+  .consultant_col > p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .consultant_col > h4 {
+    font-size: 26px;
+  }
+  .consultant_col > p {
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .consultant_col > h4 {
+    font-size: 24px;
+  }
+  .consultant_col > p {
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .consultant_col > h4 {
+    font-size: 22px;
+  }
+  .consultant_col > p {
+    font-size: 14px;
+    text-align: justify;
+  }
+}

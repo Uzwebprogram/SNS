@@ -11,13 +11,14 @@ import BanksSlice from './bank/index'
 import CategorieSlice from './categorie/index'
 import FaqSlice from './faq/index'
 import InformationSlice from './information/index'
-
+import RaitingSlice from "./raiting/index"
 
 export const store = configureStore({
   reducer: {
     userRegister: UserSlice,
     userLogin: UserLogin,
     analytic: AnalyticSlice,
+    raiting : RaitingSlice,
     uslugi: UslugiSlice,
     methodology: MethodologySlice,
     ranking: RankingSlice,

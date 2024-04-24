@@ -70,4 +70,9 @@ export const WrapperPress = styled.div`
       display: none;
     }
   }
+
+  .contant_navlink{
+    color: #fff;
+    text-decoration: none
+  }
 `;

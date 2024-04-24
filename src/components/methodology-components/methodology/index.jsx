@@ -55,7 +55,7 @@ const Methodology = ({ isSelect }) => {
             <div>
               <Row className="row">
                 <Col lg={8} md={8} sm={6} sx={6} className="col">
-                  <a href={elem.pdf} download="МИНИ ПАКЕТ">
+                  <a href={elem.pdf} target="_blank">
                     {LangVal() == "ru"
                       ? elem.title_ru
                       : LangVal() == "uz"

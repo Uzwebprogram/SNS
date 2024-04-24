@@ -142,7 +142,7 @@ const RatingCard = () => {
               <strong>Mashtab: (ochiladigan ro'yxat)</strong>
               <br />
               <strong>Reytingni olish bilan birga:</strong>batafsil reyting
-              hisoboti, 12 oy davomida nazorat qilinadi, prognoz Baholash
+              hisoboti, 12 oy davomida nazorat qilinadi, Bashorat Baholash
               jarayoni: <strong>(ochiladigan roʻyxat)</strong>
             </p>
           </>

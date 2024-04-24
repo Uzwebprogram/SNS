@@ -7,15 +7,15 @@ const DetailsComentary = () => {
   return (
     <>
       <WrapperPress>
-        <h2>{t("Details.6")}</h2>
+        <h2>{t("details.6")}</h2>
 
         <div className="press-content">
-          <p>{t("Details.7")}</p>
+          <p>{t("details.7")}</p>
           <time>16/12/2021</time>
           <hr />
         </div>
         <div className="press-content">
-          <p>{t("Details.7")}</p>
+          <p>{t("details.7")}</p>
           <time>16/12/2021</time>
           <hr />
         </div>

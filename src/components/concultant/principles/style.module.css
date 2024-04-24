@@ -1,0 +1,107 @@
+.principles_section {
+  padding: 50px 0;
+}
+
+.principles_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 110%;
+  color: #000000;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+.principles_row {
+  margin: 0 !important;
+}
+
+.principles_col_item {
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.principles_col_item > img {
+  margin-bottom: 40px;
+}
+
+.principles_col_item > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 150%;
+  color: #575757;
+}
+.principles_col_item > p > span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 150%;
+  color: #222222;
+}
+
+@media only screen and (max-width: 991px) {
+  .principles_col {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .principles_title {
+    font-size: 30px;
+  }
+  .principles_col_item > p,
+  .principles_col_item > p > span {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .principles_title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .principles_col_item > p,
+  .principles_col_item > p > span {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .principles_col_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .principles_title {
+    font-size: 24px;
+  }
+  .principles_col_item > p,
+  .principles_col_item > p > span {
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .principles_section {
+    padding: 20px 0;
+  }
+  .principles_title {
+    font-size: 22px;
+  }
+  .principles_col_item > p,
+  .principles_col_item > p > span {
+    font-size: 14px;
+    text-align: justify;
+  }
+}

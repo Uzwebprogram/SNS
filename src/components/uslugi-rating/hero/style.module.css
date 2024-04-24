@@ -1,0 +1,58 @@
+.uslugi_rating_hero_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  flex-direction: column;
+  width: 100%;
+}
+.uslugi_rating_hero_box > h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 73px;
+  line-height: 100%;
+  color: #ffffff;
+  z-index: 2;
+}
+.uslugi_rating_hero_box > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 512px) {
+  .uslugi_rating_hero_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .uslugi_rating_hero_box > h4 {
+    font-size: 70px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .uslugi_rating_hero_box > h4 {
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 378px) {
+  .uslugi_rating_hero_box > h4 {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .uslugi_rating_hero_box > h4 {
+    font-size: 45px;
+  }
+}

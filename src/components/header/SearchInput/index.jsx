@@ -6,6 +6,8 @@ import { Wrapper, Overlay } from "./styled-index";
 import { GetBanksSearch } from "../../../redux/bank/index";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { GetAnalyticSearch } from "../../../redux/analytic";
+import Cookies from "universal-cookie";
 const { Search } = Input;
 
 function SearchInput({ SearchModal, SearchClose }) {
@@ -14,15 +16,22 @@ function SearchInput({ SearchModal, SearchClose }) {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const cookies = new Cookies();
 
-  const onSearch = (value) => {
-    setSearch(value.target.value);
-    dispatch(GetBanksSearch(value.target.value));
+  const onSearch = async(e) => {
+    setSearch(e.target.value);
+    dispatch(GetBanksSearch(e.target.value));
+   dispatch(GetAnalyticSearch(e.target.value))
   };
   const getBankSearch = useSelector(
     (state) => state.banks.getbanksSearch?.Data
   );
-
+  const GetAnalyticaSearch = useSelector(
+    (state) => state.analytic.getanalyticSearch.Data
+  );
+  function GetLanguageValue() {
+    return cookies.get("i18next")
+  }
   return (
     <>
       <Wrapper SearchModal={SearchModal}>
@@ -42,6 +51,8 @@ function SearchInput({ SearchModal, SearchClose }) {
         className={!search == "" ? "modals" : "nomodals"}
       >
         <div className="modal-contents">
+        <p className="padding-header">{t("Header.9")}</p>
+        <hr /> 
           {!search == ""
             ? getBankSearch.map((elem) => (
                 <>
@@ -59,6 +70,19 @@ function SearchInput({ SearchModal, SearchClose }) {
                 </>
               ))
             : null}
+            <p className="padding-header">{t("Header.4")}</p>
+            <hr /> 
+            {!search == "" ? GetAnalyticaSearch.map(elem =>               
+             <>
+                  <a href={elem.analitka_pdf}
+                  target={"_blank"}
+                  className="navlink-href"
+                  >
+                    
+                    {GetLanguageValue() == 'uz' ? elem.title_uz : GetLanguageValue() == 'ru' ? elem.title_ru : GetLanguageValue() == 'en' ? elem.title_en : null}
+                  </a>
+                  <br  />
+                </> ): null}
         </div>
       </div>
       </Wrapper>

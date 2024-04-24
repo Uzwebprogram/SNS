@@ -8,15 +8,16 @@ export const GlobalStyle = createGlobalStyle`
   html{
     scroll-behavior:smooth
     }
+
+    *{
+      font-family: 'Montserrat' !important;
+    }
     
   body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     background-color: #F5F5F5;
-
-    font-family: 'Montserrat' !important;
-
 
     h2{
       margin-bottom: 20px;
@@ -38,6 +39,6 @@ export const WrapperContainer = styled.div`
     width: 95%;
   }
   @media only screen and (max-width: 425px) {
-    width: 92%;
+    width: 100%;
   }
 `;

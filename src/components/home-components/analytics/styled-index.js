@@ -17,6 +17,7 @@ export const WrapperPress = styled.div`
   @media only screen and (max-width: 425px) {
     margin-top: 0;
     border-radius: 0;
+    padding-top: 15px;
 
     .row {
       margin-left: 0 !important;
@@ -47,6 +48,10 @@ export const WrapperPress = styled.div`
     color: #fff;
     margin-bottom: 10px;
     padding-left: 20px;
+
+    @media only screen and (max-width: 425px) {
+      padding-left:0 ;
+    }
   }
 
   .select-box {
@@ -62,6 +67,7 @@ export const WrapperPress = styled.div`
       align-items: flex-start;
       justify-content: flex-start;
       flex-direction: column;
+      padding: 0;
     }
     select {
       width: 75%;

@@ -1,0 +1,113 @@
+.rating_users_section {
+  padding: 70px 0;
+}
+
+.rating_users_title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.rating_users_row {
+  margin: 0 !important;
+}
+
+.rating_users_col > h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #2f66b8;
+}
+
+.rating_users_col_item {
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+}
+
+.rating_users_col_item > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rating_users_col_item > ul > li {
+  display: flex;
+  align-items: top;
+  justify-content: flex-start;
+  border-bottom: 2px solid #e7e7e7;
+  margin: 10px 0;
+}
+
+.rating_users_col_item > ul > li:last-child {
+  border-bottom: none !important;
+}
+
+.rating_users_col_item > ul > li > i {
+  font-size: 30px;
+  color: #b4b4b4;
+  margin-right: 10px;
+}
+
+.rating_users_col_item > ul > li > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #363636;
+}
+
+@media only screen and (max-width: 991px) {
+  .rating_users_col {
+    margin-bottom: 30px !important;
+  }
+  .rating_users_col_item {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .rating_users_title {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .rating_users_title {
+    font-size: 26px;
+    text-align: center;
+  }
+  .rating_users_col_item > ul > li > p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .rating_users_title {
+    font-size: 24px;
+  }
+  .rating_users_col_item > ul > li > p {
+    font-size: 14px;
+  }
+  .rating_users_col_item > ul > li > i{
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .rating_users_title {
+    font-size: 22px;
+  }
+}

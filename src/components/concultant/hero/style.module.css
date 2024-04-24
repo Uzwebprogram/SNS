@@ -1,0 +1,68 @@
+.consultant_hero_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
+.consultant_hero_box > h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 110%;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+.consultant_hero_box > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 512px) {
+  .consultant_hero_box {
+    width: 100%;
+  }
+
+  .consultant_hero_box > h4 {
+    font-size: 28px;
+  }
+  .consultant_hero_box > p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .consultant_hero_box > h4 {
+    font-size: 26px;
+  }
+  .consultant_hero_box > p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 378px) {
+  .consultant_hero_box > h4 {
+    font-size: 24px;
+  }
+  .consultant_hero_box > p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+    .consultant_hero_box > h4 {
+      font-size: 22px;
+    }
+    .consultant_hero_box > p {
+      font-size: 10px;
+    }
+  }

@@ -151,9 +151,29 @@ export const WrapperPress = styled.div`
     display: none !important;
   }
 
+  
+
   .ant-table-row:hover {
     background: #f5f5f5 !important;
     color: #fff !important;
+  }
+
+  .ant-table-cell {
+    /* display: flex; */
+    /* @media only screen and (max-width: 768px) {
+      padding: 12px 6px !important;
+      column-count: 4 !important;
+    } */
+    @media only screen and (max-width: 426px) {
+      padding: 12px 6px !important;
+      font-size: 12px !important;
+      column-count: 2 !important;
+    }
+    @media only screen and (max-width: 375px) {
+      padding: 12px 3px !important;
+      font-size: 10px !important;
+      column-count: 2 !important;
+    }
   }
 
   .ant-table-wrapper .ant-table-tbody > tr > td {
