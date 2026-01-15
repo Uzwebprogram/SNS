@@ -93,6 +93,132 @@ const CompanyProfileCard = ({ isSelect }) => {
               </Row>
               <hr />
             </div>
+
+            {elem.phone && (
+              <div>
+                <Row className="row">
+                  <Col lg={6} md={8} sm={6} sx={6} className="col">
+                    <p>{t("Requisites.12")}</p>
+                  </Col>
+                  <Col lg={6} md={4} sm={6} sx={6} className="col">
+                    <span>{elem.phone}</span>
+                  </Col>
+                </Row>
+                <hr />
+              </div>
+            )}
+
+            {elem.insta_link && (
+              <div>
+                <Row className="row">
+                  <Col lg={6} md={8} sm={6} sx={6} className="col">
+                    <p>{t("Requisites.13")}</p>
+                  </Col>
+                  <Col lg={6} md={4} sm={6} sx={6} className="col">
+                    <span>
+                      <a
+                        href={elem.insta_link}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        {elem.insta_link}
+                      </a>
+                    </span>
+                  </Col>
+                </Row>
+                <hr />
+              </div>
+            )}
+
+            {elem.tg_link && (
+              <div>
+                <Row className="row">
+                  <Col lg={6} md={8} sm={6} sx={6} className="col">
+                    <p>{t("Requisites.14")}</p>
+                  </Col>
+                  <Col lg={6} md={4} sm={6} sx={6} className="col">
+                    <span>
+                      <a
+                        href={elem.tg_link}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        {elem.tg_link}
+                      </a>
+                    </span>
+                  </Col>
+                </Row>
+                <hr />
+              </div>
+            )}
+
+            {elem.web_link && (
+              <div>
+                <Row className="row">
+                  <Col lg={6} md={8} sm={6} sx={6} className="col">
+                    <p>{t("Requisites.15")}</p>
+                  </Col>
+                  <Col lg={6} md={4} sm={6} sx={6} className="col">
+                    <span>
+                      <a
+                        href={elem.web_link}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        {elem.web_link}
+                      </a>
+                    </span>
+                  </Col>
+                </Row>
+                <hr />
+              </div>
+            )}
+
+            {elem.facebook_link && (
+              <div>
+                <Row className="row">
+                  <Col lg={6} md={8} sm={6} sx={6} className="col">
+                    <p>{t("Requisites.16")}</p>
+                  </Col>
+                  <Col lg={6} md={4} sm={6} sx={6} className="col">
+                    <span>
+                      <a
+                        href={elem.facebook_link}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        {elem.facebook_link}
+                      </a>
+                    </span>
+                  </Col>
+                </Row>
+                <hr />
+              </div>
+            )}
+
+            {(elem.adress_uz || elem.adress_ru || elem.adress_en) && (
+              <div>
+                <Row className="row">
+                  <Col lg={6} md={8} sm={6} sx={6} className="col">
+                    <p>{t("Requisites.17")}</p>
+                  </Col>
+                  <Col lg={6} md={4} sm={6} sx={6} className="col">
+                    <span>
+                      {i18n.language === "uz"
+                        ? elem.adress_uz
+                        : i18n.language === "ru"
+                        ? elem.adress_ru
+                        : elem.adress_en}
+                    </span>
+                  </Col>
+                </Row>
+                <hr />
+              </div>
+            )}
             <div className="table-box">
               <h3>{t("Requisites.5")}</h3>
               <hr className="hr" />

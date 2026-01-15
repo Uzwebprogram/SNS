@@ -62,12 +62,12 @@
     "4": "Reyting nima?",
     "5": "Kompaniya ranking",
     "6": "% ulush",
-    "7" : "Sanoatni tanlang!",
-     "8" : "Indikatorni tanlang !",
-     "9" : "boshlanish",
-     "10" : "oxiri",
-     "11" : "yil",
-     "12" : "Oʻzgarishlar %"
+    "7": "Sanoatni tanlang!",
+    "8": "Indikatorni tanlang !",
+    "9": "boshlanish",
+    "10": "oxiri",
+    "11": "yil",
+    "12": "Oʻzgarishlar %"
   },
   "Analytic": {
     "0": "So'rovdan o'tish",
@@ -109,7 +109,13 @@
     "8": "Prognoz",
     "9": "Yangilangan",
     "10": "Sertifikat",
-    "11": "Yuklab olish"
+    "11": "Yuklab olish",
+    "12": "Telefon",
+    "13": "Instagram",
+    "14": "Telegram",
+    "15": "Veb-sayt",
+    "16": "Facebook",
+    "17": "Manzil"
   },
   "References": {
     "0": "Kompaniya eslatishi",

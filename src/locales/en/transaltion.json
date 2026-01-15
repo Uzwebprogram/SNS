@@ -51,7 +51,7 @@
     "14": "Attribute",
     "15": "Year",
     "16": "billion sum",
-    "17": "Select a year" ,
+    "17": "Select a year",
     "18": "Select a quarter"
   },
   "Selects": {
@@ -67,12 +67,12 @@
     "4": "What is Rating?",
     "5": "Company ranking",
     "6": "% share",
-    "7" : "Choose an industry!",
-     "8" : "Select an indicator !",
-     "9" : "start",
-      "10" : "end",
-      "11" : "year",
-      "12" : "% changes"
+    "7": "Choose an industry!",
+    "8": "Select an indicator !",
+    "9": "start",
+    "10": "end",
+    "11": "year",
+    "12": "% changes"
   },
   "Analytic": {
     "0": "Pass the survey",
@@ -114,7 +114,13 @@
     "8": "Forecast",
     "9": "Updated",
     "10": "Certificate",
-    "11": "Download"
+    "11": "Download",
+    "12": "Phone",
+    "13": "Instagram",
+    "14": "Telegram",
+    "15": "Website",
+    "16": "Facebook",
+    "17": "Address"
   },
   "References": {
     "0": "Company mentions",
